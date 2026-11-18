@@ -1,0 +1,462 @@
+{
+  "model": "two-way nonlinear waveguide + Adachi-Sato 2D lips",
+  "nonlinear_feedback_to_lips": true,
+  "beta": 1.2,
+  "propagation_fs": 192000,
+  "audio_fs": 48000,
+  "common_gain_for_linear_and_nonlinear": true,
+  "output_gain_fs_per_pa": 0.08233382841453897,
+  "duration_s": 12.08,
+  "notes": [
+    {
+      "note": "Bb3",
+      "target_hz": 233.08188075904496,
+      "frequency_hz": 233.10314822828047,
+      "cents": 0.1579585984710782,
+      "periodicity": 0.9998887295414711,
+      "linear_frequency_hz": 235.4488689529442,
+      "linear_periodicity": 0.9315424400798911,
+      "nonlinear_pitch_change_cents": -17.33436360071593,
+      "nonlinear": {
+        "rms_pa": 0.7792950992375232,
+        "centroid_hz": 978.1659244352708,
+        "hf_fraction_above_3khz": 0.04708481281184418
+      },
+      "linear": {
+        "rms_pa": 0.560216722680302,
+        "centroid_hz": 517.032304348528,
+        "hf_fraction_above_3khz": 0.0001386617696581843
+      },
+      "start_s": 0.0,
+      "duration_s": 0.72,
+      "blowing_pressure_pa": 6000.000011723613,
+      "lip_frequency_hz": 259.38279,
+      "max_wave_mach_sampled": 0.10772579641247795,
+      "boundary_residual_max_pa": 1.8189894035458565e-12,
+      "incoming_rms_pa": 3218.987251989654,
+      "linear_incoming_rms_pa": 3167.4533533768654,
+      "lip_y_rms_m": 0.0004428178864512553,
+      "linear_lip_y_rms_m": 0.00045643009191701476
+    },
+    {
+      "note": "C4",
+      "target_hz": 261.6255653005986,
+      "frequency_hz": 261.6525307462707,
+      "cents": 0.17842710440104373,
+      "periodicity": 1.0000106931562518,
+      "linear_frequency_hz": 262.98745476380515,
+      "linear_periodicity": 0.9999776106916961,
+      "nonlinear_pitch_change_cents": -8.810121086472947,
+      "nonlinear": {
+        "rms_pa": 0.5319137387384586,
+        "centroid_hz": 848.3710169568085,
+        "hf_fraction_above_3khz": 0.0024858776716149686
+      },
+      "linear": {
+        "rms_pa": 0.3909828794474241,
+        "centroid_hz": 488.7359434962991,
+        "hf_fraction_above_3khz": 0.0006516982887802148
+      },
+      "start_s": 0.78,
+      "duration_s": 0.72,
+      "blowing_pressure_pa": 5358.867323152346,
+      "lip_frequency_hz": 273.7720903628441,
+      "max_wave_mach_sampled": 0.08440862368844324,
+      "boundary_residual_max_pa": 1.8189894035458565e-12,
+      "incoming_rms_pa": 2627.4068758290387,
+      "linear_incoming_rms_pa": 2445.8372173223197,
+      "lip_y_rms_m": 0.0002590582778374853,
+      "linear_lip_y_rms_m": 0.00025500372577209424
+    },
+    {
+      "note": "D4",
+      "target_hz": 293.6647679174076,
+      "frequency_hz": 293.63387570118863,
+      "cents": -0.18212763540258475,
+      "periodicity": 0.9998896701381261,
+      "linear_frequency_hz": 295.0875621938097,
+      "linear_periodicity": 0.9602464650534404,
+      "nonlinear_pitch_change_cents": -8.549634871435176,
+      "nonlinear": {
+        "rms_pa": 0.8403383448187656,
+        "centroid_hz": 1137.8218864025757,
+        "hf_fraction_above_3khz": 0.02752470214461281
+      },
+      "linear": {
+        "rms_pa": 0.613254445155958,
+        "centroid_hz": 579.9180175254943,
+        "hf_fraction_above_3khz": 8.39040980931065e-05
+      },
+      "start_s": 1.56,
+      "duration_s": 0.72,
+      "blowing_pressure_pa": 5743.491786207587,
+      "lip_frequency_hz": 317.83014,
+      "max_wave_mach_sampled": 0.0929475266665559,
+      "boundary_residual_max_pa": 1.8189894035458565e-12,
+      "incoming_rms_pa": 2928.1824540684042,
+      "linear_incoming_rms_pa": 2908.7423829090626,
+      "lip_y_rms_m": 0.00031046510596562387,
+      "linear_lip_y_rms_m": 0.0003134260716529515
+    },
+    {
+      "note": "Eb4",
+      "target_hz": 311.1269837220809,
+      "frequency_hz": 310.78653204139937,
+      "cents": -1.8954455421689766,
+      "periodicity": 0.9960723788294158,
+      "linear_frequency_hz": 156.49341458194004,
+      "linear_periodicity": 0.9606048460186335,
+      "nonlinear_pitch_change_cents": 1187.7864451021508,
+      "nonlinear": {
+        "rms_pa": 1.3644925868743647,
+        "centroid_hz": 1627.1373133916456,
+        "hf_fraction_above_3khz": 0.16175217696468414
+      },
+      "linear": {
+        "rms_pa": 0.9368742981695691,
+        "centroid_hz": 639.0400409238615,
+        "hf_fraction_above_3khz": 0.00019527230963194958
+      },
+      "start_s": 2.34,
+      "duration_s": 0.72,
+      "blowing_pressure_pa": 7135.24270395813,
+      "lip_frequency_hz": 337.0,
+      "max_wave_mach_sampled": 0.15479052183786451,
+      "boundary_residual_max_pa": 3.637978807091713e-12,
+      "incoming_rms_pa": 3769.189050896705,
+      "linear_incoming_rms_pa": 3841.425959570062,
+      "lip_y_rms_m": 0.0004320290205645572,
+      "linear_lip_y_rms_m": 0.0004360336368690507
+    },
+    {
+      "note": "F4",
+      "target_hz": 349.2282314330039,
+      "frequency_hz": 348.40032850185156,
+      "cents": -4.109047418376464,
+      "periodicity": 0.999426905037327,
+      "linear_frequency_hz": 351.53438397800693,
+      "linear_periodicity": 0.949989240547978,
+      "nonlinear_pitch_change_cents": -15.503788329554924,
+      "nonlinear": {
+        "rms_pa": 1.5984443499598284,
+        "centroid_hz": 1787.0964772147233,
+        "hf_fraction_above_3khz": 0.17806080686063175
+      },
+      "linear": {
+        "rms_pa": 1.0898613302085802,
+        "centroid_hz": 700.4435491805658,
+        "hf_fraction_above_3khz": 0.00031343646482836053
+      },
+      "start_s": 3.12,
+      "duration_s": 0.72,
+      "blowing_pressure_pa": 7647.363778858028,
+      "lip_frequency_hz": 379.0,
+      "max_wave_mach_sampled": 0.11728419767103232,
+      "boundary_residual_max_pa": 3.637978807091713e-12,
+      "incoming_rms_pa": 4084.8181731077552,
+      "linear_incoming_rms_pa": 4071.1983704384097,
+      "lip_y_rms_m": 0.0004035931212574868,
+      "linear_lip_y_rms_m": 0.00040515216466403153
+    },
+    {
+      "note": "G4",
+      "target_hz": 391.99543598174927,
+      "frequency_hz": 392.17010056032564,
+      "cents": 0.771228156573981,
+      "periodicity": 0.9970932392248425,
+      "linear_frequency_hz": 393.607283468632,
+      "linear_periodicity": 0.9918665915487176,
+      "nonlinear_pitch_change_cents": -6.332843908693664,
+      "nonlinear": {
+        "rms_pa": 0.7469618218640611,
+        "centroid_hz": 1047.6658285273536,
+        "hf_fraction_above_3khz": 0.01585505893694724
+      },
+      "linear": {
+        "rms_pa": 0.6176620997967817,
+        "centroid_hz": 644.9438697372535,
+        "hf_fraction_above_3khz": 7.990121246538812e-05
+      },
+      "start_s": 3.9000000000000004,
+      "duration_s": 0.72,
+      "blowing_pressure_pa": 6000.0,
+      "lip_frequency_hz": 424.0,
+      "max_wave_mach_sampled": 0.07476596640640196,
+      "boundary_residual_max_pa": 1.8189894035458565e-12,
+      "incoming_rms_pa": 2320.908062964717,
+      "linear_incoming_rms_pa": 2335.9847379249145,
+      "lip_y_rms_m": 0.00023062354537218828,
+      "linear_lip_y_rms_m": 0.0002290147653466884
+    },
+    {
+      "note": "A4",
+      "target_hz": 440.0,
+      "frequency_hz": 439.32052308412847,
+      "cents": -2.6755518052045413,
+      "periodicity": 0.9999761587405125,
+      "linear_frequency_hz": 440.2552520904792,
+      "linear_periodicity": 1.0000008046774986,
+      "nonlinear_pitch_change_cents": -3.679581310213442,
+      "nonlinear": {
+        "rms_pa": 0.9122306860101059,
+        "centroid_hz": 1041.8119207485413,
+        "hf_fraction_above_3khz": 0.01091308671530477
+      },
+      "linear": {
+        "rms_pa": 0.794369124755024,
+        "centroid_hz": 678.8129065573347,
+        "hf_fraction_above_3khz": 0.00044477720811049784
+      },
+      "start_s": 4.680000000000001,
+      "duration_s": 0.72,
+      "blowing_pressure_pa": 7320.428494031772,
+      "lip_frequency_hz": 475.2681822699123,
+      "max_wave_mach_sampled": 0.07934734317358985,
+      "boundary_residual_max_pa": 1.8189894035458565e-12,
+      "incoming_rms_pa": 2710.6200640089555,
+      "linear_incoming_rms_pa": 2846.903424313963,
+      "lip_y_rms_m": 0.00017776735691657177,
+      "linear_lip_y_rms_m": 0.00017740671552964624
+    },
+    {
+      "note": "Bb4",
+      "target_hz": 466.1637615180899,
+      "frequency_hz": 466.1806217256192,
+      "cents": 0.06261412816276404,
+      "periodicity": 0.9999267081753139,
+      "linear_frequency_hz": 467.42415375496796,
+      "linear_periodicity": 0.9999521289501194,
+      "nonlinear_pitch_change_cents": -4.611900710032523,
+      "nonlinear": {
+        "rms_pa": 1.0766923019292511,
+        "centroid_hz": 1192.4791465061637,
+        "hf_fraction_above_3khz": 0.008875690863284314
+      },
+      "linear": {
+        "rms_pa": 0.8938788810347345,
+        "centroid_hz": 732.9502057210212,
+        "hf_fraction_above_3khz": 0.0005580709150823008
+      },
+      "start_s": 5.460000000000001,
+      "duration_s": 0.72,
+      "blowing_pressure_pa": 7578.582847360052,
+      "lip_frequency_hz": 489.6564244160723,
+      "max_wave_mach_sampled": 0.0914510649783216,
+      "boundary_residual_max_pa": 1.8189894035458565e-12,
+      "incoming_rms_pa": 2970.3144797687287,
+      "linear_incoming_rms_pa": 3091.3043468107016,
+      "lip_y_rms_m": 0.00017971982676210423,
+      "linear_lip_y_rms_m": 0.00017941408909062417
+    },
+    {
+      "note": "C5",
+      "target_hz": 523.2511306011972,
+      "frequency_hz": 523.3279473621739,
+      "cents": 0.2541380678837423,
+      "periodicity": 0.9999618187536092,
+      "linear_frequency_hz": 523.9995311633088,
+      "linear_periodicity": 0.9999482033137275,
+      "nonlinear_pitch_change_cents": -2.2202585657736624,
+      "nonlinear": {
+        "rms_pa": 1.058918776163797,
+        "centroid_hz": 1242.0384088018625,
+        "hf_fraction_above_3khz": 0.044515308476133816
+      },
+      "linear": {
+        "rms_pa": 0.8933895018308972,
+        "centroid_hz": 711.1055993127635,
+        "hf_fraction_above_3khz": 0.0005997091956457131
+      },
+      "start_s": 6.240000000000001,
+      "duration_s": 0.72,
+      "blowing_pressure_pa": 8122.523979433243,
+      "lip_frequency_hz": 542.0101626689053,
+      "max_wave_mach_sampled": 0.08592273553227314,
+      "boundary_residual_max_pa": 1.8189894035458565e-12,
+      "incoming_rms_pa": 2788.32822779719,
+      "linear_incoming_rms_pa": 2947.9992080780416,
+      "lip_y_rms_m": 0.0001686346288119901,
+      "linear_lip_y_rms_m": 0.00016940937530695506
+    },
+    {
+      "note": "D5",
+      "target_hz": 587.3295358348151,
+      "frequency_hz": 587.146665660122,
+      "cents": -0.5391187580352313,
+      "periodicity": 0.9999850948182961,
+      "linear_frequency_hz": 588.14090748789,
+      "linear_periodicity": 0.9998807395054292,
+      "nonlinear_pitch_change_cents": -2.929097108091085,
+      "nonlinear": {
+        "rms_pa": 1.1776591224758197,
+        "centroid_hz": 1217.6472103790827,
+        "hf_fraction_above_3khz": 0.008911253461350098
+      },
+      "linear": {
+        "rms_pa": 1.0499680341798268,
+        "centroid_hz": 797.7444217196679,
+        "hf_fraction_above_3khz": 0.0007812347062531829
+      },
+      "start_s": 7.020000000000001,
+      "duration_s": 0.72,
+      "blowing_pressure_pa": 8705.505649971237,
+      "lip_frequency_hz": 589.9622404791946,
+      "max_wave_mach_sampled": 0.10191765729015746,
+      "boundary_residual_max_pa": 1.8189894035458565e-12,
+      "incoming_rms_pa": 3063.7120164423263,
+      "linear_incoming_rms_pa": 3204.7773046294383,
+      "lip_y_rms_m": 0.0001673369113902631,
+      "linear_lip_y_rms_m": 0.00016821335221603836
+    },
+    {
+      "note": "Eb5",
+      "target_hz": 622.2539674441618,
+      "frequency_hz": 622.108437748352,
+      "cents": -0.40493985455316284,
+      "periodicity": 0.9997583836795649,
+      "linear_frequency_hz": 623.7885351139868,
+      "linear_periodicity": 0.9999545660442796,
+      "nonlinear_pitch_change_cents": -4.66915578346802,
+      "nonlinear": {
+        "rms_pa": 1.2961473876663152,
+        "centroid_hz": 1330.1622595309252,
+        "hf_fraction_above_3khz": 0.04628723838997711
+      },
+      "linear": {
+        "rms_pa": 1.1194264856732385,
+        "centroid_hz": 892.1384385664522,
+        "hf_fraction_above_3khz": 0.0008173298740545259
+      },
+      "start_s": 7.800000000000002,
+      "duration_s": 0.72,
+      "blowing_pressure_pa": 9012.504643718155,
+      "lip_frequency_hz": 615.2975511483326,
+      "max_wave_mach_sampled": 0.10417648058931273,
+      "boundary_residual_max_pa": 1.8189894035458565e-12,
+      "incoming_rms_pa": 3061.784177005754,
+      "linear_incoming_rms_pa": 3179.0662621706397,
+      "lip_y_rms_m": 0.00016535735092708455,
+      "linear_lip_y_rms_m": 0.0001669939143688685
+    },
+    {
+      "note": "F5",
+      "target_hz": 698.4564628660078,
+      "frequency_hz": 698.2962075734652,
+      "cents": -0.3972634899248026,
+      "periodicity": 0.9999803612530337,
+      "linear_frequency_hz": 700.038421477992,
+      "linear_periodicity": 0.9999195965426545,
+      "nonlinear_pitch_change_cents": -4.313962524137874,
+      "nonlinear": {
+        "rms_pa": 1.4546657359029744,
+        "centroid_hz": 1346.966484715391,
+        "hf_fraction_above_3khz": 0.018951845349215155
+      },
+      "linear": {
+        "rms_pa": 1.268003612516752,
+        "centroid_hz": 1030.6755305212073,
+        "hf_fraction_above_3khz": 0.0004731546601329087
+      },
+      "start_s": 8.580000000000002,
+      "duration_s": 0.72,
+      "blowing_pressure_pa": 9659.363308122229,
+      "lip_frequency_hz": 712.0031149879094,
+      "max_wave_mach_sampled": 0.09891548916403228,
+      "boundary_residual_max_pa": 1.8189894035458565e-12,
+      "incoming_rms_pa": 3220.657900018724,
+      "linear_incoming_rms_pa": 3247.7337391370693,
+      "lip_y_rms_m": 0.0001500376321018821,
+      "linear_lip_y_rms_m": 0.00015068812447301399
+    },
+    {
+      "note": "G5",
+      "target_hz": 783.9908719634985,
+      "frequency_hz": 784.2725813444227,
+      "cents": 0.6219680455019466,
+      "periodicity": 0.9999515278051511,
+      "linear_frequency_hz": 784.9830482387216,
+      "linear_periodicity": 0.9999017124841404,
+      "nonlinear_pitch_change_cents": -1.5676025486174783,
+      "nonlinear": {
+        "rms_pa": 1.245732530016606,
+        "centroid_hz": 1325.0482121949915,
+        "hf_fraction_above_3khz": 0.042494443457368636
+      },
+      "linear": {
+        "rms_pa": 1.0420490220717438,
+        "centroid_hz": 950.843017867416,
+        "hf_fraction_above_3khz": 0.0003950237198682988
+      },
+      "start_s": 9.360000000000001,
+      "duration_s": 0.72,
+      "blowing_pressure_pa": 10352.649258642183,
+      "lip_frequency_hz": 829.137782566246,
+      "max_wave_mach_sampled": 0.0903329519349957,
+      "boundary_residual_max_pa": 1.8189894035458565e-12,
+      "incoming_rms_pa": 3097.005032216124,
+      "linear_incoming_rms_pa": 3144.1896631539653,
+      "lip_y_rms_m": 0.00012999149033821492,
+      "linear_lip_y_rms_m": 0.00013021837434509033
+    },
+    {
+      "note": "A5",
+      "target_hz": 880.0,
+      "frequency_hz": 880.206061258379,
+      "cents": 0.4053392113353237,
+      "periodicity": 0.999940746372724,
+      "linear_frequency_hz": 879.6892098527776,
+      "linear_periodicity": 0.999892204653246,
+      "nonlinear_pitch_change_cents": 1.0168682103968845,
+      "nonlinear": {
+        "rms_pa": 1.083402972231274,
+        "centroid_hz": 1163.3458341921785,
+        "hf_fraction_above_3khz": 0.007039533571693931
+      },
+      "linear": {
+        "rms_pa": 0.9972237598879783,
+        "centroid_hz": 938.1337125792236,
+        "hf_fraction_above_3khz": 0.000260894164126585
+      },
+      "start_s": 10.14,
+      "duration_s": 0.72,
+      "blowing_pressure_pa": 11095.69474235872,
+      "lip_frequency_hz": 992.26875,
+      "max_wave_mach_sampled": 0.07471300740740673,
+      "boundary_residual_max_pa": 1.8189894035458565e-12,
+      "incoming_rms_pa": 2874.7029604102304,
+      "linear_incoming_rms_pa": 2947.7873434950716,
+      "lip_y_rms_m": 0.00010566851945354888,
+      "linear_lip_y_rms_m": 0.00010597743928831169
+    },
+    {
+      "note": "Bb5",
+      "target_hz": 932.3275230361799,
+      "frequency_hz": 932.0280793345361,
+      "cents": -0.5561247391462063,
+      "periodicity": 0.9999987970049322,
+      "linear_frequency_hz": 931.8600789117835,
+      "linear_periodicity": 0.9999948924162472,
+      "nonlinear_pitch_change_cents": 0.312087451843947,
+      "nonlinear": {
+        "rms_pa": 1.5222662499247341,
+        "centroid_hz": 1378.1804593222637,
+        "hf_fraction_above_3khz": 0.02471523579483082
+      },
+      "linear": {
+        "rms_pa": 1.3326457466995643,
+        "centroid_hz": 1013.1751536280303,
+        "hf_fraction_above_3khz": 0.00020174482281249494
+      },
+      "start_s": 10.92,
+      "duration_s": 1.1,
+      "blowing_pressure_pa": 13000.0,
+      "lip_frequency_hz": 1045.0,
+      "max_wave_mach_sampled": 0.09836671005270356,
+      "boundary_residual_max_pa": 1.8189894035458565e-12,
+      "incoming_rms_pa": 3668.876623521885,
+      "linear_incoming_rms_pa": 3745.852249318465,
+      "lip_y_rms_m": 0.0001366686235848379,
+      "linear_lip_y_rms_m": 0.00013691918494676463
+    }
+  ]
+}

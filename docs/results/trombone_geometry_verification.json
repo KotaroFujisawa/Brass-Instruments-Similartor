@@ -1,0 +1,27 @@
+{
+  "detached_volume_ml": 11.99999996969819,
+  "book_volume_ml": 12.0,
+  "detached_euler_resonance_hz": 519.6337082947757,
+  "book_detached_impedance_peak_hz": 535.0,
+  "first_position_euler_peaks_hz": [
+    37.87472185184555,
+    109.3118694441335,
+    166.95389968650304,
+    232.27148217679675,
+    292.8980675562219,
+    347.24222358498395
+  ],
+  "book_first_position_peaks_approx_hz": [
+    38,
+    111,
+    172,
+    232,
+    292,
+    347
+  ],
+  "first_position_length_m": 2.764,
+  "seventh_position_length_m": 3.983101643004554,
+  "seventh_position_travel_m": 0.609550821502277,
+  "bell_first_radial_cutoff_ideal_cylinder_hz": 1964.0693554197703,
+  "passed": true
+}

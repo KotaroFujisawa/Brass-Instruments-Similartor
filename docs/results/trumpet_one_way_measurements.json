@@ -1,0 +1,463 @@
+{
+  "model": "prescribed-incident-wave generalised Burgers, one-way",
+  "nonlinear_feedback_to_lips": false,
+  "propagation_fs": 192000,
+  "audio_fs": 48000,
+  "beta": 1.2,
+  "sound_diffusivity_m2_s": 2.9200995024875623e-05,
+  "output_gain_fs_per_pa": 0.05870423340512521,
+  "common_gain_for_linear_and_nonlinear": true,
+  "duration_s": 12.08,
+  "notes": [
+    {
+      "note": "Bb3",
+      "target_hz": 233.08188075904496,
+      "frequency_hz": 232.92983256682433,
+      "cents": -1.1297184567897822,
+      "periodicity": 0.9998248422409086,
+      "start_s": 0.0,
+      "duration_s": 0.72,
+      "propagation": {
+        "distance_m": 1.2863420158561336,
+        "equivalent_nonlinear_length_m": 0.9948382709958141,
+        "nonlinear_substeps": 129,
+        "spatial_step_m": 0.009971643533768478,
+        "beta": 1.2,
+        "peak_input_mach": 0.052293825875011114,
+        "inlet_diameter_m": 0.009399202543142726,
+        "outlet_diameter_m": 0.08825333367773099
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.00033890077097373987,
+        "centroid_hz": 447.4196766548374,
+        "rms_pa": 1.8440670475784833
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 2.4355308440165925e-05,
+        "centroid_hz": 356.3398176239283,
+        "rms_pa": 1.7105417988639573
+      },
+      "hf_fraction_ratio_db": 11.434789228968656
+    },
+    {
+      "note": "C4",
+      "target_hz": 261.6255653005986,
+      "frequency_hz": 261.53330462507137,
+      "cents": -0.6106169032027251,
+      "periodicity": 0.999673121762577,
+      "start_s": 0.78,
+      "duration_s": 0.72,
+      "propagation": {
+        "distance_m": 1.7449422487973782,
+        "equivalent_nonlinear_length_m": 1.3995137425558286,
+        "nonlinear_substeps": 175,
+        "spatial_step_m": 0.009971098564556448,
+        "beta": 1.2,
+        "peak_input_mach": 0.03826800509017742,
+        "inlet_diameter_m": 0.0094074151476558,
+        "outlet_diameter_m": 0.08825202525828782
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.00016920740698974526,
+        "centroid_hz": 382.1513416269035,
+        "rms_pa": 1.251482670682175
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 8.620373587289647e-05,
+        "centroid_hz": 365.2281167795582,
+        "rms_pa": 1.2118986383418182
+      },
+      "hf_fraction_ratio_db": 2.928932826316873
+    },
+    {
+      "note": "D4",
+      "target_hz": 293.6647679174076,
+      "frequency_hz": 293.3127154768151,
+      "cents": -2.076690375818146,
+      "periodicity": 0.9997332648802237,
+      "start_s": 1.56,
+      "duration_s": 0.72,
+      "propagation": {
+        "distance_m": 1.5539716525061615,
+        "equivalent_nonlinear_length_m": 1.2322743075792286,
+        "nonlinear_substeps": 156,
+        "spatial_step_m": 0.009961356746834368,
+        "beta": 1.2,
+        "peak_input_mach": 0.03642611504484362,
+        "inlet_diameter_m": 0.009414496466154339,
+        "outlet_diameter_m": 0.0882508970735814
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.00014774193314061096,
+        "centroid_hz": 433.4325794439876,
+        "rms_pa": 1.493521043881617
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 1.6469218753320943e-05,
+        "centroid_hz": 371.97135311631234,
+        "rms_pa": 1.4201665485549164
+      },
+      "hf_fraction_ratio_db": 9.5283077915416
+    },
+    {
+      "note": "Eb4",
+      "target_hz": 311.1269837220809,
+      "frequency_hz": 311.0672859446005,
+      "cents": -0.33221400576461846,
+      "periodicity": 0.9991608172782457,
+      "start_s": 2.34,
+      "duration_s": 0.72,
+      "propagation": {
+        "distance_m": 1.466535175316388,
+        "equivalent_nonlinear_length_m": 1.153793595379724,
+        "nonlinear_substeps": 147,
+        "spatial_step_m": 0.009976429764057061,
+        "beta": 1.2,
+        "peak_input_mach": 0.053579628303529796,
+        "inlet_diameter_m": 0.00940269055543613,
+        "outlet_diameter_m": 0.08825277797300987
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.018421089622561525,
+        "centroid_hz": 720.4205734665744,
+        "rms_pa": 2.6783105259334463
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 4.68203818836909e-05,
+        "centroid_hz": 443.33138121569294,
+        "rms_pa": 2.3333958605250262
+      },
+      "hf_fraction_ratio_db": 25.948803638601188
+    },
+    {
+      "note": "F4",
+      "target_hz": 349.2282314330039,
+      "frequency_hz": 348.887496206237,
+      "cents": -1.6899561198300295,
+      "periodicity": 0.9980552860627142,
+      "start_s": 3.12,
+      "duration_s": 0.72,
+      "propagation": {
+        "distance_m": 1.2863420158561336,
+        "equivalent_nonlinear_length_m": 0.9948382709958141,
+        "nonlinear_substeps": 129,
+        "spatial_step_m": 0.009971643533768478,
+        "beta": 1.2,
+        "peak_input_mach": 0.058474408492186096,
+        "inlet_diameter_m": 0.009399202543142726,
+        "outlet_diameter_m": 0.08825333367773099
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.021074117338175276,
+        "centroid_hz": 772.213904566852,
+        "rms_pa": 3.0288391724851857
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 6.241195650651273e-05,
+        "centroid_hz": 495.77938945026193,
+        "rms_pa": 2.6616183911569893
+      },
+      "hf_fraction_ratio_db": 25.28481596649175
+    },
+    {
+      "note": "G4",
+      "target_hz": 391.99543598174927,
+      "frequency_hz": 391.27920957955104,
+      "cents": -3.16608200441556,
+      "periodicity": 0.9970570715332441,
+      "start_s": 3.9000000000000004,
+      "duration_s": 0.72,
+      "propagation": {
+        "distance_m": 1.5539716525061615,
+        "equivalent_nonlinear_length_m": 1.2322743075792286,
+        "nonlinear_substeps": 156,
+        "spatial_step_m": 0.009961356746834368,
+        "beta": 1.2,
+        "peak_input_mach": 0.05782513247916197,
+        "inlet_diameter_m": 0.009414496466154339,
+        "outlet_diameter_m": 0.0882508970735814
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.06066643843496828,
+        "centroid_hz": 1043.8462561318033,
+        "rms_pa": 3.549821189112915
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 4.996483276374155e-05,
+        "centroid_hz": 495.84131208183317,
+        "rms_pa": 2.942267347992402
+      },
+      "hf_fraction_ratio_db": 30.842840612888107
+    },
+    {
+      "note": "A4",
+      "target_hz": 440.0,
+      "frequency_hz": 439.93930270392656,
+      "cents": -0.23883744138346794,
+      "periodicity": 0.9998648705386999,
+      "start_s": 4.680000000000001,
+      "duration_s": 0.72,
+      "propagation": {
+        "distance_m": 1.3737687387547117,
+        "equivalent_nonlinear_length_m": 1.0732726398452805,
+        "nonlinear_substeps": 138,
+        "spatial_step_m": 0.009954845933005158,
+        "beta": 1.2,
+        "peak_input_mach": 0.030008419157826517,
+        "inlet_diameter_m": 0.009412687839585668,
+        "outlet_diameter_m": 0.08825118522116752
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.0020172354577522376,
+        "centroid_hz": 653.768727468442,
+        "rms_pa": 1.9471344136566051
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 8.40741829343857e-05,
+        "centroid_hz": 527.6122174283792,
+        "rms_pa": 1.8232652406406378
+      },
+      "hf_fraction_ratio_db": 13.800939379570512
+    },
+    {
+      "note": "Bb4",
+      "target_hz": 466.1637615180899,
+      "frequency_hz": 466.0961960868918,
+      "cents": -0.2509419701677353,
+      "periodicity": 0.9999525379536417,
+      "start_s": 5.460000000000001,
+      "duration_s": 0.72,
+      "propagation": {
+        "distance_m": 1.2863420158561336,
+        "equivalent_nonlinear_length_m": 0.9948382709958141,
+        "nonlinear_substeps": 129,
+        "spatial_step_m": 0.009971643533768478,
+        "beta": 1.2,
+        "peak_input_mach": 0.031562599542477456,
+        "inlet_diameter_m": 0.009399202543142726,
+        "outlet_diameter_m": 0.08825333367773099
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.0024236372421876603,
+        "centroid_hz": 701.5335502588032,
+        "rms_pa": 2.057227865626765
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 0.00013118321819206584,
+        "centroid_hz": 573.6649152165764,
+        "rms_pa": 1.9321003188479131
+      },
+      "hf_fraction_ratio_db": 12.665893365216432
+    },
+    {
+      "note": "C5",
+      "target_hz": 523.2511306011972,
+      "frequency_hz": 523.2693669030816,
+      "cents": 0.06033576376140716,
+      "periodicity": 0.9993801559152479,
+      "start_s": 6.240000000000001,
+      "duration_s": 0.72,
+      "propagation": {
+        "distance_m": 1.466535175316388,
+        "equivalent_nonlinear_length_m": 1.153793595379724,
+        "nonlinear_substeps": 147,
+        "spatial_step_m": 0.009976429764057061,
+        "beta": 1.2,
+        "peak_input_mach": 0.02625048272346847,
+        "inlet_diameter_m": 0.00940269055543613,
+        "outlet_diameter_m": 0.08825277797300987
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.00699636397790222,
+        "centroid_hz": 774.0048978117886,
+        "rms_pa": 1.9639076754993392
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 0.00013058023464889413,
+        "centroid_hz": 610.3525181598582,
+        "rms_pa": 1.8330523609958314
+      },
+      "hf_fraction_ratio_db": 17.28994950388572
+    },
+    {
+      "note": "D5",
+      "target_hz": 587.3295358348151,
+      "frequency_hz": 587.2460140702747,
+      "cents": -0.2462093185339276,
+      "periodicity": 0.9993891837819578,
+      "start_s": 7.020000000000001,
+      "duration_s": 0.72,
+      "propagation": {
+        "distance_m": 1.2863420158561336,
+        "equivalent_nonlinear_length_m": 0.9948382709958141,
+        "nonlinear_substeps": 129,
+        "spatial_step_m": 0.009971643533768478,
+        "beta": 1.2,
+        "peak_input_mach": 0.02526977433772855,
+        "inlet_diameter_m": 0.009399202543142726,
+        "outlet_diameter_m": 0.08825333367773099
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.003151223416411631,
+        "centroid_hz": 831.8504008256925,
+        "rms_pa": 1.9494179932283173
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 0.00024505013610092694,
+        "centroid_hz": 698.3116577638758,
+        "rms_pa": 1.8469512809926185
+      },
+      "hf_fraction_ratio_db": 11.092242469539347
+    },
+    {
+      "note": "Eb5",
+      "target_hz": 622.2539674441618,
+      "frequency_hz": 622.2112684410474,
+      "cents": -0.11880117812905978,
+      "periodicity": 0.9997543768231315,
+      "start_s": 7.800000000000002,
+      "duration_s": 0.72,
+      "propagation": {
+        "distance_m": 1.466535175316388,
+        "equivalent_nonlinear_length_m": 1.153793595379724,
+        "nonlinear_substeps": 147,
+        "spatial_step_m": 0.009976429764057061,
+        "beta": 1.2,
+        "peak_input_mach": 0.02419297911081848,
+        "inlet_diameter_m": 0.00940269055543613,
+        "outlet_diameter_m": 0.08825277797300987
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.017365999186588096,
+        "centroid_hz": 949.2280910838567,
+        "rms_pa": 1.9734601902964628
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 0.00037348905621618314,
+        "centroid_hz": 765.9967426580367,
+        "rms_pa": 1.8528453124525202
+      },
+      "hf_fraction_ratio_db": 16.674218954798025
+    },
+    {
+      "note": "F5",
+      "target_hz": 698.4564628660078,
+      "frequency_hz": 698.1842255578151,
+      "cents": -0.6749144676148626,
+      "periodicity": 0.9991702845157278,
+      "start_s": 8.580000000000002,
+      "duration_s": 0.72,
+      "propagation": {
+        "distance_m": 1.2863420158561336,
+        "equivalent_nonlinear_length_m": 0.9948382709958141,
+        "nonlinear_substeps": 129,
+        "spatial_step_m": 0.009971643533768478,
+        "beta": 1.2,
+        "peak_input_mach": 0.024152663399369365,
+        "inlet_diameter_m": 0.009399202543142726,
+        "outlet_diameter_m": 0.08825333367773099
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.005607727808205286,
+        "centroid_hz": 969.5412530086502,
+        "rms_pa": 1.992123038285911
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 0.00020766454529174406,
+        "centroid_hz": 853.4940423441526,
+        "rms_pa": 1.9267983818794236
+      },
+      "hf_fraction_ratio_db": 14.31424569909004
+    },
+    {
+      "note": "G5",
+      "target_hz": 783.9908719634985,
+      "frequency_hz": 783.9303754494861,
+      "cents": -0.13359551716388476,
+      "periodicity": 0.9993168636307206,
+      "start_s": 9.360000000000001,
+      "duration_s": 0.72,
+      "propagation": {
+        "distance_m": 1.5539716525061615,
+        "equivalent_nonlinear_length_m": 1.2322743075792286,
+        "nonlinear_substeps": 156,
+        "spatial_step_m": 0.009961356746834368,
+        "beta": 1.2,
+        "peak_input_mach": 0.020354316277188932,
+        "inlet_diameter_m": 0.009414496466154339,
+        "outlet_diameter_m": 0.0882508970735814
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.008595603091676807,
+        "centroid_hz": 918.4037385746733,
+        "rms_pa": 1.7522577791211933
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 0.00017061767366863213,
+        "centroid_hz": 844.5528700301903,
+        "rms_pa": 1.719862142415162
+      },
+      "hf_fraction_ratio_db": 17.02252337255216
+    },
+    {
+      "note": "A5",
+      "target_hz": 880.0,
+      "frequency_hz": 880.0394860415787,
+      "cents": 0.07767959775610311,
+      "periodicity": 0.9982638338852629,
+      "start_s": 10.14,
+      "duration_s": 0.72,
+      "propagation": {
+        "distance_m": 1.3737687387547117,
+        "equivalent_nonlinear_length_m": 1.0732726398452805,
+        "nonlinear_substeps": 138,
+        "spatial_step_m": 0.009954845933005158,
+        "beta": 1.2,
+        "peak_input_mach": 0.015632789776132177,
+        "inlet_diameter_m": 0.009412687839585668,
+        "outlet_diameter_m": 0.08825118522116752
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.0008790766244372776,
+        "centroid_hz": 933.4704925607019,
+        "rms_pa": 1.565624850217872
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 9.59270419720508e-05,
+        "centroid_hz": 905.8830078170616,
+        "rms_pa": 1.5540660125184462
+      },
+      "hf_fraction_ratio_db": 9.620856791918648
+    },
+    {
+      "note": "Bb5",
+      "target_hz": 932.3275230361799,
+      "frequency_hz": 932.0216614936949,
+      "cents": -0.5680458637197605,
+      "periodicity": 0.9975131763073738,
+      "start_s": 10.92,
+      "duration_s": 1.1,
+      "propagation": {
+        "distance_m": 1.2863420158561336,
+        "equivalent_nonlinear_length_m": 0.9948382709958141,
+        "nonlinear_substeps": 129,
+        "spatial_step_m": 0.009971643533768478,
+        "beta": 1.2,
+        "peak_input_mach": 0.020572078532838375,
+        "inlet_diameter_m": 0.009399202543142726,
+        "outlet_diameter_m": 0.08825333367773099
+      },
+      "nonlinear": {
+        "hf_fraction_above_3khz": 0.0025842442753652725,
+        "centroid_hz": 1000.7625474999262,
+        "rms_pa": 2.0626060383613627
+      },
+      "linear": {
+        "hf_fraction_above_3khz": 8.152845328568558e-05,
+        "centroid_hz": 964.7374188478628,
+        "rms_pa": 2.0459749170820016
+      },
+      "hf_fraction_ratio_db": 15.010243596956759
+    }
+  ]
+}

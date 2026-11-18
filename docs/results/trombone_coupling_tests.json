@@ -1,0 +1,49 @@
+{
+  "coupled": {
+    "note": "Bb3",
+    "target_hz": 233.08188075904496,
+    "frequency_hz": 232.99468050644174,
+    "cents": -0.6478079384446973,
+    "periodicity": 1.0004827472380928,
+    "window_s": [
+      0.34,
+      0.56
+    ],
+    "radiated_rms_pa": 0.6866668318496371,
+    "mouthpiece_rms_pa": 3044.8148173377435,
+    "incoming_characteristic_rms_pa": 2927.770238784037,
+    "boundary_residual_pa": 0.0004857879806223764
+  },
+  "without_return_to_lips": {
+    "note": "Bb3",
+    "target_hz": 233.08188075904496,
+    "frequency_hz": 0.0,
+    "cents": null,
+    "periodicity": 0.0,
+    "window_s": [
+      0.34,
+      0.56
+    ],
+    "radiated_rms_pa": 0.0002217984227876143,
+    "mouthpiece_rms_pa": 0.0,
+    "incoming_characteristic_rms_pa": 24.795326072963345,
+    "boundary_residual_pa": 316.2993625101558
+  },
+  "refined_grid": {
+    "note": "Bb3",
+    "target_hz": 233.08188075904496,
+    "frequency_hz": 232.96583874344094,
+    "cents": -0.8621258479801066,
+    "periodicity": 1.0012465218465207,
+    "window_s": [
+      0.34,
+      0.56
+    ],
+    "radiated_rms_pa": 0.6921939597171569,
+    "mouthpiece_rms_pa": 3060.345570223975,
+    "incoming_characteristic_rms_pa": 2944.0810376667337,
+    "boundary_residual_pa": 0.00048505793859732194
+  },
+  "refined_change_cents": -0.21431790953545526,
+  "passed": true
+}

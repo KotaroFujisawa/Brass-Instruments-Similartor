@@ -1,0 +1,604 @@
+{
+  "model": "Conn 8H + 5AL / axisymmetric Euler + two-dimensional lips",
+  "notes": [
+    {
+      "note": "Bb2",
+      "target_hz": 116.54094037952248,
+      "frequency_hz": 116.51873086767688,
+      "cents": -0.32995724254562864,
+      "periodicity": 0.9512466805571536,
+      "window_s": [
+        0.33999999999999997,
+        0.5599999999999999
+      ],
+      "radiated_rms_pa": 0.35374591059081484,
+      "mouthpiece_rms_pa": 3162.091041053696,
+      "incoming_characteristic_rms_pa": 3065.150247316168,
+      "boundary_residual_pa": 0.0005101246294998418,
+      "start_s": 0.0,
+      "duration_s": 0.72,
+      "position": 1,
+      "preset": {
+        "note": "Bb2",
+        "midi": 46,
+        "position": 1,
+        "target_hz": 116.54094037952248,
+        "lip_frequency_hz": 132.273967330758,
+        "blowing_pressure_pa": 3600,
+        "rest_y_m": 6.5e-05,
+        "trim_m": -0.01634
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 552960,
+      "cells": 1392,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 2.7476599999999998,
+      "compute_s": 7.691614900017157
+    },
+    {
+      "note": "C3",
+      "target_hz": 130.8127826502993,
+      "frequency_hz": 130.62530574936793,
+      "cents": -2.4829316334638327,
+      "periodicity": 0.9994856866983167,
+      "window_s": [
+        0.33999999999999997,
+        0.5599999999999999
+      ],
+      "radiated_rms_pa": 0.3580948553027253,
+      "mouthpiece_rms_pa": 3695.878412209466,
+      "incoming_characteristic_rms_pa": 3547.394391867686,
+      "boundary_residual_pa": 0.00048655992962665096,
+      "start_s": 0.78,
+      "duration_s": 0.72,
+      "position": 6,
+      "preset": {
+        "note": "C3",
+        "midi": 48,
+        "position": 6,
+        "target_hz": 130.8127826502993,
+        "lip_frequency_hz": 136,
+        "blowing_pressure_pa": 4050,
+        "rest_y_m": 6.5e-05,
+        "trim_m": -0.142
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 552960,
+      "cells": 1680,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 3.6074911896738238,
+      "compute_s": 7.596058600116521
+    },
+    {
+      "note": "D3",
+      "target_hz": 146.8323839587038,
+      "frequency_hz": 146.407850175876,
+      "cents": -5.012735414436175,
+      "periodicity": 0.9997991448293824,
+      "window_s": [
+        0.33999999999999997,
+        0.5599999999999999
+      ],
+      "radiated_rms_pa": 0.43206983202686955,
+      "mouthpiece_rms_pa": 3699.4176177783006,
+      "incoming_characteristic_rms_pa": 3569.0469764781787,
+      "boundary_residual_pa": 0.0004810682792708576,
+      "start_s": 1.56,
+      "duration_s": 0.72,
+      "position": 4,
+      "preset": {
+        "note": "D3",
+        "midi": 50,
+        "position": 4,
+        "target_hz": 146.8323839587038,
+        "lip_frequency_hz": 158,
+        "blowing_pressure_pa": 4300,
+        "rest_y_m": 0.0,
+        "trim_m": -0.12
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 552960,
+      "cells": 1544,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 3.200869030184491,
+      "compute_s": 7.575650000013411
+    },
+    {
+      "note": "Eb3",
+      "target_hz": 155.56349186104046,
+      "frequency_hz": 155.46620865701922,
+      "cents": -1.082983396219326,
+      "periodicity": 0.9998434421306731,
+      "window_s": [
+        0.33999999999999997,
+        0.5599999999999999
+      ],
+      "radiated_rms_pa": 0.523811489700958,
+      "mouthpiece_rms_pa": 3844.961740130312,
+      "incoming_characteristic_rms_pa": 3720.592480598161,
+      "boundary_residual_pa": 0.00048515335727472575,
+      "start_s": 2.34,
+      "duration_s": 0.72,
+      "position": 3,
+      "preset": {
+        "note": "Eb3",
+        "midi": 51,
+        "position": 3,
+        "target_hz": 155.56349186104046,
+        "lip_frequency_hz": 170,
+        "blowing_pressure_pa": 4330,
+        "rest_y_m": 0.0,
+        "trim_m": -0.11508
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 552960,
+      "cells": 1482,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 3.0093468374128856,
+      "compute_s": 7.488625899888575
+    },
+    {
+      "note": "F3",
+      "target_hz": 174.61411571650194,
+      "frequency_hz": 174.16552024366652,
+      "cents": -4.453380329627886,
+      "periodicity": 0.9998374852713494,
+      "window_s": [
+        0.33999999999999997,
+        0.5599999999999999
+      ],
+      "radiated_rms_pa": 0.5668649375458988,
+      "mouthpiece_rms_pa": 4080.843184362415,
+      "incoming_characteristic_rms_pa": 3960.4237304703397,
+      "boundary_residual_pa": 0.00048177274348404353,
+      "start_s": 3.12,
+      "duration_s": 0.72,
+      "position": 1,
+      "preset": {
+        "note": "F3",
+        "midi": 53,
+        "position": 1,
+        "target_hz": 174.61411571650194,
+        "lip_frequency_hz": 190,
+        "blowing_pressure_pa": 4600,
+        "rest_y_m": -2.9999999999999997e-05,
+        "trim_m": -0.07606
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 552960,
+      "cells": 1372,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 2.6879399999999998,
+      "compute_s": 7.4828284999821335
+    },
+    {
+      "note": "G3",
+      "target_hz": 195.99771799087463,
+      "frequency_hz": 195.54747546439418,
+      "cents": -3.981535458875096,
+      "periodicity": 1.00005510085022,
+      "window_s": [
+        0.33999999999999997,
+        0.5599999999999999
+      ],
+      "radiated_rms_pa": 0.6514397769610618,
+      "mouthpiece_rms_pa": 3311.992976068983,
+      "incoming_characteristic_rms_pa": 3168.8053451519936,
+      "boundary_residual_pa": 0.0004862925406428076,
+      "start_s": 3.9000000000000004,
+      "duration_s": 0.72,
+      "position": 4,
+      "preset": {
+        "note": "G3",
+        "midi": 55,
+        "position": 4,
+        "target_hz": 195.99771799087463,
+        "lip_frequency_hz": 212.0,
+        "blowing_pressure_pa": 4600.0,
+        "rest_y_m": 0.0,
+        "trim_m": -0.049
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 552960,
+      "cells": 1568,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 3.271869030184491,
+      "compute_s": 7.637893000151962
+    },
+    {
+      "note": "A3",
+      "target_hz": 220.0,
+      "frequency_hz": 219.14566658876774,
+      "cents": -6.736047144546908,
+      "periodicity": 1.0000136140546827,
+      "window_s": [
+        0.33999999999999997,
+        0.5599999999999999
+      ],
+      "radiated_rms_pa": 0.8675760247149205,
+      "mouthpiece_rms_pa": 3452.9224566887556,
+      "incoming_characteristic_rms_pa": 3307.3970674115503,
+      "boundary_residual_pa": 0.00048403034776356435,
+      "start_s": 4.680000000000001,
+      "duration_s": 0.72,
+      "position": 2,
+      "preset": {
+        "note": "A3",
+        "midi": 57,
+        "position": 2,
+        "target_hz": 220.0,
+        "lip_frequency_hz": 235,
+        "blowing_pressure_pa": 4860,
+        "rest_y_m": 2.9999999999999997e-05,
+        "trim_m": -0.01792
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 552960,
+      "cells": 1452,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 2.921090097728901,
+      "compute_s": 7.582125399960205
+    },
+    {
+      "note": "Bb3",
+      "target_hz": 233.08188075904496,
+      "frequency_hz": 232.99468050644174,
+      "cents": -0.6478079384446973,
+      "periodicity": 1.0004827472380928,
+      "window_s": [
+        0.33999999999999997,
+        0.5599999999999999
+      ],
+      "radiated_rms_pa": 0.6866668318496371,
+      "mouthpiece_rms_pa": 3044.8148173377435,
+      "incoming_characteristic_rms_pa": 2927.770238784037,
+      "boundary_residual_pa": 0.0004857879806223764,
+      "start_s": 5.460000000000001,
+      "duration_s": 0.72,
+      "position": 1,
+      "preset": {
+        "note": "Bb3",
+        "midi": 58,
+        "position": 1,
+        "target_hz": 233.08188075904496,
+        "lip_frequency_hz": 255.22465943115424,
+        "blowing_pressure_pa": 4860,
+        "rest_y_m": 0.0,
+        "trim_m": 0.0
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 552960,
+      "cells": 1398,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 2.764,
+      "compute_s": 7.580431899987161
+    },
+    {
+      "note": "C4",
+      "target_hz": 261.6255653005986,
+      "frequency_hz": 262.5271153084443,
+      "cents": 5.955499866505655,
+      "periodicity": 1.000063781295263,
+      "window_s": [
+        0.33999999999999997,
+        0.5599999999999999
+      ],
+      "radiated_rms_pa": 0.730244568746594,
+      "mouthpiece_rms_pa": 3201.270742636933,
+      "incoming_characteristic_rms_pa": 3080.9808864037404,
+      "boundary_residual_pa": 0.0004867480151773407,
+      "start_s": 6.240000000000001,
+      "duration_s": 0.72,
+      "position": 3,
+      "preset": {
+        "note": "C4",
+        "midi": 60,
+        "position": 3,
+        "target_hz": 261.6255653005986,
+        "lip_frequency_hz": 276,
+        "blowing_pressure_pa": 5180,
+        "rest_y_m": 0.0,
+        "trim_m": -0.03128
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 552960,
+      "cells": 1510,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 3.093146837412885,
+      "compute_s": 14.136264299973845
+    },
+    {
+      "note": "D4",
+      "target_hz": 293.6647679174076,
+      "frequency_hz": 293.0983304542335,
+      "cents": -3.3425282887081504,
+      "periodicity": 0.9999391084722092,
+      "window_s": [
+        0.33999999999999997,
+        0.5599999999999999
+      ],
+      "radiated_rms_pa": 1.5411814753702464,
+      "mouthpiece_rms_pa": 4214.789109364989,
+      "incoming_characteristic_rms_pa": 4047.7833652111344,
+      "boundary_residual_pa": 0.0004962843751172841,
+      "start_s": 7.020000000000001,
+      "duration_s": 0.72,
+      "position": 1,
+      "preset": {
+        "note": "D4",
+        "midi": 62,
+        "position": 1,
+        "target_hz": 293.6647679174076,
+        "lip_frequency_hz": 306,
+        "blowing_pressure_pa": 6000,
+        "rest_y_m": 0.0,
+        "trim_m": 0.0,
+        "lip_parameters": {
+          "quality": 4.5,
+          "mass_product": 2.65
+        }
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 552960,
+      "cells": 1398,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 2.764,
+      "compute_s": 17.1009222001303
+    },
+    {
+      "note": "Eb4",
+      "target_hz": 311.1269837220809,
+      "frequency_hz": 311.06209738139154,
+      "cents": -0.36109101281188405,
+      "periodicity": 1.0000435715793528,
+      "window_s": [
+        0.33999999999999997,
+        0.5599999999999999
+      ],
+      "radiated_rms_pa": 1.5582552586355436,
+      "mouthpiece_rms_pa": 4109.307065234637,
+      "incoming_characteristic_rms_pa": 3937.9757101645087,
+      "boundary_residual_pa": 0.0005175664635999055,
+      "start_s": 7.800000000000002,
+      "duration_s": 0.72,
+      "position": 3,
+      "preset": {
+        "note": "Eb4",
+        "midi": 63,
+        "position": 3,
+        "target_hz": 311.1269837220809,
+        "lip_frequency_hz": 323,
+        "blowing_pressure_pa": 6100,
+        "rest_y_m": 0.0,
+        "trim_m": -0.02238,
+        "lip_parameters": {
+          "quality": 4.5,
+          "mass_product": 2.65
+        }
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 552960,
+      "cells": 1512,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 3.1020468374128853,
+      "compute_s": 16.048145399894565
+    },
+    {
+      "note": "F4",
+      "target_hz": 349.2282314330039,
+      "frequency_hz": 349.27901515811755,
+      "cents": 0.25173257582999575,
+      "periodicity": 0.9999813545856562,
+      "window_s": [
+        0.33999999999999997,
+        0.5599999999999999
+      ],
+      "radiated_rms_pa": 1.697752174760051,
+      "mouthpiece_rms_pa": 4611.222964186976,
+      "incoming_characteristic_rms_pa": 4464.608932837497,
+      "boundary_residual_pa": 0.0005016159192337,
+      "start_s": 8.580000000000002,
+      "duration_s": 0.72,
+      "position": 1,
+      "preset": {
+        "note": "F4",
+        "midi": 65,
+        "position": 1,
+        "target_hz": 349.2282314330039,
+        "lip_frequency_hz": 361,
+        "blowing_pressure_pa": 6600,
+        "rest_y_m": 0.0,
+        "trim_m": -0.02196,
+        "lip_parameters": {
+          "quality": 4.5,
+          "mass_product": 2.65
+        }
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 552960,
+      "cells": 1390,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 2.74204,
+      "compute_s": 17.178564299829304
+    },
+    {
+      "note": "G4",
+      "target_hz": 391.99543598174927,
+      "frequency_hz": 391.5068347081218,
+      "cents": -2.159236297372298,
+      "periodicity": 0.9999761582226596,
+      "window_s": [
+        0.33999999999999997,
+        0.5599999999999999
+      ],
+      "radiated_rms_pa": 1.4567003399871203,
+      "mouthpiece_rms_pa": 3481.5902538899722,
+      "incoming_characteristic_rms_pa": 3321.3064351097,
+      "boundary_residual_pa": 0.0004980998421046934,
+      "start_s": 9.360000000000001,
+      "duration_s": 0.72,
+      "position": 4,
+      "preset": {
+        "note": "G4",
+        "midi": 67,
+        "position": 4,
+        "target_hz": 391.99543598174927,
+        "lip_frequency_hz": 404,
+        "blowing_pressure_pa": 6700,
+        "rest_y_m": 0.0,
+        "trim_m": 0.0,
+        "lip_parameters": {
+          "quality": 4.5,
+          "mass_product": 2.65
+        }
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 552960,
+      "cells": 1584,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 3.320869030184491,
+      "compute_s": 17.57646690006368
+    },
+    {
+      "note": "A4",
+      "target_hz": 440.0,
+      "frequency_hz": 438.9301903413235,
+      "cents": -4.214423038609073,
+      "periodicity": 0.9999476083750255,
+      "window_s": [
+        0.33999999999999997,
+        0.5599999999999999
+      ],
+      "radiated_rms_pa": 1.6332260499104971,
+      "mouthpiece_rms_pa": 3459.448706262842,
+      "incoming_characteristic_rms_pa": 3308.7551948163214,
+      "boundary_residual_pa": 0.0004932299253823658,
+      "start_s": 10.14,
+      "duration_s": 0.72,
+      "position": 2,
+      "preset": {
+        "note": "A4",
+        "midi": 69,
+        "position": 2,
+        "target_hz": 440.0,
+        "lip_frequency_hz": 455,
+        "blowing_pressure_pa": 7000,
+        "rest_y_m": 0.0,
+        "trim_m": -0.01477,
+        "lip_parameters": {
+          "quality": 4.5,
+          "mass_product": 2.65
+        }
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 552960,
+      "cells": 1452,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 2.924240097728901,
+      "compute_s": 23.55462609999813
+    },
+    {
+      "note": "Bb4",
+      "target_hz": 466.1637615180899,
+      "frequency_hz": 466.08058416062164,
+      "cents": -0.3089307527797537,
+      "periodicity": 1.0000112619171404,
+      "window_s": [
+        0.7200000000000001,
+        0.9400000000000001
+      ],
+      "radiated_rms_pa": 1.7581169853660512,
+      "mouthpiece_rms_pa": 3664.979564852369,
+      "incoming_characteristic_rms_pa": 3507.4329547493967,
+      "boundary_residual_pa": 0.0005125114338397907,
+      "start_s": 10.92,
+      "duration_s": 1.1,
+      "position": 1,
+      "preset": {
+        "note": "Bb4",
+        "midi": 70,
+        "position": 1,
+        "target_hz": 466.1637615180899,
+        "lip_frequency_hz": 479,
+        "blowing_pressure_pa": 7500,
+        "rest_y_m": 0.0,
+        "trim_m": -0.01979,
+        "lip_parameters": {
+          "quality": 4.5,
+          "mass_product": 2.65
+        }
+      },
+      "dt_s": 1.3020833333333333e-06,
+      "steps": 844800,
+      "cells": 1392,
+      "rings": [
+        2,
+        32
+      ],
+      "fallback_count": 0,
+      "tube_length_m": 2.74421,
+      "compute_s": 16.05796379991807
+    }
+  ],
+  "rate_hz": 48000,
+  "duration_s": 12.08,
+  "gain_fs_per_pa": 0.17368130393136258,
+  "clipped_samples": 0,
+  "gpu": "NVIDIA RTX 2000 Ada Generation"
+}

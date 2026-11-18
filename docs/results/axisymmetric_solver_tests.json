@@ -1,0 +1,34 @@
+{
+  "rest_max_state_error": 3.98387598465888e-08,
+  "sod_coarse": {
+    "nx": 200,
+    "pressure_mae": 0.002431774299447525,
+    "density_mae": 0.0031673232020189897,
+    "normalized_mass_change": -1.0947898955065345e-08,
+    "normalized_energy_change": -2.2929161790346245e-08,
+    "shock_location_m": 0.85,
+    "exact_shock_location_m": 0.8505771589775,
+    "max_radial_momentum": 4.1685248675094044e-07,
+    "fallbacks": 0
+  },
+  "sod_fine": {
+    "nx": 400,
+    "pressure_mae": 0.0012436352271951844,
+    "density_mae": 0.0017558194974389887,
+    "normalized_mass_change": -6.0941450438202e-08,
+    "normalized_energy_change": -1.0766088960419295e-07,
+    "shock_location_m": 0.8525,
+    "exact_shock_location_m": 0.8505771589775,
+    "max_radial_momentum": 1.1795783620982547e-06,
+    "fallbacks": 0
+  },
+  "radial_mode": {
+    "radius_m": 0.053,
+    "rings": 32,
+    "frequency_hz": 3949.7860896509987,
+    "analytic_frequency_hz": 3946.6676670227457,
+    "error_percent": 0.07901406683692436,
+    "last_peak_amplitude": 0.9370405425044805
+  },
+  "passed": true
+}

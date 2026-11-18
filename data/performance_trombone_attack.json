@@ -1,0 +1,221 @@
+[
+  {
+    "note": "Bb2",
+    "midi": 46,
+    "position": 1,
+    "target_hz": 116.54094037952248,
+    "lip_frequency_hz": 132.273967330758,
+    "blowing_pressure_pa": 3600,
+    "rest_y_m": 6.5e-05,
+    "trim_m": -0.01634,
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  },
+  {
+    "note": "C3",
+    "midi": 48,
+    "position": 6,
+    "target_hz": 130.8127826502993,
+    "lip_frequency_hz": 136,
+    "blowing_pressure_pa": 4050,
+    "rest_y_m": 6.5e-05,
+    "trim_m": -0.142,
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  },
+  {
+    "note": "D3",
+    "midi": 50,
+    "position": 4,
+    "target_hz": 146.8323839587038,
+    "lip_frequency_hz": 158,
+    "blowing_pressure_pa": 4300,
+    "rest_y_m": 0.0,
+    "trim_m": -0.12,
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  },
+  {
+    "note": "Eb3",
+    "midi": 51,
+    "position": 3,
+    "target_hz": 155.56349186104046,
+    "lip_frequency_hz": 170,
+    "blowing_pressure_pa": 4330,
+    "rest_y_m": 0.0,
+    "trim_m": -0.11508,
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  },
+  {
+    "note": "F3",
+    "midi": 53,
+    "position": 1,
+    "target_hz": 174.61411571650194,
+    "lip_frequency_hz": 190,
+    "blowing_pressure_pa": 4600,
+    "rest_y_m": -2.9999999999999997e-05,
+    "trim_m": -0.07606,
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  },
+  {
+    "note": "G3",
+    "midi": 55,
+    "position": 4,
+    "target_hz": 195.99771799087463,
+    "lip_frequency_hz": 212.0,
+    "blowing_pressure_pa": 4600.0,
+    "rest_y_m": 0.0,
+    "trim_m": -0.049,
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  },
+  {
+    "note": "A3",
+    "midi": 57,
+    "position": 2,
+    "target_hz": 220.0,
+    "lip_frequency_hz": 235,
+    "blowing_pressure_pa": 4860,
+    "rest_y_m": 2.9999999999999997e-05,
+    "trim_m": -0.01792,
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  },
+  {
+    "note": "Bb3",
+    "midi": 58,
+    "position": 1,
+    "target_hz": 233.08188075904496,
+    "lip_frequency_hz": 255.22465943115424,
+    "blowing_pressure_pa": 4860,
+    "rest_y_m": 0.0,
+    "trim_m": 0.0,
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  },
+  {
+    "note": "C4",
+    "midi": 60,
+    "position": 3,
+    "target_hz": 261.6255653005986,
+    "lip_frequency_hz": 276,
+    "blowing_pressure_pa": 5180,
+    "rest_y_m": 0.0,
+    "trim_m": -0.03128,
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  },
+  {
+    "note": "D4",
+    "midi": 62,
+    "position": 1,
+    "target_hz": 293.6647679174076,
+    "lip_frequency_hz": 306,
+    "blowing_pressure_pa": 6000,
+    "rest_y_m": 0.0,
+    "trim_m": 0.0,
+    "lip_parameters": {
+      "quality": 4.5,
+      "mass_product": 2.65
+    },
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  },
+  {
+    "note": "Eb4",
+    "midi": 63,
+    "position": 3,
+    "target_hz": 311.1269837220809,
+    "lip_frequency_hz": 323,
+    "blowing_pressure_pa": 6100,
+    "rest_y_m": 0.0,
+    "trim_m": -0.02238,
+    "lip_parameters": {
+      "quality": 4.5,
+      "mass_product": 2.65
+    },
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  },
+  {
+    "note": "F4",
+    "midi": 65,
+    "position": 1,
+    "target_hz": 349.2282314330039,
+    "lip_frequency_hz": 361,
+    "blowing_pressure_pa": 6600,
+    "rest_y_m": 0.0,
+    "trim_m": -0.02196,
+    "lip_parameters": {
+      "quality": 4.5,
+      "mass_product": 2.65
+    },
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  },
+  {
+    "note": "G4",
+    "midi": 67,
+    "position": 4,
+    "target_hz": 391.99543598174927,
+    "lip_frequency_hz": 404,
+    "blowing_pressure_pa": 6700,
+    "rest_y_m": 0.0,
+    "trim_m": 0.0,
+    "lip_parameters": {
+      "quality": 4.5,
+      "mass_product": 2.65
+    },
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  },
+  {
+    "note": "A4",
+    "midi": 69,
+    "position": 2,
+    "target_hz": 440.0,
+    "lip_frequency_hz": 455,
+    "blowing_pressure_pa": 7000,
+    "rest_y_m": 0.0,
+    "trim_m": -0.01477,
+    "lip_parameters": {
+      "quality": 4.5,
+      "mass_product": 2.65
+    },
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  },
+  {
+    "note": "Bb4",
+    "midi": 70,
+    "position": 1,
+    "target_hz": 466.1637615180899,
+    "lip_frequency_hz": 479,
+    "blowing_pressure_pa": 7500,
+    "rest_y_m": 0.0,
+    "trim_m": -0.01979,
+    "lip_parameters": {
+      "quality": 4.5,
+      "mass_product": 2.65
+    },
+    "attack_s": 0.012,
+    "attack_boost": 0.22,
+    "attack_decay_s": 0.024
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "trombone_Bb2_Bb4_major_f_axisymmetric.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 579840,
+    "duration_s": 12.08,
+    "sha256": "0550302d25c6e3f726021486c3cb30082679e781ba63b3c97955e6878f1cf110"
+  },
+  "trombone_Bb2_Bb4_major_f_strong_attack.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 579840,
+    "duration_s": 12.08,
+    "sha256": "9552e07cfde2981a4a83996f3181a412868f13d96998a4cf206d1a131428cc63"
+  },
+  "trumpet_Bb3_Bb5_major_f.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 579840,
+    "duration_s": 12.08,
+    "sha256": "6028371932e707ce87142adee71b505b1971dbfe175c88423e59a9be7fe9ebd7"
+  },
+  "trumpet_Bb3_Bb5_major_f_axisymmetric.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 579840,
+    "duration_s": 12.08,
+    "sha256": "22d545c77fe836c06b77cda77b0cf90aa142d8a084b5bab26f9aaaf9641785d4"
+  },
+  "trumpet_Bb3_Bb5_major_f_bidirectional_nonlinear.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 579840,
+    "duration_s": 12.08,
+    "sha256": "a7d003c444c9541f2591df958cee2465bdb58232a9c661783abd7ab9d378b05f"
+  },
+  "trumpet_Bb3_Bb5_major_f_modern_1p5x.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 869760,
+    "duration_s": 18.12,
+    "sha256": "c80ceadb4de64b569cf64ab5915ce92a0dd304fb339cc413fb9a2bbd67d19499"
+  },
+  "trumpet_Bb3_Bb5_major_f_nonlinear.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 579840,
+    "duration_s": 12.08,
+    "sha256": "c117cee3e4bec69bec8c13998f56661af0035d914c97e22b032cbbde49939c42"
+  }
+}

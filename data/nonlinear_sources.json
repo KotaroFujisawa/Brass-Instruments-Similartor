@@ -1,0 +1,34 @@
+{
+  "primary_reference": "Campbell, Gilbert, Myers, The Science of Brass Instruments (2021), chapter 6",
+  "source_prescribed_approximation": {
+    "printed_page": 284,
+    "pdf_page": 297,
+    "scope": "Book distinguishes prescribed-input propagation simulations from simulations including nonlinear feedback to the player. This implementation uses the former approximation, driven by the existing Adachi-Sato / linear-bore solver."
+  },
+  "nonlinear_equation": {
+    "printed_pages": [291, 292, 293, 294, 295],
+    "pdf_pages": [304, 305, 306, 307, 308],
+    "equations": ["6.26", "6.30", "6.33", "6.34"],
+    "beta": 1.2,
+    "normalization": "q = p D(x)/D(0); coefficient beta/(rho*c^3)*D(0)/D(x), derived directly from Eq.6.34."
+  },
+  "analytic_validation": {
+    "printed_page": 292,
+    "pdf_page": 305,
+    "equations": ["6.27", "6.28"],
+    "test": "Fubini solution, sigma=0.6, harmonics 1 through 6. Separate entropy-decay and refinement checks after shock formation at sigma=2."
+  },
+  "losses": {
+    "wall": "Leading Keefe sqrt(f) attenuation and dispersion from chapter 4, matched to the existing model. Generalised Burgers wall-loss treatment discussed on pp.291-293.",
+    "volume": "Classical sound-diffusivity term. eta=1.846e-5 Pa s; thermal conductivity 0.0262 W/(m K) and Cp=1005 J/(kg K) are assumed representative values, not a fitted measurement of the instrument. Bulk viscosity and molecular relaxation omitted."
+  },
+  "explicit_limitations": [
+    "One-way propagation, prescribed incident wave; no nonlinear return-wave feedback to lips.",
+    "Flare-induced internal reflections and dispersion not recovered by the one-way variable-area equation, as discussed in the book p.295.",
+    "Mouthpiece itself remains in the existing linear acoustic subsystem; nonlinear propagation starts just after it.",
+    "Weakly nonlinear approximation; maximum source Mach number is reported in verification.json.",
+    "Finite-grid entropy dissipation participates in shock regularisation; microscopic shock thickness is not resolved.",
+    "Compact radiation approximation at 1 m, no nonlinear propagation outside the bell."
+  ],
+  "comparison": "The matched linear reference sets beta=0 with exactly the same input, geometry, wall/volume losses, radiation and gain. It is a different propagation approximation from the original full TMM-radiation WAV."
+}

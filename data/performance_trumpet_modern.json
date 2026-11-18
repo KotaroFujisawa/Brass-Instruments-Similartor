@@ -1,0 +1,7 @@
+{
+  "Bb3": {"tuning_m": -0.013},
+  "Eb4": {"lip_frequency_hz": 333, "tuning_m": 0.017},
+  "F4": {"lip_frequency_hz": 374, "blowing_pressure_pa": 7050, "rest_y_m": 0.00011, "tuning_m": 0.008},
+  "A5": {"lip_frequency_hz": 955, "blowing_pressure_pa": 14350, "rest_y_m": 0.000025},
+  "Bb5": {"lip_frequency_hz": 1005, "blowing_pressure_pa": 15300, "rest_y_m": 0.000027, "tuning_m": -0.023}
+}

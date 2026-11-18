@@ -1,0 +1,27 @@
+{
+  "model": "two-way weakly nonlinear waveguide coupled to Adachi-Sato 2D lips",
+  "primary_book": {
+    "title": "The Science of Brass Instruments",
+    "authors": "Campbell, Gilbert, Myers",
+    "year": 2021,
+    "nonlinear_sections": "6.2.2-6.2.3, printed pp.291-295, supplied PDF pp.304-308",
+    "linear_geometry": "Webster equation / area scattering, printed pp.148-149; inherited geometry and mouthpiece data are detailed in sources.json"
+  },
+  "time_domain_reference": {
+    "authors": "Berjamin, Lombard, Vergez, Cottanceau",
+    "title": "Time-domain numerical modeling of brass instruments including nonlinear wave propagation, viscothermal losses, and lips vibration",
+    "url": "https://arxiv.org/abs/1511.04247",
+    "journal": "Acta Acustica united with Acustica 103 (2017), 117-131",
+    "doi": "10.3813/AAA.919038",
+    "use": "Counterpropagating weakly nonlinear waves, causal diffusive wall losses, time-domain lip feedback. Our area-junction waveguide and Adachi-Sato 2D lips are not an exact reproduction of that paper's implementation."
+  },
+  "implementation_assumptions": [
+    "Independent Burgers self-distortion of forward and backward acoustic waves; cross-wave quadratic mixing is neglected.",
+    "Area changes scatter waves at every junction; reflected waves subsequently propagate nonlinearly back to the lips.",
+    "Eight positive diffusive wall-loss terms; real characteristic impedance rho*c/S; passive RL bell termination.",
+    "20 Hz causal mean estimate separates average blowing flow from acoustic self-distortion.",
+    "Book graph digitisation and inferred mouthpiece dimensions are unchanged from the previous versions.",
+    "Per-note lip spring frequency and equilibrium opening were adjusted; G4 blowing pressure was reduced to 6000 Pa for the desired register.",
+    "Weak period doubling remains in G4; its radiated 196 Hz component is about 32 dB below the 392 Hz carrier."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "lip_model": {
+    "source": "Adachi, S. and Sato, M. (1996), Trumpet sound simulation using a two-dimensional lip vibration model, JASA 99, 1200-1209, doi:10.1121/1.414601",
+    "pdf_pages": [4, 5, 6, 8, 9],
+    "equations": "(1)-(8): 2D lip motion, Bernoulli/jet flow, lip-channel inertia, swept-volume flow, lip collision. (9)-(10): reflection feedback and causalisation.",
+    "parameters": "Table I: b=7 mm, d=2 mm, joint=(0,4) mm, rest x=1 mm, Qopen=3, Qclosed=0.5, m=1.5/((2*pi)^2*f_lip), k=1.5*f_lip. Additional collision force -3*k*y.",
+    "caveats": "The printed rest-y range is (-0.1 to 2.0)*10^-3 cm, not metres. Embouchures in this implementation are fitted and may lie outside it. Original study explored f_lip=60-700 Hz and p0=2-5 kPa; the upper octave and forte conditions here extend these ranges. This is not a reproduction of their particular trumpet."
+  },
+  "body": {
+    "source": "Campbell, M., Gilbert, J., Myers, A., The Science of Brass Instruments (2021), Fig.7.52, printed p.373, PDF p.385",
+    "instrument": "York B-flat valve trumpet, Grand Rapids, 1925-27, EU(5772)",
+    "method": "Red curve digitised from the embedded 591x406 raster. Pixel axes x=56 (0 mm), x=412 (1000 mm); y=356 (0 mm diameter), y=5 (150 mm diameter). Colour-mask median per x, shape-preserving interpolation to 10 mm stations.",
+    "uncertainty": "About 1 pixel: approximately 2.8 mm axially and 0.43 mm in diameter, larger at crossings, the axis and near-vertical bell. This is graph-derived geometry, not original measurement data. The plot starts at the mouthpipe, so the mouthpiece is added separately."
+  },
+  "mouthpiece": {
+    "source": "The Science of Brass Instruments, sections 4.3.5-4.3.6, printed pp.138-147; Fig.4.40 (p.147/PDF p.160); section 1.2.8 (p.22/PDF p.35)",
+    "data": "806 Hz detached Vincent Bach 7C resonance (Fig.4.40); 3.7 mm representative trumpet throat diameter (section 1.2.8); entry area 230 mm^2 from Adachi-Sato Table I.",
+    "assumed_geometry": "Rounded converging cup, 6 mm cylindrical throat, 55 mm conical backbore expanding to 9.2 mm diameter; cup depth fitted to 806 Hz with this acoustic model.",
+    "caveat": "A reconstructed representative mouthpiece, not a claim to have measured or exactly reproduced a Bach 7C. Fitting one resonance does not uniquely identify geometry."
+  },
+  "acoustic_model": {
+    "source": "The Science of Brass Instruments, section 4.7, pp.197-211, especially Eqs.4.108-4.112 and 4.121; also Acoustics of Musical Instruments, section 7.3.4, pp.312-317.",
+    "method": "Cylindrical transfer matrices, approximately 2 mm elements, leading sqrt(f) viscothermal loss and dispersion, characteristic impedance correction, passive lumped RL radiation impedance matching low-ka resistance and end correction.",
+    "limits": "Linear one-dimensional acoustic propagation and plane waves. No full 3D bell radiation, wall vibration, vocal tract, valve switching transient, turbulent breath noise or nonlinear shock propagation. Radiated audio uses a compact free-space monopole at 1 m."
+  },
+  "performance": {
+    "scale": "Concert B-flat major ascending, Bb3 C4 D4 Eb4 F4 G4 A4 Bb4 C5 D5 Eb5 F5 G5 A5 Bb5, A4=440 Hz.",
+    "valves": "Nominal added cylinder lengths derived from one-, two- and three-semitone lowering. Standard B-flat trumpet fingerings for the sounding scale. Per-note lip control is a performance assumption. The delivered preset uses no additional tuning-slide adjustments.",
+    "forte": "Forte is not one unique pressure or WAV amplitude; blowing pressure is selected by register to produce stable, strong oscillations. One common output gain preserves simulated relative dynamics."
+  }
+}

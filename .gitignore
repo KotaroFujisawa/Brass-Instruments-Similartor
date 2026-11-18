@@ -1,0 +1,15 @@
+.deps/
+__pycache__/
+*.nbc
+*.nbi
+tmp/
+output/
+*.zip
+.venv/
+venv/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
