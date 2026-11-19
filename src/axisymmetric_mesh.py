@@ -1,5 +1,7 @@
 """Annular finite volumes with conical radial faces and nested rings."""
 from trumpet import C, ROOT, geometry, json, np, optimize
+from scipy.interpolate import PchipInterpolator
+from trumpet_mouthpiece import ADAPTER_LENGTH_M, profile, throat_limits
 
 CELL = np.dtype([('faces', 'i4', (6,)), ('neighbors', 'i4', (4,)),
                  ('sign_area_volume', 'f4', (6,)), ('radial_source', 'f4'),
@@ -18,6 +20,66 @@ def trumpet_mesh(valves=(), dz=.0035, dr=.003, tuning=0.):
     z = np.concatenate([np.linspace(a,b,1+int(np.ceil((b-a)/h)))[:-1]
                         for a,b,h in zip(anchors[:-1],anchors[1:],spacing)] + [x[-1:]])
     return annular_mesh(z, np.interp(z,x,radius), dr)
+
+
+def refined_trumpet_mesh(valves=(), tuning=0., *, axial_scale=1., dr=.003,
+                         mouthpiece_profile='legacy', mouthpiece_scale=1.,
+                         mouthpiece_rim_scale=1.):
+    """Resolve the digitized trumpet taper with shape-preserving interpolation."""
+    if not all(np.isfinite(value) and value > 0 for value in
+               (axial_scale,dr,mouthpiece_scale,mouthpiece_rim_scale)):
+        raise ValueError('Mesh spacing must be positive and finite.')
+    depth = json.loads((ROOT/'data/model.json').read_text())['cup_depth_m']
+    _, _, stations, radius = geometry(valves, depth, tuning)
+    legacy_mouthpiece_end = depth+.061
+    first_bore = np.searchsorted(stations,legacy_mouthpiece_end)
+    # A zero valve extension duplicates the cylindrical split station.
+    z_bore, once = np.unique(stations[first_bore:],return_index=True)
+    r_bore = radius[first_bore:][once]
+    if mouthpiece_profile=='legacy':
+        mouthpiece_end = leadpipe_start = legacy_mouthpiece_end
+        mouthpiece_anchors = (0.,depth,depth+.006,mouthpiece_end)
+        spacings = [.0018,.002,.0024]
+    else:
+        z_mouth,r_mouth = profile(mouthpiece_profile)
+        mouthpiece_end = float(z_mouth[-1])
+        # Retain the same downstream radius and York taper. A short estimated
+        # join couples the measured shank exit to the legacy acoustic receiver.
+        leadpipe_start = mouthpiece_end+ADAPTER_LENGTH_M
+        z_bore += leadpipe_start-legacy_mouthpiece_end
+        backbore_start = z_mouth[-2]
+        mouthpiece_anchors = (0.,.0006,*throat_limits(z_mouth,r_mouth),
+                              backbore_start,mouthpiece_end,leadpipe_start)
+        spacings = [.0005*mouthpiece_rim_scale,.0018,.002,.0014,.0024,.0018]
+
+    bell_end = float(z_bore[-1])
+    anchors = (*mouthpiece_anchors,leadpipe_start+.32,bell_end-.5465,
+               bell_end-.11,bell_end-.028,bell_end)
+    spacing = np.array([*(np.array(spacings)*mouthpiece_scale),
+                        .0024,.0035,.0024,.0016,.0013])*axial_scale
+    # Discretize the taper separately from the nearly cylindrical valve section.
+    edges = np.concatenate([np.linspace(a,b,1+int(np.ceil((b-a)/h)))[:-1]
+                            for a,b,h in zip(anchors[:-1],anchors[1:],spacing)] + [[bell_end]])
+    bore = edges>=leadpipe_start
+    r_edges = np.empty_like(edges)
+    r_edges[bore] = PchipInterpolator(z_bore,r_bore)(edges[bore])
+    if mouthpiece_profile=='legacy':
+        r_edges[~bore] = np.interp(edges[~bore],stations[:first_bore+1],radius[:first_bore+1])
+    else:
+        cup_and_throat = edges<backbore_start
+        backbore = (edges>=backbore_start) & (edges<=mouthpiece_end)
+        r_edges[cup_and_throat] = PchipInterpolator(z_mouth[:-1],r_mouth[:-1])(edges[cup_and_throat])
+        # The published curve draws the backbore as one straight segment.
+        r_edges[backbore] = np.interp(edges[backbore],z_mouth[-2:],r_mouth[-2:])
+        join = (edges>mouthpiece_end) & ~bore
+        t = (edges[join]-mouthpiece_end)/ADAPTER_LENGTH_M
+        r_edges[join] = r_mouth[-1]+(r_bore[0]-r_mouth[-1])*t*t*(3-2*t)
+    # Carry exact opening dimensions into the acoustic boundary condition.
+    r_edges[-1] = radius[-1]
+    grid = annular_mesh(edges,r_edges,dr)
+    grid.update(mouthpiece_profile=mouthpiece_profile,mouthpiece_length_m=mouthpiece_end,
+                leadpipe_start_m=leadpipe_start)
+    return grid
 
 
 def annular_mesh(z, radius, dr=.003, loss=True, min_rings=2):

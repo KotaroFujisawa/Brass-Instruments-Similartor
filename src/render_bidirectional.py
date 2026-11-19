@@ -6,11 +6,12 @@ import hashlib
 import os
 
 
-def measure_audio(y,start,end):
+def measure_audio(y,start,end,*,min_hz=150,max_hz=1200):
     # Sharp nonlinear waves have a narrow autocorrelation maximum. Interpolate
     # before selecting its first peak to avoid integer-lag octave errors.
     up=signal.resample_poly(y,4,1)
-    return measure(np.c_[up,np.zeros((len(up),3))],fs=192000,start=start,end=end)
+    return measure(np.c_[up,np.zeros((len(up),3))],fs=192000,start=start,end=end,
+                   min_hz=min_hz,max_hz=max_hz)
 
 
 def spectrum_metrics(y,fs=48000,start=.28,end=.57):

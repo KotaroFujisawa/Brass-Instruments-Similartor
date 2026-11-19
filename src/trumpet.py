@@ -215,14 +215,14 @@ def simulate(r,z0,fs,duration,flip,pressure,yeq,attack=.045,release=.065,hold=-1
     return out
 
 
-def measure(trace,fs=FS,start=.18,end=None):
+def measure(trace,fs=FS,start=.18,end=None,*,min_hz=150,max_hz=1200):
     section=trace[int(start*fs):int(end*fs) if end else len(trace)]
     y=section[:,0]
     y=y-y.mean()
     if len(y)<64:return dict(frequency=0.,rms=0.,periodicity=0.)
     ac=signal.fftconvolve(y,y[::-1],mode='full')[len(y)-1:]
     ac/=np.maximum(1,np.arange(len(y),0,-1))
-    lo=int(fs/1200);hi=min(int(fs/150),len(ac)-2)
+    lo=int(fs/max_hz);hi=min(int(fs/min_hz),len(ac)-2)
     peaks,_=signal.find_peaks(ac[lo:hi])
     if not len(peaks) or ac[0]<1e-9:return dict(frequency=0.,rms=float(np.std(y)),periodicity=0.)
     peaks=peaks+lo

@@ -1,0 +1,19 @@
+{
+  "Bb3": {"tuning_m": -0.023},
+  "C4": {"mouthpiece_rim_scale": 1.0},
+  "D4": {"mouthpiece_rim_scale": 1.0},
+  "Eb4": {"blowing_pressure_pa": 6500, "tuning_m": 0.011, "attack_s": 0.009, "attack_boost": 0.28, "attack_decay_s": 0.023},
+  "F4": {"lip_frequency_hz": 366, "blowing_pressure_pa": 7000, "rest_y_m": 0.00018, "tuning_m": -0.019},
+  "G4": {"lip_frequency_hz": 400, "blowing_pressure_pa": 6600, "tuning_m": -0.035},
+  "A4": {"lip_frequency_hz": 460, "blowing_pressure_pa": 7770, "tuning_m": -0.02},
+  "Bb4": {"tuning_m": -0.012},
+  "C5": {"tuning_m": -0.018},
+  "D5": {"tuning_m": -0.012},
+  "Eb5": {"tuning_m": -0.015},
+  "F5": {"tuning_m": -0.035},
+  "G5": {"tuning_m": -0.04},
+  "A5": {"lip_frequency_hz": 961, "tuning_m": -0.055},
+  "Bb5": {"tuning_m": -0.05},
+  "C6": {"lip_frequency_hz": 1148, "tuning_m": -0.03, "lip_parameters": {"quality": 5.5}},
+  "D6": {"lip_frequency_hz": 1312, "tuning_m": -0.032, "lip_parameters": {"quality": 6.5}}
+}

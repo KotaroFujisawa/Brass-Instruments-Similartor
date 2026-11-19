@@ -1,0 +1,1841 @@
+{
+  "distance_m": 1.0,
+  "analysis": "Audio and cup pitch estimated separately. Harmonic levels use a Hann window around the measured cup pitch.",
+  "notes": [
+    {
+      "note": "Bb4",
+      "variant": "previous",
+      "target_hz": 466.1637615180899,
+      "duration_s": 0.8,
+      "window_s": [
+        0.38,
+        0.62
+      ],
+      "cup_frequency_hz": 465.4914976927732,
+      "cup_periodicity": 0.9999655485153198,
+      "cup_rms_pa": 5375.50244260902,
+      "cup_peak_to_peak_pa": 15941.1572265625,
+      "bell_volumetric_flow_rms_m3_s": 0.0021608720264987727,
+      "frequency_hz": 465.4833877930888,
+      "periodicity": 0.9998732678620629,
+      "pitch_cents": -2.528610470352599,
+      "radiation": {
+        "0": {
+          "rms_pa": 0.8033977680227373,
+          "spl_db": 92.07801250377071,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 465.49684367169175,
+              "rms_pa": 0.5585600984533088,
+              "spl_db": 88.92079824712091
+            },
+            {
+              "order": 2,
+              "frequency_hz": 930.9928394753514,
+              "rms_pa": 0.3739528218334106,
+              "spl_db": 85.43573638154126
+            },
+            {
+              "order": 3,
+              "frequency_hz": 1396.4912254815808,
+              "rms_pa": 0.3331985417440488,
+              "spl_db": 84.43346192737584
+            },
+            {
+              "order": 4,
+              "frequency_hz": 1861.9883987790065,
+              "rms_pa": 0.23330366156910248,
+              "spl_db": 81.33783118379368
+            },
+            {
+              "order": 5,
+              "frequency_hz": 2327.4844551148253,
+              "rms_pa": 0.1393526945976686,
+              "spl_db": 76.86170750430304
+            },
+            {
+              "order": 6,
+              "frequency_hz": 2792.9811557917956,
+              "rms_pa": 0.0778530850364279,
+              "spl_db": 71.80491662204163
+            },
+            {
+              "order": 7,
+              "frequency_hz": 3258.4756241775663,
+              "rms_pa": 0.03196672611089045,
+              "spl_db": 64.07336328773687
+            },
+            {
+              "order": 8,
+              "frequency_hz": 3723.960818862717,
+              "rms_pa": 0.011841287381495359,
+              "spl_db": 55.447378513319364
+            },
+            {
+              "order": 9,
+              "frequency_hz": 4189.463746844132,
+              "rms_pa": 0.012258195691963776,
+              "spl_db": 55.747931091198886
+            },
+            {
+              "order": 10,
+              "frequency_hz": 4654.962905587679,
+              "rms_pa": 0.014689994683774481,
+              "spl_db": 57.31983285915202
+            }
+          ]
+        },
+        "45": {
+          "rms_pa": 0.8033977680227373,
+          "spl_db": 92.07801250377071,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 465.49684367169175,
+              "rms_pa": 0.5585600984533088,
+              "spl_db": 88.92079824712091,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 2,
+              "frequency_hz": 930.9928394753514,
+              "rms_pa": 0.3739528218334106,
+              "spl_db": 85.43573638154126,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 3,
+              "frequency_hz": 1396.4912254815808,
+              "rms_pa": 0.3331985417440488,
+              "spl_db": 84.43346192737584,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 4,
+              "frequency_hz": 1861.9883987790065,
+              "rms_pa": 0.23330366156910248,
+              "spl_db": 81.33783118379368,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 5,
+              "frequency_hz": 2327.4844551148253,
+              "rms_pa": 0.1393526945976686,
+              "spl_db": 76.86170750430304,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 6,
+              "frequency_hz": 2792.9811557917956,
+              "rms_pa": 0.0778530850364279,
+              "spl_db": 71.80491662204163,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 7,
+              "frequency_hz": 3258.4756241775663,
+              "rms_pa": 0.03196672611089045,
+              "spl_db": 64.07336328773687,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 8,
+              "frequency_hz": 3723.960818862717,
+              "rms_pa": 0.011841287381495359,
+              "spl_db": 55.447378513319364,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 9,
+              "frequency_hz": 4189.463746844132,
+              "rms_pa": 0.012258195691963776,
+              "spl_db": 55.747931091198886,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 10,
+              "frequency_hz": 4654.962905587679,
+              "rms_pa": 0.014689994683774481,
+              "spl_db": 57.31983285915202,
+              "relative_to_0deg_db": 0.0
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "cells": 1086,
+        "axial_cells": 406,
+        "steps": 1075200,
+        "bell_rings": 16,
+        "time_step_s": 7.440476190476191e-07,
+        "bell_radius_m": 0.04508547,
+        "bore_length_m": 1.356251908022228,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 15.925419799983501,
+        "preset": {
+          "note": "Bb4",
+          "midi": 70,
+          "target_hz": 466.1637615180899,
+          "valves_semitones": [],
+          "lip_frequency_hz": 489.6564244160723,
+          "blowing_pressure_pa": 7578.582847360052,
+          "rest_y_m": 0.0,
+          "attack_s": 0.014,
+          "attack_boost": 0.22,
+          "attack_decay_s": 0.027
+        }
+      }
+    },
+    {
+      "note": "Bb4",
+      "variant": "fine_taper",
+      "target_hz": 466.1637615180899,
+      "duration_s": 0.8,
+      "window_s": [
+        0.38,
+        0.62
+      ],
+      "cup_frequency_hz": 465.3992010855233,
+      "cup_periodicity": 0.9999753832817078,
+      "cup_rms_pa": 5391.236846640844,
+      "cup_peak_to_peak_pa": 15985.5634765625,
+      "bell_volumetric_flow_rms_m3_s": 0.0021799854504026897,
+      "frequency_hz": 465.4185035895369,
+      "periodicity": 0.9998723873990417,
+      "pitch_cents": -2.7699457682123874,
+      "radiation": {
+        "0": {
+          "rms_pa": 0.8071006889686481,
+          "spl_db": 92.117954447474,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 465.4273986662676,
+              "rms_pa": 0.5651491101068825,
+              "spl_db": 89.02266104852372
+            },
+            {
+              "order": 2,
+              "frequency_hz": 930.8531657313601,
+              "rms_pa": 0.37320370678454284,
+              "spl_db": 85.41831905981078
+            },
+            {
+              "order": 3,
+              "frequency_hz": 1396.2830134250753,
+              "rms_pa": 0.32934999281600336,
+              "spl_db": 84.33255325280875
+            },
+            {
+              "order": 4,
+              "frequency_hz": 1861.70966252365,
+              "rms_pa": 0.23322085532611303,
+              "spl_db": 81.33474776215364
+            },
+            {
+              "order": 5,
+              "frequency_hz": 2327.1370438977815,
+              "rms_pa": 0.14206292427150474,
+              "spl_db": 77.02901508858498
+            },
+            {
+              "order": 6,
+              "frequency_hz": 2792.562768104773,
+              "rms_pa": 0.08222529592568563,
+              "spl_db": 72.27950899005407
+            },
+            {
+              "order": 7,
+              "frequency_hz": 3257.988345348701,
+              "rms_pa": 0.033396886627083455,
+              "spl_db": 64.45351973211305
+            },
+            {
+              "order": 8,
+              "frequency_hz": 3723.399575458196,
+              "rms_pa": 0.011683316767964656,
+              "spl_db": 55.33072312296845
+            },
+            {
+              "order": 9,
+              "frequency_hz": 4188.8368658597,
+              "rms_pa": 0.014546118138337972,
+              "spl_db": 57.234342295385694
+            },
+            {
+              "order": 10,
+              "frequency_hz": 4654.269724663849,
+              "rms_pa": 0.017573671895949803,
+              "spl_db": 58.87665036220221
+            }
+          ]
+        },
+        "45": {
+          "rms_pa": 0.8071006889686481,
+          "spl_db": 92.117954447474,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 465.4273986662676,
+              "rms_pa": 0.5651491101068825,
+              "spl_db": 89.02266104852372,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 2,
+              "frequency_hz": 930.8531657313601,
+              "rms_pa": 0.37320370678454284,
+              "spl_db": 85.41831905981078,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 3,
+              "frequency_hz": 1396.2830134250753,
+              "rms_pa": 0.32934999281600336,
+              "spl_db": 84.33255325280875,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 4,
+              "frequency_hz": 1861.70966252365,
+              "rms_pa": 0.23322085532611303,
+              "spl_db": 81.33474776215364,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 5,
+              "frequency_hz": 2327.1370438977815,
+              "rms_pa": 0.14206292427150474,
+              "spl_db": 77.02901508858498,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 6,
+              "frequency_hz": 2792.562768104773,
+              "rms_pa": 0.08222529592568563,
+              "spl_db": 72.27950899005407,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 7,
+              "frequency_hz": 3257.988345348701,
+              "rms_pa": 0.033396886627083455,
+              "spl_db": 64.45351973211305,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 8,
+              "frequency_hz": 3723.399575458196,
+              "rms_pa": 0.011683316767964656,
+              "spl_db": 55.33072312296845,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 9,
+              "frequency_hz": 4188.8368658597,
+              "rms_pa": 0.014546118138337972,
+              "spl_db": 57.234342295385694,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 10,
+              "frequency_hz": 4654.269724663849,
+              "rms_pa": 0.017573671895949803,
+              "spl_db": 58.87665036220221,
+              "relative_to_0deg_db": 0.0
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "cells": 1538,
+        "axial_cells": 542,
+        "steps": 1075200,
+        "bell_rings": 16,
+        "time_step_s": 7.440476190476191e-07,
+        "bell_radius_m": 0.04508547,
+        "bore_length_m": 1.356251908022228,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 17.97465550014749,
+        "preset": {
+          "note": "Bb4",
+          "midi": 70,
+          "target_hz": 466.1637615180899,
+          "valves_semitones": [],
+          "lip_frequency_hz": 489.6564244160723,
+          "blowing_pressure_pa": 7578.582847360052,
+          "rest_y_m": 0.0,
+          "attack_s": 0.014,
+          "attack_boost": 0.22,
+          "attack_decay_s": 0.027
+        }
+      }
+    },
+    {
+      "note": "Bb4",
+      "variant": "exterior",
+      "target_hz": 466.1637615180899,
+      "duration_s": 0.8,
+      "window_s": [
+        0.38,
+        0.62
+      ],
+      "cup_frequency_hz": 465.6830950624052,
+      "cup_periodicity": 0.9999864101409912,
+      "cup_rms_pa": 5434.010141803318,
+      "cup_peak_to_peak_pa": 16194.5673828125,
+      "bell_volumetric_flow_rms_m3_s": 0.0021593251168886833,
+      "frequency_hz": 465.6748763678393,
+      "periodicity": 0.9999388937612012,
+      "pitch_cents": -1.816569224416255,
+      "radiation": {
+        "0": {
+          "rms_pa": 0.9606923964542166,
+          "spl_db": 93.63108715523381,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 465.68562218906135,
+              "rms_pa": 0.5822185569546795,
+              "spl_db": 89.28112095709578
+            },
+            {
+              "order": 2,
+              "frequency_hz": 931.3703911524439,
+              "rms_pa": 0.4185207908860295,
+              "spl_db": 86.41374083355907
+            },
+            {
+              "order": 3,
+              "frequency_hz": 1397.06074351209,
+              "rms_pa": 0.481111383660089,
+              "spl_db": 87.62431274554785
+            },
+            {
+              "order": 4,
+              "frequency_hz": 1862.746480032831,
+              "rms_pa": 0.3482578393001492,
+              "spl_db": 84.81741811062048
+            },
+            {
+              "order": 5,
+              "frequency_hz": 2328.43173111157,
+              "rms_pa": 0.19684695633908025,
+              "spl_db": 79.86197416847202
+            },
+            {
+              "order": 6,
+              "frequency_hz": 2794.115654552448,
+              "rms_pa": 0.11230100647129443,
+              "spl_db": 74.98707305753646
+            },
+            {
+              "order": 7,
+              "frequency_hz": 3259.7921259938034,
+              "rms_pa": 0.0407104455493637,
+              "spl_db": 66.1735171962446
+            },
+            {
+              "order": 8,
+              "frequency_hz": 3725.4735575863456,
+              "rms_pa": 0.01843238768977156,
+              "spl_db": 59.291032014462274
+            },
+            {
+              "order": 9,
+              "frequency_hz": 4191.166157000413,
+              "rms_pa": 0.020270092294500153,
+              "spl_db": 60.11651460957006
+            },
+            {
+              "order": 10,
+              "frequency_hz": 4656.8569834552245,
+              "rms_pa": 0.022314671347570463,
+              "spl_db": 60.9512099846518
+            }
+          ]
+        },
+        "45": {
+          "rms_pa": 0.868831613086994,
+          "spl_db": 92.75811237994587,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 465.68561352102665,
+              "rms_pa": 0.5607752406485838,
+              "spl_db": 88.95517669491268,
+              "relative_to_0deg_db": -0.3259442621830999
+            },
+            {
+              "order": 2,
+              "frequency_hz": 931.370364709186,
+              "rms_pa": 0.3752444419063056,
+              "spl_db": 85.46568545120651,
+              "relative_to_0deg_db": -0.9480553823525639
+            },
+            {
+              "order": 3,
+              "frequency_hz": 1397.060697260251,
+              "rms_pa": 0.4147427588117859,
+              "spl_db": 86.33497633095396,
+              "relative_to_0deg_db": -1.2893364145938904
+            },
+            {
+              "order": 4,
+              "frequency_hz": 1862.7462645281012,
+              "rms_pa": 0.2987664962990082,
+              "spl_db": 83.48603796777508,
+              "relative_to_0deg_db": -1.3313801428454042
+            },
+            {
+              "order": 5,
+              "frequency_hz": 2328.431385347654,
+              "rms_pa": 0.16447652325681,
+              "spl_db": 78.30147843059929,
+              "relative_to_0deg_db": -1.5604957378727278
+            },
+            {
+              "order": 6,
+              "frequency_hz": 2794.1143577014823,
+              "rms_pa": 0.09012791748985147,
+              "spl_db": 73.07658681280644,
+              "relative_to_0deg_db": -1.9104862447300235
+            },
+            {
+              "order": 7,
+              "frequency_hz": 3259.791410006255,
+              "rms_pa": 0.032574955119042334,
+              "spl_db": 64.23707660721976,
+              "relative_to_0deg_db": -1.9364405890248406
+            },
+            {
+              "order": 8,
+              "frequency_hz": 3725.4719037678988,
+              "rms_pa": 0.014895905520918686,
+              "spl_db": 57.440738268335494,
+              "relative_to_0deg_db": -1.8502937461267805
+            },
+            {
+              "order": 9,
+              "frequency_hz": 4191.162833298282,
+              "rms_pa": 0.016161167941242918,
+              "spl_db": 58.148854953249376,
+              "relative_to_0deg_db": -1.9676596563206843
+            },
+            {
+              "order": 10,
+              "frequency_hz": 4656.862438270286,
+              "rms_pa": 0.01764409855835902,
+              "spl_db": 58.911389587587195,
+              "relative_to_0deg_db": -2.0398203970646023
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "cells": 1538,
+        "axial_cells": 542,
+        "steps": 1075200,
+        "bell_rings": 16,
+        "time_step_s": 7.440476190476191e-07,
+        "bell_radius_m": 0.04508547,
+        "bore_length_m": 1.356251908022228,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 17.111542500089854,
+        "bell_flux_residual_m3_s": 9.313225746154785e-10,
+        "preset": {
+          "note": "Bb4",
+          "midi": 70,
+          "target_hz": 466.1637615180899,
+          "valves_semitones": [],
+          "lip_frequency_hz": 489.6564244160723,
+          "blowing_pressure_pa": 7578.582847360052,
+          "rest_y_m": 0.0,
+          "attack_s": 0.014,
+          "attack_boost": 0.22,
+          "attack_decay_s": 0.027
+        }
+      }
+    },
+    {
+      "note": "Bb5",
+      "variant": "previous",
+      "target_hz": 932.3275230361799,
+      "duration_s": 0.8,
+      "window_s": [
+        0.38,
+        0.62
+      ],
+      "cup_frequency_hz": 933.8292415778236,
+      "cup_periodicity": 0.9999245405197144,
+      "cup_rms_pa": 8416.535646961629,
+      "cup_peak_to_peak_pa": 24136.89453125,
+      "bell_volumetric_flow_rms_m3_s": 0.00280642639098956,
+      "frequency_hz": 933.7941502743998,
+      "periodicity": 0.9998101164708948,
+      "pitch_cents": 2.72123256611106,
+      "radiation": {
+        "0": {
+          "rms_pa": 1.7776921155110115,
+          "spl_db": 98.97653101115877,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 933.7529441789021,
+              "rms_pa": 1.5217628293210188,
+              "spl_db": 97.62633952249041
+            },
+            {
+              "order": 2,
+              "frequency_hz": 1867.50559174474,
+              "rms_pa": 0.7153070379096683,
+              "spl_db": 91.06925004854276
+            },
+            {
+              "order": 3,
+              "frequency_hz": 2801.257502610446,
+              "rms_pa": 0.46520615975217516,
+              "spl_db": 87.33230921767958
+            },
+            {
+              "order": 4,
+              "frequency_hz": 3735.008615764414,
+              "rms_pa": 0.2848914493513655,
+              "spl_db": 83.07298837967095
+            },
+            {
+              "order": 5,
+              "frequency_hz": 4668.771305001543,
+              "rms_pa": 0.14344356255824328,
+              "spl_db": 77.11302134286889
+            },
+            {
+              "order": 6,
+              "frequency_hz": 5602.52404655475,
+              "rms_pa": 0.09573141861990689,
+              "spl_db": 73.60048997995982
+            },
+            {
+              "order": 7,
+              "frequency_hz": 6536.303886614743,
+              "rms_pa": 0.054468292046598324,
+              "spl_db": 68.70227523442017
+            },
+            {
+              "order": 8,
+              "frequency_hz": 7470.004589390403,
+              "rms_pa": 0.02813675259265086,
+              "spl_db": 62.96487952333892
+            },
+            {
+              "order": 9,
+              "frequency_hz": 8403.865834641136,
+              "rms_pa": 0.020117929157200183,
+              "spl_db": 60.05106557673721
+            },
+            {
+              "order": 10,
+              "frequency_hz": 9337.35874907285,
+              "rms_pa": 0.009157028749346239,
+              "spl_db": 53.21449164065987
+            }
+          ]
+        },
+        "45": {
+          "rms_pa": 1.7776921155110115,
+          "spl_db": 98.97653101115877,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 933.7529441789021,
+              "rms_pa": 1.5217628293210188,
+              "spl_db": 97.62633952249041,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 2,
+              "frequency_hz": 1867.50559174474,
+              "rms_pa": 0.7153070379096683,
+              "spl_db": 91.06925004854276,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 3,
+              "frequency_hz": 2801.257502610446,
+              "rms_pa": 0.46520615975217516,
+              "spl_db": 87.33230921767958,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 4,
+              "frequency_hz": 3735.008615764414,
+              "rms_pa": 0.2848914493513655,
+              "spl_db": 83.07298837967095,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 5,
+              "frequency_hz": 4668.771305001543,
+              "rms_pa": 0.14344356255824328,
+              "spl_db": 77.11302134286889,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 6,
+              "frequency_hz": 5602.52404655475,
+              "rms_pa": 0.09573141861990689,
+              "spl_db": 73.60048997995982,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 7,
+              "frequency_hz": 6536.303886614743,
+              "rms_pa": 0.054468292046598324,
+              "spl_db": 68.70227523442017,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 8,
+              "frequency_hz": 7470.004589390403,
+              "rms_pa": 0.02813675259265086,
+              "spl_db": 62.96487952333892,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 9,
+              "frequency_hz": 8403.865834641136,
+              "rms_pa": 0.020117929157200183,
+              "spl_db": 60.05106557673721,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 10,
+              "frequency_hz": 9337.35874907285,
+              "rms_pa": 0.009157028749346239,
+              "spl_db": 53.21449164065987,
+              "relative_to_0deg_db": 0.0
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "cells": 1072,
+        "axial_cells": 399,
+        "steps": 1075200,
+        "bell_rings": 16,
+        "time_step_s": 7.440476190476191e-07,
+        "bell_radius_m": 0.04508547,
+        "bore_length_m": 1.333251908022228,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 15.715353599982336,
+        "preset": {
+          "note": "Bb5",
+          "midi": 82,
+          "target_hz": 932.3275230361799,
+          "valves_semitones": [],
+          "lip_frequency_hz": 1005,
+          "blowing_pressure_pa": 15300,
+          "rest_y_m": 2.7e-05,
+          "tuning_m": -0.023,
+          "attack_s": 0.014,
+          "attack_boost": 0.22,
+          "attack_decay_s": 0.027
+        }
+      }
+    },
+    {
+      "note": "Bb5",
+      "variant": "fine_taper",
+      "target_hz": 932.3275230361799,
+      "duration_s": 0.8,
+      "window_s": [
+        0.38,
+        0.62
+      ],
+      "cup_frequency_hz": 933.6040832358236,
+      "cup_periodicity": 0.9999407529830933,
+      "cup_rms_pa": 8452.48894474939,
+      "cup_peak_to_peak_pa": 24256.02734375,
+      "bell_volumetric_flow_rms_m3_s": 0.0027758497754640683,
+      "frequency_hz": 933.5667111338907,
+      "periodicity": 0.9998461764699683,
+      "pitch_cents": 2.299513985386653,
+      "radiation": {
+        "0": {
+          "rms_pa": 1.7653542316289528,
+          "spl_db": 98.91603734528871,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 933.5914042718318,
+              "rms_pa": 1.504167753613983,
+              "spl_db": 97.52532556723366
+            },
+            {
+              "order": 2,
+              "frequency_hz": 1867.1835635880345,
+              "rms_pa": 0.7088987542477774,
+              "spl_db": 90.99108435000613
+            },
+            {
+              "order": 3,
+              "frequency_hz": 2800.7755430682364,
+              "rms_pa": 0.47089417251784216,
+              "spl_db": 87.43786640527945
+            },
+            {
+              "order": 4,
+              "frequency_hz": 3734.364354175132,
+              "rms_pa": 0.29814534932550785,
+              "spl_db": 83.46796087298195
+            },
+            {
+              "order": 5,
+              "frequency_hz": 4667.957221495419,
+              "rms_pa": 0.15199357623106408,
+              "spl_db": 77.61590475793761
+            },
+            {
+              "order": 6,
+              "frequency_hz": 5601.55211424423,
+              "rms_pa": 0.1058426640289981,
+              "spl_db": 74.47261533437069
+            },
+            {
+              "order": 7,
+              "frequency_hz": 6535.159683841725,
+              "rms_pa": 0.06782360658031082,
+              "spl_db": 70.60701768771202
+            },
+            {
+              "order": 8,
+              "frequency_hz": 7468.774006287882,
+              "rms_pa": 0.037269969266344814,
+              "spl_db": 65.4065807792201
+            },
+            {
+              "order": 9,
+              "frequency_hz": 8402.479402999685,
+              "rms_pa": 0.025867608737923434,
+              "spl_db": 62.2345257542678
+            },
+            {
+              "order": 10,
+              "frequency_hz": 9335.999933949784,
+              "rms_pa": 0.014858009300577886,
+              "spl_db": 57.41861260402922
+            }
+          ]
+        },
+        "45": {
+          "rms_pa": 1.7653542316289528,
+          "spl_db": 98.91603734528871,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 933.5914042718318,
+              "rms_pa": 1.504167753613983,
+              "spl_db": 97.52532556723366,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 2,
+              "frequency_hz": 1867.1835635880345,
+              "rms_pa": 0.7088987542477774,
+              "spl_db": 90.99108435000613,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 3,
+              "frequency_hz": 2800.7755430682364,
+              "rms_pa": 0.47089417251784216,
+              "spl_db": 87.43786640527945,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 4,
+              "frequency_hz": 3734.364354175132,
+              "rms_pa": 0.29814534932550785,
+              "spl_db": 83.46796087298195,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 5,
+              "frequency_hz": 4667.957221495419,
+              "rms_pa": 0.15199357623106408,
+              "spl_db": 77.61590475793761,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 6,
+              "frequency_hz": 5601.55211424423,
+              "rms_pa": 0.1058426640289981,
+              "spl_db": 74.47261533437069,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 7,
+              "frequency_hz": 6535.159683841725,
+              "rms_pa": 0.06782360658031082,
+              "spl_db": 70.60701768771202,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 8,
+              "frequency_hz": 7468.774006287882,
+              "rms_pa": 0.037269969266344814,
+              "spl_db": 65.4065807792201,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 9,
+              "frequency_hz": 8402.479402999685,
+              "rms_pa": 0.025867608737923434,
+              "spl_db": 62.2345257542678,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 10,
+              "frequency_hz": 9335.999933949784,
+              "rms_pa": 0.014858009300577886,
+              "spl_db": 57.41861260402922,
+              "relative_to_0deg_db": 0.0
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "cells": 1524,
+        "axial_cells": 535,
+        "steps": 1075200,
+        "bell_rings": 16,
+        "time_step_s": 7.440476190476191e-07,
+        "bell_radius_m": 0.04508547,
+        "bore_length_m": 1.333251908022228,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 35.411855600075796,
+        "preset": {
+          "note": "Bb5",
+          "midi": 82,
+          "target_hz": 932.3275230361799,
+          "valves_semitones": [],
+          "lip_frequency_hz": 1005,
+          "blowing_pressure_pa": 15300,
+          "rest_y_m": 2.7e-05,
+          "tuning_m": -0.023,
+          "attack_s": 0.014,
+          "attack_boost": 0.22,
+          "attack_decay_s": 0.027
+        }
+      }
+    },
+    {
+      "note": "Bb5",
+      "variant": "exterior",
+      "target_hz": 932.3275230361799,
+      "duration_s": 0.8,
+      "window_s": [
+        0.38,
+        0.62
+      ],
+      "cup_frequency_hz": 934.8548391894508,
+      "cup_periodicity": 0.9999288320541382,
+      "cup_rms_pa": 8500.554995517976,
+      "cup_peak_to_peak_pa": 24416.3203125,
+      "bell_volumetric_flow_rms_m3_s": 0.002714943166014672,
+      "frequency_hz": 934.8806461768286,
+      "periodicity": 0.9997917253448521,
+      "pitch_cents": 4.734401380703286,
+      "radiation": {
+        "0": {
+          "rms_pa": 2.0887758976092687,
+          "spl_db": 100.37723703709236,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 934.8401324350968,
+              "rms_pa": 1.7051033709785797,
+              "spl_db": 98.61441434666007
+            },
+            {
+              "order": 2,
+              "frequency_hz": 1869.6783008384452,
+              "rms_pa": 0.9333210955819194,
+              "spl_db": 93.3800217301125
+            },
+            {
+              "order": 3,
+              "frequency_hz": 2804.5212607546378,
+              "rms_pa": 0.6420246756957722,
+              "spl_db": 90.13043448961045
+            },
+            {
+              "order": 4,
+              "frequency_hz": 3739.359534333028,
+              "rms_pa": 0.3662486667419933,
+              "spl_db": 85.25492113470641
+            },
+            {
+              "order": 5,
+              "frequency_hz": 4674.204380735978,
+              "rms_pa": 0.16038792127559087,
+              "spl_db": 78.08283326083532
+            },
+            {
+              "order": 6,
+              "frequency_hz": 5609.048727183346,
+              "rms_pa": 0.10057550265143843,
+              "spl_db": 74.02924432161878
+            },
+            {
+              "order": 7,
+              "frequency_hz": 6543.864026764712,
+              "rms_pa": 0.05935472702448101,
+              "spl_db": 69.44850632638202
+            },
+            {
+              "order": 8,
+              "frequency_hz": 7478.686540328585,
+              "rms_pa": 0.030991075165215924,
+              "spl_db": 63.804132954016936
+            },
+            {
+              "order": 9,
+              "frequency_hz": 8413.530976050291,
+              "rms_pa": 0.020202855471975163,
+              "spl_db": 60.08765522622604
+            },
+            {
+              "order": 10,
+              "frequency_hz": 9348.138780775824,
+              "rms_pa": 0.010488395411960132,
+              "spl_db": 54.3935811241201
+            }
+          ]
+        },
+        "45": {
+          "rms_pa": 1.8304539602458205,
+          "spl_db": 99.23057628548665,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 934.8402027371623,
+              "rms_pa": 1.527621352846976,
+              "spl_db": 97.65971449157084,
+              "relative_to_0deg_db": -0.9546998550892312
+            },
+            {
+              "order": 2,
+              "frequency_hz": 1869.6789193204215,
+              "rms_pa": 0.7999994977143873,
+              "spl_db": 92.04119437306078,
+              "relative_to_0deg_db": -1.338827357051727
+            },
+            {
+              "order": 3,
+              "frequency_hz": 2804.5215864019133,
+              "rms_pa": 0.5138250926893457,
+              "spl_db": 88.1957062717972,
+              "relative_to_0deg_db": -1.9347282178132446
+            },
+            {
+              "order": 4,
+              "frequency_hz": 3739.361474770369,
+              "rms_pa": 0.2978128428554904,
+              "spl_db": 83.45826853267992,
+              "relative_to_0deg_db": -1.7966526020264837
+            },
+            {
+              "order": 5,
+              "frequency_hz": 4674.200407717474,
+              "rms_pa": 0.1288522003684828,
+              "spl_db": 76.18123687192968,
+              "relative_to_0deg_db": -1.9015963889056309
+            },
+            {
+              "order": 6,
+              "frequency_hz": 5609.040003468999,
+              "rms_pa": 0.08050179406281395,
+              "spl_db": 72.09551126995306,
+              "relative_to_0deg_db": -1.9337330516657119
+            },
+            {
+              "order": 7,
+              "frequency_hz": 6543.8707594588695,
+              "rms_pa": 0.044195333432716165,
+              "spl_db": 66.88692838256449,
+              "relative_to_0deg_db": -2.5615779438175252
+            },
+            {
+              "order": 8,
+              "frequency_hz": 7478.716266085033,
+              "rms_pa": 0.02230570968396031,
+              "spl_db": 60.94772099507625,
+              "relative_to_0deg_db": -2.856411958940683
+            },
+            {
+              "order": 9,
+              "frequency_hz": 8413.50800496889,
+              "rms_pa": 0.013938457727174577,
+              "spl_db": 56.86369453235818,
+              "relative_to_0deg_db": -3.223960693867859
+            },
+            {
+              "order": 10,
+              "frequency_hz": 9348.424998664746,
+              "rms_pa": 0.006963330715730056,
+              "spl_db": 50.83574052679915,
+              "relative_to_0deg_db": -3.557840597320947
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "cells": 1524,
+        "axial_cells": 535,
+        "steps": 1075200,
+        "bell_rings": 16,
+        "time_step_s": 7.440476190476191e-07,
+        "bell_radius_m": 0.04508547,
+        "bore_length_m": 1.333251908022228,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 32.29639030015096,
+        "bell_flux_residual_m3_s": 1.1641532182693481e-09,
+        "preset": {
+          "note": "Bb5",
+          "midi": 82,
+          "target_hz": 932.3275230361799,
+          "valves_semitones": [],
+          "lip_frequency_hz": 1005,
+          "blowing_pressure_pa": 15300,
+          "rest_y_m": 2.7e-05,
+          "tuning_m": -0.023,
+          "attack_s": 0.014,
+          "attack_boost": 0.22,
+          "attack_decay_s": 0.027
+        }
+      }
+    },
+    {
+      "note": "Bb6",
+      "variant": "previous",
+      "target_hz": 1864.6550460723597,
+      "duration_s": 0.8,
+      "window_s": [
+        0.38,
+        0.62
+      ],
+      "cup_frequency_hz": 1864.9490836799255,
+      "cup_periodicity": 0.9999868869781494,
+      "cup_rms_pa": 3666.3193189571166,
+      "cup_peak_to_peak_pa": 10379.9658203125,
+      "bell_volumetric_flow_rms_m3_s": 0.0015248627672280162,
+      "frequency_hz": 1864.931505243188,
+      "periodicity": 0.99999351629226,
+      "pitch_cents": 0.25665876043130714,
+      "radiation": {
+        "0": {
+          "rms_pa": 1.7411836154003584,
+          "spl_db": 98.79629152228226,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 1864.984172812293,
+              "rms_pa": 1.6962511683877917,
+              "spl_db": 98.56920328297022
+            },
+            {
+              "order": 2,
+              "frequency_hz": 3729.9685448959526,
+              "rms_pa": 0.3762985904916557,
+              "spl_db": 85.49005191828681
+            },
+            {
+              "order": 3,
+              "frequency_hz": 5594.949458720466,
+              "rms_pa": 0.10924061811439978,
+              "spl_db": 74.74708306344037
+            },
+            {
+              "order": 4,
+              "frequency_hz": 7459.8733560810715,
+              "rms_pa": 0.029002182448050917,
+              "spl_db": 63.22801369261825
+            },
+            {
+              "order": 5,
+              "frequency_hz": 9325.126346079964,
+              "rms_pa": 0.0035869917709244427,
+              "spl_db": 45.074007693581194
+            },
+            {
+              "order": 6,
+              "frequency_hz": 11189.978885533828,
+              "rms_pa": 0.005795225005364954,
+              "spl_db": 49.24080613754913
+            },
+            {
+              "order": 7,
+              "frequency_hz": 13053.42383583964,
+              "rms_pa": 0.0009658805870152876,
+              "spl_db": 33.67786883436817
+            },
+            {
+              "order": 8,
+              "frequency_hz": 14920.035723151856,
+              "rms_pa": 0.0034816274904375436,
+              "spl_db": 44.815046143186834
+            },
+            {
+              "order": 9,
+              "frequency_hz": 16784.105886950347,
+              "rms_pa": 0.0005859127221360648,
+              "spl_db": 29.33605864879956
+            },
+            {
+              "order": 10,
+              "frequency_hz": 18649.71802745834,
+              "rms_pa": 0.003638108068580384,
+              "spl_db": 45.19691199606378
+            }
+          ]
+        },
+        "45": {
+          "rms_pa": 1.7411836154003584,
+          "spl_db": 98.79629152228226,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 1864.984172812293,
+              "rms_pa": 1.6962511683877917,
+              "spl_db": 98.56920328297022,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 2,
+              "frequency_hz": 3729.9685448959526,
+              "rms_pa": 0.3762985904916557,
+              "spl_db": 85.49005191828681,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 3,
+              "frequency_hz": 5594.949458720466,
+              "rms_pa": 0.10924061811439978,
+              "spl_db": 74.74708306344037,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 4,
+              "frequency_hz": 7459.8733560810715,
+              "rms_pa": 0.029002182448050917,
+              "spl_db": 63.22801369261825,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 5,
+              "frequency_hz": 9325.126346079964,
+              "rms_pa": 0.0035869917709244427,
+              "spl_db": 45.074007693581194,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 6,
+              "frequency_hz": 11189.978885533828,
+              "rms_pa": 0.005795225005364954,
+              "spl_db": 49.24080613754913,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 7,
+              "frequency_hz": 13053.42383583964,
+              "rms_pa": 0.0009658805870152876,
+              "spl_db": 33.67786883436817,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 8,
+              "frequency_hz": 14920.035723151856,
+              "rms_pa": 0.0034816274904375436,
+              "spl_db": 44.815046143186834,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 9,
+              "frequency_hz": 16784.105886950347,
+              "rms_pa": 0.0005859127221360648,
+              "spl_db": 29.33605864879956,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 10,
+              "frequency_hz": 18649.71802745834,
+              "rms_pa": 0.003638108068580384,
+              "spl_db": 45.19691199606378,
+              "relative_to_0deg_db": 0.0
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "cells": 1106,
+        "axial_cells": 416,
+        "steps": 1536000,
+        "bell_rings": 16,
+        "time_step_s": 5.208333333333334e-07,
+        "bell_radius_m": 0.04508547,
+        "bore_length_m": 1.3912519080222279,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 22.30918930005282,
+        "preset": {
+          "attack_s": 0.01,
+          "attack_boost": 0.22,
+          "attack_decay_s": 0.026,
+          "note": "Bb6",
+          "midi": 94,
+          "target_hz": 1864.6550460723597,
+          "valves_semitones": [],
+          "lip_frequency_hz": 2033,
+          "blowing_pressure_pa": 23000,
+          "rest_y_m": 2e-05,
+          "tuning_m": 0.035,
+          "lip_parameters": {
+            "quality": 12,
+            "mass_product": 1.15
+          },
+          "wave_speed_reserve": 2.2
+        }
+      }
+    },
+    {
+      "note": "Bb6",
+      "variant": "fine_taper",
+      "target_hz": 1864.6550460723597,
+      "duration_s": 0.8,
+      "window_s": [
+        0.38,
+        0.62
+      ],
+      "cup_frequency_hz": 1864.1357571541992,
+      "cup_periodicity": 0.9999993443489075,
+      "cup_rms_pa": 3670.953975422085,
+      "cup_peak_to_peak_pa": 10384.421875,
+      "bell_volumetric_flow_rms_m3_s": 0.001516372351202675,
+      "frequency_hz": 1864.0037355528232,
+      "periodicity": 1.0000023797789412,
+      "pitch_cents": -0.604813164970554,
+      "radiation": {
+        "0": {
+          "rms_pa": 1.7341670895317618,
+          "spl_db": 98.76121888799702,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 1864.0780198947502,
+              "rms_pa": 1.6854652432107764,
+              "spl_db": 98.51379610980021
+            },
+            {
+              "order": 2,
+              "frequency_hz": 3728.1571515981086,
+              "rms_pa": 0.3871054802901379,
+              "spl_db": 85.73598648095887
+            },
+            {
+              "order": 3,
+              "frequency_hz": 5592.23166537327,
+              "rms_pa": 0.11816441858848101,
+              "spl_db": 75.42913453522141
+            },
+            {
+              "order": 4,
+              "frequency_hz": 7456.304366173586,
+              "rms_pa": 0.042672339820423344,
+              "spl_db": 66.5823292238403
+            },
+            {
+              "order": 5,
+              "frequency_hz": 9320.665921682183,
+              "rms_pa": 0.003191784396736999,
+              "spl_db": 44.06007103308972
+            },
+            {
+              "order": 6,
+              "frequency_hz": 11184.004035144933,
+              "rms_pa": 0.00436731799887691,
+              "spl_db": 46.78369639654367
+            },
+            {
+              "order": 7,
+              "frequency_hz": 13048.301724948748,
+              "rms_pa": 0.004178745992450728,
+              "spl_db": 46.40031954869461
+            },
+            {
+              "order": 8,
+              "frequency_hz": 14915.691018971775,
+              "rms_pa": 0.0011795707079596423,
+              "spl_db": 35.41387967205645
+            },
+            {
+              "order": 9,
+              "frequency_hz": 16776.91552917674,
+              "rms_pa": 0.0015071639027708025,
+              "spl_db": 37.542609767363295
+            },
+            {
+              "order": 10,
+              "frequency_hz": 18641.82941456202,
+              "rms_pa": 0.0013561625547199626,
+              "spl_db": 36.62563506298626
+            }
+          ]
+        },
+        "45": {
+          "rms_pa": 1.7341670895317618,
+          "spl_db": 98.76121888799702,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 1864.0780198947502,
+              "rms_pa": 1.6854652432107764,
+              "spl_db": 98.51379610980021,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 2,
+              "frequency_hz": 3728.1571515981086,
+              "rms_pa": 0.3871054802901379,
+              "spl_db": 85.73598648095887,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 3,
+              "frequency_hz": 5592.23166537327,
+              "rms_pa": 0.11816441858848101,
+              "spl_db": 75.42913453522141,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 4,
+              "frequency_hz": 7456.304366173586,
+              "rms_pa": 0.042672339820423344,
+              "spl_db": 66.5823292238403,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 5,
+              "frequency_hz": 9320.665921682183,
+              "rms_pa": 0.003191784396736999,
+              "spl_db": 44.06007103308972,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 6,
+              "frequency_hz": 11184.004035144933,
+              "rms_pa": 0.00436731799887691,
+              "spl_db": 46.78369639654367,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 7,
+              "frequency_hz": 13048.301724948748,
+              "rms_pa": 0.004178745992450728,
+              "spl_db": 46.40031954869461,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 8,
+              "frequency_hz": 14915.691018971775,
+              "rms_pa": 0.0011795707079596423,
+              "spl_db": 35.41387967205645,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 9,
+              "frequency_hz": 16776.91552917674,
+              "rms_pa": 0.0015071639027708025,
+              "spl_db": 37.542609767363295,
+              "relative_to_0deg_db": 0.0
+            },
+            {
+              "order": 10,
+              "frequency_hz": 18641.82941456202,
+              "rms_pa": 0.0013561625547199626,
+              "spl_db": 36.62563506298626,
+              "relative_to_0deg_db": 0.0
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "cells": 1558,
+        "axial_cells": 552,
+        "steps": 1536000,
+        "bell_rings": 16,
+        "time_step_s": 5.208333333333334e-07,
+        "bell_radius_m": 0.04508547,
+        "bore_length_m": 1.3912519080222279,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 45.816273499978706,
+        "preset": {
+          "attack_s": 0.01,
+          "attack_boost": 0.22,
+          "attack_decay_s": 0.026,
+          "note": "Bb6",
+          "midi": 94,
+          "target_hz": 1864.6550460723597,
+          "valves_semitones": [],
+          "lip_frequency_hz": 2033,
+          "blowing_pressure_pa": 23000,
+          "rest_y_m": 2e-05,
+          "tuning_m": 0.035,
+          "lip_parameters": {
+            "quality": 12,
+            "mass_product": 1.15
+          },
+          "wave_speed_reserve": 2.2
+        }
+      }
+    },
+    {
+      "note": "Bb6",
+      "variant": "exterior",
+      "target_hz": 1864.6550460723597,
+      "duration_s": 0.8,
+      "window_s": [
+        0.38,
+        0.62
+      ],
+      "cup_frequency_hz": 1867.7052943619503,
+      "cup_periodicity": 0.9999246597290039,
+      "cup_rms_pa": 3658.9289737736854,
+      "cup_peak_to_peak_pa": 10354.033203125,
+      "bell_volumetric_flow_rms_m3_s": 0.0018845431246561272,
+      "frequency_hz": 1867.75472217823,
+      "periodicity": 0.9999092049380128,
+      "pitch_cents": 2.8754967339846766,
+      "radiation": {
+        "0": {
+          "rms_pa": 2.7964052515797477,
+          "spl_db": 102.91140226776054,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 1867.7008581234618,
+              "rms_pa": 2.724965991498152,
+              "spl_db": 102.68662181679485
+            },
+            {
+              "order": 2,
+              "frequency_hz": 3735.4030878650824,
+              "rms_pa": 0.6085582572117959,
+              "spl_db": 89.66544327705782
+            },
+            {
+              "order": 3,
+              "frequency_hz": 5603.131030132275,
+              "rms_pa": 0.14684160652912132,
+              "spl_db": 77.31638263235905
+            },
+            {
+              "order": 4,
+              "frequency_hz": 7470.986218977255,
+              "rms_pa": 0.05178205426758537,
+              "spl_db": 68.26298559710219
+            },
+            {
+              "order": 5,
+              "frequency_hz": 9337.30754305989,
+              "rms_pa": 0.00494194668638592,
+              "spl_db": 47.857361205357265
+            },
+            {
+              "order": 6,
+              "frequency_hz": 11205.552653227554,
+              "rms_pa": 0.00828757980148504,
+              "spl_db": 52.34795455220832
+            },
+            {
+              "order": 7,
+              "frequency_hz": 13073.64631255807,
+              "rms_pa": 0.004938882524648861,
+              "spl_db": 47.851974011435374
+            },
+            {
+              "order": 8,
+              "frequency_hz": 14941.89286259306,
+              "rms_pa": 0.004473139480179466,
+              "spl_db": 46.99164889536843
+            },
+            {
+              "order": 9,
+              "frequency_hz": 16807.21697738527,
+              "rms_pa": 0.004212735146605847,
+              "spl_db": 46.470683207148184
+            },
+            {
+              "order": 10,
+              "frequency_hz": 18677.895855799623,
+              "rms_pa": 0.0014649563726669625,
+              "spl_db": 37.29589391305367
+            }
+          ]
+        },
+        "45": {
+          "rms_pa": 2.3914977010987197,
+          "spl_db": 101.55279944130345,
+          "harmonics": [
+            {
+              "order": 1,
+              "frequency_hz": 1867.7007484052365,
+              "rms_pa": 2.3357606620628975,
+              "spl_db": 101.34796688574531,
+              "relative_to_0deg_db": -1.3386549310495468
+            },
+            {
+              "order": 2,
+              "frequency_hz": 3735.4040737059518,
+              "rms_pa": 0.4957260676319039,
+              "spl_db": 87.88423522217785,
+              "relative_to_0deg_db": -1.7812080548799685
+            },
+            {
+              "order": 3,
+              "frequency_hz": 5603.11619970637,
+              "rms_pa": 0.12355341255563275,
+              "spl_db": 75.81649498979688,
+              "relative_to_0deg_db": -1.4998876425621717
+            },
+            {
+              "order": 4,
+              "frequency_hz": 7470.82518886771,
+              "rms_pa": 0.03725179775135663,
+              "spl_db": 65.4023448147982,
+              "relative_to_0deg_db": -2.8606407823039888
+            },
+            {
+              "order": 5,
+              "frequency_hz": 9338.311665932742,
+              "rms_pa": 0.01073169677065681,
+              "spl_db": 54.59276794612396,
+              "relative_to_0deg_db": 6.735406740766699
+            },
+            {
+              "order": 6,
+              "frequency_hz": 11206.137121418938,
+              "rms_pa": 0.0041564726019875904,
+              "spl_db": 46.35389852932335,
+              "relative_to_0deg_db": -5.994056022884969
+            },
+            {
+              "order": 7,
+              "frequency_hz": 13071.663167796152,
+              "rms_pa": 0.00097832742765871,
+              "spl_db": 33.78908467177543,
+              "relative_to_0deg_db": -14.062889339659947
+            },
+            {
+              "order": 8,
+              "frequency_hz": 14942.257157379036,
+              "rms_pa": 0.0014419120197327498,
+              "spl_db": 37.15817532892038,
+              "relative_to_0deg_db": -9.833473566448049
+            },
+            {
+              "order": 9,
+              "frequency_hz": 16809.597336074454,
+              "rms_pa": 0.0008816558299450258,
+              "spl_db": 32.885381759282396,
+              "relative_to_0deg_db": -13.585301447865788
+            },
+            {
+              "order": 10,
+              "frequency_hz": 18677.11160231042,
+              "rms_pa": 0.0010909502486367384,
+              "spl_db": 34.735498998850225,
+              "relative_to_0deg_db": -2.5603949142034423
+            }
+          ]
+        }
+      },
+      "diagnostics": {
+        "cells": 1558,
+        "axial_cells": 552,
+        "steps": 1536000,
+        "bell_rings": 16,
+        "time_step_s": 5.208333333333334e-07,
+        "bell_radius_m": 0.04508547,
+        "bore_length_m": 1.3912519080222279,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 47.12192460009828,
+        "bell_flux_residual_m3_s": 6.984919309616089e-10,
+        "preset": {
+          "attack_s": 0.01,
+          "attack_boost": 0.22,
+          "attack_decay_s": 0.026,
+          "note": "Bb6",
+          "midi": 94,
+          "target_hz": 1864.6550460723597,
+          "valves_semitones": [],
+          "lip_frequency_hz": 2033,
+          "blowing_pressure_pa": 23000,
+          "rest_y_m": 2e-05,
+          "tuning_m": 0.035,
+          "lip_parameters": {
+            "quality": 12,
+            "mass_product": 1.15
+          },
+          "wave_speed_reserve": 2.2
+        }
+      }
+    }
+  ],
+  "differences": {
+    "Bb4": {
+      "fine_taper_minus_previous_pitch_cents": -0.24133529785989583,
+      "exterior_minus_fine_taper_pitch_cents": 0.9533765437962256,
+      "fine_taper_minus_previous_cup_pitch_cents": -0.3432992290450931,
+      "exterior_minus_fine_taper_cup_pitch_cents": 1.0557325305555278,
+      "fine_taper_minus_previous_cup_rms_pa": 15.734404031823942,
+      "exterior_minus_fine_taper_cup_rms_pa": 42.773295162473914
+    },
+    "Bb5": {
+      "fine_taper_minus_previous_pitch_cents": -0.4217185807246499,
+      "exterior_minus_fine_taper_pitch_cents": 2.434887395316551,
+      "fine_taper_minus_previous_cup_pitch_cents": -0.4174733146411068,
+      "exterior_minus_fine_taper_cup_pitch_cents": 2.3177941901076937,
+      "fine_taper_minus_previous_cup_rms_pa": 35.953297787760675,
+      "exterior_minus_fine_taper_cup_rms_pa": 48.06605076858614
+    },
+    "Bb6": {
+      "fine_taper_minus_previous_pitch_cents": -0.861471925402173,
+      "exterior_minus_fine_taper_pitch_cents": 3.480309898955199,
+      "fine_taper_minus_previous_cup_pitch_cents": -0.7551764879440895,
+      "exterior_minus_fine_taper_cup_pitch_cents": 3.3118807327449327,
+      "fine_taper_minus_previous_cup_rms_pa": 4.63465646496843,
+      "exterior_minus_fine_taper_cup_rms_pa": -12.025001648399666
+    }
+  },
+  "audio": {
+    "sample_rate_hz": 48000,
+    "common_gain_fs_per_pa": 0.10990537037351798,
+    "comparison_order": [
+      {
+        "variant": "previous",
+        "start_s": 0.0,
+        "angle_deg": 0,
+        "note_order": [
+          "Bb4",
+          "Bb5",
+          "Bb6"
+        ]
+      },
+      {
+        "variant": "fine_taper",
+        "start_s": 3.3,
+        "angle_deg": 0,
+        "note_order": [
+          "Bb4",
+          "Bb5",
+          "Bb6"
+        ]
+      },
+      {
+        "variant": "exterior",
+        "start_s": 6.6,
+        "angle_deg": 0,
+        "note_order": [
+          "Bb4",
+          "Bb5",
+          "Bb6"
+        ]
+      }
+    ],
+    "comparison_duration_s": 9.3,
+    "note_gap_s": 0.15
+  },
+  "metadata": {
+    "comparison_distance_m": 1.0,
+    "geometry": "York Bb trumpet, figure 7.52; digitized profile with PCHIP on the refined mesh",
+    "exterior": "Rigid rear hemisphere and projected aperture on the front hemisphere",
+    "boundary_validation": {
+      "gpu_cpu_bell_pressure_relative_l2": 2.1967827754032142e-05,
+      "gpu_cpu_bell_pressure_max_pa": 8.017714524788389e-05,
+      "bell_flux_max_residual_m3_s": 2.6741947903047986e-11,
+      "peak_bell_pressure_pa": 3.3990163803100586,
+      "aperture_modes": 4,
+      "exterior_order": 10,
+      "radiation_states": 66
+    },
+    "exterior_validation": {
+      "spherical_order": 10,
+      "aperture_ports": 4,
+      "state_count": 66,
+      "max_real_pole_in_dimensionless_time": -0.7869141289751084,
+      "state_space_formula_max_error": 2.1868857395626284e-14,
+      "float32_state_space_formula_max_error": 4.257348362015825e-07,
+      "reflection_max_singular_value": 1.0000000000000004,
+      "reflection_reciprocity_max_error": 8.326672684688674e-17,
+      "aperture_basis_orthonormal_max_error": 5.551115123125783e-16,
+      "low_frequency_mean_port_end_correction_over_radius": 0.4436416689167925,
+      "receiver_hankel_max_relative_error": 1.3282347127817195e-14,
+      "angles_deg": [
+        0.0,
+        45.0
+      ],
+      "bb6_harmonic_frequency_hz": [
+        1864.655046,
+        3729.310092,
+        5593.9651380000005,
+        7458.620184,
+        9323.275230000001,
+        11187.930276000001
+      ],
+      "plane_mode_45deg_relative_to_0deg_db": [
+        -1.7021113903968066,
+        -3.986186786331788,
+        -4.948255418895787,
+        -3.4830601632014604,
+        -2.5191758654818734,
+        -2.8916201293048327
+      ],
+      "receiver_operator_relative_error_vs_order12": [
+        [
+          9.162020683102209e-10,
+          1.227254037310481e-10
+        ],
+        [
+          1.4171944541776312e-06,
+          2.736046501767763e-07
+        ],
+        [
+          9.345913349190892e-05,
+          2.42419979239916e-05
+        ],
+        [
+          0.0015895056541084997,
+          0.00046102653100726855
+        ],
+        [
+          0.012402876109926297,
+          0.0039428315990241835
+        ],
+        [
+          0.05742010619758889,
+          0.020207440233808733
+        ]
+      ],
+      "passed": true
+    },
+    "bb6_axial_refinement": {
+      "spacing_multiplier": 0.75,
+      "nominal_cells": 1558,
+      "refined_cells": 2074,
+      "pitch_shift_cents": 0.327084632253801,
+      "nominal_cup_rms_pa": 3658.9289737736854,
+      "refined_cup_rms_pa": 3520.544748970835
+    }
+  }
+}

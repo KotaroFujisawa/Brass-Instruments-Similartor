@@ -1,0 +1,47 @@
+{
+  "overrides": {},
+  "upper_octave": [
+    {
+      "note": "C6", "midi": 84, "target_hz": 1046.5022612023945, "valves_semitones": [],
+      "lip_frequency_hz": 1128, "blowing_pressure_pa": 17700, "rest_y_m": 0.00002, "tuning_m": -0.017,
+      "lip_parameters": {"quality": 4.5, "mass_product": 1.4}, "wave_speed_reserve": 2.2,
+      "attack_s": 0.01, "attack_decay_s": 0.026
+    },
+    {
+      "note": "D6", "midi": 86, "target_hz": 1174.6590716696303, "valves_semitones": [],
+      "lip_frequency_hz": 1303, "blowing_pressure_pa": 18900, "rest_y_m": 0.00002, "tuning_m": -0.015,
+      "lip_parameters": {"quality": 6, "mass_product": 1.45}, "wave_speed_reserve": 2.2,
+      "attack_s": 0.01, "attack_decay_s": 0.026
+    },
+    {
+      "note": "Eb6", "midi": 87, "target_hz": 1244.5079348883237, "valves_semitones": [2],
+      "lip_frequency_hz": 1394, "blowing_pressure_pa": 19600, "rest_y_m": 0.00002, "tuning_m": -0.005,
+      "lip_parameters": {"quality": 7, "mass_product": 1.43}, "wave_speed_reserve": 2.2,
+      "attack_s": 0.01, "attack_decay_s": 0.026
+    },
+    {
+      "note": "F6", "midi": 89, "target_hz": 1396.9129257320155, "valves_semitones": [],
+      "lip_frequency_hz": 1540, "blowing_pressure_pa": 20400, "rest_y_m": 0.00002, "tuning_m": 0.013,
+      "lip_parameters": {"quality": 8, "mass_product": 1.42}, "wave_speed_reserve": 2.2,
+      "attack_s": 0.01, "attack_decay_s": 0.026
+    },
+    {
+      "note": "G6", "midi": 91, "target_hz": 1567.981743926997, "valves_semitones": [1],
+      "lip_frequency_hz": 1725, "blowing_pressure_pa": 21800, "rest_y_m": 0.00002, "tuning_m": -0.015,
+      "lip_parameters": {"quality": 9, "mass_product": 1.4}, "wave_speed_reserve": 2.2,
+      "attack_s": 0.01, "attack_decay_s": 0.026
+    },
+    {
+      "note": "A6", "midi": 93, "target_hz": 1760.0, "valves_semitones": [],
+      "lip_frequency_hz": 1927, "blowing_pressure_pa": 22400, "rest_y_m": 0.00002, "tuning_m": 0.032,
+      "lip_parameters": {"quality": 11, "mass_product": 1.36}, "wave_speed_reserve": 2.2,
+      "attack_s": 0.01, "attack_decay_s": 0.026
+    },
+    {
+      "note": "Bb6", "midi": 94, "target_hz": 1864.6550460723597, "valves_semitones": [],
+      "lip_frequency_hz": 2033, "blowing_pressure_pa": 23000, "rest_y_m": 0.00002, "tuning_m": 0.035,
+      "lip_parameters": {"quality": 12, "mass_product": 1.15}, "wave_speed_reserve": 2.2,
+      "attack_s": 0.01, "attack_decay_s": 0.026
+    }
+  ]
+}

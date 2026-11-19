@@ -1,28 +1,22 @@
 # Brass Instrument Simulator
 
-Physical models for synthesizing trumpet and tenor trombone sounds from the interaction of vibrating lips, a mouthpiece, and an acoustic bore. The project includes CPU models of increasing acoustic complexity and a CUDA solver for nonlinear propagation in an axisymmetric bore.
-
-The current trumpet model combines the two motion coordinates of Adachi and Sato's lip model with cubic stiffness, a distributed mouthpiece, local thermoviscous losses, and a causal bell reflection filter. Pressure waves propagate in both directions, and the returning wave acts on the lips during the simulation.
+Physical sound synthesis for B-flat trumpet, tenor trombone, and BB-flat contrabass tuba. The models couple the two-coordinate lip motion of Adachi and Sato to a mouthpiece and a bore. The CUDA solver models nonlinear propagation in the unfolded axisymmetric bore and couples the bell to a reduced exterior sound field. Reflections from the bell travel back through the bore and act on the lips.
 
 [Model equations and assumptions](docs/models.md) · [References](docs/references.md) · [Geometry and presets](data/README.md) · [Japanese notes](docs/ja/README.md)
 
 ## Audio samples
 
-All samples are ascending B-flat major scales at concert pitch, with A4 = 440 Hz. They are 48 kHz, 16-bit, mono WAV files. Follow a link to open or download a sample.
+These forte scales run from low to high in B-flat major at concert pitch (A4 = 440 Hz). Each contains 22 independently simulated notes and lasts 26.31 s. WAV files are 48 kHz, 16-bit mono. Most notes last 1.08 s and the final high B-flat lasts 1.65 s, with a 90 ms gap after each note.
 
-| Sample | Range | Duration | Model |
-| --- | --- | --- | --- |
-| [Trumpet, current model](samples/trumpet_Bb3_Bb5_major_f_modern_1p5x.wav) | B♭3–B♭5 | 18.12 s | Axisymmetric Euler, cubic lip stiffness, thermoviscous relaxation, second-order bell reflection |
-| [Trombone, stronger attack](samples/trombone_Bb2_Bb4_major_f_strong_attack.wav) | B♭2–B♭4 | 12.08 s | Axisymmetric Euler with a faster, temporarily boosted blowing pressure |
-| [Trombone, standard attack](samples/trombone_Bb2_Bb4_major_f_axisymmetric.wav) | B♭2–B♭4 | 12.08 s | Axisymmetric Euler with the original lip and loss models |
-| [Trumpet, original axisymmetric model](samples/trumpet_Bb3_Bb5_major_f_axisymmetric.wav) | B♭3–B♭5 | 12.08 s | Axisymmetric Euler with the original lip and loss models |
-| [Trumpet, bidirectional waveguide](samples/trumpet_Bb3_Bb5_major_f_bidirectional_nonlinear.wav) | B♭3–B♭5 | 12.08 s | One-dimensional waveguide with nonlinear forward and returning waves |
-| [Trumpet, prescribed-wave propagation](samples/trumpet_Bb3_Bb5_major_f_nonlinear.wav) | B♭3–B♭5 | 12.08 s | One-way generalized Burgers propagation |
-| [Trumpet, linear bore](samples/trumpet_Bb3_Bb5_major_f.wav) | B♭3–B♭5 | 12.08 s | Two-coordinate lips coupled to a linear transfer-matrix bore |
+| Sample | Range | Measurements |
+| --- | --- | --- |
+| [York trumpet with Bach 5C](samples/trumpet_Bach5C_Bb3_Bb6_major_f_strong_attack.wav) | B♭3–B♭6 | [Pitch and radiated pressure](docs/results/trumpet_Bach5C_Bb3_Bb6_measurements.json) |
+| [Conn 8H trombone with Denis Wick 5AL](samples/trombone_5AL_Bb2_Bb5_major_f_strong_attack.wav) | B♭2–B♭5 | [Base forte](docs/results/trombone_5AL_Bb2_Bb5_measurements.json) |
+| [Trombone with higher blowing pressure](samples/trombone_5AL_Bb2_Bb5_major_louder_f_strong_attack.wav) | B♭2–B♭5 | [15% increase in steady blowing pressure](docs/results/trombone_5AL_Bb2_Bb5_louder_f_measurements.json) |
+| [Trombone with higher pressure and a stronger attack](samples/trombone_5AL_Bb2_Bb5_major_stronger_f_strong_attack.wav) | B♭2–B♭5 | [Pressure and onset comparison](docs/results/trombone_5AL_Bb2_Bb5_stronger_f_measurements.json) |
+| [Reconstructed BB♭ tuba with Yamaha BB-67C4](samples/BBb_tuba_Bb1_Bb4_major_f_strong_attack.wav) | B♭1–B♭4 | [Pitch, pressure, and onset](docs/results/BBb_tuba_Bb1_Bb4_measurements.json) |
 
-The current trumpet performance extends each note and gap by a factor of 1.5. The note durations are 1.08 s, with 1.65 s for the final B♭5 and 0.09 s gaps. Attack and release times retain their earlier values. Each note starts from a resting instrument.
-
-Blowing pressures and lip settings are selected for forte playing in each register. Each complete file uses one common output gain. Playback amplitude therefore also depends on the chosen file gain and playback system. [Sample metadata and regeneration commands](samples/README.md)
+Relative to the higher-pressure trombone sample, the stronger-attack version adds another 25% to steady blowing pressure and reduces its rise time from 12 to 6.5 ms. The simulated median pressure level rises by 3.8 dB during sustain and by 6.0 dB in the first 50 ms after acoustic onset. The main scale files use an individual gain for each complete file. A [common-gain excerpt](samples/trombone_5AL_stronger_forte_before_after.wav) preserves the level change, and a [peak-limited listening copy](samples/trombone_5AL_Bb2_Bb5_major_stronger_f_listening.wav) keeps the strongest attacks from setting playback level for the entire scale. [Earlier models, checksums, and sample details](samples/README.md)
 
 ## Install
 
@@ -48,39 +42,27 @@ python -m pip install nvidia-cuda-nvrtc-cu12==12.4.127
 
 The CUDA calculations were run on an NVIDIA RTX 2000 Ada Generation with NVRTC 12.4.127. On Windows, the loader searches installed Python packages, `CUDA_NVRTC_DIR`, and `CUDA_PATH/bin`. On Linux, make `libnvrtc.so.12` and its companion libraries available through the system loader or `LD_LIBRARY_PATH`. Linux execution has not been verified in this project.
 
-## Generate the current trumpet scale
+## Generate the three-octave scales
 
 ```sh
-python src/render_trumpet_modern.py
-python src/verify_trumpet_modern.py
-python src/plot_trumpet_modern.py
+python src/render_trumpet_bach5c.py
+python src/render_trombone_detailed_scale.py
+python src/render_trombone_detailed_scale.py --louder
+python src/render_trombone_detailed_scale.py --stronger
+python src/render_tuba_scale.py
 ```
 
-The audio is written to `output/trumpet_modern/trumpet_Bb3_Bb5_major_f_modern_1p5x.wav`. The same directory holds per-note traces, measurements, verification results, and an input-impedance plot. Cached traces are keyed by model source, geometry, duration, and performance settings.
+The WAV and per-note measurements are written under `output/trumpet_bach5c/`, `output/trombone_detailed_scale/`, `output/trombone_louder_forte/`, `output/trombone_stronger_forte/`, and `output/tuba_axisymmetric/`, respectively. Generate the trombone variants in the listed order to include their pressure comparisons to the preceding version. The presets specify the lip frequency, blowing pressure, rest opening, fingerings or slide positions, and length offsets for each note.
 
-For a shorter first run, compute one sustained note.
+To try one note first, use a shorter simulation.
 
 ```sh
-python src/render_trumpet_modern.py --only Bb4 --probe 0.45
+python src/render_trumpet_bach5c.py --only Bb4 --probe 0.45
+python src/render_trombone_detailed_scale.py --only Bb3 --probe 0.45
+python src/render_tuba_scale.py --only Bb1 --probe 0.45
 ```
 
-This command saves a trace and prints measurements. A full-scale WAV is produced by the command without `--only` or `--probe`.
-
-The saved performance combines `data/performance_axisymmetric.json` with overrides in `data/performance_trumpet_modern.json`. These contain the lip frequency, blowing pressure, equilibrium opening, valve combination, and tuning length for each note.
-
-## Generate the trombone scale
-
-```sh
-python src/verify_trombone.py
-python src/trombone_axisymmetric.py
-python src/verify_trombone.py --coupling
-python src/plot_trombone.py
-python src/render_trombone_attack.py --preset data/performance_trombone_attack.json
-```
-
-The standard performance is written to `output/trombone_axisymmetric/` and the stronger-attack performance to `output/trombone_attack/`. Generate the standard performance first because the attack renderer uses its measurements and traces for comparison.
-
-The trombone uses its own bore, mouthpiece, slide positions, and lip dimensions. Its preset uses the original wall-loss and bell-load approximations. The cubic stiffness and newer thermoviscous closure are enabled in the current trumpet renderer.
+The probe commands save diagnostics for the selected notes. The full-scale commands produce the assembled WAVs.
 
 ## Run a CPU model
 
@@ -104,29 +86,22 @@ The prescribed-wave approximation is available through `python src/render_nonlin
 
 ## Models and geometry
 
-The trumpet bore is digitized from the York B-flat trumpet in Figure 7.52 of Campbell, Gilbert, and Myers, *The Science of Brass Instruments*. The trombone uses the Conn 8H profile in Figure 4.22. A mouthpiece cup, throat, and backbore are included for each instrument. Some mouthpiece dimensions are inferred and calibrated to published volume or resonance data.
+The York trumpet bore and Conn 8H taper are digitized from Campbell, Gilbert, and Myers, *The Science of Brass Instruments*. The trumpet uses a published Bach 5C contour. The trombone's 5AL profile is reconstructed from a cup drawing and calibrated to length, volume, and detached-mouthpiece resonance. The tuba combines an Alexander C-tuba bore scaled to BB♭, Alexander 163 nominal valve and bell dimensions, and a BB-67C4 mouthpiece reconstructed from dimensional and volume measurements. [Geometry and sources](docs/references.md)
 
 The CUDA solver evolves density, axial and radial momentum, and total energy using annular finite volumes, MUSCL reconstruction, an HLLC flux with HLLE fallback, and two-stage SSP Runge–Kutta integration. This conservative formulation can capture shock waves. Lip flow and cup pressure are coupled through the instantaneous returning acoustic characteristic.
 
-The current trumpet adds a positive cubic restoring term to the transverse lip motion. The coefficient is a modeling choice informed by artificial-lip research. Local circular-duct Bessel responses are approximated with positive relaxation modes for viscous and thermal losses. The bell uses Silva and colleagues' causal second-order approximation for an unflanged circular opening.
-
-The emitted sound is estimated from the time derivative of the bell volume flow using a compact monopole at 1 m. Bore bends are unfolded into an axisymmetric profile. Wall vibration, resolved turbulent jets, the player's vocal tract, an exterior radiation grid, and room acoustics would require additional modeling. Geometry digitization and fitted performance settings limit comparisons with a particular physical instrument. [Equations, provenance, and validation scope](docs/models.md)
+The three-octave renderers use local circular-duct thermoviscous losses and four aperture modes at the bell. An equivalent sphere supplies the reflected wave and the radiated pressure at 1 m on axis. The trumpet also includes a cubic transverse lip stiffness. The unfolded bore and reduced exterior preserve axisymmetry. Curved valve passages, wall vibration, resolved turbulent jets, the player's vocal tract, and room acoustics require additional models. [Equations and assumptions](docs/models.md)
 
 ## Numerical checks
 
-The shared Euler solver includes a Sod shock-tube check, conservation checks, and a cylindrical radial-mode check.
+The shared Euler solver includes a Sod shock-tube check, conservation checks, and a cylindrical radial-mode check. The exterior validator checks stability, passivity, reciprocity, and agreement between two implementations of the spherical-wave reflection.
 
 ```sh
 python src/verify_axisymmetric.py
+python src/verify_bell_exterior.py
 ```
 
-The current trumpet verification also checks the bell reflection magnitude, thermoviscous fit errors, weak-pulse input impedance, and the effect of disabling return-wave coupling. Published measurements for the included samples are in [docs/results](docs/results).
-
-For the current trumpet sample, the largest late-sustain pitch error is about 8.2 cents. D4, E♭4, and F4 have cycle-to-cycle variation. At B♭4, disabling the return-wave coupling removes sustained oscillation in the tested configuration.
-
-![Input impedance of the same trumpet geometry with the previous and current wall and bell models](docs/figures/trumpet_modern_impedance.png)
-
-This plot compares two numerical models on the same geometry and mesh. The resonance locations and peak heights can also be affected by the mesh, the digitized profile, and the mouthpiece reconstruction.
+Checks on the rendered WAVs put the late-sustain pitch error within about 12 cents for the Bach 5C trumpet, within 12 cents for all three 5AL trombone variants, and within 10 cents for the tuba. The reports also identify weak cycle-to-cycle variations where present. These checks describe the rendered performances, whose geometries and player settings have been reconstructed or fitted. [Results and numerical checks](docs/results/)
 
 ## Repository layout
 

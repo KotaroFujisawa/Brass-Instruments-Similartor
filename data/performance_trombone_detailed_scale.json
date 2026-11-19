@@ -1,0 +1,30 @@
+{
+  "C5": {
+    "position": 1, "trim_m": -0.025, "lip_frequency_hz": 543, "blowing_pressure_pa": 8100,
+    "lip_parameters": {"quality": 5.0, "mass_product": 2.60}
+  },
+  "D5": {
+    "position": 1, "trim_m": -0.030, "lip_frequency_hz": 624, "blowing_pressure_pa": 8700,
+    "lip_parameters": {"quality": 5.5, "mass_product": 2.55}
+  },
+  "Eb5": {
+    "position": 3, "trim_m": -0.022, "lip_frequency_hz": 665, "blowing_pressure_pa": 9100,
+    "lip_parameters": {"quality": 6.0, "mass_product": 2.50}
+  },
+  "F5": {
+    "position": 1, "trim_m": -0.017, "lip_frequency_hz": 754, "blowing_pressure_pa": 9700,
+    "lip_parameters": {"quality": 6.5, "mass_product": 2.45}
+  },
+  "G5": {
+    "position": 1, "trim_m": 0.093, "lip_frequency_hz": 852, "blowing_pressure_pa": 10500,
+    "lip_parameters": {"quality": 7.0, "mass_product": 2.40}
+  },
+  "A5": {
+    "position": 1, "trim_m": -0.015, "lip_frequency_hz": 958, "blowing_pressure_pa": 11500,
+    "lip_parameters": {"quality": 8.0, "mass_product": 2.30}
+  },
+  "Bb5": {
+    "position": 6, "trim_m": -0.075, "lip_frequency_hz": 1015, "blowing_pressure_pa": 12200,
+    "lip_parameters": {"quality": 9.0, "mass_product": 2.20}
+  }
+}

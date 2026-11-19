@@ -26,9 +26,12 @@ def simulate(device, s, duration, *, probe=False, feedback=True, **model):
     mesh = trumpet_mesh(s['valves_semitones'], tuning=s.get('tuning_m', 0.))
     t0 = time.perf_counter()
     hold = duration if probe else duration-.14
+    lip_parameters = model.pop('lip_parameters', {}) | s.get('lip_parameters', {})
     with Run(device, mesh, duration, lip_hz=s['lip_frequency_hz'],
              pressure=s['blowing_pressure_pa'], rest_y=s['rest_y_m'],
-             attack=s.get('attack_s', .045), hold=hold, feedback=feedback, **model) as run:
+             attack=s.get('attack_s', .045), attack_boost=s.get('attack_boost', 0.),
+             attack_decay=s.get('attack_decay_s', .024), lip_parameters=lip_parameters,
+             hold=hold, feedback=feedback, guard=s.get('wave_speed_reserve', 1.58), **model) as run:
         run.until()
         trace = run.history()
         if not np.isfinite(trace).all():

@@ -1,0 +1,6 @@
+{
+  "C4": {"trim_m": -0.01},
+  "D5": {"lip_frequency_hz": 654, "trim_m": 0.009},
+  "Eb5": {"lip_frequency_hz": 694, "trim_m": 0.018},
+  "Bb5": {"trim_m": -0.104, "lip_frequency_hz": 1024}
+}
