@@ -1,5 +1,7 @@
 # Geometry, presets, and provenance
 
+English · [日本語](README.ja.md)
+
 All lengths are in metres and all frequencies are in hertz unless a field name states another unit. Bore tables describe distance along an unfolded instrument centerline. The source graphs and the inferred dimensions are documented in [the model notes](../docs/models.md) and [references](../docs/references.md).
 
 | File | Contents |
