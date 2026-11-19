@@ -10,7 +10,19 @@ B♭トランペット、テナー・トロンボーン、BB♭コントラバ�
 
 ### ブラウザーで試聴
 
-<!-- GitHubのプレーヤーをここに挿入 -->
+再生ボタンを押すと、その場で音を聴けます。音が出ない場合はプレーヤーのミュートを解除してください。
+
+#### トランペット（Bach 5C、実音B♭3〜B♭6）
+
+https://github.com/user-attachments/assets/651233dd-1de2-4166-8f5f-820ce01c32ef
+
+#### トロンボーン（Denis Wick 5AL、実音B♭2〜B♭5）
+
+https://github.com/user-attachments/assets/f14650f5-a03d-4423-8e90-08169da3e7cf
+
+#### BB♭チューバ（Yamaha BB-67C4、実音B♭1〜B♭4）
+
+https://github.com/user-attachments/assets/14725a97-9721-4e2b-aa10-3815647df5f2
 
 ### 音源と測定結果
 
