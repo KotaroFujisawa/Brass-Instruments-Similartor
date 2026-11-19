@@ -24,6 +24,18 @@ https://github.com/user-attachments/assets/f14650f5-a03d-4423-8e90-08169da3e7cf
 
 https://github.com/user-attachments/assets/14725a97-9721-4e2b-aa10-3815647df5f2
 
+#### ユーフォニアム（実音B♭1〜B♭5）
+
+https://github.com/user-attachments/assets/7abb8c92-bccd-42b8-a587-10e82c34ed69
+
+#### B♭管オフィクレイド（実音B♭1〜B♭4）
+
+https://github.com/user-attachments/assets/0ddcb7b4-f377-4d7e-b65f-2890d1c7e8ff
+
+#### F／B♭ダブルホルン（実音B♭1〜B♭5）
+
+https://github.com/user-attachments/assets/63ab0943-60c4-411d-bc52-bcacbac094dd
+
 ### 音源と測定結果
 
 | 音声 | 実音域 | 測定結果 |
