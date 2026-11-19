@@ -1,0 +1,2409 @@
+{
+  "render": {
+    "instrument": "ophicleide",
+    "gpu": "NVIDIA RTX 2000 Ada Generation",
+    "wav": "ophicleide_Bb1_Bb4_major_f_strong_attack.wav",
+    "duration_s": 26.31,
+    "sample_rate_hz": 48000,
+    "bit_depth": 16,
+    "channels": 1,
+    "common_gain_fs_per_pa": 0.1870189861240742,
+    "bell": "coupled spherical exterior, receiver on axis 1 m beyond the bell",
+    "side_holes": "free-field monopoles of the coupled side-hole flows",
+    "max_sustained_pitch_error_cents": 12.772884362215988,
+    "notes": [
+      {
+        "note": "Bb1",
+        "target_hz": 58.27047018976124,
+        "audio_frequency_hz": 58.18326666175869,
+        "audio_period_frequency_hz": 58.18326666175869,
+        "subharmonic_odd_to_even": null,
+        "cents": -2.592784897705869,
+        "periodicity": 1.0001540917100262,
+        "radiated_rms_pa": 0.21805923000218408,
+        "mouthpiece_rms_pa": 1327.1568603515625,
+        "incoming_characteristic_rms_pa": 1278.695556640625,
+        "boundary_residual_pa": 0.00024127960205078125,
+        "attack_rms_pa": 0.1777150399399425,
+        "peak_blowing_pressure_pa": 2537.5,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 6e-05,
+          "trim_m": 0.2,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 4.6,
+            "quality": 3.9
+          },
+          "note": "Bb1",
+          "midi": 34,
+          "target_hz": 58.27047018976124,
+          "open_holes": [
+            1
+          ],
+          "lip_frequency_hz": 63.9,
+          "blowing_pressure_pa": 1750
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1622,
+        "axial_cells": 353,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 3.053685,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.20407028381903494,
+        "tonehole_rms_pa": 0.023994583680255623,
+        "open_toneholes": [
+          [
+            2.7791518202764975,
+            0.0335,
+            0.007
+          ]
+        ],
+        "compute_wall_s": 35.254581100074574,
+        "start_s": 0.0
+      },
+      {
+        "note": "C2",
+        "target_hz": 65.40639132514966,
+        "audio_frequency_hz": 65.14369782119167,
+        "audio_period_frequency_hz": 65.14369782119167,
+        "subharmonic_odd_to_even": null,
+        "cents": -6.967204010320749,
+        "periodicity": 0.9990149995474935,
+        "radiated_rms_pa": 0.21680009354067437,
+        "mouthpiece_rms_pa": 1365.142333984375,
+        "incoming_characteristic_rms_pa": 1271.8406982421875,
+        "boundary_residual_pa": 0.000240325927734375,
+        "attack_rms_pa": 0.19257200165806188,
+        "peak_blowing_pressure_pa": 2755.0,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 5.7e-05,
+          "trim_m": -0.102,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 4.55,
+            "quality": 4
+          },
+          "note": "C2",
+          "midi": 36,
+          "target_hz": 65.40639132514966,
+          "open_holes": [
+            1,
+            2,
+            3
+          ],
+          "lip_frequency_hz": 70.1,
+          "blowing_pressure_pa": 1900
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1486,
+        "axial_cells": 323,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.751685,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.18276882046788478,
+        "tonehole_rms_pa": 0.05014585964144084,
+        "open_toneholes": [
+          [
+            2.504985921658986,
+            0.0335,
+            0.007
+          ],
+          [
+            2.37214795639844,
+            0.0235,
+            0.0065
+          ],
+          [
+            2.2393099911378944,
+            0.0215,
+            0.006
+          ]
+        ],
+        "compute_wall_s": 35.43580890004523,
+        "start_s": 1.17
+      },
+      {
+        "note": "D2",
+        "target_hz": 73.41619197935188,
+        "audio_frequency_hz": 73.52698930060258,
+        "audio_period_frequency_hz": 73.52698930060258,
+        "subharmonic_odd_to_even": null,
+        "cents": 2.6107523979730214,
+        "periodicity": 1.0008690942564413,
+        "radiated_rms_pa": 0.11856310762502237,
+        "mouthpiece_rms_pa": 544.0001831054688,
+        "incoming_characteristic_rms_pa": 394.0308532714844,
+        "boundary_residual_pa": 9.1552734375e-05,
+        "attack_rms_pa": 0.14265377722461126,
+        "peak_blowing_pressure_pa": 2914.5,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 5.4e-05,
+          "trim_m": 0.0166,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 4.5,
+            "quality": 4.1
+          },
+          "note": "D2",
+          "midi": 38,
+          "target_hz": 73.41619197935188,
+          "open_holes": [
+            5
+          ],
+          "lip_frequency_hz": 73.32,
+          "blowing_pressure_pa": 2010
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1536,
+        "axial_cells": 335,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.870285,
+        "bell_radius_m": 0.10750000000000001,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.10590559255247345,
+        "tonehole_rms_pa": 0.013515982264632681,
+        "open_toneholes": [
+          [
+            1.9665983924140376,
+            0.02,
+            0.0055
+          ]
+        ],
+        "compute_wall_s": 36.11314720008522,
+        "start_s": 2.34
+      },
+      {
+        "note": "Eb2",
+        "target_hz": 77.78174593052023,
+        "audio_frequency_hz": 77.74178229159526,
+        "audio_period_frequency_hz": 77.74178229159526,
+        "subharmonic_odd_to_even": null,
+        "cents": -0.8897227930102976,
+        "periodicity": 0.9994447319452396,
+        "radiated_rms_pa": 0.13142168196318366,
+        "mouthpiece_rms_pa": 905.0113525390625,
+        "incoming_characteristic_rms_pa": 754.4500732421875,
+        "boundary_residual_pa": 0.00012969970703125,
+        "attack_rms_pa": 0.14657084850522978,
+        "peak_blowing_pressure_pa": 3074.0,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 5.1e-05,
+          "trim_m": 0.018,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 4.45,
+            "quality": 4.2
+          },
+          "note": "Eb2",
+          "midi": 39,
+          "target_hz": 77.78174593052023,
+          "open_holes": [
+            1,
+            5,
+            6
+          ],
+          "lip_frequency_hz": 77.4,
+          "blowing_pressure_pa": 2120
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1536,
+        "axial_cells": 335,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.8716850000000003,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.1010607870742188,
+        "tonehole_rms_pa": 0.03356847984997366,
+        "open_toneholes": [
+          [
+            2.613926013824885,
+            0.0335,
+            0.007
+          ],
+          [
+            1.9675457869549804,
+            0.02,
+            0.0055
+          ],
+          [
+            1.8059507302375044,
+            0.018,
+            0.005
+          ]
+        ],
+        "compute_wall_s": 36.8422133999411,
+        "start_s": 3.51
+      },
+      {
+        "note": "F2",
+        "target_hz": 87.30705785825097,
+        "audio_frequency_hz": 87.56679304828259,
+        "audio_period_frequency_hz": 87.56679304828259,
+        "subharmonic_odd_to_even": null,
+        "cents": 5.142709822532739,
+        "periodicity": 0.9999735170132903,
+        "radiated_rms_pa": 0.17343650377193998,
+        "mouthpiece_rms_pa": 1157.0653076171875,
+        "incoming_characteristic_rms_pa": 1034.953857421875,
+        "boundary_residual_pa": 0.000240325927734375,
+        "attack_rms_pa": 0.1852591151398397,
+        "peak_blowing_pressure_pa": 3248.0,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 4.8e-05,
+          "trim_m": 0.067,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 4.4,
+            "quality": 4.2
+          },
+          "note": "F2",
+          "midi": 41,
+          "target_hz": 87.30705785825097,
+          "open_holes": [
+            1,
+            7
+          ],
+          "lip_frequency_hz": 83.3,
+          "blowing_pressure_pa": 2240
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1556,
+        "axial_cells": 340,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.920685,
+        "bell_radius_m": 0.10749999999999998,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.1461811086277521,
+        "tonehole_rms_pa": 0.03105762191268133,
+        "open_toneholes": [
+          [
+            2.658409884792627,
+            0.0335,
+            0.007
+          ],
+          [
+            1.5195306345267634,
+            0.0168,
+            0.005
+          ]
+        ],
+        "compute_wall_s": 35.00830979994498,
+        "start_s": 4.68
+      },
+      {
+        "note": "G2",
+        "target_hz": 97.99885899543733,
+        "audio_frequency_hz": 97.60900168300256,
+        "audio_period_frequency_hz": 97.60900168300256,
+        "subharmonic_odd_to_even": null,
+        "cents": -6.900900044605931,
+        "periodicity": 0.9995055781560138,
+        "radiated_rms_pa": 0.2301370047459156,
+        "mouthpiece_rms_pa": 1529.32568359375,
+        "incoming_characteristic_rms_pa": 1434.738525390625,
+        "boundary_residual_pa": 0.000244140625,
+        "attack_rms_pa": 0.24040402527402582,
+        "peak_blowing_pressure_pa": 3364.0,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 4.6e-05,
+          "trim_m": 0,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 4.35,
+            "quality": 4.3
+          },
+          "note": "G2",
+          "midi": 43,
+          "target_hz": 97.99885899543733,
+          "open_holes": [
+            1,
+            8
+          ],
+          "lip_frequency_hz": 92,
+          "blowing_pressure_pa": 2320
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1530,
+        "axial_cells": 333,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.8536850000000005,
+        "bell_radius_m": 0.10750000000000001,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.20036752478867326,
+        "tonehole_rms_pa": 0.036456717136250705,
+        "open_toneholes": [
+          [
+            2.597585,
+            0.0335,
+            0.007
+          ],
+          [
+            1.2688199999999998,
+            0.0155,
+            0.0045
+          ]
+        ],
+        "compute_wall_s": 35.79226340004243,
+        "start_s": 5.85
+      },
+      {
+        "note": "A2",
+        "target_hz": 110.0,
+        "audio_frequency_hz": 109.75565470397697,
+        "audio_period_frequency_hz": 109.75565470397697,
+        "subharmonic_odd_to_even": null,
+        "cents": -3.849903849819005,
+        "periodicity": 0.9996159546347587,
+        "radiated_rms_pa": 0.8282987873327756,
+        "mouthpiece_rms_pa": 2887.607666015625,
+        "incoming_characteristic_rms_pa": 2846.028564453125,
+        "boundary_residual_pa": 0.000484466552734375,
+        "attack_rms_pa": 0.6343994313315228,
+        "peak_blowing_pressure_pa": 3509.0,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 4.4e-05,
+          "trim_m": -0.069,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 4.3,
+            "quality": 4.3
+          },
+          "note": "A2",
+          "midi": 45,
+          "target_hz": 110.0,
+          "open_holes": [],
+          "lip_frequency_hz": 114,
+          "blowing_pressure_pa": 2420
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1500,
+        "axial_cells": 326,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.7846850000000005,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.8282368266585678,
+        "tonehole_rms_pa": 0.0,
+        "open_toneholes": [],
+        "compute_wall_s": 35.97270300006494,
+        "start_s": 7.02
+      },
+      {
+        "note": "Bb2",
+        "target_hz": 116.54094037952248,
+        "audio_frequency_hz": 116.64235518003878,
+        "audio_period_frequency_hz": 116.64235518003878,
+        "subharmonic_odd_to_even": null,
+        "cents": 1.505877737783093,
+        "periodicity": 1.0000038684921897,
+        "radiated_rms_pa": 0.5771697062222789,
+        "mouthpiece_rms_pa": 2308.40673828125,
+        "incoming_characteristic_rms_pa": 2239.96044921875,
+        "boundary_residual_pa": 0.000484466552734375,
+        "attack_rms_pa": 0.5168592463646178,
+        "peak_blowing_pressure_pa": 3668.5,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 4.2e-05,
+          "trim_m": -0.225,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 4.25,
+            "quality": 4.4
+          },
+          "note": "Bb2",
+          "midi": 46,
+          "target_hz": 116.54094037952248,
+          "open_holes": [
+            1
+          ],
+          "lip_frequency_hz": 120,
+          "blowing_pressure_pa": 2530
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1428,
+        "axial_cells": 311,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.6286850000000004,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.5039385093081081,
+        "tonehole_rms_pa": 0.08963459156580879,
+        "open_toneholes": [
+          [
+            2.39332232718894,
+            0.0335,
+            0.007
+          ]
+        ],
+        "compute_wall_s": 31.31990720005706,
+        "start_s": 8.19
+      },
+      {
+        "note": "C3",
+        "target_hz": 130.8127826502993,
+        "audio_frequency_hz": 131.55484406016424,
+        "audio_period_frequency_hz": 65.77742203008212,
+        "subharmonic_odd_to_even": 0.08885747808773663,
+        "cents": 9.793017690147945,
+        "periodicity": 0.9998177273050183,
+        "radiated_rms_pa": 0.25210632812818906,
+        "mouthpiece_rms_pa": 716.9668579101562,
+        "incoming_characteristic_rms_pa": 587.0516357421875,
+        "boundary_residual_pa": 0.0001220703125,
+        "attack_rms_pa": 0.26462887520256295,
+        "peak_blowing_pressure_pa": 3842.5,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 3.9e-05,
+          "trim_m": -0.205,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 4.2,
+            "quality": 4.5
+          },
+          "note": "C3",
+          "midi": 48,
+          "target_hz": 130.8127826502993,
+          "open_holes": [
+            1,
+            4
+          ],
+          "lip_frequency_hz": 137.0,
+          "blowing_pressure_pa": 2650
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1438,
+        "axial_cells": 313,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.6486850000000004,
+        "bell_radius_m": 0.10750000000000001,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.19910083013986066,
+        "tonehole_rms_pa": 0.0554099095513719,
+        "open_toneholes": [
+          [
+            2.4114790092165896,
+            0.0335,
+            0.007
+          ],
+          [
+            2.0283001010280044,
+            0.0205,
+            0.0055
+          ]
+        ],
+        "compute_wall_s": 36.016591999912634,
+        "start_s": 9.36
+      },
+      {
+        "note": "D3",
+        "target_hz": 146.8323839587038,
+        "audio_frequency_hz": 146.9857439366459,
+        "audio_period_frequency_hz": 146.9857439366459,
+        "subharmonic_odd_to_even": null,
+        "cents": 1.8072543147030307,
+        "periodicity": 1.0001193355310367,
+        "radiated_rms_pa": 0.35150628373693343,
+        "mouthpiece_rms_pa": 1435.5045166015625,
+        "incoming_characteristic_rms_pa": 1336.750244140625,
+        "boundary_residual_pa": 0.000240325927734375,
+        "attack_rms_pa": 0.36264790961052135,
+        "peak_blowing_pressure_pa": 4103.5,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 3.6e-05,
+          "trim_m": 0.075,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 4.15,
+            "quality": 4.7
+          },
+          "note": "D3",
+          "midi": 50,
+          "target_hz": 146.8323839587038,
+          "open_holes": [
+            1,
+            5
+          ],
+          "lip_frequency_hz": 141.9,
+          "blowing_pressure_pa": 2830
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1564,
+        "axial_cells": 341,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.928685,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.2850700936238326,
+        "tonehole_rms_pa": 0.07428514681590395,
+        "open_toneholes": [
+          [
+            2.6656725576036866,
+            0.0335,
+            0.007
+          ],
+          [
+            2.0061182789790855,
+            0.02,
+            0.0055
+          ]
+        ],
+        "compute_wall_s": 19.065119999926537,
+        "start_s": 10.53
+      },
+      {
+        "note": "Eb3",
+        "target_hz": 155.56349186104046,
+        "audio_frequency_hz": 156.3682307617554,
+        "audio_period_frequency_hz": 156.3682307617554,
+        "subharmonic_odd_to_even": null,
+        "cents": 8.93268863257689,
+        "periodicity": 0.9998357532181592,
+        "radiated_rms_pa": 0.36871471859817306,
+        "mouthpiece_rms_pa": 1681.1929931640625,
+        "incoming_characteristic_rms_pa": 1581.5615234375,
+        "boundary_residual_pa": 0.000244140625,
+        "attack_rms_pa": 0.37111466344816124,
+        "peak_blowing_pressure_pa": 4292.0,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 3.3e-05,
+          "trim_m": 0.019,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 4.1,
+            "quality": 4.8
+          },
+          "note": "Eb3",
+          "midi": 51,
+          "target_hz": 155.56349186104046,
+          "open_holes": [
+            1,
+            5,
+            6
+          ],
+          "lip_frequency_hz": 160,
+          "blowing_pressure_pa": 2960
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1536,
+        "axial_cells": 335,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.8726850000000006,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.28932914299278223,
+        "tonehole_rms_pa": 0.09098869437557161,
+        "open_toneholes": [
+          [
+            2.6148338479262674,
+            0.0335,
+            0.007
+          ],
+          [
+            1.9682224973413684,
+            0.02,
+            0.0055
+          ],
+          [
+            1.8065696596951435,
+            0.018,
+            0.005
+          ]
+        ],
+        "compute_wall_s": 37.13028690009378,
+        "start_s": 11.7
+      },
+      {
+        "note": "F3",
+        "target_hz": 174.61411571650194,
+        "audio_frequency_hz": 174.60653465249828,
+        "audio_period_frequency_hz": 174.60653465249828,
+        "subharmonic_odd_to_even": null,
+        "cents": -0.07516506323139958,
+        "periodicity": 1.0000253341652605,
+        "radiated_rms_pa": 0.6871840397055611,
+        "mouthpiece_rms_pa": 2068.950439453125,
+        "incoming_characteristic_rms_pa": 1993.3182373046875,
+        "boundary_residual_pa": 0.0002593994140625,
+        "attack_rms_pa": 0.6453902328975596,
+        "peak_blowing_pressure_pa": 4480.5,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 3e-05,
+          "trim_m": -0.195,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 4.05,
+            "quality": 5
+          },
+          "note": "F3",
+          "midi": 53,
+          "target_hz": 174.61411571650194,
+          "open_holes": [
+            1
+          ],
+          "lip_frequency_hz": 182,
+          "blowing_pressure_pa": 3090
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1442,
+        "axial_cells": 314,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.658685,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.5878065123979827,
+        "tonehole_rms_pa": 0.12089222758915492,
+        "open_toneholes": [
+          [
+            2.420557350230415,
+            0.0335,
+            0.007
+          ]
+        ],
+        "compute_wall_s": 16.11130480002612,
+        "start_s": 12.87
+      },
+      {
+        "note": "G3",
+        "target_hz": 195.99771799087463,
+        "audio_frequency_hz": 197.44911855471784,
+        "audio_period_frequency_hz": 197.44911855471784,
+        "subharmonic_odd_to_even": null,
+        "cents": 12.772884362215988,
+        "periodicity": 1.000040143051854,
+        "radiated_rms_pa": 0.39367150541725454,
+        "mouthpiece_rms_pa": 993.897705078125,
+        "incoming_characteristic_rms_pa": 881.7101440429688,
+        "boundary_residual_pa": 0.0001220703125,
+        "attack_rms_pa": 0.391538273434362,
+        "peak_blowing_pressure_pa": 4799.5,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 2.7e-05,
+          "trim_m": -0.139,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 4,
+            "quality": 5.2
+          },
+          "note": "G3",
+          "midi": 55,
+          "target_hz": 195.99771799087463,
+          "open_holes": [
+            1,
+            2,
+            3
+          ],
+          "lip_frequency_hz": 208,
+          "blowing_pressure_pa": 3310
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1462,
+        "axial_cells": 319,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.7146850000000002,
+        "bell_radius_m": 0.10750000000000001,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.27285006727063754,
+        "tonehole_rms_pa": 0.13034156277706388,
+        "open_toneholes": [
+          [
+            2.471396059907834,
+            0.0335,
+            0.007
+          ],
+          [
+            2.3403943229351296,
+            0.0235,
+            0.0065
+          ],
+          [
+            2.209392585962425,
+            0.0215,
+            0.006
+          ]
+        ],
+        "compute_wall_s": 16.35303380014375,
+        "start_s": 14.04
+      },
+      {
+        "note": "A3",
+        "target_hz": 220.0,
+        "audio_frequency_hz": 219.3756542395933,
+        "audio_period_frequency_hz": 219.3756542395933,
+        "subharmonic_odd_to_even": null,
+        "cents": -4.920114967164194,
+        "periodicity": 0.9999050102517736,
+        "radiated_rms_pa": 1.196781667225656,
+        "mouthpiece_rms_pa": 2549.524658203125,
+        "incoming_characteristic_rms_pa": 2505.8564453125,
+        "boundary_residual_pa": 0.000469207763671875,
+        "attack_rms_pa": 1.000246204121608,
+        "peak_blowing_pressure_pa": 5133.0,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 2.4e-05,
+          "trim_m": -0.084,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 3.95,
+            "quality": 5.4
+          },
+          "note": "A3",
+          "midi": 57,
+          "target_hz": 220.0,
+          "open_holes": [],
+          "lip_frequency_hz": 229,
+          "blowing_pressure_pa": 3540
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1496,
+        "axial_cells": 325,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.7696850000000004,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 1.196620183984173,
+        "tonehole_rms_pa": 0.0,
+        "open_toneholes": [],
+        "compute_wall_s": 30.607868999941275,
+        "start_s": 15.21
+      },
+      {
+        "note": "Bb3",
+        "target_hz": 233.08188075904496,
+        "audio_frequency_hz": 233.35840818867345,
+        "audio_period_frequency_hz": 233.35840818867345,
+        "subharmonic_odd_to_even": null,
+        "cents": 2.05271186517832,
+        "periodicity": 0.9999963815838396,
+        "radiated_rms_pa": 0.8239922044919351,
+        "mouthpiece_rms_pa": 1888.1844482421875,
+        "incoming_characteristic_rms_pa": 1801.3853759765625,
+        "boundary_residual_pa": 0.0002593994140625,
+        "attack_rms_pa": 0.7102698117989397,
+        "peak_blowing_pressure_pa": 5408.5,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 2.1e-05,
+          "trim_m": -0.234,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 3.9,
+            "quality": 5.6
+          },
+          "note": "Bb3",
+          "midi": 58,
+          "target_hz": 233.08188075904496,
+          "open_holes": [
+            1
+          ],
+          "lip_frequency_hz": 245,
+          "blowing_pressure_pa": 3730
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1426,
+        "axial_cells": 310,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.6196850000000005,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.7070257584376973,
+        "tonehole_rms_pa": 0.15181616142727888,
+        "open_toneholes": [
+          [
+            2.385151820276498,
+            0.0335,
+            0.007
+          ]
+        ],
+        "compute_wall_s": 26.36929880012758,
+        "start_s": 16.38
+      },
+      {
+        "note": "C4",
+        "target_hz": 261.6255653005986,
+        "audio_frequency_hz": 261.08981324222225,
+        "audio_period_frequency_hz": 261.08981324222225,
+        "subharmonic_odd_to_even": null,
+        "cents": -3.5488243437156908,
+        "periodicity": 1.000005781286978,
+        "radiated_rms_pa": 0.5322682677062099,
+        "mouthpiece_rms_pa": 1255.4991455078125,
+        "incoming_characteristic_rms_pa": 1153.9844970703125,
+        "boundary_residual_pa": 0.000152587890625,
+        "attack_rms_pa": 0.4422431249757797,
+        "peak_blowing_pressure_pa": 5742.0,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 1.9e-05,
+          "trim_m": 0.06,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 3.85,
+            "quality": 5.8
+          },
+          "note": "C4",
+          "midi": 60,
+          "target_hz": 261.6255653005986,
+          "open_holes": [
+            1,
+            2,
+            3
+          ],
+          "lip_frequency_hz": 276,
+          "blowing_pressure_pa": 3960
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1552,
+        "axial_cells": 339,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.913685,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.39249948785363936,
+        "tonehole_rms_pa": 0.17946925390832072,
+        "open_toneholes": [
+          [
+            2.6520550460829493,
+            0.0335,
+            0.007
+          ],
+          [
+            2.5111773785891525,
+            0.0235,
+            0.0065
+          ],
+          [
+            2.3702997110953565,
+            0.0215,
+            0.006
+          ]
+        ],
+        "compute_wall_s": 16.136006300104782,
+        "start_s": 17.55
+      },
+      {
+        "note": "D4",
+        "target_hz": 293.6647679174076,
+        "audio_frequency_hz": 294.74549734504836,
+        "audio_period_frequency_hz": 294.74549734504836,
+        "subharmonic_odd_to_even": null,
+        "cents": 6.359500495897565,
+        "periodicity": 0.9999895164287161,
+        "radiated_rms_pa": 0.8842520787131215,
+        "mouthpiece_rms_pa": 1749.2060546875,
+        "incoming_characteristic_rms_pa": 1666.0423583984375,
+        "boundary_residual_pa": 0.000244140625,
+        "attack_rms_pa": 0.7795175084927931,
+        "peak_blowing_pressure_pa": 6090.0,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 1.7e-05,
+          "trim_m": -0.222,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 3.8,
+            "quality": 6
+          },
+          "note": "D4",
+          "midi": 62,
+          "target_hz": 293.6647679174076,
+          "open_holes": [
+            1
+          ],
+          "lip_frequency_hz": 315,
+          "blowing_pressure_pa": 4200
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1428,
+        "axial_cells": 311,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.6316850000000005,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.7719605233630584,
+        "tonehole_rms_pa": 0.16484032387343384,
+        "open_toneholes": [
+          [
+            2.396045829493088,
+            0.0335,
+            0.007
+          ]
+        ],
+        "compute_wall_s": 22.58413999993354,
+        "start_s": 18.72
+      },
+      {
+        "note": "Eb4",
+        "target_hz": 311.1269837220809,
+        "audio_frequency_hz": 311.63337258639865,
+        "audio_period_frequency_hz": 155.81668629319933,
+        "subharmonic_odd_to_even": 0.07758578442218127,
+        "cents": 2.8154580756832543,
+        "periodicity": 0.999960567645102,
+        "radiated_rms_pa": 0.5589631369363659,
+        "mouthpiece_rms_pa": 887.732666015625,
+        "incoming_characteristic_rms_pa": 802.268798828125,
+        "boundary_residual_pa": 0.0001220703125,
+        "attack_rms_pa": 0.5337186012330423,
+        "peak_blowing_pressure_pa": 6423.5,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 1.5e-05,
+          "trim_m": -0.116,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 3.75,
+            "quality": 6.2
+          },
+          "note": "Eb4",
+          "midi": 63,
+          "target_hz": 311.1269837220809,
+          "open_holes": [
+            1,
+            2
+          ],
+          "lip_frequency_hz": 334,
+          "blowing_pressure_pa": 4430
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1484,
+        "axial_cells": 322,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.7376850000000004,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.45220383837884187,
+        "tonehole_rms_pa": 0.1573430815795538,
+        "open_toneholes": [
+          [
+            2.4922762442396316,
+            0.0335,
+            0.007
+          ],
+          [
+            2.3601330680609713,
+            0.0235,
+            0.0065
+          ]
+        ],
+        "compute_wall_s": 29.734411499928683,
+        "start_s": 19.89
+      },
+      {
+        "note": "F4",
+        "target_hz": 349.2282314330039,
+        "audio_frequency_hz": 348.5812296352241,
+        "audio_period_frequency_hz": 348.5812296352241,
+        "subharmonic_odd_to_even": null,
+        "cents": -3.2103659396900226,
+        "periodicity": 1.00000763320225,
+        "radiated_rms_pa": 0.8226694579538153,
+        "mouthpiece_rms_pa": 976.2069702148438,
+        "incoming_characteristic_rms_pa": 875.1797485351562,
+        "boundary_residual_pa": 0.000152587890625,
+        "attack_rms_pa": 0.7238013086447788,
+        "peak_blowing_pressure_pa": 6757.0,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 1.3e-05,
+          "trim_m": -0.214,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 3.7,
+            "quality": 6.5
+          },
+          "note": "F4",
+          "midi": 65,
+          "target_hz": 349.2282314330039,
+          "open_holes": [
+            1
+          ],
+          "lip_frequency_hz": 367.5,
+          "blowing_pressure_pa": 4660
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1432,
+        "axial_cells": 312,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.6396850000000005,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.7228161545989231,
+        "tonehole_rms_pa": 0.16400467704225238,
+        "open_toneholes": [
+          [
+            2.4033085023041476,
+            0.0335,
+            0.007
+          ]
+        ],
+        "compute_wall_s": 16.343502999981865,
+        "start_s": 21.06
+      },
+      {
+        "note": "G4",
+        "target_hz": 391.99543598174927,
+        "audio_frequency_hz": 393.6142563302179,
+        "audio_period_frequency_hz": 393.6142563302179,
+        "subharmonic_odd_to_even": null,
+        "cents": 7.134741082277489,
+        "periodicity": 0.9900972863133488,
+        "radiated_rms_pa": 0.7028226104056778,
+        "mouthpiece_rms_pa": 1251.26171875,
+        "incoming_characteristic_rms_pa": 1175.5633544921875,
+        "boundary_residual_pa": 0.000152587890625,
+        "attack_rms_pa": 0.5084662196521648,
+        "peak_blowing_pressure_pa": 7090.5,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 1.2e-05,
+          "trim_m": -0.069,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 3.65,
+            "quality": 6.8
+          },
+          "note": "G4",
+          "midi": 67,
+          "target_hz": 391.99543598174927,
+          "open_holes": [
+            1,
+            2,
+            3
+          ],
+          "lip_frequency_hz": 425,
+          "blowing_pressure_pa": 4890
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1500,
+        "axial_cells": 326,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.7846850000000005,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 0.6227096434083383,
+        "tonehole_rms_pa": 0.2201141612381518,
+        "open_toneholes": [
+          [
+            2.5349444470046083,
+            0.0335,
+            0.007
+          ],
+          [
+            2.4004687646224743,
+            0.0235,
+            0.0065
+          ],
+          [
+            2.2659930822403407,
+            0.0215,
+            0.006
+          ]
+        ],
+        "compute_wall_s": 16.196510899811983,
+        "start_s": 22.23
+      },
+      {
+        "note": "A4",
+        "target_hz": 440.0,
+        "audio_frequency_hz": 438.17423329738403,
+        "audio_period_frequency_hz": 438.17423329738403,
+        "subharmonic_odd_to_even": null,
+        "cents": -7.198649005066029,
+        "periodicity": 1.0000088333328592,
+        "radiated_rms_pa": 2.750209194323562,
+        "mouthpiece_rms_pa": 2607.54345703125,
+        "incoming_characteristic_rms_pa": 2511.516845703125,
+        "boundary_residual_pa": 0.000274658203125,
+        "attack_rms_pa": 2.224676970461853,
+        "peak_blowing_pressure_pa": 9651.2001953125,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 1.1e-05,
+          "trim_m": -0.005,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 3.6,
+            "quality": 7.1
+          },
+          "note": "A4",
+          "midi": 69,
+          "target_hz": 440.0,
+          "open_holes": [],
+          "lip_frequency_hz": 477.4,
+          "blowing_pressure_pa": 6656
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "cells": 1530,
+        "axial_cells": 333,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.848685,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 2.74954398854934,
+        "tonehole_rms_pa": 0.0,
+        "open_toneholes": [],
+        "compute_wall_s": 16.182719399919733,
+        "start_s": 23.4
+      },
+      {
+        "note": "Bb4",
+        "target_hz": 466.1637615180899,
+        "audio_frequency_hz": 467.0979828180203,
+        "audio_period_frequency_hz": 467.0979828180203,
+        "subharmonic_odd_to_even": null,
+        "cents": 3.4660292760237517,
+        "periodicity": 0.9999960131195115,
+        "radiated_rms_pa": 1.2807180756944578,
+        "mouthpiece_rms_pa": 1080.032470703125,
+        "incoming_characteristic_rms_pa": 967.97705078125,
+        "boundary_residual_pa": 0.000152587890625,
+        "attack_rms_pa": 1.1854312815734647,
+        "peak_blowing_pressure_pa": 9222.0,
+        "preset": {
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 1e-05,
+          "trim_m": -0.22,
+          "wave_speed_reserve": 1.78,
+          "lip_parameters": {
+            "mass_product": 3.55,
+            "quality": 8.4
+          },
+          "note": "Bb4",
+          "midi": 70,
+          "target_hz": 466.1637615180899,
+          "open_holes": [
+            1
+          ],
+          "lip_frequency_hz": 499.0,
+          "blowing_pressure_pa": 6360
+        },
+        "duration_s": 1.65,
+        "sustained_window_s": [
+          1.23,
+          1.47
+        ],
+        "cells": 1428,
+        "axial_cells": 311,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1584000,
+        "bell_rings": 16,
+        "bore_length_m": 2.6336850000000003,
+        "bell_radius_m": 0.1075,
+        "reconstruction_fallbacks": 0,
+        "bell_rms_pa": 1.292960327788242,
+        "tonehole_rms_pa": 0.22528967278967063,
+        "open_toneholes": [
+          [
+            2.3978614976958523,
+            0.0335,
+            0.007
+          ]
+        ],
+        "compute_wall_s": 24.68704009987414,
+        "start_s": 24.57
+      }
+    ]
+  },
+  "independent_wav_check": {
+    "filename": "ophicleide_Bb1_Bb4_major_f_strong_attack.wav",
+    "sha256": "3814a0c6a319228e9af8746b0e89a990f0aa1dc1a116574e2ddb8446eda65f90",
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 1262880,
+    "duration_s": 26.31,
+    "note_count": 22,
+    "note_duration_s": [
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.65
+    ],
+    "inter_note_and_final_gap_s": 0.09,
+    "pcm_peak": 30146,
+    "clipped_samples": 0,
+    "common_gain_fs_per_pa": 0.1870189861240742,
+    "attack_window_s": [
+      0.018,
+      0.105
+    ],
+    "early_pitch_window_s": [
+      0.17,
+      0.41
+    ],
+    "minimum_search_pitch_hz": 24.0,
+    "allowed_pitch_error_cents": 16.0,
+    "sustained_max_abs_pitch_error_cents": 12.521450282360973,
+    "calibrated_sustained_pressure_pa": {
+      "count": 22,
+      "min": 0.11856161615390472,
+      "median": 0.5455940212698704,
+      "max": 2.7499719583115296
+    },
+    "calibrated_attack_pressure_pa": {
+      "count": 22,
+      "min": 0.14265486054408574,
+      "median": 0.47535505365054953,
+      "max": 2.2246774571027332
+    },
+    "sustained_spl_db": {
+      "count": 22,
+      "min": 75.45828230056222,
+      "median": 88.71419563310889,
+      "max": 102.76596539305176
+    },
+    "onset_20_percent_ms": {
+      "count": 22,
+      "min": 6.8125,
+      "median": 14.15625,
+      "max": 36.916666666666664
+    },
+    "onset_50_percent_ms": {
+      "count": 22,
+      "min": 13.447916666666666,
+      "median": 22.989583333333332,
+      "max": 52.166666666666664
+    },
+    "onset_definition": "First RMS-window center whose level stays above the fraction of late RMS for 12 ms. Windows use max(5 ms, one target period). Times are relative to the note start in the WAV. The renderer omits external travel time.",
+    "gate_failures": [],
+    "review": [
+      "C3 has weak 2-cycle modulation during sustain",
+      "C3 has weak 2-cycle modulation during early",
+      "Eb4 has weak 2-cycle modulation during sustain",
+      "Eb4 has weak 2-cycle modulation during early",
+      "G4 has weak 2-cycle modulation during sustain",
+      "G4 has weak 2-cycle modulation during early"
+    ],
+    "notes": [
+      {
+        "note": "Bb1",
+        "midi": 34,
+        "target_hz": 58.27047018976124,
+        "start_s": 0.0,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 58.200475715117335,
+          "periodicity": 0.9999970331858183,
+          "period_frequency_hz": 58.200475715117335,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 58.200475715117335,
+          "target_periodicity": 0.9999970331858183,
+          "cents": -2.080807902716976
+        },
+        "early": {
+          "frequency_hz": 58.199098211645854,
+          "periodicity": 0.9999953251169523,
+          "period_frequency_hz": 58.199098211645854,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 58.199098211645854,
+          "target_periodicity": 0.9999953251169523,
+          "cents": -2.121783669761497
+        },
+        "sustained_rms_pa": 0.21805767278882837,
+        "attack_rms_pa": 0.17771487709776523,
+        "attack_peak_pa": 0.46164758507629544,
+        "sustained_spl_db": 80.75082754242612,
+        "attack_relative_to_sustained_db": -1.77695174472959,
+        "renderer_pitch_hz": 58.18326666175869,
+        "decoded_pitch_delta_cents": 0.5119769949885772,
+        "renderer_sustained_rms_pa": 0.21805923000218408,
+        "renderer_steady_blowing_pressure_pa": 1750,
+        "renderer_peak_blowing_pressure_pa": 2537.5,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 14.895833333333334,
+        "onset_50_percent_ms": 21.895833333333332
+      },
+      {
+        "note": "C2",
+        "midi": 36,
+        "target_hz": 65.40639132514966,
+        "start_s": 1.17,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 65.13663957845927,
+          "periodicity": 0.999982874077178,
+          "period_frequency_hz": 65.13663957845927,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 65.13663957845927,
+          "target_periodicity": 0.999982874077178,
+          "cents": -7.154791337783238
+        },
+        "early": {
+          "frequency_hz": 65.13513883776099,
+          "periodicity": 0.9999536189044484,
+          "period_frequency_hz": 65.13513883776099,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 65.13513883776099,
+          "target_periodicity": 0.9999536189044484,
+          "cents": -7.194679231037995
+        },
+        "sustained_rms_pa": 0.21679781532561118,
+        "attack_rms_pa": 0.19257169794264897,
+        "attack_peak_pa": 0.47437593842940645,
+        "sustained_spl_db": 80.70049811666615,
+        "attack_relative_to_sustained_db": -1.0292488363269494,
+        "renderer_pitch_hz": 65.14369782119167,
+        "decoded_pitch_delta_cents": -0.18758732746261253,
+        "renderer_sustained_rms_pa": 0.21680009354067437,
+        "renderer_steady_blowing_pressure_pa": 1900,
+        "renderer_peak_blowing_pressure_pa": 2755.0,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 13.416666666666666,
+        "onset_50_percent_ms": 20.25
+      },
+      {
+        "note": "D2",
+        "midi": 38,
+        "target_hz": 73.41619197935188,
+        "start_s": 2.34,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 73.53976802480769,
+          "periodicity": 0.9999898913612126,
+          "period_frequency_hz": 73.53976802480769,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 73.53976802480769,
+          "target_periodicity": 0.9999898913612126,
+          "cents": 2.9116084568882736
+        },
+        "early": {
+          "frequency_hz": 73.52678232934733,
+          "periodicity": 0.9999673121780065,
+          "period_frequency_hz": 73.52678232934733,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 73.52678232934733,
+          "target_periodicity": 0.9999673121780065,
+          "cents": 2.605879137255965
+        },
+        "sustained_rms_pa": 0.11856161615390472,
+        "attack_rms_pa": 0.14265486054408574,
+        "attack_peak_pa": 0.5491142183745967,
+        "sustained_spl_db": 75.45828230056222,
+        "attack_relative_to_sustained_db": 1.6068492571611155,
+        "renderer_pitch_hz": 73.52698930060258,
+        "decoded_pitch_delta_cents": 0.30085605891524286,
+        "renderer_sustained_rms_pa": 0.11856310762502237,
+        "renderer_steady_blowing_pressure_pa": 2010,
+        "renderer_peak_blowing_pressure_pa": 2914.5,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 6.8125,
+        "onset_50_percent_ms": 15.375
+      },
+      {
+        "note": "Eb2",
+        "midi": 39,
+        "target_hz": 77.78174593052023,
+        "start_s": 3.51,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 77.72789002403685,
+          "periodicity": 0.9999637876862013,
+          "period_frequency_hz": 77.72789002403685,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 77.72789002403685,
+          "target_periodicity": 0.9999637876862013,
+          "cents": -1.1991177550200351
+        },
+        "early": {
+          "frequency_hz": 77.73200393901281,
+          "periodicity": 0.9999919732451599,
+          "period_frequency_hz": 77.73200393901281,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 77.73200393901281,
+          "target_periodicity": 0.9999919732451599,
+          "cents": -1.1074909115755818
+        },
+        "sustained_rms_pa": 0.1314143046610947,
+        "attack_rms_pa": 0.14656943895871588,
+        "attack_peak_pa": 0.3679799591187862,
+        "sustained_spl_db": 76.35225291589117,
+        "attack_relative_to_sustained_db": 0.9480156799039042,
+        "renderer_pitch_hz": 77.74178229159526,
+        "decoded_pitch_delta_cents": -0.30939496200956224,
+        "renderer_sustained_rms_pa": 0.13142168196318366,
+        "renderer_steady_blowing_pressure_pa": 2120,
+        "renderer_peak_blowing_pressure_pa": 3074.0,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 7.302083333333333,
+        "onset_50_percent_ms": 16.21875
+      },
+      {
+        "note": "F2",
+        "midi": 41,
+        "target_hz": 87.30705785825097,
+        "start_s": 4.68,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 87.57944437239752,
+          "periodicity": 0.9999930363649604,
+          "period_frequency_hz": 87.57944437239752,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 87.57944437239752,
+          "target_periodicity": 0.9999930363649604,
+          "cents": 5.392814003292416
+        },
+        "early": {
+          "frequency_hz": 87.58453104813024,
+          "periodicity": 0.9999888175021543,
+          "period_frequency_hz": 87.58453104813024,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 87.58453104813024,
+          "target_periodicity": 0.9999888175021543,
+          "cents": 5.493362374684578
+        },
+        "sustained_rms_pa": 0.17343185968895033,
+        "attack_rms_pa": 0.1852607703009358,
+        "attack_peak_pa": 0.5314903445010584,
+        "sustained_spl_db": 78.7619777068641,
+        "attack_relative_to_sustained_db": 0.5730916895418798,
+        "renderer_pitch_hz": 87.56679304828259,
+        "decoded_pitch_delta_cents": 0.2501041807597729,
+        "renderer_sustained_rms_pa": 0.17343650377193998,
+        "renderer_steady_blowing_pressure_pa": 2240,
+        "renderer_peak_blowing_pressure_pa": 3248.0,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 8.333333333333334,
+        "onset_50_percent_ms": 18.770833333333332
+      },
+      {
+        "note": "G2",
+        "midi": 43,
+        "target_hz": 97.99885899543733,
+        "start_s": 5.85,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 97.60545327117157,
+          "periodicity": 0.9999946569914459,
+          "period_frequency_hz": 97.60545327117157,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 97.60545327117157,
+          "target_periodicity": 0.9999946569914459,
+          "cents": -6.963837303878516
+        },
+        "early": {
+          "frequency_hz": 97.60761451137788,
+          "periodicity": 0.9999943644736504,
+          "period_frequency_hz": 97.60761451137788,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 97.60761451137788,
+          "target_periodicity": 0.9999943644736504,
+          "cents": -6.925503675130965
+        },
+        "sustained_rms_pa": 0.2301379825923564,
+        "attack_rms_pa": 0.24040391472677466,
+        "attack_peak_pa": 0.6878206331200372,
+        "sustained_spl_db": 81.21916612101913,
+        "attack_relative_to_sustained_db": 0.3790646741117773,
+        "renderer_pitch_hz": 97.60900168300256,
+        "decoded_pitch_delta_cents": -0.06293725927252938,
+        "renderer_sustained_rms_pa": 0.2301370047459156,
+        "renderer_steady_blowing_pressure_pa": 2320,
+        "renderer_peak_blowing_pressure_pa": 3364.0,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 12.333333333333334,
+        "onset_50_percent_ms": 18.875
+      },
+      {
+        "note": "A2",
+        "midi": 45,
+        "target_hz": 110.0,
+        "start_s": 7.02,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 109.77446837255142,
+          "periodicity": 0.9999984733428201,
+          "period_frequency_hz": 109.77446837255142,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 109.77446837255142,
+          "target_periodicity": 0.9999984733428201,
+          "cents": -3.5531713263071665
+        },
+        "early": {
+          "frequency_hz": 109.760651482699,
+          "periodicity": 0.9999169427428942,
+          "period_frequency_hz": 109.760651482699,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 109.760651482699,
+          "target_periodicity": 0.9999169427428942,
+          "cents": -3.7710888076840123
+        },
+        "sustained_rms_pa": 0.8282669628155109,
+        "attack_rms_pa": 0.6343985942038587,
+        "attack_peak_pa": 2.014017142103796,
+        "sustained_spl_db": 92.34280686567807,
+        "attack_relative_to_sustained_db": -2.3161625402504624,
+        "renderer_pitch_hz": 109.75565470397697,
+        "decoded_pitch_delta_cents": 0.2967325235117667,
+        "renderer_sustained_rms_pa": 0.8282987873327756,
+        "renderer_steady_blowing_pressure_pa": 2420,
+        "renderer_peak_blowing_pressure_pa": 3509.0,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 17.041666666666668,
+        "onset_50_percent_ms": 34.708333333333336
+      },
+      {
+        "note": "Bb2",
+        "midi": 46,
+        "target_hz": 116.54094037952248,
+        "start_s": 8.19,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 116.66838753181054,
+          "periodicity": 0.9999951706751565,
+          "period_frequency_hz": 116.66838753181054,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 116.66838753181054,
+          "target_periodicity": 0.9999951706751565,
+          "cents": 1.8922130897496536
+        },
+        "early": {
+          "frequency_hz": 116.66287665452695,
+          "periodicity": 0.9999868576797337,
+          "period_frequency_hz": 116.66287665452695,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 116.66287665452695,
+          "target_periodicity": 0.9999868576797337,
+          "cents": 1.8104356354627948
+        },
+        "sustained_rms_pa": 0.5771547839349124,
+        "attack_rms_pa": 0.5168576587696139,
+        "attack_peak_pa": 1.3828213630033677,
+        "sustained_spl_db": 89.20524608273247,
+        "attack_relative_to_sustained_db": -0.9584268758114316,
+        "renderer_pitch_hz": 116.64235518003878,
+        "decoded_pitch_delta_cents": 0.38633535196664137,
+        "renderer_sustained_rms_pa": 0.5771697062222789,
+        "renderer_steady_blowing_pressure_pa": 2530,
+        "renderer_peak_blowing_pressure_pa": 3668.5,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 12.979166666666666,
+        "onset_50_percent_ms": 22.145833333333332
+      },
+      {
+        "note": "C3",
+        "midi": 48,
+        "target_hz": 130.8127826502993,
+        "start_s": 9.36,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 131.57271562152806,
+          "periodicity": 0.999985652353533,
+          "period_frequency_hz": 65.78635781076403,
+          "subharmonic_odd_even_peak_ratio": 0.08871050446524707,
+          "target_period_frequency_hz": 131.54282611735968,
+          "target_periodicity": 0.973021977404841,
+          "cents": 10.028187701438808
+        },
+        "early": {
+          "frequency_hz": 131.58094495753514,
+          "periodicity": 0.9999886989479423,
+          "period_frequency_hz": 65.79047247876757,
+          "subharmonic_odd_even_peak_ratio": 0.08929483965849794,
+          "target_period_frequency_hz": 131.63573263799546,
+          "target_periodicity": 0.9726933858516,
+          "cents": 10.136465934543697
+        },
+        "sustained_rms_pa": 0.2520998035548666,
+        "attack_rms_pa": 0.2646275070597478,
+        "attack_peak_pa": 0.8075977018531587,
+        "sustained_spl_db": 82.01085023189779,
+        "attack_relative_to_sustained_db": 0.4212495651825609,
+        "renderer_pitch_hz": 131.55484406016424,
+        "decoded_pitch_delta_cents": 0.2351700112904191,
+        "renderer_sustained_rms_pa": 0.25210632812818906,
+        "renderer_steady_blowing_pressure_pa": 2650,
+        "renderer_peak_blowing_pressure_pa": 3842.5,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 8.53125,
+        "onset_50_percent_ms": 13.447916666666666
+      },
+      {
+        "note": "D3",
+        "midi": 50,
+        "target_hz": 146.8323839587038,
+        "start_s": 10.53,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 146.9645705695914,
+          "periodicity": 0.9999913210772828,
+          "period_frequency_hz": 146.9645705695914,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 146.9645705695914,
+          "target_periodicity": 0.9999913210772828,
+          "cents": 1.5578512541678216
+        },
+        "early": {
+          "frequency_hz": 146.96819150778057,
+          "periodicity": 0.9999924486341965,
+          "period_frequency_hz": 146.96819150778057,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 146.96819150778057,
+          "target_periodicity": 0.9999924486341965,
+          "cents": 1.6005051688844518
+        },
+        "sustained_rms_pa": 0.3515113249727584,
+        "attack_rms_pa": 0.36264787521086345,
+        "attack_peak_pa": 0.9366762595750922,
+        "sustained_spl_db": 84.89818651986545,
+        "attack_relative_to_sustained_db": 0.27091631148799006,
+        "renderer_pitch_hz": 146.9857439366459,
+        "decoded_pitch_delta_cents": -0.24940306053497704,
+        "renderer_sustained_rms_pa": 0.35150628373693343,
+        "renderer_steady_blowing_pressure_pa": 2830,
+        "renderer_peak_blowing_pressure_pa": 4103.5,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 10.760416666666666,
+        "onset_50_percent_ms": 17.197916666666668
+      },
+      {
+        "note": "Eb3",
+        "midi": 51,
+        "target_hz": 155.56349186104046,
+        "start_s": 11.7,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 156.39620747779398,
+          "periodicity": 0.9999867010622631,
+          "period_frequency_hz": 156.39620747779398,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 156.39620747779398,
+          "target_periodicity": 0.9999867010622631,
+          "cents": 9.24240570775871
+        },
+        "early": {
+          "frequency_hz": 156.39337396598756,
+          "periodicity": 0.999990921770527,
+          "period_frequency_hz": 156.39337396598756,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 156.39337396598756,
+          "target_periodicity": 0.999990921770527,
+          "cents": 9.211039751800831
+        },
+        "sustained_rms_pa": 0.3687003160059944,
+        "attack_rms_pa": 0.3711147839912054,
+        "attack_peak_pa": 0.8346862487328565,
+        "sustained_spl_db": 85.3128702833559,
+        "attack_relative_to_sustained_db": 0.05669491447979496,
+        "renderer_pitch_hz": 156.3682307617554,
+        "decoded_pitch_delta_cents": 0.3097170751819503,
+        "renderer_sustained_rms_pa": 0.36871471859817306,
+        "renderer_steady_blowing_pressure_pa": 2960,
+        "renderer_peak_blowing_pressure_pa": 4292.0,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 12.364583333333334,
+        "onset_50_percent_ms": 20.322916666666668
+      },
+      {
+        "note": "F3",
+        "midi": 53,
+        "target_hz": 174.61411571650194,
+        "start_s": 12.87,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 174.6178116979565,
+          "periodicity": 0.9999756847362635,
+          "period_frequency_hz": 174.6178116979565,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 174.6178116979565,
+          "target_periodicity": 0.9999756847362635,
+          "cents": 0.03664389442552778
+        },
+        "early": {
+          "frequency_hz": 174.61271190931024,
+          "periodicity": 0.9999672683437574,
+          "period_frequency_hz": 174.61271190931024,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 174.61271190931024,
+          "target_periodicity": 0.9999672683437574,
+          "cents": -0.013918282424951618
+        },
+        "sustained_rms_pa": 0.687140784668696,
+        "attack_rms_pa": 0.6453914460309401,
+        "attack_peak_pa": 1.495418334973196,
+        "sustained_spl_db": 90.72031461658071,
+        "attack_relative_to_sustained_db": -0.5444504298592779,
+        "renderer_pitch_hz": 174.60653465249828,
+        "decoded_pitch_delta_cents": 0.11180895765708397,
+        "renderer_sustained_rms_pa": 0.6871840397055611,
+        "renderer_steady_blowing_pressure_pa": 3090,
+        "renderer_peak_blowing_pressure_pa": 4480.5,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 12.447916666666666,
+        "onset_50_percent_ms": 23.427083333333332
+      },
+      {
+        "note": "G3",
+        "midi": 55,
+        "target_hz": 195.99771799087463,
+        "start_s": 14.04,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 197.42044430784748,
+          "periodicity": 0.9999911385317983,
+          "period_frequency_hz": 197.42044430784748,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 197.42044430784748,
+          "target_periodicity": 0.9999911385317983,
+          "cents": 12.521450282360973
+        },
+        "early": {
+          "frequency_hz": 197.42705701893277,
+          "periodicity": 0.9999683397551127,
+          "period_frequency_hz": 197.42705701893277,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 197.42705701893277,
+          "target_periodicity": 0.9999683397551127,
+          "cents": 12.579437989260851
+        },
+        "sustained_rms_pa": 0.3936757435116069,
+        "attack_rms_pa": 0.39153874705512615,
+        "attack_peak_pa": 0.9090981606433516,
+        "sustained_spl_db": 85.882173214448,
+        "attack_relative_to_sustained_db": -0.04727819322950012,
+        "renderer_pitch_hz": 197.44911855471784,
+        "decoded_pitch_delta_cents": -0.2514340798550816,
+        "renderer_sustained_rms_pa": 0.39367150541725454,
+        "renderer_steady_blowing_pressure_pa": 3310,
+        "renderer_peak_blowing_pressure_pa": 4799.5,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 11.510416666666666,
+        "onset_50_percent_ms": 22.552083333333332
+      },
+      {
+        "note": "A3",
+        "midi": 57,
+        "target_hz": 220.0,
+        "start_s": 15.21,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 219.3015548004457,
+          "periodicity": 0.9999667630169372,
+          "period_frequency_hz": 219.3015548004457,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 219.3015548004457,
+          "target_periodicity": 0.9999667630169372,
+          "cents": -5.50497996878982
+        },
+        "early": {
+          "frequency_hz": 219.27916384796674,
+          "periodicity": 0.9997700647818293,
+          "period_frequency_hz": 219.27916384796674,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 219.27916384796674,
+          "target_periodicity": 0.9997700647818293,
+          "cents": -5.6817500715692955
+        },
+        "sustained_rms_pa": 1.1967519123314414,
+        "attack_rms_pa": 1.0002457386153312,
+        "attack_peak_pa": 2.604253732849982,
+        "sustained_spl_db": 95.53948268929588,
+        "attack_relative_to_sustained_db": -1.5579484062994107,
+        "renderer_pitch_hz": 219.3756542395933,
+        "decoded_pitch_delta_cents": -0.5848650016255874,
+        "renderer_sustained_rms_pa": 1.196781667225656,
+        "renderer_steady_blowing_pressure_pa": 3540,
+        "renderer_peak_blowing_pressure_pa": 5133.0,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 23.6875,
+        "onset_50_percent_ms": 32.458333333333336
+      },
+      {
+        "note": "Bb3",
+        "midi": 58,
+        "target_hz": 233.08188075904496,
+        "start_s": 16.38,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 233.4183604981006,
+          "periodicity": 0.9999891252449852,
+          "period_frequency_hz": 233.4183604981006,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 233.4183604981006,
+          "target_periodicity": 0.9999891252449852,
+          "cents": 2.497427570560311
+        },
+        "early": {
+          "frequency_hz": 233.41433336420772,
+          "periodicity": 0.9998831760405114,
+          "period_frequency_hz": 233.41433336420772,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 233.41433336420772,
+          "target_periodicity": 0.9998831760405114,
+          "cents": 2.467558577204147
+        },
+        "sustained_rms_pa": 0.8239485664515421,
+        "attack_rms_pa": 0.710270780810509,
+        "attack_peak_pa": 1.6765525942290065,
+        "sustained_spl_db": 92.29740213611295,
+        "attack_relative_to_sustained_db": -1.289523069587233,
+        "renderer_pitch_hz": 233.35840818867345,
+        "decoded_pitch_delta_cents": 0.44471570538191046,
+        "renderer_sustained_rms_pa": 0.8239922044919351,
+        "renderer_steady_blowing_pressure_pa": 3730,
+        "renderer_peak_blowing_pressure_pa": 5408.5,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 24.791666666666668,
+        "onset_50_percent_ms": 33.0
+      },
+      {
+        "note": "C4",
+        "midi": 60,
+        "target_hz": 261.6255653005986,
+        "start_s": 17.55,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 261.10203811412765,
+          "periodicity": 0.9999924116713327,
+          "period_frequency_hz": 261.10203811412765,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 261.10203811412765,
+          "target_periodicity": 0.9999924116713327,
+          "cents": -3.467765574081421
+        },
+        "early": {
+          "frequency_hz": 261.10956131929686,
+          "periodicity": 0.9999843368611403,
+          "period_frequency_hz": 261.10956131929686,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 261.10956131929686,
+          "target_periodicity": 0.9999843368611403,
+          "cents": -3.417883767694603
+        },
+        "sustained_rms_pa": 0.5322555164791112,
+        "attack_rms_pa": 0.44224381216768743,
+        "attack_peak_pa": 0.9843259926405846,
+        "sustained_spl_db": 88.50180351293969,
+        "attack_relative_to_sustained_db": -1.609168125855036,
+        "renderer_pitch_hz": 261.08981324222225,
+        "decoded_pitch_delta_cents": 0.0810587696342015,
+        "renderer_sustained_rms_pa": 0.5322682677062099,
+        "renderer_steady_blowing_pressure_pa": 3960,
+        "renderer_peak_blowing_pressure_pa": 5742.0,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 32.6875,
+        "onset_50_percent_ms": 40.9375
+      },
+      {
+        "note": "D4",
+        "midi": 62,
+        "target_hz": 293.6647679174076,
+        "start_s": 18.72,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 294.7416502933416,
+          "periodicity": 0.9999848359180139,
+          "period_frequency_hz": 294.7416502933416,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 294.7416502933416,
+          "target_periodicity": 0.9999848359180139,
+          "cents": 6.336904085000194
+        },
+        "early": {
+          "frequency_hz": 294.74302377984634,
+          "periodicity": 0.9998934463741002,
+          "period_frequency_hz": 294.74302377984634,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 294.74302377984634,
+          "target_periodicity": 0.9998934463741002,
+          "cents": 6.344971560568321
+        },
+        "sustained_rms_pa": 0.8842125055371071,
+        "attack_rms_pa": 0.7795189044719031,
+        "attack_peak_pa": 1.771199324290601,
+        "sustained_spl_db": 92.91053314469863,
+        "attack_relative_to_sustained_db": -1.0946000194174985,
+        "renderer_pitch_hz": 294.74549734504836,
+        "decoded_pitch_delta_cents": -0.022596410897275272,
+        "renderer_sustained_rms_pa": 0.8842520787131215,
+        "renderer_steady_blowing_pressure_pa": 4200,
+        "renderer_peak_blowing_pressure_pa": 6090.0,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 24.083333333333332,
+        "onset_50_percent_ms": 31.291666666666668
+      },
+      {
+        "note": "Eb4",
+        "midi": 63,
+        "target_hz": 311.1269837220809,
+        "start_s": 19.89,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 311.64477770328506,
+          "periodicity": 0.9999935569705303,
+          "period_frequency_hz": 155.82238885164253,
+          "subharmonic_odd_even_peak_ratio": 0.07787800289330682,
+          "target_period_frequency_hz": 311.6451517623812,
+          "target_periodicity": 0.9864290711069112,
+          "cents": 2.878816390683971
+        },
+        "early": {
+          "frequency_hz": 311.65729962928907,
+          "periodicity": 0.9996806120797844,
+          "period_frequency_hz": 155.82864981464454,
+          "subharmonic_odd_even_peak_ratio": 0.0781192116236896,
+          "target_period_frequency_hz": 311.65176954391933,
+          "target_periodicity": 0.9862359064051188,
+          "cents": 2.948376193063165
+        },
+        "sustained_rms_pa": 0.5589325260606296,
+        "attack_rms_pa": 0.5337183999858764,
+        "attack_peak_pa": 1.2827895603693031,
+        "sustained_spl_db": 88.9265877532781,
+        "attack_relative_to_sustained_db": -0.4009441585621897,
+        "renderer_pitch_hz": 311.63337258639865,
+        "decoded_pitch_delta_cents": 0.06335831500068988,
+        "renderer_sustained_rms_pa": 0.5589631369363659,
+        "renderer_steady_blowing_pressure_pa": 4430,
+        "renderer_peak_blowing_pressure_pa": 6423.5,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 20.791666666666668,
+        "onset_50_percent_ms": 26.979166666666668
+      },
+      {
+        "note": "F4",
+        "midi": 65,
+        "target_hz": 349.2282314330039,
+        "start_s": 21.06,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 348.5102657361161,
+          "periodicity": 0.999966967468236,
+          "period_frequency_hz": 348.5102657361161,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 348.5102657361161,
+          "target_periodicity": 0.999966967468236,
+          "cents": -3.562845118192399
+        },
+        "early": {
+          "frequency_hz": 348.51439978952885,
+          "periodicity": 0.9999219342708345,
+          "period_frequency_hz": 348.51439978952885,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 348.51439978952885,
+          "target_periodicity": 0.9999219342708345,
+          "cents": -3.5423092192983483
+        },
+        "sustained_rms_pa": 0.8225705692304025,
+        "attack_rms_pa": 0.7238000577342859,
+        "attack_peak_pa": 1.5735834792826853,
+        "sustained_spl_db": 92.28286342311594,
+        "attack_relative_to_sustained_db": -1.111091068117453,
+        "renderer_pitch_hz": 348.5812296352241,
+        "decoded_pitch_delta_cents": -0.3524791785022162,
+        "renderer_sustained_rms_pa": 0.8226694579538153,
+        "renderer_steady_blowing_pressure_pa": 4660,
+        "renderer_peak_blowing_pressure_pa": 6757.0,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 23.958333333333332,
+        "onset_50_percent_ms": 33.645833333333336
+      },
+      {
+        "note": "G4",
+        "midi": 67,
+        "target_hz": 391.99543598174927,
+        "start_s": 22.23,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 393.54801135047893,
+          "periodicity": 0.999955351408347,
+          "period_frequency_hz": 196.77400567523947,
+          "subharmonic_odd_even_peak_ratio": 0.07069361155347745,
+          "target_period_frequency_hz": 393.5947489936544,
+          "target_periodicity": 0.9895702109806326,
+          "cents": 6.843351188520171
+        },
+        "early": {
+          "frequency_hz": 393.5353889810234,
+          "periodicity": 0.998933912630684,
+          "period_frequency_hz": 196.7676944905117,
+          "subharmonic_odd_even_peak_ratio": 0.06878257757697982,
+          "target_period_frequency_hz": 393.5006334522317,
+          "target_periodicity": 0.9896031639170088,
+          "cents": 6.787823970504799
+        },
+        "sustained_rms_pa": 0.7027608620133339,
+        "attack_rms_pa": 0.5084662951334116,
+        "attack_peak_pa": 1.1995657115220388,
+        "sustained_spl_db": 90.91555142420597,
+        "attack_relative_to_sustained_db": -2.8109079375498065,
+        "renderer_pitch_hz": 393.6142563302179,
+        "decoded_pitch_delta_cents": -0.29138989375734986,
+        "renderer_sustained_rms_pa": 0.7028226104056778,
+        "renderer_steady_blowing_pressure_pa": 4890,
+        "renderer_peak_blowing_pressure_pa": 7090.5,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 36.916666666666664,
+        "onset_50_percent_ms": 52.166666666666664
+      },
+      {
+        "note": "A4",
+        "midi": 69,
+        "target_hz": 440.0,
+        "start_s": 23.4,
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.6600000000000001,
+          0.9000000000000001
+        ],
+        "sustained": {
+          "frequency_hz": 438.09343459581817,
+          "periodicity": 0.9999807646041197,
+          "period_frequency_hz": 438.09343459581817,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 438.09343459581817,
+          "target_periodicity": 0.9999807646041197,
+          "cents": -7.517915523261064
+        },
+        "early": {
+          "frequency_hz": 438.0429217286844,
+          "periodicity": 0.999947488722563,
+          "period_frequency_hz": 438.0429217286844,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 438.0429217286844,
+          "target_periodicity": 0.999947488722563,
+          "cents": -7.717541060915445
+        },
+        "sustained_rms_pa": 2.7499719583115296,
+        "attack_rms_pa": 2.2246774571027332,
+        "attack_peak_pa": 4.868595157564961,
+        "sustained_spl_db": 102.76596539305176,
+        "attack_relative_to_sustained_db": -1.8412242247524213,
+        "renderer_pitch_hz": 438.17423329738403,
+        "decoded_pitch_delta_cents": -0.31926651819514773,
+        "renderer_sustained_rms_pa": 2.750209194323562,
+        "renderer_steady_blowing_pressure_pa": 6656,
+        "renderer_peak_blowing_pressure_pa": 9651.2001953125,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 25.229166666666668,
+        "onset_50_percent_ms": 30.854166666666668
+      },
+      {
+        "note": "Bb4",
+        "midi": 70,
+        "target_hz": 466.1637615180899,
+        "start_s": 24.57,
+        "duration_s": 1.65,
+        "sustained_window_s": [
+          1.23,
+          1.47
+        ],
+        "sustained": {
+          "frequency_hz": 467.1658452728875,
+          "periodicity": 0.9999945176888974,
+          "period_frequency_hz": 467.1658452728875,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 467.1658452728875,
+          "target_periodicity": 0.9999945176888974,
+          "cents": 3.7175338065288868
+        },
+        "early": {
+          "frequency_hz": 467.15839406437675,
+          "periodicity": 0.9999593162341289,
+          "period_frequency_hz": 467.15839406437675,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 467.15839406437675,
+          "target_periodicity": 0.9999593162341289,
+          "cents": 3.689920724607761
+        },
+        "sustained_rms_pa": 1.280545219601199,
+        "attack_rms_pa": 1.1854319916735563,
+        "attack_peak_pa": 2.2472071028934835,
+        "sustained_spl_db": 96.1272984710643,
+        "attack_relative_to_sustained_db": -0.6703655139368458,
+        "renderer_pitch_hz": 467.0979828180203,
+        "decoded_pitch_delta_cents": 0.25150453050524196,
+        "renderer_sustained_rms_pa": 1.2807180756944578,
+        "renderer_steady_blowing_pressure_pa": 6360,
+        "renderer_peak_blowing_pressure_pa": 9222.0,
+        "gap_nonzero_samples": 0,
+        "onset_20_percent_ms": 21.916666666666668,
+        "onset_50_percent_ms": 26.270833333333332
+      }
+    ],
+    "open_hole_note_count": 19
+  }
+}

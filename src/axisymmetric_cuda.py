@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 import sys
 
-from axisymmetric_mesh import loss_fit
+from axisymmetric_mesh import HOLE_PATCH, loss_fit
 from trumpet import C, ROOT, np
 
 PTR, DEV, INT, UINT, SIZE = ct.c_void_p, ct.c_uint64, ct.c_int, ct.c_uint, ct.c_size_t
@@ -22,6 +22,9 @@ class Config(ct.Structure):
 
 TRUMPET_LIPS = dict(width=.007, thickness=.002, joint=.004, rest_x=.001,
                     mass_product=1.5, cup_area=.00023, quality=3.)
+TONEHOLE = np.dtype([('start','i4'),('stop','i4'),('area','f4'),
+                     ('transition','f4',(4,)),('hold','f4',(2,)),('ramp','f4',(2,))],align=True)
+HOLE_RADIATION_RESISTANCE = .61**2/.25
 
 
 def discretize_radiation(A, B, step):
@@ -58,6 +61,41 @@ def pack_radiation(load, area, step):
     if not np.isfinite(packed).all():
         raise ValueError('Nonfinite exterior load coefficients.')
     return packed, modes, states
+
+
+def tonehole_lengths(radius, height, bore_radius):
+    """Return the effective chimney and radiation relaxation lengths in metres."""
+    # Refer to the internal and matching-volume corrections in
+    # Lefebvre & Scavone, JASA 131 (2012), equations 8 and 12.
+    ratio = min(radius/bore_radius,1.)
+    inner = .82-1.4*ratio**2+.75*ratio**2.7
+    matching = ratio*(1+.207*ratio**3)/8
+    return height+radius*(inner+matching), radius*(.25/.61)
+
+
+def pack_toneholes(mesh, step):
+    """Discretize the open tonehole shunt driven by the outgoing bore characteristic."""
+    holes = mesh.get('toneholes',())
+    if not holes:
+        return np.zeros(1,dtype=TONEHOLE), np.zeros(1,dtype=HOLE_PATCH)
+    packed = np.empty(len(holes),dtype=TONEHOLE)
+    offsets, patches = mesh['hole_offsets'], mesh['hole_patches']
+    if max(np.diff(offsets))>128:
+        raise ValueError('Each tonehole may intersect at most 128 wall faces.')
+    for i,(position,radius,height) in enumerate(holes):
+        bore_radius = np.interp(position,mesh['z'],mesh['radius'])
+        chimney, radiation = tonehole_lengths(radius,height,bore_radius)
+        # v is the hole velocity and m its low-pass memory. The normalized
+        # radiation pressure R*(v-m) tends to i*k*0.61*a + (k*a)^2/4.
+        inverse_chimney, inverse_radiation = C/chimney, C/radiation
+        resistance = HOLE_RADIATION_RESISTANCE
+        A = np.array([[-(1+resistance)*inverse_chimney,resistance*inverse_chimney],
+                      [inverse_radiation,-inverse_radiation]])
+        B = np.array([[inverse_chimney],[0.]])
+        transition, hold, ramp = discretize_radiation(A,B,step)
+        packed[i] = (offsets[i],offsets[i+1],np.pi*radius**2,
+                     transition.ravel(),hold.ravel(),ramp.ravel())
+    return packed, patches
 
 
 def load_nvrtc():
@@ -165,7 +203,7 @@ class Run:
     def __init__(self, device, mesh, seconds, *, lip_hz=490., pressure=7600., rest_y=0.,
                  hold=None, attack=.045, release=.065, mode=0, feedback=True, lip_parameters=None,
                  attack_boost=0., attack_decay=.024, thermoviscous=False, radiation_order=1,
-                 reservoir_inflow=False, exterior_load=None, record_bell=False,
+                 reservoir_inflow=False, exterior_load=None, record_bell=False, record_toneholes=False,
                  initial=None, trace_fs=192000, cfl=.73, guard=1.58, chunk=256):
         self.device=device;self.mesh=mesh;self.trace_fs=trace_fs
         self.chunk=chunk
@@ -196,6 +234,9 @@ class Run:
             theta,weights,self.loss_error=loss_fit()
         bell_rings = int(mesh['rings'][-1])
         self.bell_trace_rings = bell_rings if record_bell else 0
+        tonehole_count = len(mesh.get('toneholes',()))
+        self.tonehole_trace_count = tonehole_count if record_toneholes else None
+        toneholes, hole_patches = pack_toneholes(mesh,self.dt)
         if exterior_load is None:
             exterior_coefficients, radiation_modes, radiation_states = np.zeros(1,'f4'),0,0
         else:
@@ -226,11 +267,18 @@ class Run:
         self.exterior_coefficients=self.upload(exterior_coefficients)
         self.exterior_state=self.upload(np.zeros(max(1,2*radiation_states+radiation_modes),'f4'))
         self.bell_trace=self.upload(np.zeros((self.records,bell_rings) if record_bell else (1,),'f4'))
+        self.toneholes=self.upload(toneholes)
+        self.hole_patches=self.upload(hole_patches)
+        self.hole_state=self.upload(np.zeros((max(1,tonehole_count),5),'f4'))
+        self.tonehole_trace=self.upload(np.zeros((self.records,tonehole_count)
+                                                if self.tonehole_trace_count else (1,),'f4'))
         self.kernels=[]
         for stage in (0,1):
-            self.kernels.append((device.flux,(mesh['inlet']+127)//128+2,self.args(
+            self.kernels.append((device.flux,(mesh['inlet']+127)//128+2+tonehole_count,self.args(
                 self.state,self.predicted,self.cells,self.faces,self.flux,self.config,self.clock,self.boundary,
-                self.exterior_coefficients,self.exterior_state,self.bell_trace,INT(record_bell),INT(stage))))
+                self.exterior_coefficients,self.exterior_state,self.bell_trace,INT(record_bell),
+                self.toneholes,self.hole_patches,self.hole_state,self.tonehole_trace,
+                INT(self.tonehole_trace_count or 0),INT(stage))))
             self.kernels.append((device.advance,(nc+127)//128,self.args(self.state,self.predicted,self.cells,
                 self.flux,self.memory,self.loss_coefficients,self.config,self.clock,self.boundary,self.trace,INT(stage))))
         device.call('cuStreamBeginCapture_v2',self.stream,0)
@@ -284,6 +332,16 @@ class Run:
         if not self.bell_trace_rings:
             raise ValueError('Set record_bell=True to collect bell velocities.')
         return self.download(self.bell_trace,(self.records,self.bell_trace_rings),'f4')[:self.progress//self.stride]
+
+    def tonehole_history(self):
+        """Outward volume flow in m³/s for each open tonehole, in mesh input order."""
+        count = self.tonehole_trace_count
+        if count is None:
+            raise ValueError('Set record_toneholes=True to collect tonehole volume flows.')
+        records = self.progress//self.stride
+        if count==0:
+            return np.empty((records,0),dtype='f4')
+        return self.download(self.tonehole_trace,(self.records,count),'f4')[:records]
 
     def __enter__(self):return self
 

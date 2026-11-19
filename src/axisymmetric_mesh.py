@@ -9,6 +9,8 @@ CELL = np.dtype([('faces', 'i4', (6,)), ('neighbors', 'i4', (4,)),
 FACE = np.dtype([('left', 'i4'), ('right', 'i4'), ('kind', 'i4'),
                  ('nz', 'f4'), ('nr', 'f4'), ('eta_l', 'f4'), ('eta_r', 'f4'),
                  ('area', 'f4'), ('radius2', 'f4')], align=True)
+TONEHOLE_FACE = 5
+HOLE_PATCH = np.dtype([('face', 'i4'), ('open_fraction', 'f4')], align=True)
 
 
 def trumpet_mesh(valves=(), dz=.0035, dr=.003, tuning=0.):
@@ -82,7 +84,32 @@ def refined_trumpet_mesh(valves=(), tuning=0., *, axial_scale=1., dr=.003,
     return grid
 
 
-def annular_mesh(z, radius, dr=.003, loss=True, min_rings=2):
+def tonehole_patches(z, faces, wall_faces, toneholes):
+    """Distribute each circular aperture over the intersected annular wall faces."""
+    offsets = [0]
+    patches = []
+    for position, hole_radius, height in toneholes:
+        if not (np.isfinite([position,hole_radius,height]).all()
+                and hole_radius>0 and height>=0
+                and z[0]<=position-hole_radius and position+hole_radius<=z[-1]):
+            raise ValueError('Each tonehole needs a finite, positive aperture inside the bore wall.')
+        # Integral of the circular aperture's chord along the bore.
+        t = np.clip((z-position)/hole_radius,-1.,1.)
+        disk = hole_radius**2*(t*np.sqrt(1-t*t)+np.arcsin(t))
+        strips = np.diff(disk)
+        columns = np.flatnonzero(strips>0.)
+        selected = wall_faces[columns]
+        fractions = strips[columns]/faces['area'][selected]
+        if not len(selected) or np.any(fractions>1.+1e-6) or np.any(faces['kind'][selected]!=2):
+            raise ValueError('Toneholes must fit the available, nonoverlapping wall faces.')
+        faces['kind'][selected] = TONEHOLE_FACE
+        patches.extend(zip(selected,np.minimum(1.,fractions)))
+        offsets.append(len(patches))
+    return np.asarray(patches,dtype=HOLE_PATCH),np.asarray(offsets,dtype='i4')
+
+
+def annular_mesh(z, radius, dr=.003, loss=True, min_rings=2, *, toneholes=()):
+    """Mesh the complete bore, with optional open `(z, radius, chimney height)` ports."""
     z, radius = np.asarray(z), np.asarray(radius)
     widths = np.diff(z)
     center_r = (radius[:-1]+radius[1:])/2
@@ -128,6 +155,7 @@ def annular_mesh(z, radius, dr=.003, loss=True, min_rings=2):
             if loss:
                 cells['wall_loss'][cid] = 4*np.sqrt(np.pi)*1.045/(632.8*center_r[iz])
 
+    wall_faces = np.empty(len(rings),dtype='i4')
     for iz,n in enumerate(rings):
         a,b = radius[iz:iz+2]
         for j in range(1,n+1):
@@ -137,6 +165,7 @@ def annular_mesh(z, radius, dr=.003, loss=True, min_rings=2):
             area = 2*np.pi*eta*center_r[iz]*widths[iz]*norm
             add(offsets[iz]+j-1,offsets[iz]+j if j<n else -1,
                 1 if j<n else 2,-slope/norm,1/norm,area)
+        wall_faces[iz] = len(faces)-1
         if iz+1 == len(rings):
             continue
         m = rings[iz+1]; sections = max(m,n)
@@ -157,9 +186,13 @@ def annular_mesh(z, radius, dr=.003, loss=True, min_rings=2):
     # Deflate the eigenvalue-based finite-volume limit to leave room for
     # finite-amplitude wave speed, MUSCL, the axis, and nonorthogonal faces.
     length_scale = 2*np.min(volumes/total_area)
-    return dict(cells=cells,faces=np.array(faces,dtype=FACE),inlet=inlet,bell=bell,
+    faces = np.array(faces,dtype=FACE)
+    toneholes = tuple(tuple(hole) for hole in toneholes)
+    patches, hole_offsets = tonehole_patches(z,faces,wall_faces,toneholes)
+    return dict(cells=cells,faces=faces,inlet=inlet,bell=bell,
                 z=z,radius=radius,rings=rings,offsets=offsets,centers=centers,
-                volumes=volumes,length_scale=float(length_scale))
+                volumes=volumes,length_scale=float(length_scale),toneholes=toneholes,
+                hole_patches=patches,hole_offsets=hole_offsets)
 
 
 def loss_fit():
