@@ -1,35 +1,33 @@
-# Geometry, presets, and provenance
+# 形状データ、演奏設定、出典
 
-English · [日本語](README.ja.md)
+長さはメートル、周波数はヘルツで記録しています。別の単位を使う場合は項目名に示します。管体の表には、曲がった管を展開した中心線に沿う距離を記録しています。元の図と推定した寸法は、[モデルの説明](../docs/models.md)と[参考文献](../docs/references.md)にまとめています。
 
-All lengths are in metres and all frequencies are in hertz unless a field name states another unit. Bore tables describe distance along an unfolded instrument centerline. The source graphs and the inferred dimensions are documented in [the model notes](../docs/models.md) and [references](../docs/references.md).
-
-| File | Contents |
+| ファイル | 内容 |
 | --- | --- |
-| `york_trumpet_fig7_52.csv` | Distance and diameter digitized from the York trumpet in Figure 7.52 of *The Science of Brass Instruments* |
-| `bach_5c_jackson_2025_fig2.csv` | Axial distance and radius digitized from the measured Bach 5C contour in Jackson and Scavone (2025), Figure 2 |
-| `conn8h_fig4_22.csv` | Distance and radius of the reconstructed Conn 8H body, beginning 80 mm from the mouthpiece entrance |
-| `wick5al_calibrated.csv` | Distance and radius of the calibrated representative 5AL mouthpiece |
-| `alexander_bb_tuba_reconstructed.csv` | Tuba bore reconstructed for BB♭ from the Alexander C-tuba profile, before the solver's 0.936 axial calibration |
-| `yamaha_bb67c4_reconstructed.csv` | BB-67C4 internal profile reconstructed from measured dimensions and volumes |
-| `model.json` | Trumpet cup depth and the original detached-mouthpiece calibration target |
-| `performance.json` | Linear-bore trumpet performance |
-| `performance_bidirectional.json` | Bidirectional CPU trumpet performance |
-| `performance_axisymmetric.json` | Original axisymmetric trumpet performance |
-| `performance_trumpet_modern.json` | Per-note overrides for the earlier two-octave trumpet with cubic stiffness and thermoviscous losses |
-| `performance_trumpet_high.json` | Extended B♭3–B♭6 trumpet preset and attack settings |
-| `performance_trumpet_bach5c.json` | Trumpet overrides for the refined Bach 5C geometry and coupled exterior |
-| `performance_trombone.json` | Trombone notes, slide positions, lip settings, blowing pressures, and length corrections |
-| `performance_trombone_attack.json` | Trombone performance with selected attack-envelope settings |
-| `performance_trombone_detailed_scale.json` | Overrides and high-register settings for the three-octave 5AL trombone |
-| `performance_trombone_stronger_forte.json` | Tuning overrides for the `--stronger` trombone performance |
-| `performance_tuba.json` | Tuba lip settings, pressures, attack envelopes, valve selections, and length offsets for B♭1–B♭4 |
-| `sources.json` | Provenance of the initial trumpet geometry, mouthpiece reconstruction, and lip model |
-| `nonlinear_sources.json` | Equations and assumptions for prescribed-wave propagation |
-| `sources_bidirectional.json` | References and assumptions for the bidirectional CPU model |
+| `york_trumpet_fig7_52.csv` | *The Science of Brass Instruments* の図7.52から読み取ったYorkトランペットの距離と管径 |
+| `bach_5c_jackson_2025_fig2.csv` | JacksonとScavone（2025）の図2にあるBach 5Cの実測輪郭から読み取った軸方向距離と半径 |
+| `conn8h_fig4_22.csv` | 再構成したConn 8H管体の距離と半径。マウスピース入口から80 mmの位置に始まる |
+| `wick5al_calibrated.csv` | 寸法と音響特性を校正したDenis Wick 5ALの距離と半径 |
+| `alexander_bb_tuba_reconstructed.csv` | AlexanderのC管からBB♭管に換算したチューバの管体。ソルバー内で軸方向寸法を0.936倍する前の形状 |
+| `yamaha_bb67c4_reconstructed.csv` | 寸法と容積の計測値から再構成したYamaha BB-67C4の内面形状 |
+| `model.json` | 初期のトランペットモデルのカップ深さと、単体マウスピースの校正に使った共鳴周波数 |
+| `performance.json` | 線形管体モデルによるトランペットの演奏設定 |
+| `performance_bidirectional.json` | CPUの双方向伝搬モデルによるトランペットの演奏設定 |
+| `performance_axisymmetric.json` | 初期の軸対称モデルによるトランペットの演奏設定 |
+| `performance_trumpet_modern.json` | 三次剛性と熱粘性損失を追加したトランペットの2オクターブ音階の音別設定 |
+| `performance_trumpet_high.json` | B♭3〜B♭6に拡張したトランペットの音階とアタック設定 |
+| `performance_trumpet_bach5c.json` | Bach 5Cの形状と外部音場を連成したトランペットの音別補正 |
+| `performance_trombone.json` | トロンボーンの音名、スライド位置、唇の設定、吹奏圧、管長補正 |
+| `performance_trombone_attack.json` | アタック時の吹奏圧を調整したトロンボーンの演奏設定 |
+| `performance_trombone_detailed_scale.json` | 5ALを使ったトロンボーンの3オクターブ音階の補正と高音域の設定 |
+| `performance_trombone_stronger_forte.json` | トロンボーンの `--stronger` 版に使う調律補正 |
+| `performance_tuba.json` | B♭1〜B♭4のチューバの唇、吹奏圧、アタック、バルブ、管長補正 |
+| `sources.json` | 初期のトランペットの管体、マウスピースの再構成、唇モデルの出典 |
+| `nonlinear_sources.json` | 入射波を指定する非線形伝搬モデルの式と仮定 |
+| `sources_bidirectional.json` | CPUの双方向伝搬モデルの文献と仮定 |
 
-Performance fields include `target_hz`, `lip_frequency_hz`, `blowing_pressure_pa`, and `rest_y_m`. The trumpet's `valves_semitones` lists the nominal lowering of each active valve. The tuba's `valves` lists valve numbers 1–4, whose nominal lowerings are two, one, three, and five semitones in that order. `tuning_m` and `trim_m` adjust effective bore length. The trombone's `--louder` pressure multiplier is defined in the renderer.
+演奏設定の `target_hz` は目標周波数、`lip_frequency_hz` は唇の固有振動数、`blowing_pressure_pa` は吹奏圧、`rest_y_m` は静止時の開口の設定です。トランペットの `valves_semitones` は、押した各バルブが下げる公称半音数を並べたものです。チューバの `valves` はバルブ番号1〜4を記録し、第1〜4バルブは順に2、1、3、5半音下げる設定です。`tuning_m` と `trim_m` は有効管長の補正量です。トロンボーンの `--louder` 版の吹奏圧の倍率はレンダラーに定義しています。
 
-The bore profiles are approximate graph reconstructions. Measured contours and available mouthpiece lengths, volumes, and resonances constrain the selected geometry. Performance presets are fitted to their model version.
+管体の断面は図から読み取って近似しました。マウスピースの形状は、資料にある輪郭、長さ、容積、共鳴周波数を使って決めています。演奏設定は、それぞれのモデルで目標音を発音するように調整しています。
 
-`bach_5c_jackson_2025_fig2.csv` reproduces the measured contour from Figure 2 by sampling and converting its published coordinate path. Credit Miranda Jackson and Gary Scavone, “A study of impedance of brass instruments and mouthpieces,” *Proceedings of Meetings on Acoustics* 58, 035019 (2025). The source article is published under CC BY-NC 4.0. [DOI and source figure](https://doi.org/10.1121/2.0002165) · [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+`bach_5c_jackson_2025_fig2.csv` は公開された図2の座標をサンプリングし、メートルに換算したものです。出典は Miranda Jackson と Gary Scavone による “A study of impedance of brass instruments and mouthpieces,” *Proceedings of Meetings on Acoustics* 58, 035019（2025）です。元の論文は CC BY-NC 4.0 で公開されています。 [論文と元の図](https://doi.org/10.1121/2.0002165) · [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)

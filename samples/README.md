@@ -1,45 +1,45 @@
-# Audio samples
+# 音声サンプル
 
-English · [日本語](README.ja.md)
+[測定結果](../docs/results/README.md)
 
-Each WAV is 48 kHz, 16-bit, mono. The full performances are ascending B-flat major scales at concert pitch with A4 = 440 Hz.
+すべての WAV は 48 kHz、16 bit、モノラルです。音階は実音の変ロ長調（B♭メジャー）で、A4 = 440 Hz を基準に低い音から順に演奏します。
 
-## Three-octave scales
+## 3オクターブの音階
 
-| Sample | Concert range | Duration | Regenerate from the repository root |
+| サンプル | 実音の音域 | 長さ | リポジトリのルートで実行する再生成コマンド |
 | --- | --- | --- | --- |
-| [York trumpet with Bach 5C](trumpet_Bach5C_Bb3_Bb6_major_f_strong_attack.wav) | B♭3–B♭6 | 26.31 s | `python src/render_trumpet_bach5c.py` |
-| [Conn 8H trombone with Wick 5AL](trombone_5AL_Bb2_Bb5_major_f_strong_attack.wav) | B♭2–B♭5 | 26.31 s | `python src/render_trombone_detailed_scale.py` |
-| [5AL trombone, louder forte](trombone_5AL_Bb2_Bb5_major_louder_f_strong_attack.wav) | B♭2–B♭5 | 26.31 s | `python src/render_trombone_detailed_scale.py --louder` |
-| [5AL trombone, stronger attack](trombone_5AL_Bb2_Bb5_major_stronger_f_strong_attack.wav) | B♭2–B♭5 | 26.31 s | `python src/render_trombone_detailed_scale.py --stronger` |
-| [BB♭ tuba with Yamaha BB-67C4](BBb_tuba_Bb1_Bb4_major_f_strong_attack.wav) | B♭1–B♭4 | 26.31 s | `python src/render_tuba_scale.py` |
+| [York トランペットと Bach 5C](trumpet_Bach5C_Bb3_Bb6_major_f_strong_attack.wav) | B♭3–B♭6 | 26.31 秒 | `python src/render_trumpet_bach5c.py` |
+| [Conn 8H トロンボーンと Wick 5AL](trombone_5AL_Bb2_Bb5_major_f_strong_attack.wav) | B♭2–B♭5 | 26.31 秒 | `python src/render_trombone_detailed_scale.py` |
+| [5AL トロンボーンの音量を上げたフォルテ](trombone_5AL_Bb2_Bb5_major_louder_f_strong_attack.wav) | B♭2–B♭5 | 26.31 秒 | `python src/render_trombone_detailed_scale.py --louder` |
+| [5AL トロンボーンのアタックを強めた音階](trombone_5AL_Bb2_Bb5_major_stronger_f_strong_attack.wav) | B♭2–B♭5 | 26.31 秒 | `python src/render_trombone_detailed_scale.py --stronger` |
+| [BB♭チューバと Yamaha BB-67C4](BBb_tuba_Bb1_Bb4_major_f_strong_attack.wav) | B♭1–B♭4 | 26.31 秒 | `python src/render_tuba_scale.py` |
 
-The three-octave scales have 22 notes. Each note starts from rest and runs for 1.08 s, with 1.65 s for the final note and 90 ms of silence after each note. Generate the three trombone variants in the order shown so the louder and stronger runs can use the preceding variant's output gain and calculate the acoustic level changes.
+3オクターブの音階は22音です。各音は初期静止状態から計算し、通常は1.08秒、最後の音は1.65秒とします。各音の後には90 msの無音を入れます。トロンボーンの3種類は表の順に生成すると、強奏版と強いアタック版で直前の版の出力ゲインを参照し、音圧レベルの差を計算できます。
 
-## Trombone listening copies
+## トロンボーンの試聴用音源
 
-| Sample | Duration | Processing |
+| サンプル | 長さ | 音声処理 |
 | --- | --- | --- |
-| [Stronger attack, peak-limited listening copy](trombone_5AL_Bb2_Bb5_major_stronger_f_listening.wav) | 26.31 s | Playback copy with peak limiting. Level and peak measurements are in the [stronger-attack report](../docs/results/trombone_5AL_Bb2_Bb5_stronger_f_measurements.json). |
-| [Louder and stronger attacks, matched gain](trombone_5AL_stronger_forte_before_after.wav) | 9.18 s | Each pair plays the louder preset followed by the stronger preset. The pairs are B♭2, B♭4, and B♭5 in that order. Their pressure scales are restored before one gain is applied to the assembled WAV. |
+| [強いアタック版のピーク制限付き試聴音源](trombone_5AL_Bb2_Bb5_major_stronger_f_listening.wav) | 26.31 秒 | 試聴用にピークを制限しました。レベルとピーク値は[強いアタック版の測定結果](../docs/results/trombone_5AL_Bb2_Bb5_stronger_f_measurements.json)に記録しています。 |
+| [強奏版と強いアタック版を同じゲインで聴き比べ](trombone_5AL_stronger_forte_before_after.wav) | 9.18 秒 | B♭2、B♭4、B♭5の順に、各音を強奏版、強いアタック版の順で再生します。両版を音圧の尺度に戻してから連結し、ファイル全体に共通のゲインを適用しています。 |
 
-The full simulation WAVs use a common gain within each file. For acoustic comparisons between files, account for their different gains using the [measurement reports](../docs/results/).
+シミュレーションの全音階 WAV は、各ファイル内の全音に共通のゲインを適用しています。ファイル間の音圧を比べる際は、[測定結果](../docs/results/README.md)に記録したゲインを使って換算してください。
 
-## Earlier scales
+## 以前の音階
 
-| File | Duration | Regenerate from the repository root |
+| サンプル | 長さ | リポジトリのルートで実行する再生成コマンド |
 | --- | --- | --- |
-| [Trumpet high-register reference](trumpet_Bb3_Bb6_major_f_strong_attack.wav) | 26.31 s | `python src/render_trumpet_high.py` |
-| [Two-octave trumpet with thermoviscous relaxation](trumpet_Bb3_Bb5_major_f_modern_1p5x.wav) | 18.12 s | `python src/render_trumpet_modern.py` |
-| [Trumpet with linear bore](trumpet_Bb3_Bb5_major_f.wav) | 12.08 s | `python src/render_scale.py --render` |
-| [Trumpet with prescribed-wave propagation](trumpet_Bb3_Bb5_major_f_nonlinear.wav) | 12.08 s | `python src/render_nonlinear.py` |
-| [Trumpet with bidirectional waveguide](trumpet_Bb3_Bb5_major_f_bidirectional_nonlinear.wav) | 12.08 s | `python src/render_bidirectional.py` |
-| [Original axisymmetric trumpet](trumpet_Bb3_Bb5_major_f_axisymmetric.wav) | 12.08 s | `python src/render_axisymmetric.py` |
-| [Standard trombone](trombone_Bb2_Bb4_major_f_axisymmetric.wav) | 12.08 s | `python src/trombone_axisymmetric.py` |
-| [Trombone with stronger attack](trombone_Bb2_Bb4_major_f_strong_attack.wav) | 12.08 s | `python src/render_trombone_attack.py --preset data/performance_trombone_attack.json` |
+| [トランペットの高音域比較用音源](trumpet_Bb3_Bb6_major_f_strong_attack.wav) | 26.31 秒 | `python src/render_trumpet_high.py` |
+| [熱粘性緩和を含むトランペットの2オクターブ音階](trumpet_Bb3_Bb5_major_f_modern_1p5x.wav) | 18.12 秒 | `python src/render_trumpet_modern.py` |
+| [線形管体モデルによるトランペット](trumpet_Bb3_Bb5_major_f.wav) | 12.08 秒 | `python src/render_scale.py --render` |
+| [所与の波形を伝搬させたトランペット](trumpet_Bb3_Bb5_major_f_nonlinear.wav) | 12.08 秒 | `python src/render_nonlinear.py` |
+| [双方向導波管モデルによるトランペット](trumpet_Bb3_Bb5_major_f_bidirectional_nonlinear.wav) | 12.08 秒 | `python src/render_bidirectional.py` |
+| [初期の軸対称モデルによるトランペット](trumpet_Bb3_Bb5_major_f_axisymmetric.wav) | 12.08 秒 | `python src/render_axisymmetric.py` |
+| [トロンボーンの標準音階](trombone_Bb2_Bb4_major_f_axisymmetric.wav) | 12.08 秒 | `python src/trombone_axisymmetric.py` |
+| [トロンボーンのアタックを強めた2オクターブ音階](trombone_Bb2_Bb4_major_f_strong_attack.wav) | 12.08 秒 | `python src/render_trombone_attack.py --preset data/performance_trombone_attack.json` |
 
-Generate the earlier standard trombone performance before its two-octave stronger-attack version so the comparison can use the standard measurements and traces.
+トロンボーンの2オクターブ音階では、先に標準音階を生成すると、強いアタック版との比較に標準版の測定値と時系列データを使えます。
 
-The original 12.08 s scales use 0.72 s notes, a 1.10 s final note, and 0.06 s gaps. The 18.12 s trumpet version uses 1.08 s notes, a 1.65 s final note, and 0.09 s gaps.
+12.08秒の音階では通常の音が0.72秒、最後の音が1.10秒で、音の後に0.06秒の間隔があります。18.12秒のトランペット版ではそれぞれ1.08秒、1.65秒、0.09秒です。
 
-[The manifest](manifest.json) records each sample's format, duration, and SHA-256 checksum. Simulations on other drivers or hardware may differ slightly in floating-point details.
+[音声ファイルの一覧](manifest.json)に形式、長さ、SHA-256チェックサムを記録しています。ドライバーやハードウェアが異なると、浮動小数点演算の結果にわずかな差が生じることがあります。

@@ -1,14 +1,12 @@
-# Physical models
+# 物理モデル
 
-English · [日本語](ja/MODELS.md)
+各レンダラーは内部計算にSI単位を使い、音高はすべて実音で表します。音階は音ごとに計算します。各音の管体形状を固定し、設定した吹奏圧の時間変化を与えます。
 
-The renderers use SI units internally. Sounding pitches are used throughout. Each scale is assembled from separate notes with a prescribed blowing-pressure envelope and a fixed bore geometry during the note.
+## 唇の運動と管入口の境界条件
 
-## Lip motion and the entrance boundary
+`src/trumpet.py` と `src/axisymmetric_euler.cu` は、AdachiとSatoの2自由度唇モデルを実装しています。上唇先端の位置を軸方向座標 `x` と横方向座標 `y` で表します。圧力による力が唇を駆動し、ばねと減衰がそれぞれ変位と速度に抗します。`y < 0` で唇が接触すると復元力が加わり、減衰も強くなります。
 
-`src/trumpet.py` and `src/axisymmetric_euler.cu` implement Adachi and Sato's two-coordinate lip model. The upper lip tip has axial and transverse coordinates `x` and `y`. Pressure forces drive the motion, while a spring and damping oppose displacement and velocity. Contact adds a restoring force and stronger damping when `y < 0`.
-
-The open gap area and swept-volume flow are
+唇の開口面積と、唇の移動が押しのける体積の流量は次の式で求めます。
 
 ```text
 S_gap = max(2*b*y, 0)
@@ -16,49 +14,49 @@ U_swept = b * (x*dy/dt - (y-y_joint)*dx/dt)
 U_total = U_air + U_swept
 ```
 
-The gap flow includes fluid inertia and a signed quadratic pressure loss. Given the returning wave and lip state, the implementation solves the resulting quadratic flow equation at the entrance.
+唇の隙間を通る空気に対しては、流体慣性と流れの向きに応じた二次の圧力損失を考慮します。管からの戻り波と唇の状態を使い、入口で流量の二次方程式を解きます。
 
-For the axisymmetric solver, the area-weighted returning characteristic and entrance pressure satisfy
+軸対称ソルバーでは、断面積で重み付けした戻り波の特性量と入口圧力を次の式で結びます。
 
 ```text
 h = area_mean(p_prime - rho0*c0*u_z)
 p_cup = h + (rho0*c0/S_cup)*U_total
 ```
 
-The tube supplies `h` at each fluid stage. The cup and gap pressures act on the subsequent lip update. The entrance uses a small-Mach-number acoustic characteristic approximation even though the bore interior evolves with the nonlinear Euler equations.
+流体計算の各段階で管内の状態から `h` を求めます。カップと唇の隙間の圧力を、次の唇の更新に用います。管入口では低マッハ数の音響特性量による近似を使い、管内部は非線形Euler方程式で時間発展させます。
 
-The default trumpet lip width is 7 mm, lip thickness 2 mm, pivot height 4 mm, equilibrium axial coordinate 1 mm, and cup entrance area 230 mm². The mass and spring depend on the lip-frequency control using Adachi and Sato's parameterization. The trombone and tuba use larger effective dimensions and different lip-mass parameters. The three-octave renderers calculate the entrance area from the selected cup profile. Per-note pressures, rest openings, and lip frequencies are fitted controls.
+トランペットの既定値は、唇モデルの幅7 mm、厚さ2 mm、支点の高さ4 mm、平衡位置の軸方向座標1 mm、カップの入口面積230 mm²です。質量とばねの係数は、AdachiとSatoの定式化に従い、唇の固有振動数の設定に応じて変わります。トロンボーンとチューバでは、より大きな有効寸法と各楽器に合わせた唇の質量パラメーターを使います。3オクターブ版では、選択したカップ形状から入口面積を求めます。吹奏圧、平衡時の開口量、唇の固有振動数は音ごとに調整しています。
 
-## Cubic stiffness in the newer trumpet models
+## 新しいトランペットモデルの三次剛性
 
-The transverse restoring acceleration in `src/axisymmetric_euler.cu` is
+`src/axisymmetric_euler.cu` の横方向のばねによる加速度は次の式で表します。
 
 ```text
 eta = y - y_equilibrium
 a_spring_y = -omega_y^2 * eta * (1 + alpha*eta^2)
 ```
 
-`src/render_trumpet_modern.py` sets `alpha = 8e4 m^-2`, which the high-register and Bach 5C presets inherit by default. At a displacement of 1 mm, the cubic restoring term is 8% of the linear term.
+`src/render_trumpet_modern.py` は `alpha = 8e4 m^-2` を設定します。高音域版とBach 5C版は既定でこの値を引き継ぎます。変位が1 mmのとき、三次の復元項は一次項の8%です。
 
-This extension is informed by Fréour and colleagues' reduced artificial-lip model with cubic stiffness and by Inomata and colleagues' study of geometric stiffness under blowing pressure. Combining this term with the Adachi–Sato two-coordinate system is a modeling choice. Its coefficient has not been identified from measurements of a human player's lips. The original contact and flow models are retained.
+この拡張は、Fréourらの三次剛性を含む人工唇の低次元モデルと、Inomataらによる吹奏圧下の幾何剛性の研究を参考にしています。三次項をAdachi–Satoの2自由度系と組み合わせるのは本実装で選んだモデル化です。係数は人間の奏者の唇の実測から同定していません。接触と隙間の流れには元のモデルを使います。
 
-## Instrument geometry
+## 楽器の形状
 
-The trumpet body is reconstructed from the York B-flat trumpet, Grand Rapids, 1925–27, EU(5772), in Figure 7.52 of *The Science of Brass Instruments*. It is sampled from a raster graph. The approximate reading resolution is 2.8 mm axially and 0.43 mm in diameter, with greater uncertainty at crossings and near the bell rim.
+トランペットの管体は、*The Science of Brass Instruments* の図7.52に載るYork製B♭トランペット（Grand Rapids、1925〜27年、EU 5772）から再構成しました。ラスタ画像のグラフからの読み取り分解能は、軸方向で約2.8 mm、直径で約0.43 mmです。曲線が交差する箇所やベル端付近の読み取りには、より大きな不確かさがあります。
 
-The earlier trumpet mouthpiece is reconstructed as a rounded converging cup, a 3.7 mm diameter throat 6 mm long, and a 55 mm backbore. Its cup depth was calibrated to the book's 806 Hz detached-mouthpiece resonance using the original linear acoustic model. This resonance provides one constraint on the geometry.
+初期のトランペット版では、なめらかに収束するカップ、直径3.7 mm・長さ6 mmのスロート、長さ55 mmのバックボアからマウスピースを再構成しました。元の線形音響モデルで、教科書に示されたマウスピース単体の806 Hzの共鳴に合うようカップ深さを校正しました。この共鳴が形状を決める拘束条件の一つです。
 
-The Bach 5C version uses 111 points extracted from the published measured contour in Jackson and Scavone's Figure 2. The extracted contour is 87.13 mm long, reaches a 3.68 mm throat diameter, and connects to the York leadpipe through a short modeled transition. The finer taper uses shape-preserving interpolation. Its geometry and mesh affect both the cup impedance and the reflected wave that drives the lips. [Mouthpiece comparison](trumpet_mouthpiece.md)
+Bach 5C版では、JacksonとScavoneの図2にある実測輪郭から抽出した111点を使います。抽出した輪郭は全長87.13 mm、スロートの最小径は3.68 mmです。短い接続区間をモデル化してYorkのリードパイプにつないでいます。細分化したテーパーは形状を保存する補間で求めます。形状と格子はカップの入力インピーダンスと、唇を駆動する戻り波の両方に影響します。 [マウスピースの比較](trumpet_mouthpiece.md)
 
-The trombone uses the Conn 8H profile in Figure 4.22, the cup profile in Figure 4.32b, and representative Denis Wick 5AL dimensions. The reconstruction constrains mouthpiece length to 80 mm, volume to 12 mL, and a detached resonance to 535 Hz in the linear calibration. The detailed renderer refines the cup, throat, backbore, and bell taper. Slide movement extends both legs of the unfolded bore. Per-note `trim_m` provides an additional effective-length correction. [Trombone geometry and performance notes](ja/TROMBONE_MODEL.md)
+トロンボーンは図4.22のConn 8Hの管体、図4.32bのカップ形状、およびDenis Wick 5ALの代表寸法を使います。再構成では、全長80 mm、容積12 mL、線形モデルによるマウスピース単体の共鳴535 Hzを拘束条件としました。詳細版ではカップ、スロート、バックボア、ベルのテーパーを細分化します。スライドを動かすと、展開した管路の往路と復路がともに延びます。音別の `trim_m` は有効管長への追加補正です。 [トロンボーンの形状と吹奏設定](ja/TROMBONE_MODEL.md)
 
-The BB♭ tuba uses the Alexander C-tuba profile from Figures 7.45 and 7.46, plus a bell extension reconstructed from Figure 6.9. The bore was scaled longitudinally from C to BB♭, anchored to the Alexander 163's nominal 20.5 mm valve bore and 450 mm bell diameter, and calibrated to the BB♭ resonance spacing. The open length including the mouthpiece is approximately 5.532 m. The Yamaha BB-67C4 mouthpiece is fitted to measured dimensions and volumes including a 38.81 mm cup depth, an 8.05 mm throat diameter, an 18.819 mL cup, and a 4.064 mL backbore. The entrance plane, cylindrical throat length, and backbore transition are modeled choices. [Tuba geometry and calibration](ja/TUBA_MODEL.md)
+BB♭チューバは、図7.45と図7.46のAlexander C管チューバの管形状に、図6.9から再構成したベル外側のフレアをつないでいます。管体の軸方向の長さをC管からBB♭管へ換算し、Alexander 163の公称バルブ径20.5 mmおよびベル径450 mmを形状の基準とし、共鳴の間隔をBB♭管に合わせました。マウスピースを含む開放時の全長は約5.532 mです。Yamaha BB-67C4は、カップ深さ38.81 mm、スロート径8.05 mm、カップ容積18.819 mL、バックボア容積4.064 mLなどの計測値に合わせて再構成しました。マウスピースの入口面、円筒スロートの長さ、バックボアの接続形状はモデル化しています。 [チューバの形状と校正](ja/TUBA_MODEL.md)
 
-Valve tubing is represented by lengths of approximately cylindrical bore corresponding to the selected semitone extensions. The tuba uses four nominal loops lowering pitch by two, one, three, and five semitones. Per-note offsets adjust the effective cylindrical length. Unfolding the centerline into an axisymmetric profile represents the change in bore radius along the tube. Resolving flow around valve ports and bends would require three-dimensional geometry.
+バルブ管は、選択した半音数に応じた長さを持つ、おおむね円筒形の管として扱います。チューバでは、音高をそれぞれ2、1、3、5半音下げる4つの公称ループを使います。音別の補正で円筒区間の有効長を調整します。管の中心線を軸対称形状に展開し、管路に沿った半径の変化を表します。バルブのポートや曲管周辺の流れを解像するには、三次元形状が必要です。
 
-## Nonlinear axisymmetric flow
+## 軸対称の非線形流れ
 
-The CUDA solver in `src/axisymmetric_euler.cu` evolves density, axial momentum, radial momentum, and total energy of an ideal gas with `gamma = 1.4`, `rho0 = 1.2 kg/m³`, and `c0 = 343 m/s`.
+`src/axisymmetric_euler.cu` のCUDAソルバーは、`gamma = 1.4`、`rho0 = 1.2 kg/m³`、`c0 = 343 m/s` の理想気体について、密度、軸方向および半径方向の運動量、全エネルギーを時間発展させます。
 
 ```text
 Q = (rho, rho*u_z, rho*u_r, E)
@@ -69,17 +67,17 @@ p = (gamma-1) * (E - rho*(u_z^2+u_r^2)/2)
 d(r*Q)/dt + d(r*F_z)/dz + d(r*F_r)/dr = (0, 0, p, 0)
 ```
 
-The mesh uses annular finite volumes with conical side faces. The solver uses MUSCL reconstruction with an MC limiter, an HLLC Riemann flux, an HLLE fallback for inadmissible intermediate states, and SSP-RK2 integration. The geometric pressure source balances the pressure flux at rest. Wave-speed and positivity checks stop a run when its state exceeds the configured limits.
+格子には円錐面を側面とする環状の有限体積セルを使います。ソルバーはMCリミター付きのMUSCL再構成、HLLCリーマン流束、許容条件を満たさない中間状態でのHLLEへの切り替え、SSP-RK2による時間積分を使います。静止状態では幾何学的な圧力源項と圧力流束がつり合います。波速と正値性の検査で、状態が設定範囲を外れたら計算を止めます。
 
-This conservative formulation allows steep compression waves and shock waves. A Sod shock-tube test checks the flux and conservation. The mesh does not resolve the physical microscopic thickness of an acoustic shock.
+この保存形の定式化で、急峻な圧縮波や衝撃波を扱えます。Sod衝撃波管で流束と保存性を検査します。音響衝撃波の物理的な厚さは格子幅より小さく、この計算では解像していません。
 
-Each instrument uses its own axial spacing, with finer resolution in the mouthpiece and bell taper. The refined trumpet and trombone use 16 annular rings at the bell in the default geometry. The open tuba mesh uses 441 axial intervals with 2,422 cells in total and 32 rings at the bell. The global time step is determined by a CFL estimate with a wave-speed reserve. Boundary histories are recorded at 192 kHz and radiated audio is filtered and resampled to 48 kHz.
+軸方向の格子幅は楽器ごとに設定し、マウスピースとベルのテーパーでは細かく分割します。トランペットとトロンボーンの細分化版では、標準形状のベル開口に16の同心リングを使います。開放のチューバでは軸方向441区間、計2,422セル、ベル開口のリング数は32です。全体の時間刻みは波速に余裕を持たせたCFL条件で決めます。境界の履歴を192 kHzで記録し、放射音をフィルター処理して48 kHzに再標本化します。
 
-## Thermoviscous closure
+## 粘性・熱損失の閉包
 
-The earlier axisymmetric presets use five causal relaxation terms to approximate a loss proportional to the square root of frequency.
+初期の軸対称版は、周波数の平方根に比例する損失を、5つの因果的な緩和項で近似します。
 
-The three-octave simulations use local circular-duct viscous and thermal responses following the Bessel-function treatment also used by Jackson and Scavone. Here `s` is the Laplace variable, `a` is the local radius, `nu` is kinematic viscosity, and `D` is thermal diffusivity.
+3オクターブ版では、JacksonとScavoneも用いたベッセル関数の定式化に従い、局所的な円管の粘性応答と熱応答を使います。`s` はラプラス変数、`a` はその位置での半径、`nu` は動粘性係数、`D` は熱拡散率です。
 
 ```text
 w_v = s*a^2/nu
@@ -89,52 +87,54 @@ D_v(s) = s*F(w_v)/(1-F(w_v))
 D_T(s) = (gamma-1)*s*F(w_T)
 ```
 
-`I_n` denotes a modified Bessel function. `src/thermoviscous.py` fits the dynamic parts with ten positive relaxation weights and positive pole rates for each response. The viscous DC term `8*nu/a^2` is included separately. The parameters are `nu = 1.54e-5 m²/s` and `D = 2.17e-5 m²/s`. Maximum relative errors on the fitting band are approximately 1.56% for the viscous dynamic response and 2.31% for the thermal response.
+`I_n` は変形ベッセル関数です。`src/thermoviscous.py` は各応答の動的成分を、正の重みと正の減衰率を持つ10個の緩和モードで近似します。粘性の直流項 `8*nu/a^2` は別に加えます。係数は `nu = 1.54e-5 m²/s`、`D = 2.17e-5 m²/s` です。近似した帯域での最大相対誤差は、粘性の動的応答が約1.56%、熱応答が約2.31%です。
 
-The resulting momentum and pressure relaxation is distributed across each section. It is a local linear circular-duct closure applied to a nonlinear fluid calculation. Actual thermal and viscous boundary layers are represented through this closure rather than spatially resolved at the wall.
+この近似による運動量と圧力の緩和を各断面に分布させます。非線形流体計算に適用する、局所的で線形な円管の閉包です。壁面の粘性・熱境界層の効果は閉包で表し、境界層内の空間分布は解像していません。
 
-## Bell reflection, inflow, and audible output
+## ベルの反射、流入、放射音
 
-The current three-octave renderers project the outgoing bell characteristics onto four area-orthogonal aperture modes. The equivalent sphere projects the aperture onto its forward hemisphere and uses a rigid rear hemisphere. The linear exterior solution uses outgoing spherical waves through harmonic order 10. Its 66-state causal realization returns a reflection to the bell rings during each solver step. Gas entering from the external reservoir carries the reference entropy, and outgoing gas carries the interior entropy.
+3オクターブ版のレンダラーでは、ベルから外に向かう特性量を、断面積の重みに関して互いに直交する4つの開口モードへ射影します。等価球モデルは開口からの流れを前半球へ投影し、後半球を剛体として扱います。線形の外部音場は、球面調和関数の次数10までの外向き球面波で求めます。これを66状態の因果系で表現し、ソルバーの各時刻で反射をベルの各リングに戻します。外部から入る気体には外気の基準エントロピーを、外に出る気体には管内部のエントロピーを使います。
 
-The same exterior solution gives the pressure at 1 m on axis for the saved scales. The trumpet benchmark also renders at 45°. The calculation omits the common exterior propagation delay when writing the WAV. The equivalent-sphere exterior approximates the radiation geometry. Measured directivity and the actual bell exterior would be useful for validating it. [Exterior derivation and reproduction commands](trumpet_bell_exterior.md)
+収録した音階の放射圧は、同じ外部解を使い、ベルの軸上1 mで求めます。トランペットの比較計算では45°方向も計算しています。WAVの保存時には外部での共通の伝搬遅延を除きます。等価球は放射形状の近似です。実測した指向性や実際のベル外形を使うと、この近似を検証できます。 [ベル外部放射の導出と再現手順](trumpet_bell_exterior.md)
 
-The original axisymmetric presets use a passive first-order RL load with a low-frequency end correction. The intermediate trumpet model uses Silva and colleagues' causal reflection approximation for an unflanged circular opening, where `x = s*a/c0`.
+初期の軸対称版は、低周波の開口端補正を持つ受動的な一次RL負荷を使います。中間段階のトランペット版では、フランジのない円管開口に対するSilvaらの因果的反射近似を使います。ここで `x = s*a/c0` です。
 
 ```text
 R(s) = -(1 + 0.167*x) / (1 + 1.393*x + 0.457*x^2)
 ```
 
-The filter acts on the outgoing mean pressure wave at the bell and other radial components use a local outgoing characteristic. In these earlier renders, a compact monopole estimates the radiated pressure at distance `d = 1 m`.
+このフィルターはベルから外に向かう断面平均圧力波に作用し、ほかの半径方向成分は局所的な外向き特性境界で扱います。これらの初期版では、コンパクトな単極音源により距離 `d = 1 m` での放射圧を推定します。
 
 ```text
 p_radiated(t) = rho0/(4*pi*d) * dU_bell(t)/dt
 ```
 
-## Earlier CPU models
+## 初期のCPUモデル
 
-| Renderer | Acoustic calculation | Lip feedback |
+| レンダラー | 音響計算 | 唇へのフィードバック |
 | --- | --- | --- |
-| `render_scale.py` | Lossy, linear transfer matrices converted to a causal reflection response | Linear returning acoustic response |
-| `render_nonlinear.py` | Generalized Burgers propagation of a prescribed incident wave | Excitation supplied by the linear resonator |
-| `render_bidirectional.py` | Area-junction waveguide, causal wall losses, and Burgers self-distortion in each direction | Actual evolving returning wave |
+| `render_scale.py` | 損失を含む線形伝達行列を因果的な反射応答に変換 | 線形の戻り波 |
+| `render_nonlinear.py` | 与えた入射波の一般化Burgers方程式による伝搬 | 唇の励起を線形共鳴管で計算 |
+| `render_bidirectional.py` | 断面積の変化を含む波動ガイド、因果的な壁面損失、両方向それぞれのBurgers方程式による波形の変形 | 時間発展する戻り波 |
 
-The bidirectional CPU model neglects quadratic mixing between the two counterpropagating waves. Its assumptions and source records are in `data/sources_bidirectional.json`. The prescribed-wave model's scope is recorded in `data/nonlinear_sources.json`.
+双方向CPUモデルでは、逆方向に伝わる2つの波の二次の混合項を省略しています。仮定と出典は [双方向モデルの出典データ](../data/sources_bidirectional.json) に記載しています。入射波を与える版の適用範囲は [非線形一方向モデルの出典データ](../data/nonlinear_sources.json) に記載しています。
 
-## Validation and sample results
+## 検証と音声サンプルの結果
 
-The committed JSON files in `docs/results/` record the published samples and selected numerical checks. Generated results from a new run are written under `output/`.
+[結果と数値検証](results/) のJSONには、公開音声サンプルと主な数値検査の結果を収録しています。再計算した結果は `output/` 以下に出力します。
 
-- `verify_axisymmetric.py` checks a resting state, mass and energy conservation, the Sod shock tube at two resolutions, and a cylindrical radial eigenmode.
-- `verify_bell_exterior.py` checks stability, passivity, reciprocity, and agreement with a direct spherical Hankel evaluation. `verify_trumpet_bell.py` compares the loaded bell in the time-domain solver to an independent frequency-domain calculation using its measured numerical ring velocities.
-- `verify_trumpet_modern.py` checks the bell reflection magnitude, positive thermoviscous fits, weak-pulse input impedance, and a B♭4 run with return-wave coupling disabled.
-- `verify_trombone.py` checks mouthpiece geometry and resonance, slide lengths, and bore impedance. Its `--coupling` option compares B♭3 with disabled feedback and a refined mesh.
-- The CPU verification scripts provide analytical, refinement, and audio measurements appropriate to their respective acoustic approximations.
+- `verify_axisymmetric.py` は静止状態、質量とエネルギーの保存、2種類の格子分解能でのSod衝撃波管、円筒管の半径方向固有モードを検査します。
+- `verify_bell_exterior.py` は安定性、受動性、相反性、球ハンケル関数から直接求めた解との一致を検査します。`verify_trumpet_bell.py` は時間領域ソルバーのベル境界の圧力を、ベルの各リングで得られた数値流速から周波数領域で独立に計算した圧力と比較します。
+- `verify_trumpet_modern.py` はベル反射の大きさ、正の係数による粘性・熱損失の近似、微小パルスによる入力インピーダンス、戻り波の連成を切ったB♭4の計算を検査します。
+- `verify_trombone.py` はマウスピースの形状と共鳴、スライドの長さ、管体のインピーダンスを検査します。`--coupling` では、B♭3について戻り波の連成を切った場合と、細分化した格子での結果を比較します。
+- CPU版の検証スクリプトは、各音響近似に合わせて解析解との比較、格子細分化による比較、音声測定を行います。
 
-The independent WAV checks give maximum late-sustain pitch errors of 11.8 cents for the Bach 5C trumpet, 9.2 to 11.7 cents for the 5AL trombone variants, and 9.7 cents for the tuba. The tuba has weak early cycle modulation in D2, E♭2, and G2. These values describe the rendered scales at the selected pressures and tunings.
+WAVの独立分析で得た持続部後半の最大音程誤差は、Bach 5Cトランペットが11.8セント、5ALトロンボーンの各版が9.2〜11.7セント、チューバが9.7セントです。チューバのD2、E♭2、G2は立ち上がりに弱い周期変動が見られます。これらは設定した吹奏圧と調律で計算した音階の結果です。 [Bach 5Cの測定結果](results/trumpet_Bach5C_Bb3_Bb6_measurements.json) · [チューバの測定結果](results/BBb_tuba_Bb1_Bb4_measurements.json)
 
-In the intermediate two-octave trumpet sample, the maximum late-sustain pitch error was 8.2 cents. D4, E♭4, and F4 show cycle-to-cycle variation. In that model's B♭4 feedback test, the cup pressure is about 5.37 kPa RMS and sustained oscillation disappears with return-wave feedback disabled.
+5ALトロンボーンの増圧版では、標準版から持続吹奏圧を15%上げました。さらにアタックを強めた版では、増圧版から持続吹奏圧を25%上げ、圧力の立ち上がりを12 msから6.5 msに短縮しました。増圧版との比較では、ベル正面1 mでの音圧レベルの増加量の中央値は、持続部が3.8 dB、発音から50 msの区間が6.0 dBです。 [増圧版の測定結果](results/trombone_5AL_Bb2_Bb5_louder_f_measurements.json) · [強いアタック版の測定結果](results/trombone_5AL_Bb2_Bb5_stronger_f_measurements.json) · [同じ出力ゲインでの比較音声](../samples/trombone_5AL_stronger_forte_before_after.wav)
 
-Updating the wall and bell models on the same nominal open-fingering mesh shifts the first six weak-signal resonances by less than 0.7 Hz. The first impedance peak decreases from about 113.8 to 96.8 MPa·s/m³. These are comparisons between numerical models. Mesh sensitivity, graph-derived dimensions, and the reconstructed mouthpieces must be considered before drawing conclusions about a specific physical instrument.
+中間段階の2オクターブのトランペットでは、持続部後半の最大音程誤差は8.2セントでした。D4、E♭4、F4の波形には周期ごとの変動があります。このモデルのB♭4の連成試験では、カップ内圧は約5.37 kPa RMSで、戻り波のフィードバックを切ると持続振動が消えます。
 
-The presets fit selected playing regimes. Additional validation would compare the fitted lip dynamics, bore losses, and equivalent-sphere directivity with independent measurements of the corresponding instruments. Graph reconstruction and per-note tuning are important when interpreting differences in pitch, timbre, or playing pressure.
+同じ公称開放運指の格子で壁面損失とベルのモデルを更新したところ、微小振幅の最初の6つの共鳴の移動は0.7 Hz未満でした。最初のインピーダンスのピークは約113.8 MPa·s/m³から96.8 MPa·s/m³に下がりました。これは数値モデル間の比較です。特定の実機と比較するには、格子への依存性、グラフから読み取った寸法、再構成したマウスピースを考慮する必要があります。
+
+演奏設定は、選んだ吹奏の状態に合うよう調整しています。対応する実機の独立した測定があれば、調整した唇の運動、管内損失、等価球の指向性をさらに検証できます。音程、音色、吹奏圧の差を解釈する際は、グラフからの形状再構成と音別の調律補正を考慮してください。

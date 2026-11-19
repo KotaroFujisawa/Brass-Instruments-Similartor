@@ -1,28 +1,34 @@
-# Brass Instrument Simulator
+# 金管楽器シミュレーター
 
-English · [日本語](README.ja.md)
+[日本語ドキュメント一覧](docs/ja/README.md) · [モデルの方程式と仮定](docs/models.md) · [参考文献](docs/references.md) · [形状データと演奏設定](data/README.md)
 
-Physical sound synthesis for B-flat trumpet, tenor trombone, and BB-flat contrabass tuba. The models couple the two-coordinate lip motion of Adachi and Sato to a mouthpiece and a bore. The CUDA solver models nonlinear propagation in the unfolded axisymmetric bore and couples the bell to a reduced exterior sound field. Reflections from the bell travel back through the bore and act on the lips.
+B♭トランペット、テナー・トロンボーン、BB♭コントラバス・チューバの音を物理モデルで合成します。Adachi–Satoの2自由度唇モデルをマウスピースと管内音場に連成します。CUDAソルバーは、曲がった管を中心線に沿って展開した軸対称の管内で非線形な波の伝搬を解きます。ベルで放射された音を求めると同時に、管内へ戻る反射波が唇の振動に及ぼす影響も計算します。
 
-[Model equations and assumptions](docs/models.md) · [References](docs/references.md) · [Geometry and presets](data/README.md) · [Japanese notes](docs/ja/README.md)
+## 音声サンプル
 
-## Audio samples
+各サンプルは実音のB♭メジャー上行音階をフォルテで演奏します。基準音はA4 = 440 Hzです。22音を個別に静止状態から計算してつなぎ、各音を1.08秒、最後のB♭を1.65秒としました。各音の後に90 msの無音を入れ、合計26.31秒のWAVにしています。形式は48 kHz、16 bit、モノラルです。
 
-These forte scales run from low to high in B-flat major at concert pitch (A4 = 440 Hz). Each contains 22 independently simulated notes and lasts 26.31 s. WAV files are 48 kHz, 16-bit mono. Most notes last 1.08 s and the final high B-flat lasts 1.65 s, with a 90 ms gap after each note.
+### ブラウザーで試聴
 
-| Sample | Range | Measurements |
+<!-- GitHubのプレーヤーをここに挿入 -->
+
+### 音源と測定結果
+
+| 音声 | 実音域 | 測定結果 |
 | --- | --- | --- |
-| [York trumpet with Bach 5C](samples/trumpet_Bach5C_Bb3_Bb6_major_f_strong_attack.wav) | B♭3–B♭6 | [Pitch and radiated pressure](docs/results/trumpet_Bach5C_Bb3_Bb6_measurements.json) |
-| [Conn 8H trombone with Denis Wick 5AL](samples/trombone_5AL_Bb2_Bb5_major_f_strong_attack.wav) | B♭2–B♭5 | [Base forte](docs/results/trombone_5AL_Bb2_Bb5_measurements.json) |
-| [Trombone with higher blowing pressure](samples/trombone_5AL_Bb2_Bb5_major_louder_f_strong_attack.wav) | B♭2–B♭5 | [15% increase in steady blowing pressure](docs/results/trombone_5AL_Bb2_Bb5_louder_f_measurements.json) |
-| [Trombone with higher pressure and a stronger attack](samples/trombone_5AL_Bb2_Bb5_major_stronger_f_strong_attack.wav) | B♭2–B♭5 | [Pressure and onset comparison](docs/results/trombone_5AL_Bb2_Bb5_stronger_f_measurements.json) |
-| [Reconstructed BB♭ tuba with Yamaha BB-67C4](samples/BBb_tuba_Bb1_Bb4_major_f_strong_attack.wav) | B♭1–B♭4 | [Pitch, pressure, and onset](docs/results/BBb_tuba_Bb1_Bb4_measurements.json) |
+| [Yorkトランペット、Bach 5C](samples/trumpet_Bach5C_Bb3_Bb6_major_f_strong_attack.wav) | B♭3〜B♭6 | [音程と放射音圧](docs/results/trumpet_Bach5C_Bb3_Bb6_measurements.json) |
+| [Conn 8Hトロンボーン、Denis Wick 5AL](samples/trombone_5AL_Bb2_Bb5_major_f_strong_attack.wav) | B♭2〜B♭5 | [基準のフォルテ](docs/results/trombone_5AL_Bb2_Bb5_measurements.json) |
+| [トロンボーン、吹奏圧を上げた版](samples/trombone_5AL_Bb2_Bb5_major_louder_f_strong_attack.wav) | B♭2〜B♭5 | [持続時の吹奏圧を15%増加](docs/results/trombone_5AL_Bb2_Bb5_louder_f_measurements.json) |
+| [トロンボーン、さらに吹奏圧とアタックを強めた版](samples/trombone_5AL_Bb2_Bb5_major_stronger_f_strong_attack.wav) | B♭2〜B♭5 | [音圧と発音時刻の比較](docs/results/trombone_5AL_Bb2_Bb5_stronger_f_measurements.json) |
+| [再構成したBB♭チューバ、Yamaha BB-67C4](samples/BBb_tuba_Bb1_Bb4_major_f_strong_attack.wav) | B♭1〜B♭4 | [音程・音圧・発音時刻](docs/results/BBb_tuba_Bb1_Bb4_measurements.json) |
 
-Relative to the higher-pressure trombone sample, the stronger-attack version adds another 25% to steady blowing pressure and reduces its rise time from 12 to 6.5 ms. The simulated median pressure level rises by 3.8 dB during sustain and by 6.0 dB in the first 50 ms after acoustic onset. The main scale files use an individual gain for each complete file. A [common-gain excerpt](samples/trombone_5AL_stronger_forte_before_after.wav) preserves the level change, and a [peak-limited listening copy](samples/trombone_5AL_Bb2_Bb5_major_stronger_f_listening.wav) keeps the strongest attacks from setting playback level for the entire scale. [Earlier models, checksums, and sample details](samples/README.md)
+トロンボーンのアタックをさらに強めた版では、15%増圧の版から持続時の吹奏圧をさらに25%上げ、吹奏圧の立ち上がりを12 msから6.5 msに短縮しました。ベル正面1 mの放射音圧レベルは、22音の中央値で持続部が+3.8 dB、音が立ち上がってから最初の50 msが+6.0 dBでした。
 
-## Install
+音階のWAVはファイルごとに一つの出力ゲインを適用しています。2つの演奏に同じゲインを適用した抜粋で、吹奏圧とアタックを変えたときの音圧差を確認できます。音階全体を試聴するためのピークを抑えた版も収録しています。 [同じゲインで聴き比べ](samples/trombone_5AL_stronger_forte_before_after.wav) · [音階全体の試聴版](samples/trombone_5AL_Bb2_Bb5_major_stronger_f_listening.wav) · [以前の音源・再生成コマンド・チェックサム](samples/README.md)
 
-Python 3.12 was used for development. NumPy, SciPy, Numba, and Matplotlib are required. Run commands from the repository root.
+## インストール
+
+開発にはPython 3.12を使用しました。NumPy、SciPy、Numba、Matplotlibが必要です。リポジトリのルートからコマンドを実行します。
 
 ```sh
 git clone https://github.com/KotaroFujisawa/Brass-Instruments-Similartor.git
@@ -30,21 +36,21 @@ cd Brass-Instruments-Similartor
 python -m venv .venv
 ```
 
-Activate the environment on Windows PowerShell with `.venv\Scripts\Activate.ps1`, or on Linux with `source .venv/bin/activate`, then install the dependencies.
+Windows PowerShellでは `.venv\Scripts\Activate.ps1`、Linuxでは `source .venv/bin/activate` を実行して仮想環境を有効にします。その後、依存パッケージをインストールします。
 
 ```sh
 python -m pip install -r requirements.txt
 ```
 
-The CPU models can run with these dependencies. The axisymmetric models also require an NVIDIA GPU, an NVIDIA driver, and NVRTC, the CUDA runtime compiler. The solver uses the CUDA Driver API directly through Python ctypes.
+CPUモデルはここまでの設定で実行できます。軸対称モデルにはNVIDIA GPUとドライバー、およびCUDAランタイムコンパイラーのNVRTCが必要です。ソルバーはPythonの `ctypes` を通じてCUDA Driver APIを呼び出します。
 
 ```sh
 python -m pip install nvidia-cuda-nvrtc-cu12==12.4.127
 ```
 
-The CUDA calculations were run on an NVIDIA RTX 2000 Ada Generation with NVRTC 12.4.127. On Windows, the loader searches installed Python packages, `CUDA_NVRTC_DIR`, and `CUDA_PATH/bin`. On Linux, make `libnvrtc.so.12` and its companion libraries available through the system loader or `LD_LIBRARY_PATH`. Linux execution has not been verified in this project.
+公開音源の計算にはNVIDIA RTX 2000 Ada GenerationとNVRTC 12.4.127を使用しました。Windowsでは `CUDA_NVRTC_DIR`、インストール済みのPythonパッケージ、`CUDA_PATH/bin` などからNVRTCを探します。Linuxでは `libnvrtc.so.12` と関連ライブラリをシステムローダーまたは `LD_LIBRARY_PATH` で参照可能にしてください。本プロジェクトでの動作確認環境はWindowsです。
 
-## Generate the three-octave scales
+## 3オクターブの音階を再生成する
 
 ```sh
 python src/render_trumpet_bach5c.py
@@ -54,9 +60,9 @@ python src/render_trombone_detailed_scale.py --stronger
 python src/render_tuba_scale.py
 ```
 
-The WAV and per-note measurements are written under `output/trumpet_bach5c/`, `output/trombone_detailed_scale/`, `output/trombone_louder_forte/`, `output/trombone_stronger_forte/`, and `output/tuba_axisymmetric/`, respectively. Generate the trombone variants in the listed order to include their pressure comparisons to the preceding version. The presets specify the lip frequency, blowing pressure, rest opening, fingerings or slide positions, and length offsets for each note.
+WAVと音ごとの測定結果は、上のコマンド順に `output/trumpet_bach5c/`、`output/trombone_detailed_scale/`、`output/trombone_louder_forte/`、`output/trombone_stronger_forte/`、`output/tuba_axisymmetric/` に保存されます。トロンボーンの3つの版をこの順で実行すると、一つ前の版に対する音圧差も計算します。演奏設定には各音の唇の固有振動数、吹奏圧、静止時の唇の開き、運指またはスライド位置、管長補正が含まれます。
 
-To try one note first, use a shorter simulation.
+まず1音を短く試す場合は、次のコマンドで選んだ音の診断結果を保存できます。音階全体のWAVは上のコマンドで生成します。
 
 ```sh
 python src/render_trumpet_bach5c.py --only Bb4 --probe 0.45
@@ -64,18 +70,16 @@ python src/render_trombone_detailed_scale.py --only Bb3 --probe 0.45
 python src/render_tuba_scale.py --only Bb1 --probe 0.45
 ```
 
-The probe commands save diagnostics for the selected notes. The full-scale commands produce the assembled WAVs.
+## CPUモデルを実行する
 
-## Run a CPU model
-
-For the linear bore coupled to the nonlinear lips, generate the saved performance and its diagnostic plot.
+非線形な唇の振動と線形管体を連成したモデルは、次のコマンドで保存済み設定の音階と診断図を生成できます。
 
 ```sh
 python src/render_scale.py --render
 python src/verify.py
 ```
 
-For the one-dimensional waveguide, including nonlinear return-wave feedback, run the following.
+一次元波動ガイドでは、管内の波が双方向に非線形に伝わり、戻り波が唇に作用します。
 
 ```sh
 python src/render_bidirectional.py
@@ -84,43 +88,42 @@ python src/verify_bidirectional.py --full
 python src/plot_bidirectional.py
 ```
 
-The prescribed-wave approximation is available through `python src/render_nonlinear.py` and `python src/verify_nonlinear.py --full`. Its lip excitation is calculated with the linear resonator and then propagated through the nonlinear model. The bidirectional and axisymmetric renderers calculate the returning wave within their evolving acoustic state.
+入射波を与える非線形伝搬モデルは `python src/render_nonlinear.py` で計算し、`python src/verify_nonlinear.py --full` で検証します。このモデルでは唇による励振を線形共鳴器で求め、その波形を非線形伝搬の入力にします。双方向波動ガイドとCUDAソルバーでは、戻り波も時々刻々の音場から求めます。
 
-## Models and geometry
+## モデルと形状
 
-The York trumpet bore and Conn 8H taper are digitized from Campbell, Gilbert, and Myers, *The Science of Brass Instruments*. The trumpet uses a published Bach 5C contour. The trombone's 5AL profile is reconstructed from a cup drawing and calibrated to length, volume, and detached-mouthpiece resonance. The tuba combines an Alexander C-tuba bore scaled to BB♭, Alexander 163 nominal valve and bell dimensions, and a BB-67C4 mouthpiece reconstructed from dimensional and volume measurements. [Geometry and sources](docs/references.md)
+YorkトランペットとConn 8Hの管径は、Campbell、Gilbert、Myersの *The Science of Brass Instruments* に掲載された図から読み取りました。Bach 5Cには公表された実測断面を用い、Denis Wick 5ALはカップ断面を読み取って長さ・容積・単体共鳴から校正しました。BB♭チューバはAlexanderのC管の管径曲線をBB♭管に合わせ、Alexander 163の公称バルブ径とベル径を反映しています。Yamaha BB-67C4は、公開測定値の寸法と容積を基に再構成しました。 [形状データの出典](docs/references.md)
 
-The CUDA solver evolves density, axial and radial momentum, and total energy using annular finite volumes, MUSCL reconstruction, an HLLC flux with HLLE fallback, and two-stage SSP Runge–Kutta integration. This conservative formulation can capture shock waves. Lip flow and cup pressure are coupled through the instantaneous returning acoustic characteristic.
+CUDAソルバーは圧縮性Euler方程式に基づき、密度、軸方向と半径方向の運動量、全エネルギーを時間積分します。同心リングの有限体積にMUSCL再構成とHLLC流束を用い、必要に応じてHLLE流束へ切り替えます。時間積分は2段のSSP Runge–Kutta法です。保存形の離散化で衝撃波を扱い、管から戻る音響特性量を用いて唇の流量とカップの圧力を結びます。
 
-The three-octave renderers use local circular-duct thermoviscous losses and four aperture modes at the bell. An equivalent sphere supplies the reflected wave and the radiated pressure at 1 m on axis. The trumpet also includes a cubic transverse lip stiffness. The unfolded bore and reduced exterior preserve axisymmetry. Curved valve passages, wall vibration, resolved turbulent jets, the player's vocal tract, and room acoustics require additional models. [Equations and assumptions](docs/models.md)
+3オクターブ版は、円管の周波数依存の粘性・熱損失を考慮します。ベル開口の4モードを等価球の外部音場に結合し、反射波とベル正面1 mの放射音圧を求めます。トランペットでは流れに垂直な向きの唇の復元力に、三次の剛性項も加えています。軸対称化と等価球面は幾何形状の近似です。バルブ通路の曲がり、管壁の振動、乱流ジェット、奏者の声道、室内の反響を扱うには、モデルの拡張が必要です。 [方程式と仮定](docs/models.md) · [楽器ごとの技術ノート](docs/ja/README.md)
 
-## Numerical checks
+## 数値検証
 
-The shared Euler solver includes a Sod shock-tube check, conservation checks, and a cylindrical radial-mode check. The exterior validator checks stability, passivity, reciprocity, and agreement between two implementations of the spherical-wave reflection.
+共通のEulerソルバーではSodの衝撃波管、保存性、円筒管の半径方向モードを検証します。ベル外部モデルでは安定性、受動性、相反性を調べ、球面波の反射を別の方法でも計算して比較します。
 
 ```sh
 python src/verify_axisymmetric.py
 python src/verify_bell_exterior.py
 ```
 
-Checks on the rendered WAVs put the late-sustain pitch error within about 12 cents for the Bach 5C trumpet, within 12 cents for all three 5AL trombone variants, and within 10 cents for the tuba. The reports also identify weak cycle-to-cycle variations where present. These checks describe the rendered performances, whose geometries and player settings have been reconstructed or fitted. [Results and numerical checks](docs/results/)
+完成したWAVを別に解析すると、持続部の音程誤差はBach 5Cトランペットで最大約12セント、5ALトロンボーンの3版で最大12セント以内、BB♭チューバで最大約10セントでした。弱い周期変動が見られた音は測定結果に記録しています。数値は再構成した形状と調整済みの演奏設定による合成音の結果です。 [測定と数値検証の一覧](docs/results/README.md)
 
-## Repository layout
+## リポジトリの構成
 
-```text
-src/             Simulation, rendering, verification, and plotting code
-data/            Bore profiles, mouthpiece data, performance presets, source records
-samples/         Selected WAV files and their regeneration instructions
-docs/models.md   Model equations, assumptions, and validation scope
-docs/references.md
-                 Books, papers, and the role of each reference
-docs/results/    Saved measurements and verification reports
-docs/figures/    Selected diagnostic plots
-docs/ja/         Original model notes in Japanese
-output/          Generated audio, traces, and diagnostics, created locally
-tmp/             Local caches and working files, created locally
-```
+| パス | 内容 |
+| --- | --- |
+| `src/` | シミュレーション、音声生成、検証、作図 |
+| `data/` | 管径とマウスピースの形状、演奏設定、出典 |
+| `samples/` | 公開WAV、再生成手順、チェックサム |
+| `docs/models.md` | 方程式、前提条件、検証範囲 |
+| `docs/references.md` | 参考文献と各モデルとの関係 |
+| `docs/results/` | 測定結果と数値検証 |
+| `docs/figures/` | 診断図 |
+| `docs/ja/` | 日本語の技術ノート |
+| `output/` | ローカルで生成する音声、時系列、診断結果 |
+| `tmp/` | ローカルで生成するキャッシュと作業ファイル |
 
-## References
+## 参考文献
 
-The main sources are Campbell, Gilbert, and Myers (2021) for instrument acoustics and geometry, Adachi and Sato (1996) for two-coordinate lip motion, and more recent work on artificial lips and thermoviscous bore modeling. The current implementation combines these ingredients with the assumptions described above. Full citations, links, figure numbers, and how each source is used are collected in [docs/references.md](docs/references.md).
+形状や音響特性にはCampbell、Gilbert、Myers（2021）、唇の2自由度モデルにはAdachi、Sato（1996）を用いています。人工唇の剛性、円管の粘性・熱損失、ベルの放射には、それぞれの研究を参照しました。書誌情報、図番号、データの利用条件は参考文献に列挙しています。 [参考文献の一覧](docs/references.md)
