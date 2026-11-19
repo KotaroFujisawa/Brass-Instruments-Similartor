@@ -7,7 +7,8 @@
 - [物理モデルと計算の仮定](../models.md)
 - [参考文献と各モデルでの利用箇所](../references.md)
 - [管体・マウスピースのデータと演奏設定](../../data/README.md)
-- [音声サンプルと再生成方法](../../samples/README.md)
+- [ブラウザーで試聴](../../README.md#ブラウザーで試聴)
+- [音声ファイルと再生成方法](../../samples/README.md)
 - [測定結果と検証レポート](../results/README.md)
 
 ## 楽器別のノート
@@ -16,6 +17,8 @@
 - [トランペットのベル放射とテーパーの細分化](../trumpet_bell_exterior.md)
 - [Conn 8Hトロンボーンと吹奏圧・アタックの比較](TROMBONE_MODEL.md)
 - [BB♭コントラバス・チューバ](TUBA_MODEL.md)
+- [ユーフォニアムとB♭管オフィクレイド](EUPHONIUM_OPHICLEIDE_MODEL.md)
+- [F/B♭ダブルホルンの運指、管形状とベル放射](DOUBLE_HORN_MODEL.md)
 
 ## モデルの開発経緯
 

@@ -1,0 +1,37 @@
+[
+  {
+    "note": "Bb1", "valves": [], "trim_m": 0.0,
+    "lip_frequency_hz": 63.0, "blowing_pressure_pa": 2400.0, "rest_y_m": 0.000025,
+    "lip_parameters": {"mass_product": 5.6, "quality": 3.9}
+  },
+  {
+    "note": "C2", "valves": [1, 3, 4], "trim_m": -0.041,
+    "lip_frequency_hz": 69.6, "blowing_pressure_pa": 2380.0, "rest_y_m": 0.000025,
+    "lip_parameters": {"mass_product": 5.45, "quality": 3.9}
+  },
+  {
+    "note": "D2", "valves": [1, 2, 4], "trim_m": -0.056,
+    "lip_frequency_hz": 78.1, "blowing_pressure_pa": 2500.0, "rest_y_m": 0.000025,
+    "lip_parameters": {"mass_product": 5.3, "quality": 3.9}
+  },
+  {
+    "note": "Eb2", "valves": [1, 4], "trim_m": -0.104,
+    "lip_frequency_hz": 82.5, "blowing_pressure_pa": 2600.0, "rest_y_m": 0.000025,
+    "lip_parameters": {"mass_product": 5.15, "quality": 3.9}
+  },
+  {
+    "note": "F2", "valves": [4], "trim_m": -0.157,
+    "lip_frequency_hz": 92.0, "blowing_pressure_pa": 2760.0, "rest_y_m": 0.000025,
+    "lip_parameters": {"mass_product": 5.0, "quality": 3.9}
+  },
+  {
+    "note": "G2", "valves": [1, 2], "trim_m": -0.149,
+    "lip_frequency_hz": 102.5, "blowing_pressure_pa": 2920.0, "rest_y_m": 0.000025,
+    "lip_parameters": {"mass_product": 4.75, "quality": 3.9}
+  },
+  {
+    "note": "A2", "valves": [2], "trim_m": -0.142,
+    "lip_frequency_hz": 114.5, "blowing_pressure_pa": 3080.0, "rest_y_m": 0.000025,
+    "lip_parameters": {"mass_product": 4.4, "quality": 3.9}
+  }
+]

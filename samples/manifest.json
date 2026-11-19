@@ -118,5 +118,29 @@
     "frames": 1262880,
     "duration_s": 26.31,
     "sha256": "0a20d15a6bbbb1592a82d7bc7e5c1fe687a0e5753f42c25ed8ea742a1c9d6355"
+  },
+  "euphonium_Bb1_Bb5_major_f_strong_attack.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 1656000,
+    "duration_s": 34.5,
+    "sha256": "208d231dd9a4f442f193b86f20c031a56897b16f9c53f37a6151449af3284fb0"
+  },
+  "ophicleide_Bb1_Bb4_major_f_strong_attack.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 1262880,
+    "duration_s": 26.31,
+    "sha256": "3814a0c6a319228e9af8746b0e89a990f0aa1dc1a116574e2ddb8446eda65f90"
+  },
+  "horn_Bb1_Bb5_major_f_strong_attack.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 1656000,
+    "duration_s": 34.5,
+    "sha256": "01cb2e49a7f1e093b374894260952ce453af6b098199e8d13c56685a3d55c245"
   }
 }

@@ -4,6 +4,15 @@
 
 すべての WAV は 48 kHz、16 bit、モノラルです。音階は実音の変ロ長調（B♭メジャー）で、A4 = 440 Hz を基準に低い音から順に演奏します。
 
+## 4オクターブの音階
+
+| サンプル | 実音の音域 | 長さ | リポジトリのルートで実行する再生成コマンド |
+| --- | --- | --- | --- |
+| [ユーフォニアム](euphonium_Bb1_Bb5_major_f_strong_attack.wav) | B♭1〜B♭5 | 34.50秒 | `python src/render_euphonium_ophicleide.py euphonium --extended` |
+| [F／B♭ダブルホルン](horn_Bb1_Bb5_major_f_strong_attack.wav) | B♭1〜B♭5 | 34.50秒 | `python src/render_horn_scale.py` |
+
+4オクターブの音階は全29音です。音の長さと無音の間隔は3オクターブ版と同じです。[ブラウザーで試聴](../README.md#ブラウザーで試聴)
+
 ## 3オクターブの音階
 
 | サンプル | 実音の音域 | 長さ | リポジトリのルートで実行する再生成コマンド |
@@ -13,6 +22,7 @@
 | [5AL トロンボーンの音量を上げたフォルテ](trombone_5AL_Bb2_Bb5_major_louder_f_strong_attack.wav) | B♭2–B♭5 | 26.31 秒 | `python src/render_trombone_detailed_scale.py --louder` |
 | [5AL トロンボーンのアタックを強めた音階](trombone_5AL_Bb2_Bb5_major_stronger_f_strong_attack.wav) | B♭2–B♭5 | 26.31 秒 | `python src/render_trombone_detailed_scale.py --stronger` |
 | [BB♭チューバと Yamaha BB-67C4](BBb_tuba_Bb1_Bb4_major_f_strong_attack.wav) | B♭1–B♭4 | 26.31 秒 | `python src/render_tuba_scale.py` |
+| [B♭管オフィクレイド](ophicleide_Bb1_Bb4_major_f_strong_attack.wav) | B♭1〜B♭4 | 26.31秒 | `python src/render_euphonium_ophicleide.py ophicleide` |
 
 3オクターブの音階は22音です。各音は初期静止状態から計算し、通常は1.08秒、最後の音は1.65秒とします。各音の後には90 msの無音を入れます。トロンボーンの3種類は表の順に生成すると、強奏版と強いアタック版で直前の版の出力ゲインを参照し、音圧レベルの差を計算できます。
 

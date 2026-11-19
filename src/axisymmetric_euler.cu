@@ -10,6 +10,9 @@ struct Cell {
     float sign_area_volume[6], radial_source, wall_loss, radius2;
 };
 struct Face { int left,right,kind; float nz,nr,eta_l,eta_r,area,radius2; };
+struct Tonehole { int start,stop; float area,transition[4],hold[2],ramp[2]; };
+struct HolePatch { int face; float open_fraction; };
+struct HoleState { float velocity,memory,velocity_predict,memory_predict,drive; };
 struct Config {
     int nc,nf,inlet,bell,stride,mode,feedback,thermal_poles,radiation_order,reservoir_inflow;
     int radiation_modes,radiation_states;
@@ -203,6 +206,60 @@ __device__ float dot_product(const float* a,const float* b,int n) {
     return sum;
 }
 
+__device__ void tonehole_flux(const Vec* values,const Cell* cells,const Face* faces,
+        Vec* flux,const Config* c,Clock* clock,const Tonehole& hole,const HolePatch* patches,
+        HoleState& state,float* trace,int record_count,int index,int stage) {
+    int lane=threadIdx.x, slot=hole.start+lane;
+    __shared__ float pressure_drive[128], velocity;
+    HolePatch patch;
+    Face f;
+    Vec q;
+    float h=0.f;
+    if (slot<hole.stop) {
+        patch=patches[slot];
+        f=faces[patch.face];
+        q=reconstruct(values,cells,f.left,1,.5f,0.f,0.f);
+        if(q.d<=-.99f || pressure(q)<=-.99f*P0) q=values[f.left];
+        h=pressure(q)+(f.nz*q.z+f.nr*q.r)/(1.f+q.d);
+        pressure_drive[lane]=patch.open_fraction*f.area*h;
+    }
+    __syncthreads();
+    if (lane==0) {
+        float drive=0.f;
+        for(int j=0;j<hole.stop-hole.start;++j) drive+=pressure_drive[j];
+        drive/=hole.area;
+        // Exact hold followed by a linear-drive correction, sampled at the
+        // two bore stages. The shunt is in parallel with the extended bore.
+        if(stage) {
+            velocity=state.velocity_predict;
+            float increment=drive-state.drive;
+            state.velocity=fmaf(hole.ramp[0],increment,velocity);
+            state.memory=fmaf(hole.ramp[1],increment,state.memory_predict);
+        } else {
+            velocity=state.velocity;
+            state.drive=drive;
+            state.velocity_predict=hole.transition[0]*velocity+hole.transition[1]*state.memory+hole.hold[0]*drive;
+            state.memory_predict=hole.transition[2]*velocity+hole.transition[3]*state.memory+hole.hold[1]*drive;
+        }
+        if(record_count && stage && clock->step%c->stride==c->stride-1)
+            trace[(clock->step/c->stride)*record_count+index]=velocity*hole.area*C0;
+    }
+    __syncthreads();
+    if(slot>=hole.stop) return;
+    Vec closed=wall(q,f.nz,f.nr);
+    float p=h-velocity;
+    if(!(p>-.99f*P0 && isfinite(velocity))) {
+        atomicOr(&clock->error,4);
+        flux[patch.face]=closed;
+        return;
+    }
+    // Solve the port in its own normal/tangent frame, then rotate back.
+    Vec normal={q.d,f.nz*q.z+f.nr*q.r,-f.nr*q.z+f.nz*q.r,q.e};
+    Vec local=open_face(normal,p,velocity,velocity<0.f);
+    Vec open={local.d,f.nz*local.z-f.nr*local.r,f.nr*local.z+f.nz*local.r,local.e};
+    flux[patch.face]=(1.f-patch.open_fraction)*closed+patch.open_fraction*open;
+}
+
 __device__ void exterior_reflection(const Config* c,const float* coeff,float* state,
         const float* characteristic,float* incident,float* reflected,float* returned,int rings,int stage) {
     int lane=threadIdx.x, nm=c->radiation_modes, ns=c->radiation_states;
@@ -236,7 +293,9 @@ __device__ void exterior_reflection(const Config* c,const float* coeff,float* st
 
 extern "C" __global__ void fluxes(const Vec* current,const Vec* predicted,const Cell* cells,
         const Face* faces,Vec* flux,const Config* c,Clock* clock,Boundary* boundary,
-        const float* radiation_coefficients,float* radiation_state,float* bell_trace,int record_bell,int stage) {
+        const float* radiation_coefficients,float* radiation_state,float* bell_trace,int record_bell,
+        const Tonehole* toneholes,const HolePatch* hole_patches,HoleState* hole_state,
+        float* hole_trace,int record_holes,int stage) {
     const Vec* values=stage ? predicted : current;
     int internal_blocks=(c->inlet+blockDim.x-1)/blockDim.x;
     int lane=threadIdx.x;
@@ -244,6 +303,7 @@ extern "C" __global__ void fluxes(const Vec* current,const Vec* predicted,const 
         int i=blockIdx.x*blockDim.x+lane;
         if (i>=c->inlet) return;
         Face f=faces[i];
+        if (f.kind==5) return; // The shared tonehole block owns this wall face.
         Vec left=reconstruct(values,cells,f.left,f.kind>0,.5f,f.eta_l,f.radius2);
         if (f.kind==2) {
             if(left.d<=-.99f || pressure(left)<=-.99f*P0) left=values[f.left];
@@ -252,6 +312,12 @@ extern "C" __global__ void fluxes(const Vec* current,const Vec* predicted,const 
             Vec right=reconstruct(values,cells,f.right,f.kind,-.5f,f.eta_r,f.radius2);
             flux[i]=riemann(left,right,values[f.left],values[f.right],f.nz,f.nr,clock);
         }
+        return;
+    }
+    int hole=blockIdx.x-internal_blocks-2;
+    if (hole>=0) {
+        tonehole_flux(values,cells,faces,flux,c,clock,toneholes[hole],hole_patches,
+                      hole_state[hole],hole_trace,record_holes,hole,stage);
         return;
     }
     bool inlet=blockIdx.x==internal_blocks;

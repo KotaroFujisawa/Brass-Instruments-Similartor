@@ -2,11 +2,11 @@
 
 [日本語ドキュメント一覧](docs/ja/README.md) · [モデルの方程式と仮定](docs/models.md) · [参考文献](docs/references.md) · [形状データと演奏設定](data/README.md)
 
-B♭トランペット、テナー・トロンボーン、BB♭コントラバス・チューバの音を物理モデルで合成します。Adachi–Satoの2自由度唇モデルをマウスピースと管内音場に連成します。CUDAソルバーは、曲がった管を中心線に沿って展開した軸対称の管内で非線形な波の伝搬を解きます。ベルで放射された音を求めると同時に、管内へ戻る反射波が唇の振動に及ぼす影響も計算します。
+トランペット、トロンボーン、チューバ、ユーフォニアム、オフィクレイド、F／B♭ダブルホルンの音を物理モデルで合成します。Adachi–Satoの2自由度唇モデルをマウスピースと管内音場に連成します。CUDAソルバーは、曲がった管を中心線に沿って展開した軸対称の管内で非線形な波の伝搬を解きます。ベルで放射された音を求めると同時に、管内へ戻る反射波が唇の振動に及ぼす影響も計算します。
 
 ## 音声サンプル
 
-各サンプルは実音のB♭メジャー上行音階をフォルテで演奏します。基準音はA4 = 440 Hzです。22音を個別に静止状態から計算してつなぎ、各音を1.08秒、最後のB♭を1.65秒としました。各音の後に90 msの無音を入れ、合計26.31秒のWAVにしています。形式は48 kHz、16 bit、モノラルです。
+各サンプルは実音のB♭メジャー上行音階をフォルテで演奏します。基準音はA4 = 440 Hzです。各音を静止状態から個別に計算してつなぎ、各音を1.08秒、最後のB♭を1.65秒としました。各音の後に90 msの無音を入れています。3オクターブ版は22音で26.31秒、4オクターブ版は29音で34.50秒です。形式は48 kHz、16 bit、モノラルです。
 
 ### ブラウザーで試聴
 
@@ -24,6 +24,18 @@ https://github.com/user-attachments/assets/f14650f5-a03d-4423-8e90-08169da3e7cf
 
 https://github.com/user-attachments/assets/14725a97-9721-4e2b-aa10-3815647df5f2
 
+#### ユーフォニアム（実音B♭1〜B♭5）
+
+https://github.com/user-attachments/assets/7abb8c92-bccd-42b8-a587-10e82c34ed69
+
+#### B♭管オフィクレイド（実音B♭1〜B♭4）
+
+https://github.com/user-attachments/assets/0ddcb7b4-f377-4d7e-b65f-2890d1c7e8ff
+
+#### F／B♭ダブルホルン（実音B♭1〜B♭5）
+
+https://github.com/user-attachments/assets/63ab0943-60c4-411d-bc52-bcacbac094dd
+
 ### 音源と測定結果
 
 | 音声 | 実音域 | 測定結果 |
@@ -33,6 +45,9 @@ https://github.com/user-attachments/assets/14725a97-9721-4e2b-aa10-3815647df5f2
 | [トロンボーン、吹奏圧を上げた版](samples/trombone_5AL_Bb2_Bb5_major_louder_f_strong_attack.wav) | B♭2〜B♭5 | [持続時の吹奏圧を15%増加](docs/results/trombone_5AL_Bb2_Bb5_louder_f_measurements.json) |
 | [トロンボーン、さらに吹奏圧とアタックを強めた版](samples/trombone_5AL_Bb2_Bb5_major_stronger_f_strong_attack.wav) | B♭2〜B♭5 | [音圧と発音時刻の比較](docs/results/trombone_5AL_Bb2_Bb5_stronger_f_measurements.json) |
 | [再構成したBB♭チューバ、Yamaha BB-67C4](samples/BBb_tuba_Bb1_Bb4_major_f_strong_attack.wav) | B♭1〜B♭4 | [音程・音圧・発音時刻](docs/results/BBb_tuba_Bb1_Bb4_measurements.json) |
+| [ユーフォニアム](samples/euphonium_Bb1_Bb5_major_f_strong_attack.wav) | B♭1〜B♭5 | [音程と放射音圧](docs/results/euphonium_Bb1_Bb5_verified_measurements.json) |
+| [B♭管オフィクレイド](samples/ophicleide_Bb1_Bb4_major_f_strong_attack.wav) | B♭1〜B♭4 | [音程と指穴からの放射](docs/results/ophicleide_verified_measurements.json) |
+| [F／B♭ダブルホルン](samples/horn_Bb1_Bb5_major_f_strong_attack.wav) | B♭1〜B♭5 | [音程と管の選択](docs/results/horn_verified_measurements.json) |
 
 トロンボーンのアタックをさらに強めた版では、15%増圧の版から持続時の吹奏圧をさらに25%上げ、吹奏圧の立ち上がりを12 msから6.5 msに短縮しました。ベル正面1 mの放射音圧レベルは、22音の中央値で持続部が+3.8 dB、音が立ち上がってから最初の50 msが+6.0 dBでした。
 
@@ -43,8 +58,8 @@ https://github.com/user-attachments/assets/14725a97-9721-4e2b-aa10-3815647df5f2
 開発にはPython 3.12を使用しました。NumPy、SciPy、Numba、Matplotlibが必要です。リポジトリのルートからコマンドを実行します。
 
 ```sh
-git clone https://github.com/KotaroFujisawa/Brass-Instruments-Similartor.git
-cd Brass-Instruments-Similartor
+git clone https://github.com/KotaroFujisawa/Brass-Instruments-Simulator.git
+cd Brass-Instruments-Simulator
 python -m venv .venv
 ```
 
@@ -81,6 +96,18 @@ python src/render_trumpet_bach5c.py --only Bb4 --probe 0.45
 python src/render_trombone_detailed_scale.py --only Bb3 --probe 0.45
 python src/render_tuba_scale.py --only Bb1 --probe 0.45
 ```
+
+## ユーフォニアム、オフィクレイド、ダブルホルンの音階を再生成する
+
+ユーフォニアムとダブルホルンは実音B♭1〜B♭5、B♭管オフィクレイドは実音B♭1〜B♭4を計算します。オフィクレイドでは運指で開く指穴からの放射、ダブルホルンではF管とB♭管の選択および右手を入れたベルの反射を扱います。
+
+```sh
+python src/render_euphonium_ophicleide.py euphonium --extended
+python src/render_euphonium_ophicleide.py ophicleide
+python src/render_horn_scale.py
+```
+
+WAVと各音の測定結果はそれぞれ `output/euphonium_extended/`、`output/ophicleide_axisymmetric/`、`output/horn_axisymmetric/` に保存されます。[ユーフォニアムとオフィクレイドのモデル](docs/ja/EUPHONIUM_OPHICLEIDE_MODEL.md) · [ダブルホルンのモデル](docs/ja/DOUBLE_HORN_MODEL.md)
 
 ## CPUモデルを実行する
 
