@@ -1,4 +1,52 @@
 {
+  "BBb_tuba_Bb1_Bb4_major_f_strong_attack.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 1262880,
+    "duration_s": 26.31,
+    "sha256": "a1f9d359e20507a3ebac8c69d102ab611819b043652e5afc23729cdf434128df"
+  },
+  "trombone_5AL_Bb2_Bb5_major_f_strong_attack.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 1262880,
+    "duration_s": 26.31,
+    "sha256": "0b603ff0a178cf4f315f888864d8c1c56d692d25f78151583a505b10b9cfc537"
+  },
+  "trombone_5AL_Bb2_Bb5_major_louder_f_strong_attack.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 1262880,
+    "duration_s": 26.31,
+    "sha256": "415cc8a35b279bf0011cc989f32b8b398589328f68b2bfc04b36e75ae5cabeda"
+  },
+  "trombone_5AL_Bb2_Bb5_major_stronger_f_listening.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 1262880,
+    "duration_s": 26.31,
+    "sha256": "dd81eeff7637188ca63f9bc33fed9d4bf0b2f25a27851678136d11d3a7540a15"
+  },
+  "trombone_5AL_Bb2_Bb5_major_stronger_f_strong_attack.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 1262880,
+    "duration_s": 26.31,
+    "sha256": "a438f1076c6b547482b3d163a3edb663d961e8735d6086fde22e29f36d98f157"
+  },
+  "trombone_5AL_stronger_forte_before_after.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 440640,
+    "duration_s": 9.18,
+    "sha256": "5145ac0e76002b5fd45783c6b86c410c5c1996f65c950d6fd771e19f1f4a2ce7"
+  },
   "trombone_Bb2_Bb4_major_f_axisymmetric.wav": {
     "sample_rate_hz": 48000,
     "channels": 1,
@@ -14,6 +62,14 @@
     "frames": 579840,
     "duration_s": 12.08,
     "sha256": "9552e07cfde2981a4a83996f3181a412868f13d96998a4cf206d1a131428cc63"
+  },
+  "trumpet_Bach5C_Bb3_Bb6_major_f_strong_attack.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 1262880,
+    "duration_s": 26.31,
+    "sha256": "07cd07166968bd948104f9bcb4fc2c23e32f55bdf11dd8e0ededa90f829db05d"
   },
   "trumpet_Bb3_Bb5_major_f.wav": {
     "sample_rate_hz": 48000,
@@ -54,5 +110,13 @@
     "frames": 579840,
     "duration_s": 12.08,
     "sha256": "c117cee3e4bec69bec8c13998f56661af0035d914c97e22b032cbbde49939c42"
+  },
+  "trumpet_Bb3_Bb6_major_f_strong_attack.wav": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "frames": 1262880,
+    "duration_s": 26.31,
+    "sha256": "0a20d15a6bbbb1592a82d7bc7e5c1fe687a0e5753f42c25ed8ea742a1c9d6355"
   }
 }

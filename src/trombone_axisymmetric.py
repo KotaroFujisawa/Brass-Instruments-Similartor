@@ -9,6 +9,7 @@ from axisymmetric_cuda import Device, Run
 from axisymmetric_mesh import annular_mesh
 from render_axisymmetric import radiation, TRACE_FS
 from trumpet import C, RHO, ROOT, json, np, signal
+from scipy.interpolate import PchipInterpolator
 from scipy.io import wavfile
 
 OUT = ROOT/'output/trombone_axisymmetric'
@@ -54,6 +55,47 @@ def mesh(position, trim=0., dz=.006, dr=.0045):
     z = np.concatenate([np.linspace(a,b,int(np.ceil((b-a)/h))+1)[:-1]
                         for a,b,h in zip(anchors[:-1],anchors[1:],spacing)] + [x[-1:]])
     return annular_mesh(z,np.interp(z,x,r),dr)
+
+
+@cache
+def refined_trombone_mesh(position, tuning=0., *, axial_scale=1., dr=.006,
+                          mouthpiece_scale=1.):
+    """Resolve the calibrated 5AL and graph-derived Conn 8H bore profiles."""
+    if not all(np.isfinite(value) and value > 0
+               for value in (axial_scale, dr, mouthpiece_scale)):
+        raise ValueError('Mesh spacing must be positive and finite.')
+    x, r = profile(position, tuning)
+    # These positions follow the calibrated cup contraction and nominal throat.
+    # The backbore's radius increases continuously beyond its fitted minimum.
+    mouthpiece_end = .080
+    throat = float(x[np.argmin(r)])
+    shift = 2*slide_travel(position)
+    bell_end = x[-1]
+    anchors = np.array([0., .010, .0175, .029, throat, .047, mouthpiece_end,
+                        .256, .756+tuning, .766+tuning, .946+shift+tuning,
+                        .956+shift+tuning, 1.694+shift+tuning,
+                        bell_end-.105, bell_end-.022, bell_end])
+    spacing = axial_scale*np.r_[
+        mouthpiece_scale*np.array([.0025,.0016,.0021,.0016,.0018,.002]),
+        .0045,.006,.0025,.006,.0025,.006,.0045,.0025,.00165]
+    widths = np.diff(anchors)
+    if not np.isfinite(widths).all() or np.any(widths <= 0):
+        raise ValueError('Adjusted bore stations must be finite and increasing.')
+    counts = np.ceil(widths/spacing).astype(int)
+    edges = np.concatenate([np.linspace(a,b,n+1)[:-1]
+                            for a,b,n in zip(anchors[:-1],anchors[1:],counts)] + [[bell_end]])
+
+    # Fit the mouthpiece and bore independently to retain the shank join.
+    join = np.searchsorted(x,mouthpiece_end)
+    mouthpiece = edges < mouthpiece_end
+    radii = np.empty_like(edges)
+    radii[mouthpiece] = PchipInterpolator(x[:join+1],r[:join+1])(edges[mouthpiece])
+    radii[~mouthpiece] = PchipInterpolator(x[join:],r[join:])(edges[~mouthpiece])
+    radii[-1] = r[-1]
+    grid = annular_mesh(edges,radii,dr)
+    grid.update(mouthpiece_profile=MOUTHPIECE.name,mouthpiece_length_m=mouthpiece_end,
+                mouthpiece_throat_radius_m=float(r.min()),bore_profile=BORE.name)
+    return grid
 
 
 def initial_settings():

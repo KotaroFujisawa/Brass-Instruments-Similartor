@@ -1,0 +1,9 @@
+{
+  "gpu_cpu_bell_pressure_relative_l2": 2.1967827754032142e-05,
+  "gpu_cpu_bell_pressure_max_pa": 8.017714524788389e-05,
+  "bell_flux_max_residual_m3_s": 2.6741947903047986e-11,
+  "peak_bell_pressure_pa": 3.3990163803100586,
+  "aperture_modes": 4,
+  "exterior_order": 10,
+  "radiation_states": 66
+}

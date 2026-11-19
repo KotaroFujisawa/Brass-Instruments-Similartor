@@ -45,11 +45,11 @@ def radiation(trace):
     return signal.resample_poly(output,1,4)
 
 
-def analyze(s, trace, start, end):
+def analyze(s, trace, start, end, *, max_hz=1200):
     yn=radiation(trace)
-    audio=measure_audio(yn,start,end)
+    audio=measure_audio(yn,start,end,max_hz=max_hz)
     steady=trace[round(start*TRACE_FS):round(end*TRACE_FS)].astype('f8')
-    mouth=measure(steady,fs=TRACE_FS,start=0.)
+    mouth=measure(steady,fs=TRACE_FS,start=0.,max_hz=max_hz)
     pressure_error=steady[:,0]-steady[:,8]-RHO*C/(.00023)*steady[:,1]
     pitch=audio['frequency'];target=s['target_hz']
     return dict(note=s['note'],target_hz=target,audio_frequency_hz=pitch,

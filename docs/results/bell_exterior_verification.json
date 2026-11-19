@@ -1,0 +1,60 @@
+{
+  "spherical_order": 10,
+  "aperture_ports": 4,
+  "state_count": 66,
+  "max_real_pole_in_dimensionless_time": -0.7869141289751084,
+  "state_space_formula_max_error": 2.1868857395626284e-14,
+  "float32_state_space_formula_max_error": 4.257348362015825e-07,
+  "reflection_max_singular_value": 1.0000000000000004,
+  "reflection_reciprocity_max_error": 8.326672684688674e-17,
+  "aperture_basis_orthonormal_max_error": 5.551115123125783e-16,
+  "low_frequency_mean_port_end_correction_over_radius": 0.4436416689167925,
+  "receiver_hankel_max_relative_error": 1.3282347127817195e-14,
+  "angles_deg": [
+    0.0,
+    45.0
+  ],
+  "bb6_harmonic_frequency_hz": [
+    1864.655046,
+    3729.310092,
+    5593.9651380000005,
+    7458.620184,
+    9323.275230000001,
+    11187.930276000001
+  ],
+  "plane_mode_45deg_relative_to_0deg_db": [
+    -1.7021113903968066,
+    -3.986186786331788,
+    -4.948255418895787,
+    -3.4830601632014604,
+    -2.5191758654818734,
+    -2.8916201293048327
+  ],
+  "receiver_operator_relative_error_vs_order12": [
+    [
+      9.162020683102209e-10,
+      1.227254037310481e-10
+    ],
+    [
+      1.4171944541776312e-06,
+      2.736046501767763e-07
+    ],
+    [
+      9.345913349190892e-05,
+      2.42419979239916e-05
+    ],
+    [
+      0.0015895056541084997,
+      0.00046102653100726855
+    ],
+    [
+      0.012402876109926297,
+      0.0039428315990241835
+    ],
+    [
+      0.05742010619758889,
+      0.020207440233808733
+    ]
+  ],
+  "passed": true
+}

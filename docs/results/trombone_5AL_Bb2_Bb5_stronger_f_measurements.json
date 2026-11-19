@@ -1,0 +1,3816 @@
+{
+  "render": {
+    "gpu": "NVIDIA RTX 2000 Ada Generation",
+    "duration_s": 26.31,
+    "sample_rate_hz": 48000,
+    "bit_depth": 16,
+    "channels": 1,
+    "common_gain_fs_per_pa": 0.026573631716694524,
+    "clipped_samples": 0,
+    "mouthpiece": "Denis Wick 5AL reconstructed from The Science of Brass Instruments, Fig. 4.32b",
+    "bore": "Conn 8H reconstructed from The Science of Brass Instruments, Fig. 4.22",
+    "bell": "coupled spherical exterior; receiver at 0 deg and 1 m",
+    "output_tail_fade_s": 0.005,
+    "max_sustained_pitch_error_cents": 11.661229024746866,
+    "notes": [
+      {
+        "note": "Bb2",
+        "target_hz": 116.54094037952248,
+        "audio_frequency_hz": 116.81380251224249,
+        "audio_period_frequency_hz": 116.81380251224249,
+        "subharmonic_odd_to_even": null,
+        "cents": 4.048672200150736,
+        "periodicity": 0.999409090338645,
+        "early_frequency_hz": 58.43235323744617,
+        "radiated_rms_pa": 0.8649118712075672,
+        "mouthpiece_rms_pa": 4720.4228515625,
+        "incoming_characteristic_rms_pa": 4559.02685546875,
+        "boundary_residual_pa": 0.0010056290918782906,
+        "attack_rms_pa": 0.41627464713089635,
+        "peak_blowing_pressure_pa": 7503.75,
+        "preset": {
+          "note": "Bb2",
+          "midi": 46,
+          "position": 1,
+          "target_hz": 116.54094037952248,
+          "lip_frequency_hz": 132.273967330758,
+          "blowing_pressure_pa": 5175.0,
+          "rest_y_m": 6.5e-05,
+          "trim_m": -0.01634,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "lip_parameters": {},
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1620,
+        "axial_cells": 591,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.7476599999999998,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 15.605666600167751,
+        "bell_flux_residual_m3_s": 3.725290298461914e-09,
+        "start_s": 0.0,
+        "change_in_sustained_level_db": 3.4947823934631184
+      },
+      {
+        "note": "C3",
+        "target_hz": 130.8127826502993,
+        "audio_frequency_hz": 131.6968843046138,
+        "audio_period_frequency_hz": 131.6968843046138,
+        "subharmonic_odd_to_even": null,
+        "cents": 11.661229024746866,
+        "periodicity": 1.0008284958898601,
+        "early_frequency_hz": 131.5550044822095,
+        "radiated_rms_pa": 1.4948949636712654,
+        "mouthpiece_rms_pa": 5852.19970703125,
+        "incoming_characteristic_rms_pa": 5590.6630859375,
+        "boundary_residual_pa": 0.0009677333434439106,
+        "attack_rms_pa": 0.8177438506171385,
+        "peak_blowing_pressure_pa": 8441.71875,
+        "preset": {
+          "note": "C3",
+          "midi": 48,
+          "position": 6,
+          "target_hz": 130.8127826502993,
+          "lip_frequency_hz": 136,
+          "blowing_pressure_pa": 5821.875,
+          "rest_y_m": 6.5e-05,
+          "trim_m": -0.142,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "lip_parameters": {},
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1908,
+        "axial_cells": 735,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 3.6074911896738238,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 15.781987200025469,
+        "bell_flux_residual_m3_s": 3.725290298461914e-09,
+        "start_s": 1.17,
+        "change_in_sustained_level_db": 8.43247964849995
+      },
+      {
+        "note": "D3",
+        "target_hz": 146.8323839587038,
+        "audio_frequency_hz": 147.66228961713205,
+        "audio_period_frequency_hz": 147.66228961713205,
+        "subharmonic_odd_to_even": null,
+        "cents": 9.757492176700813,
+        "periodicity": 0.9997466960778038,
+        "early_frequency_hz": 147.48279173943925,
+        "radiated_rms_pa": 1.6739266252196587,
+        "mouthpiece_rms_pa": 5955.5908203125,
+        "incoming_characteristic_rms_pa": 5721.51416015625,
+        "boundary_residual_pa": 0.0009699211849465428,
+        "attack_rms_pa": 0.9487306581792216,
+        "peak_blowing_pressure_pa": 8962.8125,
+        "preset": {
+          "note": "D3",
+          "midi": 50,
+          "position": 4,
+          "target_hz": 146.8323839587038,
+          "lip_frequency_hz": 158,
+          "blowing_pressure_pa": 6181.25,
+          "rest_y_m": 0.0,
+          "trim_m": -0.12,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "lip_parameters": {},
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1770,
+        "axial_cells": 666,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 3.200869030184491,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 27.336926399962977,
+        "bell_flux_residual_m3_s": 3.725290298461914e-09,
+        "start_s": 2.34,
+        "change_in_sustained_level_db": 7.181890252747053
+      },
+      {
+        "note": "Eb3",
+        "target_hz": 155.56349186104046,
+        "audio_frequency_hz": 156.52682513793553,
+        "audio_period_frequency_hz": 156.52682513793553,
+        "subharmonic_odd_to_even": null,
+        "cents": 10.687679658284821,
+        "periodicity": 1.0006185170390414,
+        "early_frequency_hz": 156.37896172080957,
+        "radiated_rms_pa": 1.9819425280656648,
+        "mouthpiece_rms_pa": 6097.6328125,
+        "incoming_characteristic_rms_pa": 5885.73583984375,
+        "boundary_residual_pa": 0.0009613994031809625,
+        "attack_rms_pa": 0.9756804352299289,
+        "peak_blowing_pressure_pa": 9025.34375,
+        "preset": {
+          "note": "Eb3",
+          "midi": 51,
+          "position": 3,
+          "target_hz": 155.56349186104046,
+          "lip_frequency_hz": 170,
+          "blowing_pressure_pa": 6224.375,
+          "rest_y_m": 0.0,
+          "trim_m": -0.11508,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "lip_parameters": {},
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1710,
+        "axial_cells": 636,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 3.0093468374128856,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 19.308606599923223,
+        "bell_flux_residual_m3_s": 3.725290298461914e-09,
+        "start_s": 3.51,
+        "change_in_sustained_level_db": 6.389520970718602
+      },
+      {
+        "note": "F3",
+        "target_hz": 174.61411571650194,
+        "audio_frequency_hz": 175.16362698142171,
+        "audio_period_frequency_hz": 175.16362698142171,
+        "subharmonic_odd_to_even": null,
+        "cents": 5.439645115841191,
+        "periodicity": 0.9999660722546027,
+        "early_frequency_hz": 175.01041321607318,
+        "radiated_rms_pa": 2.1339319965958885,
+        "mouthpiece_rms_pa": 6594.677734375,
+        "incoming_characteristic_rms_pa": 6391.373046875,
+        "boundary_residual_pa": 0.0009594552942644441,
+        "attack_rms_pa": 1.2335284958951163,
+        "peak_blowing_pressure_pa": 9588.125,
+        "preset": {
+          "note": "F3",
+          "midi": 53,
+          "position": 1,
+          "target_hz": 174.61411571650194,
+          "lip_frequency_hz": 190,
+          "blowing_pressure_pa": 6612.5,
+          "rest_y_m": -2.9999999999999997e-05,
+          "trim_m": -0.07606,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "lip_parameters": {},
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1600,
+        "axial_cells": 581,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.6879399999999998,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 15.603753800038248,
+        "bell_flux_residual_m3_s": 5.587935447692871e-09,
+        "start_s": 4.68,
+        "change_in_sustained_level_db": 6.069229123323594
+      },
+      {
+        "note": "G3",
+        "target_hz": 195.99771799087463,
+        "audio_frequency_hz": 196.6977034009995,
+        "audio_period_frequency_hz": 196.6977034009995,
+        "subharmonic_odd_to_even": null,
+        "cents": 6.17190725090419,
+        "periodicity": 0.9997717828974456,
+        "early_frequency_hz": 196.5032564759002,
+        "radiated_rms_pa": 1.8676871466370886,
+        "mouthpiece_rms_pa": 5256.47509765625,
+        "incoming_characteristic_rms_pa": 5022.0888671875,
+        "boundary_residual_pa": 0.0009764787638459893,
+        "attack_rms_pa": 0.7144645024922152,
+        "peak_blowing_pressure_pa": 9588.125,
+        "preset": {
+          "note": "G3",
+          "midi": 55,
+          "position": 4,
+          "target_hz": 195.99771799087463,
+          "lip_frequency_hz": 212.0,
+          "blowing_pressure_pa": 6612.5,
+          "rest_y_m": 0.0,
+          "trim_m": -0.049,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "lip_parameters": {},
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1794,
+        "axial_cells": 678,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 3.271869030184491,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 15.618743499973789,
+        "bell_flux_residual_m3_s": 3.725290298461914e-09,
+        "start_s": 5.85,
+        "change_in_sustained_level_db": 4.093804038929533
+      },
+      {
+        "note": "A3",
+        "target_hz": 220.0,
+        "audio_frequency_hz": 220.37268361756895,
+        "audio_period_frequency_hz": 220.37268361756895,
+        "subharmonic_odd_to_even": null,
+        "cents": 2.930257694450807,
+        "periodicity": 0.9999335872442355,
+        "early_frequency_hz": 220.21415167821556,
+        "radiated_rms_pa": 2.1609645647957874,
+        "mouthpiece_rms_pa": 5305.080078125,
+        "incoming_characteristic_rms_pa": 5075.7490234375,
+        "boundary_residual_pa": 0.0009633967578679403,
+        "attack_rms_pa": 0.9468801270669709,
+        "peak_blowing_pressure_pa": 10130.0625,
+        "preset": {
+          "note": "A3",
+          "midi": 57,
+          "position": 2,
+          "target_hz": 220.0,
+          "lip_frequency_hz": 235,
+          "blowing_pressure_pa": 6986.25,
+          "rest_y_m": 2.9999999999999997e-05,
+          "trim_m": -0.01792,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "lip_parameters": {},
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1680,
+        "axial_cells": 621,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.921090097728901,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 36.754199099959806,
+        "bell_flux_residual_m3_s": 3.725290298461914e-09,
+        "start_s": 7.02,
+        "change_in_sustained_level_db": 3.3596014009389696
+      },
+      {
+        "note": "Bb3",
+        "target_hz": 233.08188075904496,
+        "audio_frequency_hz": 234.55036558033873,
+        "audio_period_frequency_hz": 234.55036558033873,
+        "subharmonic_odd_to_even": null,
+        "cents": 10.873070879079364,
+        "periodicity": 0.9999733211946962,
+        "early_frequency_hz": 234.38783294579986,
+        "radiated_rms_pa": 1.5488601490559746,
+        "mouthpiece_rms_pa": 4742.60498046875,
+        "incoming_characteristic_rms_pa": 4555.6376953125,
+        "boundary_residual_pa": 0.0005232083944974875,
+        "attack_rms_pa": 0.5725145065560615,
+        "peak_blowing_pressure_pa": 10130.0625,
+        "preset": {
+          "note": "Bb3",
+          "midi": 58,
+          "position": 1,
+          "target_hz": 233.08188075904496,
+          "lip_frequency_hz": 255.22465943115424,
+          "blowing_pressure_pa": 6986.25,
+          "rest_y_m": 0.0,
+          "trim_m": 0.0,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "lip_parameters": {},
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1626,
+        "axial_cells": 594,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.764,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 36.13704079994932,
+        "bell_flux_residual_m3_s": 2.7939677238464355e-09,
+        "start_s": 8.19,
+        "change_in_sustained_level_db": 3.02281150183533
+      },
+      {
+        "note": "C4",
+        "target_hz": 261.6255653005986,
+        "audio_frequency_hz": 262.5498276036503,
+        "audio_period_frequency_hz": 262.5498276036503,
+        "subharmonic_odd_to_even": null,
+        "cents": 6.105269531117026,
+        "periodicity": 0.9997797558786995,
+        "early_frequency_hz": 262.34012470929514,
+        "radiated_rms_pa": 1.675675461309729,
+        "mouthpiece_rms_pa": 5144.2587890625,
+        "incoming_characteristic_rms_pa": 4949.47021484375,
+        "boundary_residual_pa": 0.0009624085232360358,
+        "attack_rms_pa": 0.6098633765224434,
+        "peak_blowing_pressure_pa": 10797.0625,
+        "preset": {
+          "note": "C4",
+          "midi": 60,
+          "position": 3,
+          "target_hz": 261.6255653005986,
+          "lip_frequency_hz": 276,
+          "blowing_pressure_pa": 7446.249999999999,
+          "rest_y_m": 0.0,
+          "trim_m": -0.01,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "lip_parameters": {},
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1746,
+        "axial_cells": 654,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 3.1144268374128856,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 36.89826949988492,
+        "bell_flux_residual_m3_s": 3.725290298461914e-09,
+        "start_s": 9.36,
+        "change_in_sustained_level_db": 2.9964697507254083
+      },
+      {
+        "note": "D4",
+        "target_hz": 293.6647679174076,
+        "audio_frequency_hz": 293.8729285594315,
+        "audio_period_frequency_hz": 293.8729285594315,
+        "subharmonic_odd_to_even": null,
+        "cents": 1.2267291388685877,
+        "periodicity": 0.9999846139156187,
+        "early_frequency_hz": 293.67516148986715,
+        "radiated_rms_pa": 3.897466820143525,
+        "mouthpiece_rms_pa": 6602.96435546875,
+        "incoming_characteristic_rms_pa": 6336.42822265625,
+        "boundary_residual_pa": 0.0009966265174625732,
+        "attack_rms_pa": 3.5361249827985226,
+        "peak_blowing_pressure_pa": 12506.25,
+        "preset": {
+          "note": "D4",
+          "midi": 62,
+          "position": 1,
+          "target_hz": 293.6647679174076,
+          "lip_frequency_hz": 306,
+          "blowing_pressure_pa": 8624.999999999998,
+          "rest_y_m": 0.0,
+          "trim_m": 0.0,
+          "lip_parameters": {
+            "quality": 4.5,
+            "mass_product": 2.65
+          },
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1626,
+        "axial_cells": 594,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.764,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 15.525747700128704,
+        "bell_flux_residual_m3_s": 7.450580596923828e-09,
+        "start_s": 10.53,
+        "change_in_sustained_level_db": 3.4577892558228935
+      },
+      {
+        "note": "Eb4",
+        "target_hz": 311.1269837220809,
+        "audio_frequency_hz": 311.8388518296262,
+        "audio_period_frequency_hz": 311.8388518296262,
+        "subharmonic_odd_to_even": null,
+        "cents": 3.9565920707539135,
+        "periodicity": 0.999904940679022,
+        "early_frequency_hz": 311.4117061493084,
+        "radiated_rms_pa": 4.172811168052182,
+        "mouthpiece_rms_pa": 6529.77783203125,
+        "incoming_characteristic_rms_pa": 6255.32958984375,
+        "boundary_residual_pa": 0.0009558974530818887,
+        "attack_rms_pa": 3.590926979391184,
+        "peak_blowing_pressure_pa": 12714.6875,
+        "preset": {
+          "note": "Eb4",
+          "midi": 63,
+          "position": 3,
+          "target_hz": 311.1269837220809,
+          "lip_frequency_hz": 323,
+          "blowing_pressure_pa": 8768.749999999998,
+          "rest_y_m": 0.0,
+          "trim_m": -0.02238,
+          "lip_parameters": {
+            "quality": 4.5,
+            "mass_product": 2.65
+          },
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1740,
+        "axial_cells": 651,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 3.1020468374128853,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 15.907753399806097,
+        "bell_flux_residual_m3_s": 7.450580596923828e-09,
+        "start_s": 11.7,
+        "change_in_sustained_level_db": 3.6509350676448866
+      },
+      {
+        "note": "F4",
+        "target_hz": 349.2282314330039,
+        "audio_frequency_hz": 349.8494371727147,
+        "audio_period_frequency_hz": 349.8494371727147,
+        "subharmonic_odd_to_even": null,
+        "cents": 3.076776328088694,
+        "periodicity": 0.9999580758992546,
+        "early_frequency_hz": 349.50147400707004,
+        "radiated_rms_pa": 4.531876181451805,
+        "mouthpiece_rms_pa": 7286.68994140625,
+        "incoming_characteristic_rms_pa": 7051.6083984375,
+        "boundary_residual_pa": 0.0009714793485500195,
+        "attack_rms_pa": 4.517193241708794,
+        "peak_blowing_pressure_pa": 13756.875,
+        "preset": {
+          "note": "F4",
+          "midi": 65,
+          "position": 1,
+          "target_hz": 349.2282314330039,
+          "lip_frequency_hz": 361,
+          "blowing_pressure_pa": 9487.499999999998,
+          "rest_y_m": 0.0,
+          "trim_m": -0.02196,
+          "lip_parameters": {
+            "quality": 4.5,
+            "mass_product": 2.65
+          },
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1618,
+        "axial_cells": 590,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.74204,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 15.585227399831638,
+        "bell_flux_residual_m3_s": 7.450580596923828e-09,
+        "start_s": 12.87,
+        "change_in_sustained_level_db": 3.5822969623083174
+      },
+      {
+        "note": "G4",
+        "target_hz": 391.99543598174927,
+        "audio_frequency_hz": 392.72566873831767,
+        "audio_period_frequency_hz": 392.72566873831767,
+        "subharmonic_odd_to_even": null,
+        "cents": 3.222047092203613,
+        "periodicity": 1.0000398826407526,
+        "early_frequency_hz": 392.2925664555333,
+        "radiated_rms_pa": 3.871406419416086,
+        "mouthpiece_rms_pa": 5778.7109375,
+        "incoming_characteristic_rms_pa": 5511.0859375,
+        "boundary_residual_pa": 0.0009559126010572072,
+        "attack_rms_pa": 3.7005363682374455,
+        "peak_blowing_pressure_pa": 13965.3125,
+        "preset": {
+          "note": "G4",
+          "midi": 67,
+          "position": 4,
+          "target_hz": 391.99543598174927,
+          "lip_frequency_hz": 404,
+          "blowing_pressure_pa": 9631.249999999998,
+          "rest_y_m": 0.0,
+          "trim_m": 0.0,
+          "lip_parameters": {
+            "quality": 4.5,
+            "mass_product": 2.65
+          },
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1810,
+        "axial_cells": 686,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 3.320869030184491,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 15.738517800113186,
+        "bell_flux_residual_m3_s": 5.587935447692871e-09,
+        "start_s": 14.04,
+        "change_in_sustained_level_db": 3.7222676471442235
+      },
+      {
+        "note": "A4",
+        "target_hz": 440.0,
+        "audio_frequency_hz": 440.37895170457557,
+        "audio_period_frequency_hz": 440.37895170457557,
+        "subharmonic_odd_to_even": null,
+        "cents": 1.490390321487671,
+        "periodicity": 0.9999842443867523,
+        "early_frequency_hz": 440.0341806032937,
+        "radiated_rms_pa": 4.531979573941028,
+        "mouthpiece_rms_pa": 5919.3544921875,
+        "incoming_characteristic_rms_pa": 5657.96630859375,
+        "boundary_residual_pa": 0.000963696747078302,
+        "attack_rms_pa": 4.307276718958761,
+        "peak_blowing_pressure_pa": 14590.625,
+        "preset": {
+          "note": "A4",
+          "midi": 69,
+          "position": 2,
+          "target_hz": 440.0,
+          "lip_frequency_hz": 455,
+          "blowing_pressure_pa": 10062.499999999998,
+          "rest_y_m": 0.0,
+          "trim_m": -0.01477,
+          "lip_parameters": {
+            "quality": 4.5,
+            "mass_product": 2.65
+          },
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1680,
+        "axial_cells": 621,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.924240097728901,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 15.659045099979267,
+        "bell_flux_residual_m3_s": 5.587935447692871e-09,
+        "start_s": 15.21,
+        "change_in_sustained_level_db": 4.139888719972558
+      },
+      {
+        "note": "Bb4",
+        "target_hz": 466.1637615180899,
+        "audio_frequency_hz": 466.73652440592963,
+        "audio_period_frequency_hz": 466.73652440592963,
+        "subharmonic_odd_to_even": null,
+        "cents": 2.1258150587431257,
+        "periodicity": 0.999886983691872,
+        "early_frequency_hz": 466.3637816969979,
+        "radiated_rms_pa": 4.854838178135293,
+        "mouthpiece_rms_pa": 6240.68115234375,
+        "incoming_characteristic_rms_pa": 5971.41845703125,
+        "boundary_residual_pa": 0.0009774603911978375,
+        "attack_rms_pa": 4.88466657011015,
+        "peak_blowing_pressure_pa": 15632.8125,
+        "preset": {
+          "note": "Bb4",
+          "midi": 70,
+          "position": 1,
+          "target_hz": 466.1637615180899,
+          "lip_frequency_hz": 479,
+          "blowing_pressure_pa": 10781.25,
+          "rest_y_m": 0.0,
+          "trim_m": -0.01979,
+          "lip_parameters": {
+            "quality": 4.5,
+            "mass_product": 2.65
+          },
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1620,
+        "axial_cells": 591,
+        "time_step_s": 1.0416666666666667e-06,
+        "steps": 1036800,
+        "bell_rings": 16,
+        "bore_length_m": 2.74421,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 15.524091399973258,
+        "bell_flux_residual_m3_s": 5.587935447692871e-09,
+        "start_s": 16.38,
+        "change_in_sustained_level_db": 4.048881485759449
+      },
+      {
+        "note": "C5",
+        "target_hz": 523.2511306011972,
+        "audio_frequency_hz": 525.5249805138066,
+        "audio_period_frequency_hz": 525.5249805138066,
+        "subharmonic_odd_to_even": null,
+        "cents": 7.506983650019859,
+        "periodicity": 0.9999013128270492,
+        "early_frequency_hz": 525.036551925107,
+        "radiated_rms_pa": 4.5857615409380985,
+        "mouthpiece_rms_pa": 6630.40625,
+        "incoming_characteristic_rms_pa": 6375.06396484375,
+        "boundary_residual_pa": 0.0010387655355543757,
+        "attack_rms_pa": 5.018660023099843,
+        "peak_blowing_pressure_pa": 16883.4375,
+        "preset": {
+          "note": "C5",
+          "midi": 72,
+          "target_hz": 523.2511306011972,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 0.0,
+          "trim_m": -0.025,
+          "wave_speed_reserve": 1.75,
+          "position": 1,
+          "lip_frequency_hz": 543,
+          "blowing_pressure_pa": 11643.75,
+          "lip_parameters": {
+            "quality": 5.0,
+            "mass_product": 2.6
+          },
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1620,
+        "axial_cells": 591,
+        "time_step_s": 8.680555555555556e-07,
+        "steps": 1244160,
+        "bell_rings": 16,
+        "bore_length_m": 2.739,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 18.587887899950147,
+        "bell_flux_residual_m3_s": 7.450580596923828e-09,
+        "start_s": 17.55,
+        "change_in_sustained_level_db": 4.139366576751904
+      },
+      {
+        "note": "D5",
+        "target_hz": 587.3295358348151,
+        "audio_frequency_hz": 590.786645867991,
+        "audio_period_frequency_hz": 590.786645867991,
+        "subharmonic_odd_to_even": null,
+        "cents": 10.160430478500171,
+        "periodicity": 1.0000129313803297,
+        "early_frequency_hz": 590.43715761812,
+        "radiated_rms_pa": 5.158184061772976,
+        "mouthpiece_rms_pa": 5226.732421875,
+        "incoming_characteristic_rms_pa": 5016.240234375,
+        "boundary_residual_pa": 0.000550822839841203,
+        "attack_rms_pa": 5.452214841774227,
+        "peak_blowing_pressure_pa": 18134.0625,
+        "preset": {
+          "note": "D5",
+          "midi": 74,
+          "target_hz": 587.3295358348151,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 0.0,
+          "trim_m": 0.009,
+          "wave_speed_reserve": 1.75,
+          "position": 1,
+          "lip_frequency_hz": 654,
+          "blowing_pressure_pa": 12506.25,
+          "lip_parameters": {
+            "quality": 5.5,
+            "mass_product": 2.55
+          },
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1628,
+        "axial_cells": 595,
+        "time_step_s": 8.680555555555556e-07,
+        "steps": 1244160,
+        "bell_rings": 16,
+        "bore_length_m": 2.7729999999999997,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 18.63079409999773,
+        "bell_flux_residual_m3_s": 7.450580596923828e-09,
+        "start_s": 18.72,
+        "change_in_sustained_level_db": 2.6373038515498126
+      },
+      {
+        "note": "Eb5",
+        "target_hz": 622.2539674441618,
+        "audio_frequency_hz": 625.3088693463806,
+        "audio_period_frequency_hz": 625.3088693463806,
+        "subharmonic_odd_to_even": null,
+        "cents": 8.478548100981488,
+        "periodicity": 1.0000171148674741,
+        "early_frequency_hz": 624.8212471336736,
+        "radiated_rms_pa": 5.305512890635424,
+        "mouthpiece_rms_pa": 5190.15087890625,
+        "incoming_characteristic_rms_pa": 4979.10888671875,
+        "boundary_residual_pa": 0.0005566388308579917,
+        "attack_rms_pa": 5.611416548558977,
+        "peak_blowing_pressure_pa": 18967.8125,
+        "preset": {
+          "note": "Eb5",
+          "midi": 75,
+          "target_hz": 622.2539674441618,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 0.0,
+          "trim_m": 0.018,
+          "wave_speed_reserve": 1.75,
+          "position": 3,
+          "lip_frequency_hz": 694,
+          "blowing_pressure_pa": 13081.25,
+          "lip_parameters": {
+            "quality": 6.0,
+            "mass_product": 2.5
+          },
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1754,
+        "axial_cells": 658,
+        "time_step_s": 8.680555555555556e-07,
+        "steps": 1244160,
+        "bell_rings": 16,
+        "bore_length_m": 3.142426837412885,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 18.94131170003675,
+        "bell_flux_residual_m3_s": 5.587935447692871e-09,
+        "start_s": 19.89,
+        "change_in_sustained_level_db": 2.441790181555464
+      },
+      {
+        "note": "F5",
+        "target_hz": 698.4564628660078,
+        "audio_frequency_hz": 701.2676744115593,
+        "audio_period_frequency_hz": 701.2676744115593,
+        "subharmonic_odd_to_even": null,
+        "cents": 6.954044101965625,
+        "periodicity": 0.999973408566097,
+        "early_frequency_hz": 700.9325047189844,
+        "radiated_rms_pa": 6.190416012288029,
+        "mouthpiece_rms_pa": 4729.16845703125,
+        "incoming_characteristic_rms_pa": 4391.54296875,
+        "boundary_residual_pa": 0.0005521543012037,
+        "attack_rms_pa": 6.0826830251320025,
+        "peak_blowing_pressure_pa": 20218.4375,
+        "preset": {
+          "note": "F5",
+          "midi": 77,
+          "target_hz": 698.4564628660078,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 0.0,
+          "trim_m": -0.017,
+          "wave_speed_reserve": 1.75,
+          "position": 1,
+          "lip_frequency_hz": 754,
+          "blowing_pressure_pa": 13943.75,
+          "lip_parameters": {
+            "quality": 6.5,
+            "mass_product": 2.45
+          },
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1622,
+        "axial_cells": 592,
+        "time_step_s": 8.680555555555556e-07,
+        "steps": 1244160,
+        "bell_rings": 16,
+        "bore_length_m": 2.747,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 18.56376379984431,
+        "bell_flux_residual_m3_s": 5.587935447692871e-09,
+        "start_s": 21.06,
+        "change_in_sustained_level_db": 3.8010226782257677
+      },
+      {
+        "note": "G5",
+        "target_hz": 783.9908719634985,
+        "audio_frequency_hz": 785.5087131932397,
+        "audio_period_frequency_hz": 785.5087131932397,
+        "subharmonic_odd_to_even": null,
+        "cents": 3.348505806639911,
+        "periodicity": 0.9998895354711451,
+        "early_frequency_hz": 785.443986358012,
+        "radiated_rms_pa": 6.030491224953107,
+        "mouthpiece_rms_pa": 3424.618408203125,
+        "incoming_characteristic_rms_pa": 3130.65380859375,
+        "boundary_residual_pa": 0.0005026627665642991,
+        "attack_rms_pa": 5.159559163382556,
+        "peak_blowing_pressure_pa": 21885.9375,
+        "preset": {
+          "note": "G5",
+          "midi": 79,
+          "target_hz": 783.9908719634985,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 0.0,
+          "trim_m": 0.093,
+          "wave_speed_reserve": 1.75,
+          "position": 1,
+          "lip_frequency_hz": 852,
+          "blowing_pressure_pa": 15093.749999999998,
+          "lip_parameters": {
+            "quality": 7.0,
+            "mass_product": 2.4
+          },
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1656,
+        "axial_cells": 609,
+        "time_step_s": 8.680555555555556e-07,
+        "steps": 1244160,
+        "bell_rings": 16,
+        "bore_length_m": 2.8569999999999998,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 18.584281099960208,
+        "bell_flux_residual_m3_s": 3.725290298461914e-09,
+        "start_s": 22.23,
+        "change_in_sustained_level_db": 4.029544791254463
+      },
+      {
+        "note": "A5",
+        "target_hz": 880.0,
+        "audio_frequency_hz": 881.7907192832205,
+        "audio_period_frequency_hz": 881.7907192832205,
+        "subharmonic_odd_to_even": null,
+        "cents": 3.5193229582833125,
+        "periodicity": 0.9999627762697871,
+        "early_frequency_hz": 881.6576970193235,
+        "radiated_rms_pa": 5.524662623256932,
+        "mouthpiece_rms_pa": 2866.681884765625,
+        "incoming_characteristic_rms_pa": 2652.030517578125,
+        "boundary_residual_pa": 0.0004578669111197087,
+        "attack_rms_pa": 4.823972460823469,
+        "peak_blowing_pressure_pa": 23970.3125,
+        "preset": {
+          "note": "A5",
+          "midi": 81,
+          "target_hz": 880.0,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 0.0,
+          "trim_m": -0.015,
+          "wave_speed_reserve": 1.75,
+          "position": 1,
+          "lip_frequency_hz": 958,
+          "blowing_pressure_pa": 16531.249999999996,
+          "lip_parameters": {
+            "quality": 8.0,
+            "mass_product": 2.3
+          },
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.08,
+        "sustained_window_s": [
+          0.72,
+          0.92
+        ],
+        "cells": 1622,
+        "axial_cells": 592,
+        "time_step_s": 8.680555555555556e-07,
+        "steps": 1244160,
+        "bell_rings": 16,
+        "bore_length_m": 2.7489999999999997,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 18.590032999869436,
+        "bell_flux_residual_m3_s": 3.725290298461914e-09,
+        "start_s": 23.4,
+        "change_in_sustained_level_db": 3.9805699549019637
+      },
+      {
+        "note": "Bb5",
+        "target_hz": 932.3275230361799,
+        "audio_frequency_hz": 931.9980505328234,
+        "audio_period_frequency_hz": 931.9980505328234,
+        "subharmonic_odd_to_even": null,
+        "cents": -0.6119038756605549,
+        "periodicity": 0.9999953577614662,
+        "early_frequency_hz": 932.2887276582244,
+        "radiated_rms_pa": 3.514057305480868,
+        "mouthpiece_rms_pa": 2989.344970703125,
+        "incoming_characteristic_rms_pa": 2972.40234375,
+        "boundary_residual_pa": 0.000489251040335148,
+        "attack_rms_pa": 3.8471263095628263,
+        "peak_blowing_pressure_pa": 25429.375,
+        "preset": {
+          "note": "Bb5",
+          "midi": 82,
+          "target_hz": 932.3275230361799,
+          "attack_s": 0.0065,
+          "attack_boost": 0.45,
+          "attack_decay_s": 0.028,
+          "rest_y_m": 0.0,
+          "trim_m": -0.104,
+          "wave_speed_reserve": 1.75,
+          "position": 6,
+          "lip_frequency_hz": 1024,
+          "blowing_pressure_pa": 17537.499999999996,
+          "lip_parameters": {
+            "quality": 9.0,
+            "mass_product": 2.2
+          },
+          "pressure_factor": 1.4375
+        },
+        "duration_s": 1.65,
+        "sustained_window_s": [
+          1.29,
+          1.49
+        ],
+        "cells": 1920,
+        "axial_cells": 741,
+        "time_step_s": 8.680555555555556e-07,
+        "steps": 1900800,
+        "bell_rings": 16,
+        "bore_length_m": 3.6454911896738236,
+        "bell_radius_m": 0.1065,
+        "reconstruction_fallbacks": 0,
+        "compute_wall_s": 65.64062899979763,
+        "bell_flux_residual_m3_s": 2.7939677238464355e-09,
+        "start_s": 24.57,
+        "change_in_sustained_level_db": 3.4667993708326748
+      }
+    ]
+  },
+  "independent_wav_check": {
+    "wav": "samples/trombone_5AL_Bb2_Bb5_major_stronger_f_strong_attack.wav",
+    "sha256": "a438f1076c6b547482b3d163a3edb663d961e8735d6086fde22e29f36d98f157",
+    "sample_rate_hz": 48000,
+    "frames": 1262880,
+    "channels": 1,
+    "bit_depth": 16,
+    "duration_s": 26.31,
+    "note_count": 22,
+    "clipped_samples": 0,
+    "peak_pcm": 31784,
+    "note_duration_s": [
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.65
+    ],
+    "gap_s": 0.09,
+    "sustained_max_abs_pitch_error_cents": 11.697825055736699,
+    "attack_window_s": [
+      0.012,
+      0.08
+    ],
+    "early_pitch_window_s": [
+      0.17,
+      0.37
+    ],
+    "reference_wav": null,
+    "reference_note_count": 0,
+    "median_attack_vs_reference_db": null,
+    "median_onset_advance_vs_reference_ms": null,
+    "gate_failures": [],
+    "review": [],
+    "notes": [
+      {
+        "sustained": {
+          "frequency_hz": 116.8176153205649,
+          "periodicity": 0.9999547888673203,
+          "period_frequency_hz": 116.8176153205649,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 116.8176153205649,
+          "target_periodicity": 0.9999547888673203,
+          "cents": 4.105178843410842
+        },
+        "early": {
+          "frequency_hz": 116.82467811742593,
+          "periodicity": 0.9942276020619237,
+          "period_frequency_hz": 116.82467811742593,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 116.82467811742593,
+          "target_periodicity": 0.9942276020619237,
+          "cents": 4.209846146844974
+        },
+        "sustained_rms_pa": 0.8647260309896893,
+        "attack_rms_pa": 0.4162768276165036,
+        "attack_relative_to_sustained_db": -6.349925932031036,
+        "onset_ms": 25.4375,
+        "note": "Bb2",
+        "target_hz": 116.54094037952248,
+        "start_s": 0.0,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 131.6996682344944,
+          "periodicity": 0.9999896928332486,
+          "period_frequency_hz": 131.6996682344944,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 131.6996682344944,
+          "target_periodicity": 0.9999896928332486,
+          "cents": 11.697825055736699
+        },
+        "early": {
+          "frequency_hz": 131.57399903307737,
+          "periodicity": 0.9998156227322593,
+          "period_frequency_hz": 131.57399903307737,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 131.57399903307737,
+          "target_periodicity": 0.9998156227322593,
+          "cents": 10.0450747507492
+        },
+        "sustained_rms_pa": 1.4943563355398537,
+        "attack_rms_pa": 0.817750303426402,
+        "attack_relative_to_sustained_db": -5.236669104564405,
+        "onset_ms": 34.708333333333336,
+        "note": "C3",
+        "target_hz": 130.8127826502993,
+        "start_s": 1.17,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 147.62362100113646,
+          "periodicity": 0.9997006020505169,
+          "period_frequency_hz": 147.62362100113646,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 147.62362100113646,
+          "target_periodicity": 0.9997006020505169,
+          "cents": 9.304071118551878
+        },
+        "early": {
+          "frequency_hz": 147.49006044280625,
+          "periodicity": 0.9999244963961684,
+          "period_frequency_hz": 147.49006044280625,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 147.49006044280625,
+          "target_periodicity": 0.9999244963961684,
+          "cents": 7.737050566682144
+        },
+        "sustained_rms_pa": 1.6728142936923323,
+        "attack_rms_pa": 0.9487325142158872,
+        "attack_relative_to_sustained_db": -4.926078922104916,
+        "onset_ms": 30.4375,
+        "note": "D3",
+        "target_hz": 146.8323839587038,
+        "start_s": 2.34,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 156.5308163571114,
+          "periodicity": 0.9999304214022109,
+          "period_frequency_hz": 156.5308163571114,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 156.5308163571114,
+          "target_periodicity": 0.9999304214022109,
+          "cents": 10.731823187264979
+        },
+        "early": {
+          "frequency_hz": 156.40273233911194,
+          "periodicity": 0.9998316602489794,
+          "period_frequency_hz": 156.40273233911194,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 156.40273233911194,
+          "target_periodicity": 0.9998316602489794,
+          "cents": 9.314631413430034
+        },
+        "sustained_rms_pa": 1.9812484012888465,
+        "attack_rms_pa": 0.9756909566829277,
+        "attack_relative_to_sustained_db": -6.152532988524379,
+        "onset_ms": 28.6875,
+        "note": "Eb3",
+        "target_hz": 155.56349186104046,
+        "start_s": 3.51,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 175.16782072068926,
+          "periodicity": 0.9999933056713716,
+          "period_frequency_hz": 175.16782072068926,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 175.16782072068926,
+          "target_periodicity": 0.9999933056713716,
+          "cents": 5.481093545668622
+        },
+        "early": {
+          "frequency_hz": 175.02797525761054,
+          "periodicity": 0.9999143483017345,
+          "period_frequency_hz": 175.02797525761054,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 175.02797525761054,
+          "target_periodicity": 0.9999143483017345,
+          "cents": 4.098408528091816
+        },
+        "sustained_rms_pa": 2.1330764453221613,
+        "attack_rms_pa": 1.2335217650089987,
+        "attack_relative_to_sustained_db": -4.757192063010781,
+        "onset_ms": 25.729166666666668,
+        "note": "F3",
+        "target_hz": 174.61411571650194,
+        "start_s": 4.68,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 196.7029501283724,
+          "periodicity": 0.9999914462128635,
+          "period_frequency_hz": 196.7029501283724,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 196.7029501283724,
+          "target_periodicity": 0.9999914462128635,
+          "cents": 6.218085684992535
+        },
+        "early": {
+          "frequency_hz": 196.53562184874443,
+          "periodicity": 0.9998915124870688,
+          "period_frequency_hz": 196.53562184874443,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 196.53562184874443,
+          "target_periodicity": 0.9998915124870688,
+          "cents": 4.744759042131305
+        },
+        "sustained_rms_pa": 1.8669913138566387,
+        "attack_rms_pa": 0.714463145413659,
+        "attack_relative_to_sustained_db": -8.343249323555906,
+        "onset_ms": 34.770833333333336,
+        "note": "G3",
+        "target_hz": 195.99771799087463,
+        "start_s": 5.85,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 220.37945946574908,
+          "periodicity": 0.9999726764037763,
+          "period_frequency_hz": 220.37945946574908,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 220.37945946574908,
+          "target_periodicity": 0.9999726764037763,
+          "cents": 2.9834875165434087
+        },
+        "early": {
+          "frequency_hz": 220.21888338379335,
+          "periodicity": 0.9999528235085458,
+          "period_frequency_hz": 220.21888338379335,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 220.21888338379335,
+          "target_periodicity": 0.9999528235085458,
+          "cents": 1.7215908373244933
+        },
+        "sustained_rms_pa": 2.160127924453275,
+        "attack_rms_pa": 0.946882996618764,
+        "attack_relative_to_sustained_db": -7.163663065324669,
+        "onset_ms": 33.729166666666664,
+        "note": "A3",
+        "target_hz": 220.0,
+        "start_s": 7.02,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 234.56169840876703,
+          "periodicity": 0.9999328616387211,
+          "period_frequency_hz": 234.56169840876703,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 234.56169840876703,
+          "target_periodicity": 0.9999328616387211,
+          "cents": 10.956717325023574
+        },
+        "early": {
+          "frequency_hz": 234.42176843707483,
+          "periodicity": 0.9999868850748512,
+          "period_frequency_hz": 234.42176843707483,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 234.42176843707483,
+          "target_periodicity": 0.9999868850748512,
+          "cents": 9.923625304545682
+        },
+        "sustained_rms_pa": 1.5484589046718755,
+        "attack_rms_pa": 0.5725236495418747,
+        "attack_relative_to_sustained_db": -8.642125057372661,
+        "onset_ms": 33.75,
+        "note": "Bb3",
+        "target_hz": 233.08188075904496,
+        "start_s": 8.19,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 262.55920674393565,
+          "periodicity": 0.9999672666449809,
+          "period_frequency_hz": 262.55920674393565,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 262.55920674393565,
+          "target_periodicity": 0.9999672666449809,
+          "cents": 6.167113780416396
+        },
+        "early": {
+          "frequency_hz": 262.34909263782555,
+          "periodicity": 0.9999512119430954,
+          "period_frequency_hz": 262.34909263782555,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 262.34909263782555,
+          "target_periodicity": 0.9999512119430954,
+          "cents": 4.781131830640851
+        },
+        "sustained_rms_pa": 1.6751424390174514,
+        "attack_rms_pa": 0.6098564711853911,
+        "attack_relative_to_sustained_db": -8.776482099137162,
+        "onset_ms": 53.395833333333336,
+        "note": "C4",
+        "target_hz": 261.6255653005986,
+        "start_s": 9.36,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 293.88030363199965,
+          "periodicity": 0.9999136397923986,
+          "period_frequency_hz": 293.88030363199965,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 293.88030363199965,
+          "target_periodicity": 0.9999136397923986,
+          "cents": 1.2701758646226302
+        },
+        "early": {
+          "frequency_hz": 293.67008633588375,
+          "periodicity": 0.999617499176463,
+          "period_frequency_hz": 293.67008633588375,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 293.67008633588375,
+          "target_periodicity": 0.999617499176463,
+          "cents": 0.03135324623314147
+        },
+        "sustained_rms_pa": 3.8955440506214494,
+        "attack_rms_pa": 3.536128170081986,
+        "attack_relative_to_sustained_db": -0.840802433618461,
+        "onset_ms": 24.6875,
+        "note": "D4",
+        "target_hz": 293.6647679174076,
+        "start_s": 10.53,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 311.81690423277144,
+          "periodicity": 0.9999386464534593,
+          "period_frequency_hz": 311.81690423277144,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 311.81690423277144,
+          "target_periodicity": 0.9999386464534593,
+          "cents": 3.8347414292212987
+        },
+        "early": {
+          "frequency_hz": 311.5530257919372,
+          "periodicity": 0.9954801349078995,
+          "period_frequency_hz": 311.5530257919372,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 311.5530257919372,
+          "target_periodicity": 0.9954801349078995,
+          "cents": 2.3690455498715703
+        },
+        "sustained_rms_pa": 4.171335970110455,
+        "attack_rms_pa": 3.5909240834336105,
+        "attack_relative_to_sustained_db": -1.3013789349098845,
+        "onset_ms": 26.3125,
+        "note": "Eb4",
+        "target_hz": 311.1269837220809,
+        "start_s": 11.7,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 349.8404510870862,
+          "periodicity": 0.9999478974410679,
+          "period_frequency_hz": 349.8404510870862,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 349.8404510870862,
+          "target_periodicity": 0.9999478974410679,
+          "cents": 3.03230800670865
+        },
+        "early": {
+          "frequency_hz": 349.61633665529024,
+          "periodicity": 0.999941551585804,
+          "period_frequency_hz": 349.61633665529024,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 349.61633665529024,
+          "target_periodicity": 0.999941551585804,
+          "cents": 1.9228912270316592
+        },
+        "sustained_rms_pa": 4.529494347628715,
+        "attack_rms_pa": 4.51718932543752,
+        "attack_relative_to_sustained_db": -0.023628576950574826,
+        "onset_ms": 23.895833333333332,
+        "note": "F4",
+        "target_hz": 349.2282314330039,
+        "start_s": 12.87,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 392.7394695222826,
+          "periodicity": 0.999981754233516,
+          "period_frequency_hz": 392.7394695222826,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 392.7394695222826,
+          "target_periodicity": 0.999981754233516,
+          "cents": 3.282883368551084
+        },
+        "early": {
+          "frequency_hz": 392.3724999672857,
+          "periodicity": 0.9997637270380137,
+          "period_frequency_hz": 392.3724999672857,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 392.3724999672857,
+          "target_periodicity": 0.9997637270380137,
+          "cents": 1.6644894081063482
+        },
+        "sustained_rms_pa": 3.8695951445829277,
+        "attack_rms_pa": 3.7005372833337424,
+        "attack_relative_to_sustained_db": -0.38801490622469226,
+        "onset_ms": 29.916666666666668,
+        "note": "G4",
+        "target_hz": 391.99543598174927,
+        "start_s": 14.04,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 440.3993659916976,
+          "periodicity": 0.9999968993576719,
+          "period_frequency_hz": 440.3993659916976,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 440.3993659916976,
+          "target_periodicity": 0.9999968993576719,
+          "cents": 1.570641863219257
+        },
+        "early": {
+          "frequency_hz": 440.0230902247683,
+          "periodicity": 0.9999188977791017,
+          "period_frequency_hz": 440.0230902247683,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 440.0230902247683,
+          "target_periodicity": 0.9999188977791017,
+          "cents": 0.0908489419712057
+        },
+        "sustained_rms_pa": 4.530037213864531,
+        "attack_rms_pa": 4.307280681319486,
+        "attack_relative_to_sustained_db": -0.4379719299858236,
+        "onset_ms": 26.0,
+        "note": "A4",
+        "target_hz": 440.0,
+        "start_s": 15.21,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 466.7523191313906,
+          "periodicity": 0.9999174882263924,
+          "period_frequency_hz": 466.7523191313906,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 466.7523191313906,
+          "target_periodicity": 0.9999174882263924,
+          "cents": 2.1844003684779496
+        },
+        "early": {
+          "frequency_hz": 466.39049476772914,
+          "periodicity": 0.9998153492652926,
+          "period_frequency_hz": 466.39049476772914,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 466.39049476772914,
+          "target_periodicity": 0.9998153492652926,
+          "cents": 0.8418348357099851
+        },
+        "sustained_rms_pa": 4.852752849578276,
+        "attack_rms_pa": 4.8846633225656335,
+        "attack_relative_to_sustained_db": 0.056929237487016934,
+        "onset_ms": 24.333333333333332,
+        "note": "Bb4",
+        "target_hz": 466.1637615180899,
+        "start_s": 16.38,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 525.4685165265737,
+          "periodicity": 0.9998079493723582,
+          "period_frequency_hz": 525.4685165265737,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 525.4685165265737,
+          "target_periodicity": 0.9998079493723582,
+          "cents": 7.320964654444795
+        },
+        "early": {
+          "frequency_hz": 525.1615418097971,
+          "periodicity": 0.9997759592968929,
+          "period_frequency_hz": 525.1615418097971,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 525.1615418097971,
+          "target_periodicity": 0.9997759592968929,
+          "cents": 6.309295336985789
+        },
+        "sustained_rms_pa": 4.5828867681867065,
+        "attack_rms_pa": 5.018666441631833,
+        "attack_relative_to_sustained_db": 0.7889840971326358,
+        "onset_ms": 22.729166666666668,
+        "note": "C5",
+        "target_hz": 523.2511306011972,
+        "start_s": 17.55,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 590.7719553876449,
+          "periodicity": 0.999982440891213,
+          "period_frequency_hz": 590.7719553876449,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 590.7719553876449,
+          "target_periodicity": 0.999982440891213,
+          "cents": 10.11738113715302
+        },
+        "early": {
+          "frequency_hz": 590.4700290145702,
+          "periodicity": 0.9999783484898888,
+          "period_frequency_hz": 590.4700290145702,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 590.4700290145702,
+          "target_periodicity": 0.9999783484898888,
+          "cents": 9.232371569827215
+        },
+        "sustained_rms_pa": 5.155987468302152,
+        "attack_rms_pa": 5.452208077145858,
+        "attack_relative_to_sustained_db": 0.4852113739199268,
+        "onset_ms": 22.0,
+        "note": "D5",
+        "target_hz": 587.3295358348151,
+        "start_s": 18.72,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 625.2872756349728,
+          "periodicity": 0.999990658497742,
+          "period_frequency_hz": 625.2872756349728,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 625.2872756349728,
+          "target_periodicity": 0.999990658497742,
+          "cents": 8.418762584148475
+        },
+        "early": {
+          "frequency_hz": 624.9751862940353,
+          "periodicity": 0.9999555291176645,
+          "period_frequency_hz": 624.9751862940353,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 624.9751862940353,
+          "target_periodicity": 0.9999555291176645,
+          "cents": 7.554464533049153
+        },
+        "sustained_rms_pa": 5.303494018146532,
+        "attack_rms_pa": 5.611418855278007,
+        "attack_relative_to_sustained_db": 0.490212075566267,
+        "onset_ms": 23.083333333333332,
+        "note": "Eb5",
+        "target_hz": 622.2539674441618,
+        "start_s": 19.89,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 701.2938296214696,
+          "periodicity": 0.9999730007411297,
+          "period_frequency_hz": 701.2938296214696,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 701.2938296214696,
+          "target_periodicity": 0.9999730007411297,
+          "cents": 7.01861280691345
+        },
+        "early": {
+          "frequency_hz": 701.0142548157545,
+          "periodicity": 0.9999399463311327,
+          "period_frequency_hz": 701.0142548157545,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 701.0142548157545,
+          "target_periodicity": 0.9999399463311327,
+          "cents": 6.328308822076617
+        },
+        "sustained_rms_pa": 6.188274208233983,
+        "attack_rms_pa": 6.082690083951507,
+        "attack_relative_to_sustained_db": -0.14947719880286015,
+        "onset_ms": 23.229166666666668,
+        "note": "F5",
+        "target_hz": 698.4564628660078,
+        "start_s": 21.06,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 785.5762217464738,
+          "periodicity": 0.9999001362352267,
+          "period_frequency_hz": 785.5762217464738,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 785.5762217464738,
+          "target_periodicity": 0.9999001362352267,
+          "cents": 3.4972859310429945
+        },
+        "early": {
+          "frequency_hz": 785.5386758568645,
+          "periodicity": 0.9998921081590176,
+          "period_frequency_hz": 785.5386758568645,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 785.5386758568645,
+          "target_periodicity": 0.9998921081590176,
+          "cents": 3.414541222039557
+        },
+        "sustained_rms_pa": 6.027771751960548,
+        "attack_rms_pa": 5.159554961587642,
+        "attack_relative_to_sustained_db": -1.3508911167950233,
+        "onset_ms": 22.145833333333332,
+        "note": "G5",
+        "target_hz": 783.9908719634985,
+        "start_s": 22.23,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 881.7424731228379,
+          "periodicity": 0.999942951508104,
+          "period_frequency_hz": 881.7424731228379,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 881.7424731228379,
+          "target_periodicity": 0.999942951508104,
+          "cents": 3.424597896150517
+        },
+        "early": {
+          "frequency_hz": 881.6975889951532,
+          "periodicity": 0.9999399326144086,
+          "period_frequency_hz": 881.6975889951532,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 881.6975889951532,
+          "target_periodicity": 0.9999399326144086,
+          "cents": 3.33646909404808
+        },
+        "sustained_rms_pa": 5.521959746197284,
+        "attack_rms_pa": 4.823970512529871,
+        "attack_relative_to_sustained_db": -1.1737718395870962,
+        "onset_ms": 20.4375,
+        "note": "A5",
+        "target_hz": 880.0,
+        "start_s": 23.4,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 932.0413822679841,
+          "periodicity": 0.9999887714274347,
+          "period_frequency_hz": 932.0413822679841,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 932.0413822679841,
+          "target_periodicity": 0.9999887714274347,
+          "cents": -0.5314148323401512
+        },
+        "early": {
+          "frequency_hz": 932.0612684410082,
+          "periodicity": 0.9999931614804212,
+          "period_frequency_hz": 932.0612684410082,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 932.0612684410082,
+          "target_periodicity": 0.9999931614804212,
+          "cents": -0.49447736021848887
+        },
+        "sustained_rms_pa": 3.512261484610019,
+        "attack_rms_pa": 3.8471241089694734,
+        "attack_relative_to_sustained_db": 0.7909871139579251,
+        "onset_ms": 22.041666666666668,
+        "note": "Bb5",
+        "target_hz": 932.3275230361799,
+        "start_s": 24.57,
+        "duration_s": 1.65,
+        "gap_nonzero_count": 0
+      }
+    ]
+  },
+  "reference_wav_check": {
+    "wav": "samples/trombone_5AL_Bb2_Bb5_major_louder_f_strong_attack.wav",
+    "sha256": "415cc8a35b279bf0011cc989f32b8b398589328f68b2bfc04b36e75ae5cabeda",
+    "sample_rate_hz": 48000,
+    "frames": 1262880,
+    "channels": 1,
+    "bit_depth": 16,
+    "duration_s": 26.31,
+    "note_count": 22,
+    "clipped_samples": 0,
+    "peak_pcm": 31784,
+    "note_duration_s": [
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.65
+    ],
+    "gap_s": 0.09,
+    "sustained_max_abs_pitch_error_cents": 10.142275742132123,
+    "attack_window_s": [
+      0.012,
+      0.08
+    ],
+    "early_pitch_window_s": [
+      0.17,
+      0.37
+    ],
+    "reference_wav": null,
+    "reference_note_count": 0,
+    "median_attack_vs_reference_db": null,
+    "median_onset_advance_vs_reference_ms": null,
+    "gate_failures": [],
+    "review": [],
+    "notes": [
+      {
+        "sustained": {
+          "frequency_hz": 116.42957556681348,
+          "periodicity": 0.9999915996010122,
+          "period_frequency_hz": 116.42957556681348,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 116.42957556681348,
+          "target_periodicity": 0.9999915996010122,
+          "cents": -1.6551327925054864
+        },
+        "early": {
+          "frequency_hz": 116.39506946781913,
+          "periodicity": 0.9996358600843013,
+          "period_frequency_hz": 116.39506946781913,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 116.39506946781913,
+          "target_periodicity": 0.9996358600843013,
+          "cents": -2.1682926764858825
+        },
+        "sustained_rms_pa": 0.5783169872023762,
+        "attack_rms_pa": 0.09149749424840922,
+        "attack_relative_to_sustained_db": -16.015134972226527,
+        "onset_ms": 67.20833333333333,
+        "note": "Bb2",
+        "target_hz": 116.54094037952248,
+        "start_s": 0.0,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 131.08959905087042,
+          "periodicity": 0.9999867617774457,
+          "period_frequency_hz": 131.08959905087042,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 131.08959905087042,
+          "target_periodicity": 0.9999867617774457,
+          "cents": 3.6596395447192136
+        },
+        "early": {
+          "frequency_hz": 130.99124076155942,
+          "periodicity": 0.9999415188990968,
+          "period_frequency_hz": 130.99124076155942,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 130.99124076155942,
+          "target_periodicity": 0.9999415188990968,
+          "cents": 2.36018379221485
+        },
+        "sustained_rms_pa": 0.5661715033581559,
+        "attack_rms_pa": 0.13215471377255536,
+        "attack_relative_to_sustained_db": -12.637306963553776,
+        "onset_ms": 66.375,
+        "note": "C3",
+        "target_hz": 130.8127826502993,
+        "start_s": 1.17,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 147.00657919646443,
+          "periodicity": 0.9999939361414408,
+          "period_frequency_hz": 147.00657919646443,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 147.00657919646443,
+          "target_periodicity": 0.9999939361414408,
+          "cents": 2.0526397104505083
+        },
+        "early": {
+          "frequency_hz": 146.90417542316175,
+          "periodicity": 0.9998271169157553,
+          "period_frequency_hz": 146.90417542316175,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 146.90417542316175,
+          "target_periodicity": 0.9998271169157553,
+          "cents": 0.8462537345593686
+        },
+        "sustained_rms_pa": 0.7321298530819815,
+        "attack_rms_pa": 0.14942862971432258,
+        "attack_relative_to_sustained_db": -13.8030860388833,
+        "onset_ms": 69.45833333333333,
+        "note": "D3",
+        "target_hz": 146.8323839587038,
+        "start_s": 2.34,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 155.99947514873847,
+          "periodicity": 0.9999859197791695,
+          "period_frequency_hz": 155.99947514873847,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 155.99947514873847,
+          "target_periodicity": 0.9999859197791695,
+          "cents": 4.8451817775218275
+        },
+        "early": {
+          "frequency_hz": 155.8916509897115,
+          "periodicity": 0.9998693781334725,
+          "period_frequency_hz": 155.8916509897115,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 155.8916509897115,
+          "target_periodicity": 0.9998693781334725,
+          "cents": 3.64816879951738
+        },
+        "sustained_rms_pa": 0.9495923053709618,
+        "attack_rms_pa": 0.14656098138033388,
+        "attack_relative_to_sustained_db": -16.230376448835177,
+        "onset_ms": 77.29166666666667,
+        "note": "Eb3",
+        "target_hz": 155.56349186104046,
+        "start_s": 3.51,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 174.661667857457,
+          "periodicity": 0.9999817111403809,
+          "period_frequency_hz": 174.661667857457,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 174.661667857457,
+          "target_periodicity": 0.9999817111403809,
+          "cents": 0.47139761705570743
+        },
+        "early": {
+          "frequency_hz": 174.5353449305452,
+          "periodicity": 0.9999862790237316,
+          "period_frequency_hz": 174.5353449305452,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 174.5353449305452,
+          "target_periodicity": 0.9999862790237316,
+          "cents": -0.781159270766468
+        },
+        "sustained_rms_pa": 1.0607742670861264,
+        "attack_rms_pa": 0.3668438741290836,
+        "attack_relative_to_sustained_db": -9.222834091065915,
+        "onset_ms": 48.333333333333336,
+        "note": "F3",
+        "target_hz": 174.61411571650194,
+        "start_s": 4.68,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 196.06309886365682,
+          "periodicity": 0.9999674022258737,
+          "period_frequency_hz": 196.06309886365682,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 196.06309886365682,
+          "target_periodicity": 0.9999674022258737,
+          "cents": 0.5774083473866113
+        },
+        "early": {
+          "frequency_hz": 195.92076758738557,
+          "periodicity": 0.9999636042196001,
+          "period_frequency_hz": 195.92076758738557,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 195.92076758738557,
+          "target_periodicity": 0.9999636042196001,
+          "cents": -0.6798309608949145
+        },
+        "sustained_rms_pa": 1.1655166542792528,
+        "attack_rms_pa": 0.052826366386429874,
+        "attack_relative_to_sustained_db": -26.873354889008127,
+        "onset_ms": 86.77083333333333,
+        "note": "G3",
+        "target_hz": 195.99771799087463,
+        "start_s": 5.85,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 219.6611235652596,
+          "periodicity": 0.9999967630353525,
+          "period_frequency_hz": 219.6611235652596,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 219.6611235652596,
+          "target_periodicity": 0.9999967630353525,
+          "cents": -2.668757854545671
+        },
+        "early": {
+          "frequency_hz": 219.50953742727407,
+          "periodicity": 0.9999090280386996,
+          "period_frequency_hz": 219.50953742727407,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 219.50953742727407,
+          "target_periodicity": 0.9999090280386996,
+          "cents": -3.8638791009235525
+        },
+        "sustained_rms_pa": 1.467388827874394,
+        "attack_rms_pa": 0.04158182995736133,
+        "attack_relative_to_sustained_db": -30.95283220205014,
+        "onset_ms": 95.875,
+        "note": "A3",
+        "target_hz": 220.0,
+        "start_s": 7.02,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 233.57398239148614,
+          "periodicity": 0.9999980920163523,
+          "period_frequency_hz": 233.57398239148614,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 233.57398239148614,
+          "target_periodicity": 0.9999980920163523,
+          "cents": 3.651270603254306
+        },
+        "early": {
+          "frequency_hz": 233.45913611696795,
+          "periodicity": 0.9994047710866016,
+          "period_frequency_hz": 233.45913611696795,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 233.45913611696795,
+          "target_periodicity": 0.9994047710866016,
+          "cents": 2.799828694821665
+        },
+        "sustained_rms_pa": 1.0934048850312237,
+        "attack_rms_pa": 0.025398404766845076,
+        "attack_relative_to_sustained_db": -32.679491394651336,
+        "onset_ms": 116.72916666666667,
+        "note": "Bb3",
+        "target_hz": 233.08188075904496,
+        "start_s": 8.19,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 263.1627730553431,
+          "periodicity": 0.9999240004023948,
+          "period_frequency_hz": 263.1627730553431,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 263.1627730553431,
+          "target_periodicity": 0.9999240004023948,
+          "cents": 10.142275742132123
+        },
+        "early": {
+          "frequency_hz": 262.9897504742343,
+          "periodicity": 0.9999873712997769,
+          "period_frequency_hz": 262.9897504742343,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 262.9897504742343,
+          "target_periodicity": 0.9999873712997769,
+          "cents": 9.003660678724287
+        },
+        "sustained_rms_pa": 1.186421798578962,
+        "attack_rms_pa": 0.09582328155551427,
+        "attack_relative_to_sustained_db": -21.85536155929238,
+        "onset_ms": 76.60416666666667,
+        "note": "C4",
+        "target_hz": 261.6255653005986,
+        "start_s": 9.36,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 293.4130006834742,
+          "periodicity": 0.9999296958605984,
+          "period_frequency_hz": 293.4130006834742,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 293.4130006834742,
+          "target_periodicity": 0.9999296958605984,
+          "cents": -1.4848732411853385
+        },
+        "early": {
+          "frequency_hz": 293.1813455739877,
+          "periodicity": 0.9999472931337388,
+          "period_frequency_hz": 293.1813455739877,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 293.1813455739877,
+          "target_periodicity": 0.9999472931337388,
+          "cents": -2.8522551008673473
+        },
+        "sustained_rms_pa": 2.616538376448331,
+        "attack_rms_pa": 0.9666807760081716,
+        "attack_relative_to_sustained_db": -8.648880536547667,
+        "onset_ms": 48.354166666666664,
+        "note": "D4",
+        "target_hz": 293.6647679174076,
+        "start_s": 10.53,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 311.37410187827936,
+          "periodicity": 0.9999221513756573,
+          "period_frequency_hz": 311.37410187827936,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 311.37410187827936,
+          "target_periodicity": 0.9999221513756573,
+          "cents": 1.3745177270303575
+        },
+        "early": {
+          "frequency_hz": 311.0756439757648,
+          "periodicity": 0.9995207181716376,
+          "period_frequency_hz": 311.0756439757648,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 311.0756439757648,
+          "target_periodicity": 0.9995207181716376,
+          "cents": -0.28569830192923895
+        },
+        "sustained_rms_pa": 2.7398797691115133,
+        "attack_rms_pa": 1.381781306401368,
+        "attack_relative_to_sustained_db": -5.945843852571281,
+        "onset_ms": 39.979166666666664,
+        "note": "Eb4",
+        "target_hz": 311.1269837220809,
+        "start_s": 11.7,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 349.3772329567391,
+          "periodicity": 0.9998935947583588,
+          "period_frequency_hz": 349.3772329567391,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 349.3772329567391,
+          "target_periodicity": 0.9998935947583588,
+          "cents": 0.7384898295636398
+        },
+        "early": {
+          "frequency_hz": 349.13473451803367,
+          "periodicity": 0.9999883099959935,
+          "period_frequency_hz": 349.13473451803367,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 349.13473451803367,
+          "target_periodicity": 0.9999883099959935,
+          "cents": -0.46355563378356573
+        },
+        "sustained_rms_pa": 2.9990722388876696,
+        "attack_rms_pa": 1.977972531006866,
+        "attack_relative_to_sustained_db": -3.6153334142043265,
+        "onset_ms": 34.479166666666664,
+        "note": "F4",
+        "target_hz": 349.2282314330039,
+        "start_s": 12.87,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 391.97637434536017,
+          "periodicity": 0.9999668325171214,
+          "period_frequency_hz": 391.97637434536017,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 391.97637434536017,
+          "target_periodicity": 0.9999668325171214,
+          "cents": -0.08418709325912187
+        },
+        "early": {
+          "frequency_hz": 391.68086227775274,
+          "periodicity": 0.9999538341541215,
+          "period_frequency_hz": 391.68086227775274,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 391.68086227775274,
+          "target_periodicity": 0.9999538341541215,
+          "cents": -1.3898614460065855
+        },
+        "sustained_rms_pa": 2.5211180600129035,
+        "attack_rms_pa": 1.4905873148984525,
+        "attack_relative_to_sustained_db": -4.5647152495776515,
+        "onset_ms": 42.041666666666664,
+        "note": "G4",
+        "target_hz": 391.99543598174927,
+        "start_s": 14.04,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 439.6281457172774,
+          "periodicity": 0.9999714881208231,
+          "period_frequency_hz": 439.6281457172774,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 439.6281457172774,
+          "target_periodicity": 0.9999714881208231,
+          "cents": -1.4637249547416256
+        },
+        "early": {
+          "frequency_hz": 439.2970774573091,
+          "periodicity": 0.9999915283819302,
+          "period_frequency_hz": 439.2970774573091,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 439.2970774573091,
+          "target_periodicity": 0.9999915283819302,
+          "cents": -2.7679466478209678
+        },
+        "sustained_rms_pa": 2.812943107512314,
+        "attack_rms_pa": 1.802686237818263,
+        "attack_relative_to_sustained_db": -3.864816106218973,
+        "onset_ms": 37.833333333333336,
+        "note": "A4",
+        "target_hz": 440.0,
+        "start_s": 15.21,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 465.85454738955764,
+          "periodicity": 0.9999722314708115,
+          "period_frequency_hz": 465.85454738955764,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 465.85454738955764,
+          "target_periodicity": 0.9999722314708115,
+          "cents": -1.1487371917318896
+        },
+        "early": {
+          "frequency_hz": 465.49800372353667,
+          "periodicity": 0.9998333387582742,
+          "period_frequency_hz": 465.49800372353667,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 465.49800372353667,
+          "target_periodicity": 0.9998333387582742,
+          "cents": -2.474251496730255
+        },
+        "sustained_rms_pa": 3.045270326375112,
+        "attack_rms_pa": 1.9172452993156488,
+        "attack_relative_to_sustained_db": -4.01896338067041,
+        "onset_ms": 38.75,
+        "note": "Bb4",
+        "target_hz": 466.1637615180899,
+        "start_s": 16.38,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 524.4528020066465,
+          "periodicity": 0.9999359007007934,
+          "period_frequency_hz": 524.4528020066465,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 524.4528020066465,
+          "target_periodicity": 0.9999359007007934,
+          "cents": 3.971303915940146
+        },
+        "early": {
+          "frequency_hz": 524.1134714411539,
+          "periodicity": 0.9999414306758576,
+          "period_frequency_hz": 524.1134714411539,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 524.1134714411539,
+          "target_periodicity": 0.9999414306758576,
+          "cents": 2.8508012557782663
+        },
+        "sustained_rms_pa": 2.8460972926079267,
+        "attack_rms_pa": 2.105245068319684,
+        "attack_relative_to_sustained_db": -2.618941670172977,
+        "onset_ms": 34.020833333333336,
+        "note": "C5",
+        "target_hz": 523.2511306011972,
+        "start_s": 17.55,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 588.790902033878,
+          "periodicity": 0.9999908384745034,
+          "period_frequency_hz": 588.790902033878,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 588.790902033878,
+          "target_periodicity": 0.9999908384745034,
+          "cents": 4.302226442982336
+        },
+        "early": {
+          "frequency_hz": 588.4006011418412,
+          "periodicity": 0.9999200750688415,
+          "period_frequency_hz": 588.4006011418412,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 588.4006011418412,
+          "target_periodicity": 0.9999200750688415,
+          "cents": 3.154236134504139
+        },
+        "sustained_rms_pa": 3.806444110568368,
+        "attack_rms_pa": 2.5590230141608683,
+        "attack_relative_to_sustained_db": -3.4489053167024064,
+        "onset_ms": 34.0,
+        "note": "D5",
+        "target_hz": 587.3295358348151,
+        "start_s": 18.72,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 623.8345515121603,
+          "periodicity": 0.9999804335461452,
+          "period_frequency_hz": 623.8345515121603,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 623.8345515121603,
+          "target_periodicity": 0.9999804335461452,
+          "cents": 4.39192301645364
+        },
+        "early": {
+          "frequency_hz": 623.441008607579,
+          "periodicity": 0.9999945670728175,
+          "period_frequency_hz": 623.441008607579,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 623.441008607579,
+          "target_periodicity": 0.9999945670728175,
+          "cents": 3.2994380507034524
+        },
+        "sustained_rms_pa": 4.004239077751476,
+        "attack_rms_pa": 2.635258883357425,
+        "attack_relative_to_sustained_db": -3.633934272837303,
+        "onset_ms": 37.541666666666664,
+        "note": "Eb5",
+        "target_hz": 622.2539674441618,
+        "start_s": 19.89,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 700.5953506566773,
+          "periodicity": 0.9999848025909025,
+          "period_frequency_hz": 700.5953506566773,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 700.5953506566773,
+          "target_periodicity": 0.9999848025909025,
+          "cents": 5.29346836114936
+        },
+        "early": {
+          "frequency_hz": 700.2834083790859,
+          "periodicity": 0.9999866656227684,
+          "period_frequency_hz": 700.2834083790859,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 700.2834083790859,
+          "target_periodicity": 0.9999866656227684,
+          "cents": 4.522459310219959
+        },
+        "sustained_rms_pa": 3.995228920162819,
+        "attack_rms_pa": 2.7386378930571205,
+        "attack_relative_to_sustained_db": -3.280141115482695,
+        "onset_ms": 35.708333333333336,
+        "note": "F5",
+        "target_hz": 698.4564628660078,
+        "start_s": 21.06,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 785.333282526099,
+          "periodicity": 0.9998988236815454,
+          "period_frequency_hz": 785.333282526099,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 785.333282526099,
+          "target_periodicity": 0.9998988236815454,
+          "cents": 2.96181949917564
+        },
+        "early": {
+          "frequency_hz": 785.1965943625112,
+          "periodicity": 0.9998975150270941,
+          "period_frequency_hz": 785.1965943625112,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 785.1965943625112,
+          "target_periodicity": 0.9998975150270941,
+          "cents": 2.6604699903413165
+        },
+        "sustained_rms_pa": 3.7906233071942648,
+        "attack_rms_pa": 2.549835744375506,
+        "attack_relative_to_sustained_db": -3.4439684739936043,
+        "onset_ms": 35.9375,
+        "note": "G5",
+        "target_hz": 783.9908719634985,
+        "start_s": 22.23,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 882.4225393341383,
+          "periodicity": 0.9999051827643166,
+          "period_frequency_hz": 882.4225393341383,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 882.4225393341383,
+          "target_periodicity": 0.9999051827643166,
+          "cents": 4.759341336394285
+        },
+        "early": {
+          "frequency_hz": 882.3515875377096,
+          "periodicity": 0.9999046835452364,
+          "period_frequency_hz": 882.3515875377096,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 882.3515875377096,
+          "target_periodicity": 0.9999046835452364,
+          "cents": 4.620134665109179
+        },
+        "sustained_rms_pa": 3.4920751228782865,
+        "attack_rms_pa": 2.470831229851044,
+        "attack_relative_to_sustained_db": -3.0048099183821533,
+        "onset_ms": 34.0,
+        "note": "A5",
+        "target_hz": 880.0,
+        "start_s": 23.4,
+        "duration_s": 1.08,
+        "gap_nonzero_count": 0
+      },
+      {
+        "sustained": {
+          "frequency_hz": 928.2895010946063,
+          "periodicity": 0.9999516333797158,
+          "period_frequency_hz": 928.2895010946063,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 928.2895010946063,
+          "target_periodicity": 0.9999516333797158,
+          "cents": -7.5144663958824784
+        },
+        "early": {
+          "frequency_hz": 928.4403122262432,
+          "periodicity": 0.9999585879695465,
+          "period_frequency_hz": 928.4403122262432,
+          "subharmonic_odd_even_peak_ratio": null,
+          "target_period_frequency_hz": 928.4403122262432,
+          "target_periodicity": 0.9999585879695465,
+          "cents": -7.233230682674102
+        },
+        "sustained_rms_pa": 2.356432835339838,
+        "attack_rms_pa": 1.9845032716074145,
+        "attack_relative_to_sustained_db": -1.4920649300372286,
+        "onset_ms": 37.1875,
+        "note": "Bb5",
+        "target_hz": 932.3275230361799,
+        "start_s": 24.57,
+        "duration_s": 1.65,
+        "gap_nonzero_count": 0
+      }
+    ]
+  },
+  "comparison": {
+    "compared_notes": 22,
+    "acoustic_sustain_delta_db": {
+      "count": 22,
+      "min": 2.440841674103244,
+      "median": 3.761002266757986,
+      "max": 8.430123251519625
+    },
+    "pcm_sustain_delta_db": {
+      "count": 22,
+      "min": -9.0281706424615,
+      "median": -7.708010049806758,
+      "max": -3.038889065045119
+    },
+    "acoustic_attack_delta_db": {
+      "count": 22,
+      "min": 5.7496875549020245,
+      "median": 8.209238642369105,
+      "max": 27.147854396051322
+    },
+    "pcm_attack_delta_db": {
+      "count": 22,
+      "min": -5.719324761662719,
+      "median": -3.259773674195639,
+      "max": 15.678842079486579
+    },
+    "onset_delta_ms": {
+      "count": 22,
+      "min": -82.97916666666606,
+      "median": -14.80208333333394,
+      "max": -10.58333333333212
+    },
+    "inter_onset_interval_delta_ms": {
+      "count": 21,
+      "min": -29.39583333333394,
+      "median": -0.7083333333357587,
+      "max": 59.77083333333394
+    },
+    "sustained_pitch_delta_cents": {
+      "count": 22,
+      "min": -3.9751619617157266,
+      "median": 3.69695501475252,
+      "max": 8.038185511017485
+    },
+    "louder_sustained_note_count": 22,
+    "reference_gain_fs_per_pa": 0.09951797437792978,
+    "gain_fs_per_pa": 0.026573631716694524,
+    "gain_difference_db": -11.469012316564744,
+    "pcm_rms_delta_db": -7.648395221449671,
+    "pcm_peak_delta_db": 0.0,
+    "pcm_changed_samples": 1156307,
+    "pcm_changed_fraction": 0.915611142784746,
+    "pcm_max_absolute_difference_lsb": 36685,
+    "notes": [
+      {
+        "note": "Bb2",
+        "sustained_rms_pa": 0.8647260309896893,
+        "reference_sustained_rms_pa": 0.5783169872023762,
+        "acoustic_sustain_delta_db": 3.494251671286202,
+        "pcm_sustain_delta_db": -7.974760645278542,
+        "attack_rms_pa": 0.4162768276165036,
+        "reference_attack_rms_pa": 0.09149749424840922,
+        "acoustic_attack_delta_db": 13.159460711481694,
+        "pcm_attack_delta_db": 1.6904483949169506,
+        "attack_relative_to_sustained_db": -6.349925932031036,
+        "reference_attack_relative_to_sustained_db": -16.015134972226527,
+        "onset_ms": 25.4375,
+        "reference_onset_ms": 67.20833333333333,
+        "onset_delta_ms": -41.77083333333333,
+        "inter_onset_interval_delta_ms": null,
+        "sustained_pitch_delta_cents": 5.760311635916328
+      },
+      {
+        "note": "C3",
+        "sustained_rms_pa": 1.4943563355398537,
+        "reference_sustained_rms_pa": 0.5661715033581559,
+        "acoustic_sustain_delta_db": 8.430123251519625,
+        "pcm_sustain_delta_db": -3.038889065045119,
+        "attack_rms_pa": 0.817750303426402,
+        "reference_attack_rms_pa": 0.13215471377255536,
+        "acoustic_attack_delta_db": 15.830761110508998,
+        "pcm_attack_delta_db": 4.361748793944255,
+        "attack_relative_to_sustained_db": -5.236669104564405,
+        "reference_attack_relative_to_sustained_db": -12.637306963553776,
+        "onset_ms": 34.708333333333336,
+        "reference_onset_ms": 66.375,
+        "onset_delta_ms": -31.666666666666742,
+        "inter_onset_interval_delta_ms": 10.104166666666515,
+        "sustained_pitch_delta_cents": 8.038185511017485
+      },
+      {
+        "note": "D3",
+        "sustained_rms_pa": 1.6728142936923323,
+        "reference_sustained_rms_pa": 0.7321298530819815,
+        "acoustic_sustain_delta_db": 7.177192297590061,
+        "pcm_sustain_delta_db": -4.291820018974683,
+        "attack_rms_pa": 0.9487325142158872,
+        "reference_attack_rms_pa": 0.14942862971432258,
+        "acoustic_attack_delta_db": 16.054199414368448,
+        "pcm_attack_delta_db": 4.585187097803704,
+        "attack_relative_to_sustained_db": -4.926078922104916,
+        "reference_attack_relative_to_sustained_db": -13.8030860388833,
+        "onset_ms": 30.4375,
+        "reference_onset_ms": 69.45833333333333,
+        "onset_delta_ms": -39.020833333333485,
+        "inter_onset_interval_delta_ms": -7.3541666666667425,
+        "sustained_pitch_delta_cents": 7.25143140810137
+      },
+      {
+        "note": "Eb3",
+        "sustained_rms_pa": 1.9812484012888465,
+        "reference_sustained_rms_pa": 0.9495923053709618,
+        "acoustic_sustain_delta_db": 6.388034845714991,
+        "pcm_sustain_delta_db": -5.080977470849753,
+        "attack_rms_pa": 0.9756909566829277,
+        "reference_attack_rms_pa": 0.14656098138033388,
+        "acoustic_attack_delta_db": 16.465878306025786,
+        "pcm_attack_delta_db": 4.9968659894610425,
+        "attack_relative_to_sustained_db": -6.152532988524379,
+        "reference_attack_relative_to_sustained_db": -16.230376448835177,
+        "onset_ms": 28.6875,
+        "reference_onset_ms": 77.29166666666667,
+        "onset_delta_ms": -48.604166666666515,
+        "inter_onset_interval_delta_ms": -9.58333333333303,
+        "sustained_pitch_delta_cents": 5.886641409743151
+      },
+      {
+        "note": "F3",
+        "sustained_rms_pa": 2.1330764453221613,
+        "reference_sustained_rms_pa": 1.0607742670861264,
+        "acoustic_sustain_delta_db": 6.067668883880292,
+        "pcm_sustain_delta_db": -5.401343432684452,
+        "attack_rms_pa": 1.2335217650089987,
+        "reference_attack_rms_pa": 0.3668438741290836,
+        "acoustic_attack_delta_db": 10.533310911935425,
+        "pcm_attack_delta_db": -0.9357014046293184,
+        "attack_relative_to_sustained_db": -4.757192063010781,
+        "reference_attack_relative_to_sustained_db": -9.222834091065915,
+        "onset_ms": 25.729166666666668,
+        "reference_onset_ms": 48.333333333333336,
+        "onset_delta_ms": -22.60416666666606,
+        "inter_onset_interval_delta_ms": 26.000000000000455,
+        "sustained_pitch_delta_cents": 5.009695928612914
+      },
+      {
+        "note": "G3",
+        "sustained_rms_pa": 1.8669913138566387,
+        "reference_sustained_rms_pa": 1.1655166542792528,
+        "acoustic_sustain_delta_db": 4.092476275856968,
+        "pcm_sustain_delta_db": -7.376536040707776,
+        "attack_rms_pa": 0.714463145413659,
+        "reference_attack_rms_pa": 0.052826366386429874,
+        "acoustic_attack_delta_db": 22.62258184130919,
+        "pcm_attack_delta_db": 11.153569524744448,
+        "attack_relative_to_sustained_db": -8.343249323555906,
+        "reference_attack_relative_to_sustained_db": -26.873354889008127,
+        "onset_ms": 34.770833333333336,
+        "reference_onset_ms": 86.77083333333333,
+        "onset_delta_ms": -52.0,
+        "inter_onset_interval_delta_ms": -29.39583333333394,
+        "sustained_pitch_delta_cents": 5.640677337605924
+      },
+      {
+        "note": "A3",
+        "sustained_rms_pa": 2.160127924453275,
+        "reference_sustained_rms_pa": 1.467388827874394,
+        "acoustic_sustain_delta_db": 3.3586852593258474,
+        "pcm_sustain_delta_db": -8.110327057238896,
+        "attack_rms_pa": 0.946882996618764,
+        "reference_attack_rms_pa": 0.04158182995736133,
+        "acoustic_attack_delta_db": 27.147854396051322,
+        "pcm_attack_delta_db": 15.678842079486579,
+        "attack_relative_to_sustained_db": -7.163663065324669,
+        "reference_attack_relative_to_sustained_db": -30.95283220205014,
+        "onset_ms": 33.729166666666664,
+        "reference_onset_ms": 95.875,
+        "onset_delta_ms": -62.14583333333303,
+        "inter_onset_interval_delta_ms": -10.14583333333303,
+        "sustained_pitch_delta_cents": 5.65224537108908
+      },
+      {
+        "note": "Bb3",
+        "sustained_rms_pa": 1.5484589046718755,
+        "reference_sustained_rms_pa": 1.0934048850312237,
+        "acoustic_sustain_delta_db": 3.0223734803751072,
+        "pcm_sustain_delta_db": -8.446638836189637,
+        "attack_rms_pa": 0.5725236495418747,
+        "reference_attack_rms_pa": 0.025398404766845076,
+        "acoustic_attack_delta_db": 27.05973981765378,
+        "pcm_attack_delta_db": 15.590727501089038,
+        "attack_relative_to_sustained_db": -8.642125057372661,
+        "reference_attack_relative_to_sustained_db": -32.679491394651336,
+        "onset_ms": 33.75,
+        "reference_onset_ms": 116.72916666666667,
+        "onset_delta_ms": -82.97916666666606,
+        "inter_onset_interval_delta_ms": -20.83333333333303,
+        "sustained_pitch_delta_cents": 7.305446721769268
+      },
+      {
+        "note": "C4",
+        "sustained_rms_pa": 1.6751424390174514,
+        "reference_sustained_rms_pa": 1.186421798578962,
+        "acoustic_sustain_delta_db": 2.996252477614928,
+        "pcm_sustain_delta_db": -8.472759838949816,
+        "attack_rms_pa": 0.6098564711853911,
+        "reference_attack_rms_pa": 0.09582328155551427,
+        "acoustic_attack_delta_db": 16.07513193777014,
+        "pcm_attack_delta_db": 4.606119621205398,
+        "attack_relative_to_sustained_db": -8.776482099137162,
+        "reference_attack_relative_to_sustained_db": -21.85536155929238,
+        "onset_ms": 53.395833333333336,
+        "reference_onset_ms": 76.60416666666667,
+        "onset_delta_ms": -23.20833333333212,
+        "inter_onset_interval_delta_ms": 59.77083333333394,
+        "sustained_pitch_delta_cents": -3.9751619617157266
+      },
+      {
+        "note": "D4",
+        "sustained_rms_pa": 3.8955440506214494,
+        "reference_sustained_rms_pa": 2.616538376448331,
+        "acoustic_sustain_delta_db": 3.456820216541036,
+        "pcm_sustain_delta_db": -8.012192100023707,
+        "attack_rms_pa": 3.536128170081986,
+        "reference_attack_rms_pa": 0.9666807760081716,
+        "acoustic_attack_delta_db": 11.264898319470243,
+        "pcm_attack_delta_db": -0.20411399709450073,
+        "attack_relative_to_sustained_db": -0.840802433618461,
+        "reference_attack_relative_to_sustained_db": -8.648880536547667,
+        "onset_ms": 24.6875,
+        "reference_onset_ms": 48.354166666666664,
+        "onset_delta_ms": -23.66666666666606,
+        "inter_onset_interval_delta_ms": -0.45833333333393966,
+        "sustained_pitch_delta_cents": 2.7550491058079687
+      },
+      {
+        "note": "Eb4",
+        "sustained_rms_pa": 4.171335970110455,
+        "reference_sustained_rms_pa": 2.7398797691115133,
+        "acoustic_sustain_delta_db": 3.6508732967513065,
+        "pcm_sustain_delta_db": -7.818139019813437,
+        "attack_rms_pa": 3.5909240834336105,
+        "reference_attack_rms_pa": 1.381781306401368,
+        "acoustic_attack_delta_db": 8.295338214412704,
+        "pcm_attack_delta_db": -3.17367410215204,
+        "attack_relative_to_sustained_db": -1.3013789349098845,
+        "reference_attack_relative_to_sustained_db": -5.945843852571281,
+        "onset_ms": 26.3125,
+        "reference_onset_ms": 39.979166666666664,
+        "onset_delta_ms": -13.66666666666606,
+        "inter_onset_interval_delta_ms": 10.0,
+        "sustained_pitch_delta_cents": 2.460223702190941
+      },
+      {
+        "note": "F4",
+        "sustained_rms_pa": 4.529494347628715,
+        "reference_sustained_rms_pa": 2.9990722388876696,
+        "acoustic_sustain_delta_db": 3.5812559053205266,
+        "pcm_sustain_delta_db": -7.887756411244217,
+        "attack_rms_pa": 4.51718932543752,
+        "reference_attack_rms_pa": 1.977972531006866,
+        "acoustic_attack_delta_db": 7.172960742574279,
+        "pcm_attack_delta_db": -4.296051573990464,
+        "attack_relative_to_sustained_db": -0.023628576950574826,
+        "reference_attack_relative_to_sustained_db": -3.6153334142043265,
+        "onset_ms": 23.895833333333332,
+        "reference_onset_ms": 34.479166666666664,
+        "onset_delta_ms": -10.58333333333212,
+        "inter_onset_interval_delta_ms": 3.0833333333339397,
+        "sustained_pitch_delta_cents": 2.29381817714501
+      },
+      {
+        "note": "G4",
+        "sustained_rms_pa": 3.8695951445829277,
+        "reference_sustained_rms_pa": 2.5211180600129035,
+        "acoustic_sustain_delta_db": 3.721446919229069,
+        "pcm_sustain_delta_db": -7.747565397335674,
+        "attack_rms_pa": 3.7005372833337424,
+        "reference_attack_rms_pa": 1.4905873148984525,
+        "acoustic_attack_delta_db": 7.898147262582028,
+        "pcm_attack_delta_db": -3.5708650539827156,
+        "attack_relative_to_sustained_db": -0.38801490622469226,
+        "reference_attack_relative_to_sustained_db": -4.5647152495776515,
+        "onset_ms": 29.916666666666668,
+        "reference_onset_ms": 42.041666666666664,
+        "onset_delta_ms": -12.125,
+        "inter_onset_interval_delta_ms": -1.5416666666678793,
+        "sustained_pitch_delta_cents": 3.3670704618102056
+      },
+      {
+        "note": "A4",
+        "sustained_rms_pa": 4.530037213864531,
+        "reference_sustained_rms_pa": 2.812943107512314,
+        "acoustic_sustain_delta_db": 4.138816423623116,
+        "pcm_sustain_delta_db": -7.330195892941627,
+        "attack_rms_pa": 4.307280681319486,
+        "reference_attack_rms_pa": 1.802686237818263,
+        "acoustic_attack_delta_db": 7.565660599856269,
+        "pcm_attack_delta_db": -3.9033517167084746,
+        "attack_relative_to_sustained_db": -0.4379719299858236,
+        "reference_attack_relative_to_sustained_db": -3.864816106218973,
+        "onset_ms": 26.0,
+        "reference_onset_ms": 37.833333333333336,
+        "onset_delta_ms": -11.83333333333394,
+        "inter_onset_interval_delta_ms": 0.29166666666606034,
+        "sustained_pitch_delta_cents": 3.0343668179608825
+      },
+      {
+        "note": "Bb4",
+        "sustained_rms_pa": 4.852752849578276,
+        "reference_sustained_rms_pa": 3.045270326375112,
+        "acoustic_sustain_delta_db": 4.0472464521680775,
+        "pcm_sustain_delta_db": -7.421765864396666,
+        "attack_rms_pa": 4.8846633225656335,
+        "reference_attack_rms_pa": 1.9172452993156488,
+        "acoustic_attack_delta_db": 8.123139070325506,
+        "pcm_attack_delta_db": -3.345873246239238,
+        "attack_relative_to_sustained_db": 0.056929237487016934,
+        "reference_attack_relative_to_sustained_db": -4.01896338067041,
+        "onset_ms": 24.333333333333332,
+        "reference_onset_ms": 38.75,
+        "onset_delta_ms": -14.41666666666788,
+        "inter_onset_interval_delta_ms": -2.5833333333339397,
+        "sustained_pitch_delta_cents": 3.333137560209839
+      },
+      {
+        "note": "C5",
+        "sustained_rms_pa": 4.5828867681867065,
+        "reference_sustained_rms_pa": 2.8460972926079267,
+        "acoustic_sustain_delta_db": 4.137787697236167,
+        "pcm_sustain_delta_db": -7.331224619328577,
+        "attack_rms_pa": 5.018666441631833,
+        "reference_attack_rms_pa": 2.105245068319684,
+        "acoustic_attack_delta_db": 7.5457134645417785,
+        "pcm_attack_delta_db": -3.923298852022965,
+        "attack_relative_to_sustained_db": 0.7889840971326358,
+        "reference_attack_relative_to_sustained_db": -2.618941670172977,
+        "onset_ms": 22.729166666666668,
+        "reference_onset_ms": 34.020833333333336,
+        "onset_delta_ms": -11.291666666664241,
+        "inter_onset_interval_delta_ms": 3.125000000003638,
+        "sustained_pitch_delta_cents": 3.349660738504649
+      },
+      {
+        "note": "D5",
+        "sustained_rms_pa": 5.155987468302152,
+        "reference_sustained_rms_pa": 3.806444110568368,
+        "acoustic_sustain_delta_db": 2.635847912534412,
+        "pcm_sustain_delta_db": -8.833164404030331,
+        "attack_rms_pa": 5.452208077145858,
+        "reference_attack_rms_pa": 2.5590230141608683,
+        "acoustic_attack_delta_db": 6.5699646031567465,
+        "pcm_attack_delta_db": -4.899047713407997,
+        "attack_relative_to_sustained_db": 0.4852113739199268,
+        "reference_attack_relative_to_sustained_db": -3.4489053167024064,
+        "onset_ms": 22.0,
+        "reference_onset_ms": 34.0,
+        "onset_delta_ms": -12.0,
+        "inter_onset_interval_delta_ms": -0.7083333333357587,
+        "sustained_pitch_delta_cents": 5.815154694170683
+      },
+      {
+        "note": "Eb5",
+        "sustained_rms_pa": 5.303494018146532,
+        "reference_sustained_rms_pa": 4.004239077751476,
+        "acoustic_sustain_delta_db": 2.440841674103244,
+        "pcm_sustain_delta_db": -9.0281706424615,
+        "attack_rms_pa": 5.611418855278007,
+        "reference_attack_rms_pa": 2.635258883357425,
+        "acoustic_attack_delta_db": 6.564988022506815,
+        "pcm_attack_delta_db": -4.904024294057929,
+        "attack_relative_to_sustained_db": 0.490212075566267,
+        "reference_attack_relative_to_sustained_db": -3.633934272837303,
+        "onset_ms": 23.083333333333332,
+        "reference_onset_ms": 37.541666666666664,
+        "onset_delta_ms": -14.458333333335759,
+        "inter_onset_interval_delta_ms": -2.4583333333357587,
+        "sustained_pitch_delta_cents": 4.026839567694835
+      },
+      {
+        "note": "F5",
+        "sustained_rms_pa": 6.188274208233983,
+        "reference_sustained_rms_pa": 3.995228920162819,
+        "acoustic_sustain_delta_db": 3.800557614286903,
+        "pcm_sustain_delta_db": -7.66845470227784,
+        "attack_rms_pa": 6.082690083951507,
+        "reference_attack_rms_pa": 2.7386378930571205,
+        "acoustic_attack_delta_db": 6.931221530966737,
+        "pcm_attack_delta_db": -4.537790785598006,
+        "attack_relative_to_sustained_db": -0.14947719880286015,
+        "reference_attack_relative_to_sustained_db": -3.280141115482695,
+        "onset_ms": 23.229166666666668,
+        "reference_onset_ms": 35.708333333333336,
+        "onset_delta_ms": -12.479166666664241,
+        "inter_onset_interval_delta_ms": 1.9791666666715173,
+        "sustained_pitch_delta_cents": 1.7251444457640899
+      },
+      {
+        "note": "G5",
+        "sustained_rms_pa": 6.027771751960548,
+        "reference_sustained_rms_pa": 3.7906233071942648,
+        "acoustic_sustain_delta_db": 4.028923406541564,
+        "pcm_sustain_delta_db": -7.44008891002318,
+        "attack_rms_pa": 5.159554961587642,
+        "reference_attack_rms_pa": 2.549835744375506,
+        "acoustic_attack_delta_db": 6.122000763740145,
+        "pcm_attack_delta_db": -5.347011552824599,
+        "attack_relative_to_sustained_db": -1.3508911167950233,
+        "reference_attack_relative_to_sustained_db": -3.4439684739936043,
+        "onset_ms": 22.145833333333332,
+        "reference_onset_ms": 35.9375,
+        "onset_delta_ms": -13.79166666666788,
+        "inter_onset_interval_delta_ms": -1.312500000003638,
+        "sustained_pitch_delta_cents": 0.5354664318673543
+      },
+      {
+        "note": "A5",
+        "sustained_rms_pa": 5.521959746197284,
+        "reference_sustained_rms_pa": 3.4920751228782865,
+        "acoustic_sustain_delta_db": 3.9801931712628633,
+        "pcm_sustain_delta_db": -7.48881914530188,
+        "attack_rms_pa": 4.823970512529871,
+        "reference_attack_rms_pa": 2.470831229851044,
+        "acoustic_attack_delta_db": 5.811231250057921,
+        "pcm_attack_delta_db": -5.657781066506822,
+        "attack_relative_to_sustained_db": -1.1737718395870962,
+        "reference_attack_relative_to_sustained_db": -3.0048099183821533,
+        "onset_ms": 20.4375,
+        "reference_onset_ms": 34.0,
+        "onset_delta_ms": -13.5625,
+        "inter_onset_interval_delta_ms": 0.22916666666787933,
+        "sustained_pitch_delta_cents": -1.3347434402437681
+      },
+      {
+        "note": "Bb5",
+        "sustained_rms_pa": 3.512261484610019,
+        "reference_sustained_rms_pa": 2.356432835339838,
+        "acoustic_sustain_delta_db": 3.466635510906869,
+        "pcm_sustain_delta_db": -8.002376805657875,
+        "attack_rms_pa": 3.8471241089694734,
+        "reference_attack_rms_pa": 1.9845032716074145,
+        "acoustic_attack_delta_db": 5.7496875549020245,
+        "pcm_attack_delta_db": -5.719324761662719,
+        "attack_relative_to_sustained_db": 0.7909871139579251,
+        "reference_attack_relative_to_sustained_db": -1.4920649300372286,
+        "onset_ms": 22.041666666666668,
+        "reference_onset_ms": 37.1875,
+        "onset_delta_ms": -15.14583333333212,
+        "inter_onset_interval_delta_ms": -1.5833333333321207,
+        "sustained_pitch_delta_cents": 6.983051563542327
+      }
+    ]
+  },
+  "attack_comparison": {
+    "fixed_window_s": [
+      0.012,
+      0.08
+    ],
+    "onset_aligned_window_s": 0.05,
+    "onset_definition": "First sustained crossing of 20% of the note\u2019s own late RMS",
+    "minimum_median_improvement_db": 0.5,
+    "minimum_median_onset_advance_ms": 2.0,
+    "statistics": {
+      "fixed_rms_db": {
+        "count": 22,
+        "min": 5.749687554902023,
+        "median": 8.209238642369105,
+        "max": 27.147854396051322
+      },
+      "fixed_peak_db": {
+        "count": 22,
+        "min": 8.175085746949847,
+        "median": 12.892659703391624,
+        "max": 31.866961059818834
+      },
+      "onset_aligned_rms_db": {
+        "count": 22,
+        "min": 2.5769361448016093,
+        "median": 5.971972985367042,
+        "max": 7.592672867061361
+      },
+      "onset_aligned_peak_db": {
+        "count": 22,
+        "min": 3.302859455032998,
+        "median": 10.610837010831899,
+        "max": 13.239478160412306
+      },
+      "fixed_rms_relative_to_sustain_db": {
+        "count": 22,
+        "min": 1.8310380787950589,
+        "median": 4.321171185704046,
+        "max": 24.037366337278673
+      },
+      "fixed_peak_relative_to_sustain_db": {
+        "count": 22,
+        "min": 4.708450236042978,
+        "median": 8.935650445830877,
+        "max": 28.641835581972764
+      },
+      "onset_aligned_rms_relative_to_sustain_db": {
+        "count": 22,
+        "min": -2.068798621999716,
+        "median": 1.724694350545121,
+        "max": 3.5206551874432863
+      },
+      "onset_aligned_peak_relative_to_sustain_db": {
+        "count": 22,
+        "min": 0.28048597465789094,
+        "median": 6.413595572759695,
+        "max": 9.375526157335525
+      },
+      "onset_advance_ms": {
+        "count": 22,
+        "min": 10.583333333333332,
+        "median": 14.802083333333332,
+        "max": 82.97916666666667
+      }
+    },
+    "checks": {
+      "sustain_pressure_increased": true,
+      "attack_pressure_increased": true,
+      "attack_accent_or_onset_improved": true
+    },
+    "all_improvement_checks_pass": true,
+    "notes": [
+      {
+        "note": "Bb2",
+        "attack": {
+          "fixed": {
+            "rms_pa": 0.4162768276165036,
+            "peak_pa": 2.07295375323381
+          },
+          "onset_aligned": {
+            "rms_pa": 0.4769090022033652,
+            "peak_pa": 2.07295375323381
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 0.09149749424840922,
+            "peak_pa": 0.4351552090678805
+          },
+          "onset_aligned": {
+            "rms_pa": 0.22236282196905738,
+            "peak_pa": 0.7730981550811324
+          }
+        },
+        "acoustic_sustain_delta_db": 3.494251671286202,
+        "onset_ms": 25.4375,
+        "reference_onset_ms": 67.20833333333333,
+        "onset_advance_ms": 41.77083333333333,
+        "fixed_rms_db": 13.159460711481694,
+        "fixed_rms_relative_to_sustain_db": 9.665209040195492,
+        "fixed_peak_db": 13.558908532248799,
+        "fixed_peak_relative_to_sustain_db": 10.064656860962597,
+        "onset_aligned_rms_db": 6.627466867145147,
+        "onset_aligned_rms_relative_to_sustain_db": 3.133215195858945,
+        "onset_aligned_peak_db": 8.567099527869361,
+        "onset_aligned_peak_relative_to_sustain_db": 5.072847856583159
+      },
+      {
+        "note": "C3",
+        "attack": {
+          "fixed": {
+            "rms_pa": 0.817750303426402,
+            "peak_pa": 8.171227675489506
+          },
+          "onset_aligned": {
+            "rms_pa": 1.0658873836132472,
+            "peak_pa": 8.171227675489506
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 0.13215471377255536,
+            "peak_pa": 0.9926690710026281
+          },
+          "onset_aligned": {
+            "rms_pa": 0.44471080178506794,
+            "peak_pa": 1.8335398132606469
+          }
+        },
+        "acoustic_sustain_delta_db": 8.430123251519625,
+        "onset_ms": 34.708333333333336,
+        "reference_onset_ms": 66.375,
+        "onset_advance_ms": 31.666666666666664,
+        "fixed_rms_db": 15.830761110508998,
+        "fixed_rms_relative_to_sustain_db": 7.4006378589893735,
+        "fixed_peak_db": 18.309656416919346,
+        "fixed_peak_relative_to_sustain_db": 9.879533165399721,
+        "onset_aligned_rms_db": 7.592672867061361,
+        "onset_aligned_rms_relative_to_sustain_db": -0.8374503844582639,
+        "onset_aligned_peak_db": 12.979939336567806,
+        "onset_aligned_peak_relative_to_sustain_db": 4.549816085048182
+      },
+      {
+        "note": "D3",
+        "attack": {
+          "fixed": {
+            "rms_pa": 0.9487325142158871,
+            "peak_pa": 8.57203701614247
+          },
+          "onset_aligned": {
+            "rms_pa": 1.1406575607500864,
+            "peak_pa": 8.57203701614247
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 0.14942862971432255,
+            "peak_pa": 0.8295242005134721
+          },
+          "onset_aligned": {
+            "rms_pa": 0.5003169082813061,
+            "peak_pa": 2.508505715415971
+          }
+        },
+        "acoustic_sustain_delta_db": 7.177192297590061,
+        "onset_ms": 30.4375,
+        "reference_onset_ms": 69.45833333333333,
+        "onset_advance_ms": 39.02083333333333,
+        "fixed_rms_db": 16.054199414368448,
+        "fixed_rms_relative_to_sustain_db": 8.877007116778387,
+        "fixed_peak_db": 20.285099542481852,
+        "fixed_peak_relative_to_sustain_db": 13.107907244891791,
+        "onset_aligned_rms_db": 7.158202066660055,
+        "onset_aligned_rms_relative_to_sustain_db": -0.018990230930005403,
+        "onset_aligned_peak_db": 10.673378857907156,
+        "onset_aligned_peak_relative_to_sustain_db": 3.4961865603170956
+      },
+      {
+        "note": "Eb3",
+        "attack": {
+          "fixed": {
+            "rms_pa": 0.9756909566829277,
+            "peak_pa": 9.950178015522289
+          },
+          "onset_aligned": {
+            "rms_pa": 1.1302388628720876,
+            "peak_pa": 9.950178015522289
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 0.14656098138033385,
+            "peak_pa": 0.7378318766859201
+          },
+          "onset_aligned": {
+            "rms_pa": 0.6873982546473596,
+            "peak_pa": 3.3024569742438374
+          }
+        },
+        "acoustic_sustain_delta_db": 6.388034845714991,
+        "onset_ms": 28.6875,
+        "reference_onset_ms": 77.29166666666667,
+        "onset_advance_ms": 48.60416666666667,
+        "fixed_rms_db": 16.465878306025786,
+        "fixed_rms_relative_to_sustain_db": 10.077843460310795,
+        "fixed_peak_db": 22.597468728833505,
+        "fixed_peak_relative_to_sustain_db": 16.209433883118514,
+        "onset_aligned_rms_db": 4.319236223715275,
+        "onset_aligned_rms_relative_to_sustain_db": -2.068798621999716,
+        "onset_aligned_peak_db": 9.579873649682767,
+        "onset_aligned_peak_relative_to_sustain_db": 3.1918388039677765
+      },
+      {
+        "note": "F3",
+        "attack": {
+          "fixed": {
+            "rms_pa": 1.2335217650089985,
+            "peak_pa": 9.618275724838316
+          },
+          "onset_aligned": {
+            "rms_pa": 1.3119559554748108,
+            "peak_pa": 9.618275724838316
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 0.3668438741290836,
+            "peak_pa": 2.261641766649485
+          },
+          "onset_aligned": {
+            "rms_pa": 0.6482080527972387,
+            "peak_pa": 3.133792164527605
+          }
+        },
+        "acoustic_sustain_delta_db": 6.067668883880292,
+        "onset_ms": 25.729166666666668,
+        "reference_onset_ms": 48.333333333333336,
+        "onset_advance_ms": 22.604166666666668,
+        "fixed_rms_db": 10.533310911935423,
+        "fixed_rms_relative_to_sustain_db": 4.465642028055131,
+        "fixed_peak_db": 12.573468137738391,
+        "fixed_peak_relative_to_sustain_db": 6.5057992538580995,
+        "onset_aligned_rms_db": 6.1240966651906925,
+        "onset_aligned_rms_relative_to_sustain_db": 0.056427781310400604,
+        "onset_aligned_peak_db": 9.740540647705064,
+        "onset_aligned_peak_relative_to_sustain_db": 3.672871763824772
+      },
+      {
+        "note": "G3",
+        "attack": {
+          "fixed": {
+            "rms_pa": 0.714463145413659,
+            "peak_pa": 4.526044732129887
+          },
+          "onset_aligned": {
+            "rms_pa": 0.8744164508522373,
+            "peak_pa": 4.526044732129887
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 0.05282636638642987,
+            "peak_pa": 0.2732369917402971
+          },
+          "onset_aligned": {
+            "rms_pa": 0.5462599719604031,
+            "peak_pa": 2.2079756908306836
+          }
+        },
+        "acoustic_sustain_delta_db": 4.092476275856968,
+        "onset_ms": 34.770833333333336,
+        "reference_onset_ms": 86.77083333333333,
+        "onset_advance_ms": 51.99999999999999,
+        "fixed_rms_db": 22.62258184130919,
+        "fixed_rms_relative_to_sustain_db": 18.530105565452224,
+        "fixed_peak_db": 24.383586933139313,
+        "fixed_peak_relative_to_sustain_db": 20.291110657282346,
+        "onset_aligned_rms_db": 4.086378830849448,
+        "onset_aligned_rms_relative_to_sustain_db": -0.006097445007520186,
+        "onset_aligned_peak_db": 6.234491085251436,
+        "onset_aligned_peak_relative_to_sustain_db": 2.1420148093944684
+      },
+      {
+        "note": "A3",
+        "attack": {
+          "fixed": {
+            "rms_pa": 0.946882996618764,
+            "peak_pa": 5.975389683144329
+          },
+          "onset_aligned": {
+            "rms_pa": 1.2072812034703302,
+            "peak_pa": 6.148805758899623
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 0.04158182995736133,
+            "peak_pa": 0.1524116553253958
+          },
+          "onset_aligned": {
+            "rms_pa": 0.8138516577678405,
+            "peak_pa": 3.675359535361909
+          }
+        },
+        "acoustic_sustain_delta_db": 3.3586852593258474,
+        "onset_ms": 33.729166666666664,
+        "reference_onset_ms": 95.875,
+        "onset_advance_ms": 62.145833333333336,
+        "fixed_rms_db": 27.147854396051322,
+        "fixed_rms_relative_to_sustain_db": 23.789169136725477,
+        "fixed_peak_db": 31.866961059818834,
+        "fixed_peak_relative_to_sustain_db": 28.50827580049299,
+        "onset_aligned_rms_db": 3.425263731390076,
+        "onset_aligned_rms_relative_to_sustain_db": 0.0665784720642284,
+        "onset_aligned_peak_db": 4.469818886189568,
+        "onset_aligned_peak_relative_to_sustain_db": 1.1111336268637206
+      },
+      {
+        "note": "Bb3",
+        "attack": {
+          "fixed": {
+            "rms_pa": 0.5725236495418747,
+            "peak_pa": 2.5840143738371597
+          },
+          "onset_aligned": {
+            "rms_pa": 0.7591094819983922,
+            "peak_pa": 3.108856404434307
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 0.025398404766845076,
+            "peak_pa": 0.06746592388649311
+          },
+          "onset_aligned": {
+            "rms_pa": 0.56423186457531,
+            "peak_pa": 2.125483265714926
+          }
+        },
+        "acoustic_sustain_delta_db": 3.0223734803751072,
+        "onset_ms": 33.75,
+        "reference_onset_ms": 116.72916666666667,
+        "onset_advance_ms": 82.97916666666667,
+        "fixed_rms_db": 27.05973981765378,
+        "fixed_rms_relative_to_sustain_db": 24.037366337278673,
+        "fixed_peak_db": 31.664209062347872,
+        "fixed_peak_relative_to_sustain_db": 28.641835581972764,
+        "onset_aligned_rms_db": 2.5769361448016093,
+        "onset_aligned_rms_relative_to_sustain_db": -0.44543733557349796,
+        "onset_aligned_peak_db": 3.302859455032998,
+        "onset_aligned_peak_relative_to_sustain_db": 0.28048597465789094
+      },
+      {
+        "note": "C4",
+        "attack": {
+          "fixed": {
+            "rms_pa": 0.6098564711853911,
+            "peak_pa": 2.9090259595242336
+          },
+          "onset_aligned": {
+            "rms_pa": 1.2324639763436225,
+            "peak_pa": 5.13816902602109
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 0.09582328155551426,
+            "peak_pa": 0.517647634183638
+          },
+          "onset_aligned": {
+            "rms_pa": 0.7403835480228045,
+            "peak_pa": 2.7409564895339793
+          }
+        },
+        "acoustic_sustain_delta_db": 2.996252477614928,
+        "onset_ms": 53.395833333333336,
+        "reference_onset_ms": 76.60416666666667,
+        "onset_advance_ms": 23.208333333333336,
+        "fixed_rms_db": 16.075131937770145,
+        "fixed_rms_relative_to_sustain_db": 13.078879460155218,
+        "fixed_peak_db": 14.994267266582979,
+        "fixed_peak_relative_to_sustain_db": 11.99801478896805,
+        "onset_aligned_rms_db": 4.4263494874486815,
+        "onset_aligned_rms_relative_to_sustain_db": 1.4300970098337533,
+        "onset_aligned_peak_db": 5.4581249052901555,
+        "onset_aligned_peak_relative_to_sustain_db": 2.4618724276752273
+      },
+      {
+        "note": "D4",
+        "attack": {
+          "fixed": {
+            "rms_pa": 3.536128170081986,
+            "peak_pa": 29.214292285186517
+          },
+          "onset_aligned": {
+            "rms_pa": 4.034798925837554,
+            "peak_pa": 29.214292285186517
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 0.9666807760081716,
+            "peak_pa": 4.956292099334099
+          },
+          "onset_aligned": {
+            "rms_pa": 1.8069582836578069,
+            "peak_pa": 7.788327586114843
+          }
+        },
+        "acoustic_sustain_delta_db": 3.456820216541036,
+        "onset_ms": 24.6875,
+        "reference_onset_ms": 48.354166666666664,
+        "onset_advance_ms": 23.666666666666664,
+        "fixed_rms_db": 11.264898319470243,
+        "fixed_rms_relative_to_sustain_db": 7.808078102929207,
+        "fixed_peak_db": 15.408769527693442,
+        "fixed_peak_relative_to_sustain_db": 11.951949311152406,
+        "onset_aligned_rms_db": 6.9774754039843225,
+        "onset_aligned_rms_relative_to_sustain_db": 3.5206551874432863,
+        "onset_aligned_peak_db": 11.48302319695734,
+        "onset_aligned_peak_relative_to_sustain_db": 8.026202980416304
+      },
+      {
+        "note": "Eb4",
+        "attack": {
+          "fixed": {
+            "rms_pa": 3.590924083433611,
+            "peak_pa": 27.596125061748047
+          },
+          "onset_aligned": {
+            "rms_pa": 4.0863878771452775,
+            "peak_pa": 27.596125061748047
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 1.3817813064013678,
+            "peak_pa": 7.476144356494616
+          },
+          "onset_aligned": {
+            "rms_pa": 1.9330049695779945,
+            "peak_pa": 8.658024677669818
+          }
+        },
+        "acoustic_sustain_delta_db": 3.6508732967513065,
+        "onset_ms": 26.3125,
+        "reference_onset_ms": 39.979166666666664,
+        "onset_advance_ms": 13.666666666666664,
+        "fixed_rms_db": 8.295338214412705,
+        "fixed_rms_relative_to_sustain_db": 4.644464917661399,
+        "fixed_peak_db": 11.343408517647159,
+        "fixed_peak_relative_to_sustain_db": 7.692535220895852,
+        "onset_aligned_rms_db": 6.502132332546232,
+        "onset_aligned_rms_relative_to_sustain_db": 2.8512590357949255,
+        "onset_aligned_peak_db": 10.06858570213717,
+        "onset_aligned_peak_relative_to_sustain_db": 6.417712405385863
+      },
+      {
+        "note": "F4",
+        "attack": {
+          "fixed": {
+            "rms_pa": 4.51718932543752,
+            "peak_pa": 32.30477347629576
+          },
+          "onset_aligned": {
+            "rms_pa": 5.037100092455219,
+            "peak_pa": 32.30477347629576
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 1.9779725310068659,
+            "peak_pa": 9.718772999139725
+          },
+          "onset_aligned": {
+            "rms_pa": 2.4525071192014867,
+            "peak_pa": 9.718772999139725
+          }
+        },
+        "acoustic_sustain_delta_db": 3.5812559053205266,
+        "onset_ms": 23.895833333333332,
+        "reference_onset_ms": 34.479166666666664,
+        "onset_advance_ms": 10.583333333333332,
+        "fixed_rms_db": 7.172960742574279,
+        "fixed_rms_relative_to_sustain_db": 3.5917048372537526,
+        "fixed_peak_db": 10.433105232551334,
+        "fixed_peak_relative_to_sustain_db": 6.851849327230807,
+        "onset_aligned_rms_db": 6.251406081891918,
+        "onset_aligned_rms_relative_to_sustain_db": 2.6701501765713918,
+        "onset_aligned_peak_db": 10.433105232551334,
+        "onset_aligned_peak_relative_to_sustain_db": 6.851849327230807
+      },
+      {
+        "note": "G4",
+        "attack": {
+          "fixed": {
+            "rms_pa": 3.700537283333742,
+            "peak_pa": 27.429599690989654
+          },
+          "onset_aligned": {
+            "rms_pa": 4.313366105635609,
+            "peak_pa": 27.429599690989654
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 1.4905873148984525,
+            "peak_pa": 7.399478533896328
+          },
+          "onset_aligned": {
+            "rms_pa": 2.065729086243556,
+            "peak_pa": 7.399478533896328
+          }
+        },
+        "acoustic_sustain_delta_db": 3.721446919229069,
+        "onset_ms": 29.916666666666668,
+        "reference_onset_ms": 42.041666666666664,
+        "onset_advance_ms": 12.124999999999996,
+        "fixed_rms_db": 7.898147262582028,
+        "fixed_rms_relative_to_sustain_db": 4.176700343352959,
+        "fixed_peak_db": 11.380367098315503,
+        "fixed_peak_relative_to_sustain_db": 7.658920179086434,
+        "onset_aligned_rms_db": 6.39485913484196,
+        "onset_aligned_rms_relative_to_sustain_db": 2.673412215612891,
+        "onset_aligned_peak_db": 11.380367098315503,
+        "onset_aligned_peak_relative_to_sustain_db": 7.658920179086434
+      },
+      {
+        "note": "A4",
+        "attack": {
+          "fixed": {
+            "rms_pa": 4.307280681319486,
+            "peak_pa": 25.613898924306742
+          },
+          "onset_aligned": {
+            "rms_pa": 4.917274481973427,
+            "peak_pa": 25.613898924306742
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 1.8026862378182629,
+            "peak_pa": 7.604329611878953
+          },
+          "onset_aligned": {
+            "rms_pa": 2.328085913855128,
+            "peak_pa": 7.604329611878953
+          }
+        },
+        "acoustic_sustain_delta_db": 4.138816423623116,
+        "onset_ms": 26.0,
+        "reference_onset_ms": 37.833333333333336,
+        "onset_advance_ms": 11.833333333333336,
+        "fixed_rms_db": 7.565660599856269,
+        "fixed_rms_relative_to_sustain_db": 3.4268441762331525,
+        "fixed_peak_db": 10.548295163756642,
+        "fixed_peak_relative_to_sustain_db": 6.409478740133525,
+        "onset_aligned_rms_db": 6.49450896246158,
+        "onset_aligned_rms_relative_to_sustain_db": 2.355692538838464,
+        "onset_aligned_peak_db": 10.548295163756642,
+        "onset_aligned_peak_relative_to_sustain_db": 6.409478740133525
+      },
+      {
+        "note": "Bb4",
+        "attack": {
+          "fixed": {
+            "rms_pa": 4.8846633225656335,
+            "peak_pa": 33.144291035084635
+          },
+          "onset_aligned": {
+            "rms_pa": 5.487732119910698,
+            "peak_pa": 33.144291035084635
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 1.917245299315649,
+            "peak_pa": 7.799367464568997
+          },
+          "onset_aligned": {
+            "rms_pa": 2.5931903548884274,
+            "peak_pa": 8.354121356890206
+          }
+        },
+        "acoustic_sustain_delta_db": 4.0472464521680775,
+        "onset_ms": 24.333333333333332,
+        "reference_onset_ms": 38.75,
+        "onset_advance_ms": 14.416666666666668,
+        "fixed_rms_db": 8.123139070325504,
+        "fixed_rms_relative_to_sustain_db": 4.075892618157426,
+        "fixed_peak_db": 12.566987026414322,
+        "fixed_peak_relative_to_sustain_db": 8.519740574246246,
+        "onset_aligned_rms_db": 6.511170115863248,
+        "onset_aligned_rms_relative_to_sustain_db": 2.4639236636951702,
+        "onset_aligned_peak_db": 11.970159079792959,
+        "onset_aligned_peak_relative_to_sustain_db": 7.922912627624881
+      },
+      {
+        "note": "C5",
+        "attack": {
+          "fixed": {
+            "rms_pa": 5.018666441631835,
+            "peak_pa": 36.50236127024012
+          },
+          "onset_aligned": {
+            "rms_pa": 5.528060836425779,
+            "peak_pa": 36.50236127024012
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 2.105245068319684,
+            "peak_pa": 7.94963247686164
+          },
+          "onset_aligned": {
+            "rms_pa": 2.5870149197684,
+            "peak_pa": 7.94963247686164
+          }
+        },
+        "acoustic_sustain_delta_db": 4.137787697236167,
+        "onset_ms": 22.729166666666668,
+        "reference_onset_ms": 34.020833333333336,
+        "onset_advance_ms": 11.291666666666668,
+        "fixed_rms_db": 7.545713464541782,
+        "fixed_rms_relative_to_sustain_db": 3.407925767305615,
+        "fixed_peak_db": 13.239478160412306,
+        "fixed_peak_relative_to_sustain_db": 9.101690463176139,
+        "onset_aligned_rms_db": 6.595477608723977,
+        "onset_aligned_rms_relative_to_sustain_db": 2.45768991148781,
+        "onset_aligned_peak_db": 13.239478160412306,
+        "onset_aligned_peak_relative_to_sustain_db": 9.101690463176139
+      },
+      {
+        "note": "D5",
+        "attack": {
+          "fixed": {
+            "rms_pa": 5.452208077145859,
+            "peak_pa": 30.338625650513887
+          },
+          "onset_aligned": {
+            "rms_pa": 6.056025347572312,
+            "peak_pa": 30.338625650513887
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 2.5590230141608674,
+            "peak_pa": 8.160616820652129
+          },
+          "onset_aligned": {
+            "rms_pa": 3.151888288397401,
+            "peak_pa": 8.160616820652129
+          }
+        },
+        "acoustic_sustain_delta_db": 2.635847912534412,
+        "onset_ms": 22.0,
+        "reference_onset_ms": 34.0,
+        "onset_advance_ms": 12.0,
+        "fixed_rms_db": 6.56996460315675,
+        "fixed_rms_relative_to_sustain_db": 3.934116690622338,
+        "fixed_peak_db": 11.405458341020026,
+        "fixed_peak_relative_to_sustain_db": 8.769610428485613,
+        "onset_aligned_rms_db": 5.672337354867347,
+        "onset_aligned_rms_relative_to_sustain_db": 3.0364894423329347,
+        "onset_aligned_peak_db": 11.405458341020026,
+        "onset_aligned_peak_relative_to_sustain_db": 8.769610428485613
+      },
+      {
+        "note": "Eb5",
+        "attack": {
+          "fixed": {
+            "rms_pa": 5.611418855278007,
+            "peak_pa": 30.362743118003035
+          },
+          "onset_aligned": {
+            "rms_pa": 6.214968007262813,
+            "peak_pa": 30.362743118003035
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 2.6352588833574244,
+            "peak_pa": 8.448573650331296
+          },
+          "onset_aligned": {
+            "rms_pa": 3.4105318115980467,
+            "peak_pa": 8.448573650331296
+          }
+        },
+        "acoustic_sustain_delta_db": 2.440841674103244,
+        "onset_ms": 23.083333333333332,
+        "reference_onset_ms": 37.541666666666664,
+        "onset_advance_ms": 14.458333333333332,
+        "fixed_rms_db": 6.564988022506816,
+        "fixed_rms_relative_to_sustain_db": 4.124146348403571,
+        "fixed_peak_db": 11.111152217782095,
+        "fixed_peak_relative_to_sustain_db": 8.670310543678852,
+        "onset_aligned_rms_db": 5.212335852382419,
+        "onset_aligned_rms_relative_to_sustain_db": 2.771494178279175,
+        "onset_aligned_peak_db": 11.111152217782095,
+        "onset_aligned_peak_relative_to_sustain_db": 8.670310543678852
+      },
+      {
+        "note": "F5",
+        "attack": {
+          "fixed": {
+            "rms_pa": 6.082690083951507,
+            "peak_pa": 33.67602377067868
+          },
+          "onset_aligned": {
+            "rms_pa": 6.754865080271058,
+            "peak_pa": 33.67602377067868
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 2.738637893057121,
+            "peak_pa": 7.357465663112467
+          },
+          "onset_aligned": {
+            "rms_pa": 3.4564017288704307,
+            "peak_pa": 7.387825328861388
+          }
+        },
+        "acoustic_sustain_delta_db": 3.800557614286903,
+        "onset_ms": 23.229166666666668,
+        "reference_onset_ms": 35.708333333333336,
+        "onset_advance_ms": 12.479166666666668,
+        "fixed_rms_db": 6.931221530966736,
+        "fixed_rms_relative_to_sustain_db": 3.130663916679833,
+        "fixed_peak_db": 13.211851269044857,
+        "fixed_peak_relative_to_sustain_db": 9.411293654757953,
+        "onset_aligned_rms_db": 5.819849305543392,
+        "onset_aligned_rms_relative_to_sustain_db": 2.019291691256489,
+        "onset_aligned_peak_db": 13.176083771622428,
+        "onset_aligned_peak_relative_to_sustain_db": 9.375526157335525
+      },
+      {
+        "note": "G5",
+        "attack": {
+          "fixed": {
+            "rms_pa": 5.1595549615876415,
+            "peak_pa": 27.201057975259168
+          },
+          "onset_aligned": {
+            "rms_pa": 5.700019693457301,
+            "peak_pa": 27.201057975259168
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 2.549835744375506,
+            "peak_pa": 7.117961633315416
+          },
+          "onset_aligned": {
+            "rms_pa": 3.2108667818013226,
+            "peak_pa": 7.117961633315416
+          }
+        },
+        "acoustic_sustain_delta_db": 4.028923406541564,
+        "onset_ms": 22.145833333333332,
+        "reference_onset_ms": 35.9375,
+        "onset_advance_ms": 13.791666666666668,
+        "fixed_rms_db": 6.122000763740144,
+        "fixed_rms_relative_to_sustain_db": 2.09307735719858,
+        "fixed_peak_db": 11.644603066299005,
+        "fixed_peak_relative_to_sustain_db": 7.615679659757442,
+        "onset_aligned_rms_db": 4.985081380040409,
+        "onset_aligned_rms_relative_to_sustain_db": 0.9561579734988452,
+        "onset_aligned_peak_db": 11.644603066299005,
+        "onset_aligned_peak_relative_to_sustain_db": 7.615679659757442
+      },
+      {
+        "note": "A5",
+        "attack": {
+          "fixed": {
+            "rms_pa": 4.823970512529871,
+            "peak_pa": 22.461401388225408
+          },
+          "onset_aligned": {
+            "rms_pa": 5.152453713469039,
+            "peak_pa": 22.461401388225408
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 2.4708312298510435,
+            "peak_pa": 6.121919266118463
+          },
+          "onset_aligned": {
+            "rms_pa": 3.0301816451337342,
+            "peak_pa": 6.121919266118463
+          }
+        },
+        "acoustic_sustain_delta_db": 3.9801931712628633,
+        "onset_ms": 20.4375,
+        "reference_onset_ms": 34.0,
+        "onset_advance_ms": 13.5625,
+        "fixed_rms_db": 5.811231250057922,
+        "fixed_rms_relative_to_sustain_db": 1.8310380787950589,
+        "fixed_peak_db": 11.290985017049987,
+        "fixed_peak_relative_to_sustain_db": 7.310791845787124,
+        "onset_aligned_rms_db": 4.610908716718433,
+        "onset_aligned_rms_relative_to_sustain_db": 0.63071554545557,
+        "onset_aligned_peak_db": 11.290985017049987,
+        "onset_aligned_peak_relative_to_sustain_db": 7.310791845787124
+      },
+      {
+        "note": "Bb5",
+        "attack": {
+          "fixed": {
+            "rms_pa": 3.847124108969473,
+            "peak_pa": 14.058186644506964
+          },
+          "onset_aligned": {
+            "rms_pa": 4.149228774932962,
+            "peak_pa": 14.058186644506964
+          }
+        },
+        "reference_attack": {
+          "fixed": {
+            "rms_pa": 1.9845032716074145,
+            "peak_pa": 5.48497961197189
+          },
+          "onset_aligned": {
+            "rms_pa": 2.552199862297727,
+            "peak_pa": 5.48497961197189
+          }
+        },
+        "acoustic_sustain_delta_db": 3.466635510906869,
+        "onset_ms": 22.041666666666668,
+        "reference_onset_ms": 37.1875,
+        "onset_advance_ms": 15.145833333333332,
+        "fixed_rms_db": 5.749687554902023,
+        "fixed_rms_relative_to_sustain_db": 2.283052043995154,
+        "fixed_peak_db": 8.175085746949847,
+        "fixed_peak_relative_to_sustain_db": 4.708450236042978,
+        "onset_aligned_rms_db": 4.221054003366768,
+        "onset_aligned_rms_relative_to_sustain_db": 0.7544184924598989,
+        "onset_aligned_peak_db": 8.175085746949847,
+        "onset_aligned_peak_relative_to_sustain_db": 4.708450236042978
+      }
+    ]
+  },
+  "listening_copy": {
+    "wav": "samples/trombone_5AL_Bb2_Bb5_major_stronger_f_listening.wav",
+    "sha256": "dd81eeff7637188ca63f9bc33fed9d4bf0b2f25a27851678136d11d3a7540a15",
+    "duration_s": 26.31,
+    "peak_dbfs": -0.543079124862897,
+    "true_peak_dbtp": -0.5372442811247291,
+    "input_gain_relative_to_prior_wav": 1.07,
+    "limiter_release_s": 0.019,
+    "greatest_gain_reduction_db": -12.373120191338034,
+    "sustained_max_abs_pitch_error_cents": 11.697816031847253,
+    "clipped_samples": 0,
+    "total_rms_change_db": 1.5394848414781794,
+    "median_sustain_rms_change_db": 1.92598125251143,
+    "median_attack_rms_change_db": 3.5615720239676447,
+    "median_attack_relative_to_sustain_change_db": 2.7101363421836235
+  }
+}

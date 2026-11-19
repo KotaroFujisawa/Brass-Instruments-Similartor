@@ -12,6 +12,7 @@ struct Cell {
 struct Face { int left,right,kind; float nz,nr,eta_l,eta_r,area,radius2; };
 struct Config {
     int nc,nf,inlet,bell,stride,mode,feedback,thermal_poles,radiation_order,reservoir_inflow;
+    int radiation_modes,radiation_states;
     float dt,delta,area_in,area_bell,r_bell,guard,viscous_dc;
     float filters_b[5],filters_w[5];
     double lip_hz,force,rest_y,hold,attack,release;
@@ -196,8 +197,46 @@ __device__ float bell_reflection(Boundary* b,const Config* c,float outgoing,int 
     return r_inf*outgoing-(1+r_inf)*memory;
 }
 
+__device__ float dot_product(const float* a,const float* b,int n) {
+    float sum=0.f;
+    for(int j=0;j<n;++j) sum=fmaf(a[j],b[j],sum);
+    return sum;
+}
+
+__device__ void exterior_reflection(const Config* c,const float* coeff,float* state,
+        const float* characteristic,float* incident,float* reflected,float* returned,int rings,int stage) {
+    int lane=threadIdx.x, nm=c->radiation_modes, ns=c->radiation_states;
+    const float* basis=coeff+nm*rings, *D=basis+nm*rings, *C=D+nm*nm;
+    const float* Ad=C+nm*ns, *hold=Ad+ns*ns, *ramp=hold+ns*nm;
+    float* next=state+ns, *first=next+ns;
+    if(lane<nm) incident[lane]=.5f*dot_product(coeff+lane*rings,characteristic,rings);
+    __syncthreads();
+    if(lane<nm) {
+        const float* at_stage=stage ? next : state;
+        reflected[lane]=dot_product(D+lane*nm,incident,nm)+dot_product(C+lane*ns,at_stage,ns);
+    }
+    __syncthreads();
+    if(stage) {
+        if(lane<ns) {
+            float correction=0.f;
+            for(int j=0;j<nm;++j) correction=fmaf(ramp[lane*nm+j],incident[j]-first[j],correction);
+            state[lane]=next[lane]+correction;
+        }
+    } else {
+        if(lane<nm) first[lane]=incident[lane];
+        if(lane<ns) {
+            float predicted=0.f;
+            for(int j=0;j<ns;++j) predicted=fmaf(Ad[j*ns+lane],state[j],predicted);
+            next[lane]=predicted+dot_product(hold+lane*nm,incident,nm);
+        }
+    }
+    if(lane<rings) returned[lane]=dot_product(basis+lane*nm,reflected,nm);
+    __syncthreads();
+}
+
 extern "C" __global__ void fluxes(const Vec* current,const Vec* predicted,const Cell* cells,
-        const Face* faces,Vec* flux,const Config* c,Clock* clock,Boundary* boundary,int stage) {
+        const Face* faces,Vec* flux,const Config* c,Clock* clock,Boundary* boundary,
+        const float* radiation_coefficients,float* radiation_state,float* bell_trace,int record_bell,int stage) {
     const Vec* values=stage ? predicted : current;
     int internal_blocks=(c->inlet+blockDim.x-1)/blockDim.x;
     int lane=threadIdx.x;
@@ -218,6 +257,7 @@ extern "C" __global__ void fluxes(const Vec* current,const Vec* predicted,const 
     bool inlet=blockIdx.x==internal_blocks;
     int start=inlet ? c->inlet : c->bell, stop=inlet ? c->bell : c->nf;
     __shared__ float radial_h[128], shared_condition;
+    __shared__ float incident[16], reflected[16], returned[128];
     int i=start+lane;
     Face f;
     Vec q;
@@ -226,6 +266,30 @@ extern "C" __global__ void fluxes(const Vec* current,const Vec* predicted,const 
         radial_h[lane]=pressure(q)+(inlet ? -1.f : 1.f)*q.z/(1.f+q.d);
     }
     __syncthreads();
+    if(!inlet && c->radiation_modes>0 && (c->mode==0 || c->mode==3)) {
+        int rings=stop-start;
+        exterior_reflection(c,radiation_coefficients,radiation_state,radial_h,
+                            incident,reflected,returned,rings,stage);
+        // The mean bell observables are recorded by advance at the same
+        // sampling steps. Reflection itself uses all rings every stage.
+        if(lane==0 && stage && clock->step%c->stride==c->stride-1) {
+            float flow=0.f, p=0.f;
+            for(int j=0;j<rings;++j) {
+                float a=.5f*radial_h[j], b=returned[j], area=faces[start+j].area;
+                flow+=area*(a-b);
+                p+=area*(a+b);
+            }
+            boundary->bell_flux=flow*C0;
+            boundary->bell_p=p/c->area_bell*PUNIT;
+        }
+        if(i<stop) {
+            float a=.5f*radial_h[lane], b=returned[lane], u=a-b;
+            flux[i]=open_face(q,a+b,u,c->reservoir_inflow && u<0.f);
+            if(record_bell && stage && clock->step%c->stride==c->stride-1)
+                bell_trace[(clock->step/c->stride)*rings+lane]=u*C0;
+        }
+        return;
+    }
     if(lane==0) {
         float integrated=0.f;
         for(int j=start;j<stop;++j) integrated+=faces[j].area*radial_h[j-start];
@@ -256,6 +320,8 @@ extern "C" __global__ void fluxes(const Vec* current,const Vec* predicted,const 
     else {
         float u=.5f*radial_h[lane]-shared_condition;
         flux[i]=open_face(q,.5f*radial_h[lane]+shared_condition,u,c->reservoir_inflow && u<0.f);
+        if(record_bell && stage && clock->step%c->stride==c->stride-1)
+            bell_trace[(clock->step/c->stride)*(stop-start)+lane]=u*C0;
     }
 }
 
