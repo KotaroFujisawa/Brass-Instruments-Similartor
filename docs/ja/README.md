@@ -1,14 +1,14 @@
 # 日本語ドキュメント
 
-[日本語README](../../README.ja.md) · [English README](../../README.md)
+[リポジトリのトップページ](../../README.md)
 
 ## 公開版のモデルと結果
 
-- [物理モデルと計算の仮定](MODELS.md)
-- [参考文献と各モデルでの利用箇所](REFERENCES.md)
-- [管体・マウスピースのデータと演奏設定](../../data/README.ja.md)
-- [音声サンプルと再生成方法](../../samples/README.ja.md)
-- [測定結果と検証レポート](../results/README.ja.md)
+- [物理モデルと計算の仮定](../models.md)
+- [参考文献と各モデルでの利用箇所](../references.md)
+- [管体・マウスピースのデータと演奏設定](../../data/README.md)
+- [音声サンプルと再生成方法](../../samples/README.md)
+- [測定結果と検証レポート](../results/README.md)
 
 ## 楽器別のノート
 
