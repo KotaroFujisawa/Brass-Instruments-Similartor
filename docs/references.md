@@ -1,5 +1,7 @@
 # References and their role in the model
 
+English · [日本語](ja/REFERENCES.md)
+
 ## Instrument acoustics and geometry
 
 - Murray Campbell, Joël Gilbert, and Arnold Myers (2021), *The Science of Brass Instruments*, Springer. Primary source for bore geometry, mouthpiece resonances, nonlinear propagation, and radiation approximations. The York trumpet profile is from Figure 7.52, printed p. 373. The Conn 8H bore and 5AL cup are reconstructed from Figures 4.22 and 4.32b, with Figure 4.46 used for an impedance comparison. Figures 7.45 and 7.46 identify and plot the Alexander C tuba, and Figure 6.9 supplies the flare used to complete the reconstructed BB♭ profile. [Publisher and DOI](https://doi.org/10.1007/978-3-030-55686-0)

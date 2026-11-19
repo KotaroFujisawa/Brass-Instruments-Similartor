@@ -1,5 +1,7 @@
 # Brass Instrument Simulator
 
+English · [日本語](README.ja.md)
+
 Physical sound synthesis for B-flat trumpet, tenor trombone, and BB-flat contrabass tuba. The models couple the two-coordinate lip motion of Adachi and Sato to a mouthpiece and a bore. The CUDA solver models nonlinear propagation in the unfolded axisymmetric bore and couples the bell to a reduced exterior sound field. Reflections from the bell travel back through the bore and act on the lips.
 
 [Model equations and assumptions](docs/models.md) · [References](docs/references.md) · [Geometry and presets](data/README.md) · [Japanese notes](docs/ja/README.md)

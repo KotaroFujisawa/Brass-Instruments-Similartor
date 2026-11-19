@@ -1,5 +1,7 @@
 # Audio samples
 
+English · [日本語](README.ja.md)
+
 Each WAV is 48 kHz, 16-bit, mono. The full performances are ascending B-flat major scales at concert pitch with A4 = 440 Hz.
 
 ## Three-octave scales

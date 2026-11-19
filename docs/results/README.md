@@ -1,5 +1,7 @@
 # Published measurements
 
+English · [日本語](README.ja.md)
+
 These reports accompany the [published audio samples](../../samples/). Re-running the renderers and verification scripts writes new reports under `output/`. Sample paths in the published reports are relative to the repository root.
 
 ## Three-octave performances and model checks

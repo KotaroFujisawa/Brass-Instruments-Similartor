@@ -1,5 +1,7 @@
 # Physical models
 
+English · [日本語](ja/MODELS.md)
+
 The renderers use SI units internally. Sounding pitches are used throughout. Each scale is assembled from separate notes with a prescribed blowing-pressure envelope and a fixed bore geometry during the note.
 
 ## Lip motion and the entrance boundary
